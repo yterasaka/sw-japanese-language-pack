@@ -43,6 +43,7 @@ class JapaneseLanguagePack extends Plugin
     public function update(UpdateContext $updateContext): void
     {
         $this->createJapaneseLanguage($updateContext->getContext());
+        $this->createJapaneseCurrency($updateContext->getContext());
     }
 
     public function postInstall(InstallContext $installContext): void
