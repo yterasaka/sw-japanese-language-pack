@@ -17,6 +17,7 @@ class JapaneseLanguagePack extends Plugin
     public function install(InstallContext $installContext): void
     {
         $this->createJapaneseLanguage($installContext->getContext());
+        $this->createJapaneseCurrency($installContext->getContext());
     }
 
     public function uninstall(UninstallContext $uninstallContext): void
@@ -28,6 +29,7 @@ class JapaneseLanguagePack extends Plugin
         }
 
         $this->removeJapaneseLanguage($uninstallContext->getContext());
+        $this->removeJapaneseCurrency($uninstallContext->getContext());
     }
 
     public function activate(ActivateContext $activateContext): void
@@ -51,6 +53,7 @@ class JapaneseLanguagePack extends Plugin
     {
     }
 
+    // 言語とスニペット
     private function createJapaneseLanguage(Context $context): void
     {
         $localeRepository = $this->container->get('locale.repository');
@@ -148,6 +151,57 @@ class JapaneseLanguagePack extends Plugin
         if ($locale) {
             $localeRepository->delete([
                 ['id' => $locale->getId()]
+            ], $context);
+        }
+    }
+
+    // 通貨
+    private function createJapaneseCurrency(Context $context): void
+    {
+        $currencyRepository = $this->container->get('currency.repository');
+
+        $criteria = new Criteria();
+        $criteria->addFilter(new EqualsFilter('isoCode', 'JPY'));
+        
+        $currency = $currencyRepository->search($criteria, $context)->first();
+
+        if (!$currency) {
+            $currencyRepository->create([
+            [
+                'isoCode' => 'JPY',
+                'name' => '日本円',
+                'symbol' => '¥',
+                'factor' => 1.0,
+                'decimalPrecision' => 0,
+                'shortName' => 'JPY',
+                'position' => 1,
+                'itemRounding' => [
+                    'decimals' => 0,
+                    'interval' => 1.0,
+                    'roundForNet' => true
+                ],
+                'totalRounding' => [
+                    'decimals' => 0,
+                    'interval' => 1.0,
+                    'roundForNet' => true
+                ]
+            ]
+        ], $context);
+        }
+    }
+
+    private function removeJapaneseCurrency(Context $context): void
+    {
+        $currencyRepository = $this->container->get('currency.repository');
+
+        $criteria = new Criteria();
+        $criteria->addFilter(new EqualsFilter('isoCode', 'JPY'));
+        
+        $currency = $currencyRepository->search($criteria, $context)->first();
+
+        if ($currency) {
+            $currencyRepository->delete([
+                ['id' => $currency->getId()]
             ], $context);
         }
     }
