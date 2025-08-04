@@ -11,7 +11,7 @@
       "activate": "有効化",
       "deactivate": "無効化",
       "confirm": "確認",
-      "noteRequiredFields": "アスタリスク（*）が付いている項目は必須です。"
+      "noteRequiredFields": "(*) が付いている項目は必須です。"
     }
   },
   "general": {
@@ -40,7 +40,7 @@
     "categories": "カテゴリ",
     "showCategory": "%category%を表示",
     "required": "*",
-    "requiredFields": "アスタリスク（*）が付いている項目は必須です。",
+    "requiredFields": "(*) が付いている項目は必須です。",
     "privacyTitle": "プライバシー",
     "privacyNoticeText": "続行を選択することで、当社の<a data-ajax-modal=\"true\" data-url=\"%privacyUrl%\" href=\"%privacyUrl%\" title=\"個人情報保護方針\">個人情報保護方針</a>をお読みいただき、<a data-ajax-modal=\"true\" data-url=\"%tosUrl%\" href=\"%tosUrl%\" title=\"利用規約\">利用規約</a>に同意したことを確認します。",
     "privacyNoticeTextModal": "続行を選択することで、当社の%privacyModalTagOpen%個人情報保護方針%privacyModalTagClose%をお読みいただき、%tosModalTagOpen%利用規約%tosModalTagClose%に同意したことを確認します。",
