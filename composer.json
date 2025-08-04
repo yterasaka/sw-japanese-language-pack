@@ -1,27 +1,28 @@
 {
-    "name": "japanese-language-pack/japanese-language-pack",
-    "description": "japanese-language-pack/japanese-language-pack",
-    "type": "shopware-platform-plugin",
-    "version": "1.0.0",
-    "license": "MIT",
-    "require": {
-        "shopware/core": "~6.7.0"
-    },
-    "extra": {
-        "shopware-plugin-class": "JapaneseLanguagePack\\JapaneseLanguagePack",
-        "label": {
-            "de-DE": "Skeleton plugin",
-            "en-GB": "Skeleton plugin"
-        }
-    },
-    "autoload": {
-        "psr-4": {
-            "JapaneseLanguagePack\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "JapaneseLanguagePack\\Tests\\": "tests/"
-        }
+  "name": "yterasaka/japanese-language-pack",
+  "description": "Japanese language pack for Shopware 6",
+  "type": "shopware-platform-plugin",
+  "version": "1.0.0",
+  "license": "MIT",
+  "require": {
+    "shopware/core": "~6.7.0"
+  },
+  "extra": {
+    "shopware-plugin-class": "JapaneseLanguagePack\\JapaneseLanguagePack",
+    "label": {
+      "de-DE": "Japanisches Sprachpaket",
+      "en-GB": "Japanese Language Pack",
+      "ja-JP": "日本語言語パック"
     }
+  },
+  "autoload": {
+    "psr-4": {
+      "JapaneseLanguagePack\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "JapaneseLanguagePack\\Tests\\": "tests/"
+    }
+  }
 }
