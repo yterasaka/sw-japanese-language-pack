@@ -54,7 +54,6 @@ class JapaneseLanguagePack extends Plugin
     {
     }
 
-    // 言語とスニペット
     private function createJapaneseLanguage(Context $context): void
     {
         $localeRepository = $this->container->get('locale.repository');
@@ -156,7 +155,6 @@ class JapaneseLanguagePack extends Plugin
         }
     }
 
-    // 通貨
     private function createJapaneseCurrency(Context $context): void
     {
         $currencyRepository = $this->container->get('currency.repository');
@@ -168,26 +166,26 @@ class JapaneseLanguagePack extends Plugin
 
         if (!$currency) {
             $currencyRepository->create([
-            [
-                'isoCode' => 'JPY',
-                'name' => '日本円',
-                'symbol' => '¥',
-                'factor' => 1.0,
-                'decimalPrecision' => 0,
-                'shortName' => 'JPY',
-                'position' => 1,
-                'itemRounding' => [
-                    'decimals' => 0,
-                    'interval' => 1.0,
-                    'roundForNet' => true
-                ],
-                'totalRounding' => [
-                    'decimals' => 0,
-                    'interval' => 1.0,
-                    'roundForNet' => true
+                [
+                    'isoCode' => 'JPY',
+                    'name' => '日本円',
+                    'symbol' => '¥',
+                    'factor' => 1.0,
+                    'decimalPrecision' => 0,
+                    'shortName' => 'JPY',
+                    'position' => 1,
+                    'itemRounding' => [
+                        'decimals' => 0,
+                        'interval' => 1.0,
+                        'roundForNet' => true
+                    ],
+                    'totalRounding' => [
+                        'decimals' => 0,
+                        'interval' => 1.0,
+                        'roundForNet' => true
+                    ]
                 ]
-            ]
-        ], $context);
+            ], $context);
         }
     }
 
