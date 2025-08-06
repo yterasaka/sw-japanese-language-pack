@@ -398,8 +398,8 @@
   "address": {
     "streetLabel": "住所",
     "streetPlaceholder": "住所を入力...",
-    "additionalField1Label": "住所追加行1",
-    "additionalField1Placeholder": "住所追加行を入力...",
+    "additionalField1Label": "建物名・部屋番号",
+    "additionalField1Placeholder": "建物名・部屋番号を入力...",
     "additionalField2Label": "住所追加行2",
     "additionalField2Placeholder": "住所追加行を入力...",
     "zipcodeLabel": "郵便番号",
