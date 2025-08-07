@@ -5,6 +5,20 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
+        <service id="JapaneseLanguagePack\Service\JapaneseLanguageService">
+            <argument type="service" id="locale.repository"/>
+            <argument type="service" id="language.repository"/>
+            <argument type="service" id="snippet_set.repository"/>
+        </service>
 
+        <service id="JapaneseLanguagePack\Service\JapaneseCurrencyService">
+            <argument type="service" id="currency.repository"/>
+        </service>
+
+        <service id="JapaneseLanguagePack\Service\JapanesePrefectureService">
+            <argument type="service" id="country.repository"/>
+            <argument type="service" id="country_state.repository"/>
+            <argument type="service" id="language.repository"/>
+        </service>
     </services>
 </container>
