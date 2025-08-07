@@ -19,12 +19,12 @@ This plugin adds Japanese language support to Shopware 6, including complete Jap
 - **最適化された国設定** - Optimized country configuration for Japan
 - **都道府県サポート** - Japanese prefectures (47 prefectures) with bilingual names
 - **ストアフロント** - Complete storefront translation including:
+- **ドキュメント** - document translations with Japanese formatting
 
 ### 今後の予定 / Planned
 
 - **管理画面翻訳** - Administration panel translations
 - **メールテンプレート** - Email template translations
-- **請求書・領収書** - Invoice and document translations
 
 ## インストール / Installation
 
@@ -80,6 +80,7 @@ If you have suggestions for translation improvements:
 - 日本国の自動作成機能 / Auto-creation of Japan country
 - 最適化された国設定 / Optimized country configuration
 - 47 都道府県の追加（英語・日本語対応）/ Added 47 Japanese prefectures (bilingual)
+- ドキュメント翻訳の追加 / Added document translations (invoices, delivery notes, etc.)
 - 各サービスを分離して保守性を向上 / Improved maintainability by separating services
 
 ### v1.0.0
