@@ -100,12 +100,13 @@ class JapanesePrefectureService
         $prefectures = $this->getPrefecturesData();
         
         $stateData = [];
+        $position = 1;
         foreach ($prefectures as $prefecture) {
             $stateData[] = [
                 'countryId' => $countryId,
                 'shortCode' => $prefecture['shortCode'],
                 'name' => $prefecture['nameEn'],
-                'position' => 1,
+                'position' => $position,
                 'active' => true,
                 'translations' => [
                     $this->getLanguageId($context, 'en-GB') => [
@@ -116,6 +117,7 @@ class JapanesePrefectureService
                     ]
                 ]
             ];
+            $position++;
         }
 
         $this->countryStateRepository->create($stateData, $context);
