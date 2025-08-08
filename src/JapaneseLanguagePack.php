@@ -6,6 +6,7 @@ use JapaneseLanguagePack\Service\JapaneseCurrencyService;
 use JapaneseLanguagePack\Service\JapaneseLanguageService;
 use JapaneseLanguagePack\Service\JapanesePrefectureService;
 use JapaneseLanguagePack\Service\JapaneseProductSortingService;
+use JapaneseLanguagePack\Service\JapaneseMailTemplateService;
 use Shopware\Core\Framework\Plugin;
 use Shopware\Core\Framework\Plugin\Context\ActivateContext;
 use Shopware\Core\Framework\Plugin\Context\DeactivateContext;
@@ -21,6 +22,7 @@ class JapaneseLanguagePack extends Plugin
         $this->getCurrencyService()->createJapaneseCurrency($installContext->getContext());
         $this->getPrefectureService()->createJapanesePrefectures($installContext->getContext());
         $this->getProductSortingService()->updateProductSortingTranslations($installContext->getContext());
+        $this->getMailTemplateService()->createJapaneseMailTemplateTranslations($installContext->getContext());
     }
 
     public function uninstall(UninstallContext $uninstallContext): void
@@ -46,6 +48,7 @@ class JapaneseLanguagePack extends Plugin
         $this->getCurrencyService()->createJapaneseCurrency($updateContext->getContext());
         $this->getPrefectureService()->createJapanesePrefectures($updateContext->getContext());
         $this->getProductSortingService()->updateProductSortingTranslations($updateContext->getContext());
+        $this->getMailTemplateService()->createJapaneseMailTemplateTranslations($updateContext->getContext());
     }
 
     public function postInstall(InstallContext $installContext): void
@@ -101,6 +104,18 @@ class JapaneseLanguagePack extends Plugin
             return new JapaneseProductSortingService(
                 $this->container->get('language.repository'),
                 $this->container->get(\Doctrine\DBAL\Connection::class)
+            );
+        }
+    }
+
+    private function getMailTemplateService(): JapaneseMailTemplateService
+    {
+        try {
+            return $this->container->get(JapaneseMailTemplateService::class);
+        } catch (\Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException $e) {
+            return new JapaneseMailTemplateService(
+                $this->container->get('mail_template.repository'),
+                $this->container->get('language.repository'),
             );
         }
     }

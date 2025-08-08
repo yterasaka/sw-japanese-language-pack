@@ -25,5 +25,10 @@
             <argument type="service" id="language.repository"/>
             <argument type="service" id="Doctrine\DBAL\Connection"/>
         </service>
+
+        <service id="JapaneseLanguagePack\Service\JapaneseMailTemplateService">
+            <argument type="service" id="mail_template.repository"/>
+            <argument type="service" id="language.repository"/>
+        </service>
     </services>
 </container>
