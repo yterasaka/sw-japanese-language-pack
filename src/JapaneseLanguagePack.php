@@ -7,6 +7,7 @@ use JapaneseLanguagePack\Service\JapaneseLanguageService;
 use JapaneseLanguagePack\Service\JapanesePrefectureService;
 use JapaneseLanguagePack\Service\JapaneseProductSortingService;
 use JapaneseLanguagePack\Service\JapaneseMailTemplateService;
+use JapaneseLanguagePack\Service\JapaneseStateMachineStateService;
 use Shopware\Core\Framework\Plugin;
 use Shopware\Core\Framework\Plugin\Context\ActivateContext;
 use Shopware\Core\Framework\Plugin\Context\DeactivateContext;
@@ -23,6 +24,7 @@ class JapaneseLanguagePack extends Plugin
         $this->getPrefectureService()->createJapanesePrefectures($installContext->getContext());
         $this->getProductSortingService()->updateProductSortingTranslations($installContext->getContext());
         $this->getMailTemplateService()->createJapaneseMailTemplateTranslations($installContext->getContext());
+        $this->getStateMachineStateService()->addJapaneseStateTranslations($installContext->getContext());
     }
 
     public function uninstall(UninstallContext $uninstallContext): void
@@ -49,6 +51,7 @@ class JapaneseLanguagePack extends Plugin
         $this->getPrefectureService()->createJapanesePrefectures($updateContext->getContext());
         $this->getProductSortingService()->updateProductSortingTranslations($updateContext->getContext());
         $this->getMailTemplateService()->createJapaneseMailTemplateTranslations($updateContext->getContext());
+        $this->getStateMachineStateService()->addJapaneseStateTranslations($updateContext->getContext());
     }
 
     public function postInstall(InstallContext $installContext): void
@@ -116,6 +119,18 @@ class JapaneseLanguagePack extends Plugin
             return new JapaneseMailTemplateService(
                 $this->container->get('mail_template.repository'),
                 $this->container->get('language.repository'),
+            );
+        }
+    }
+
+    private function getStateMachineStateService(): JapaneseStateMachineStateService
+    {
+        try {
+            return $this->container->get(JapaneseStateMachineStateService::class);
+        } catch (\Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException $e) {
+            return new JapaneseStateMachineStateService(
+                $this->container->get('state_machine_state.repository'),
+                $this->container->get('language.repository')
             );
         }
     }
