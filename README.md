@@ -4,9 +4,9 @@
 
 ## 概要 / Overview
 
-このプラグインは、Shopware 6 に包括的な日本語サポートを追加します。ストアフロントの日本語翻訳、日本円（JPY）通貨サポート、日本の 47 都道府県対応、商品ソートオプションの日本語化、および日本の国旗アイコンが含まれています。
+このプラグインは、Shopware 6 に日本語サポートを追加します。ストアフロントの日本語翻訳、日本円（JPY）通貨サポート、日本の 47 都道府県対応、商品ソートオプションの日本語化、および日本の国旗アイコンが含まれています。
 
-This plugin adds comprehensive Japanese language support to Shopware 6, including complete Japanese translations for the storefront, Japanese Yen (JPY) currency support, all 47 Japanese prefectures, localized product sorting options, and Japanese flag icon.
+This plugin adds Japanese language support to Shopware 6, including complete Japanese translations for the storefront, Japanese Yen (JPY) currency support, all 47 Japanese prefectures, localized product sorting options, and Japanese flag icon.
 
 ## 機能 / Features
 
