@@ -596,7 +596,7 @@
     "filterByPriceAriaLabel": "価格でフィルタリング",
     "filterByRatingAriaLabel": "最低評価でフィルタリング",
     "filterClose": "フィルターを閉じる",
-    "defaultProductSortingLabel": "名前、昇順",
+    "defaultProductSortingLabel": "名前、A-Z",
     "disabledFilterTooltip": "このフィルターは、選択されたフィルターとの組み合わせでは、さらなる結果を表示しません。",
     "beforeListPrice": "",
     "afterListPrice": "",
