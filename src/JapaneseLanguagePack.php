@@ -5,6 +5,7 @@ namespace JapaneseLanguagePack;
 use JapaneseLanguagePack\Service\JapaneseCurrencyService;
 use JapaneseLanguagePack\Service\JapaneseLanguageService;
 use JapaneseLanguagePack\Service\JapanesePrefectureService;
+use JapaneseLanguagePack\Service\JapaneseProductSortingService;
 use Shopware\Core\Framework\Plugin;
 use Shopware\Core\Framework\Plugin\Context\ActivateContext;
 use Shopware\Core\Framework\Plugin\Context\DeactivateContext;
@@ -19,6 +20,7 @@ class JapaneseLanguagePack extends Plugin
         $this->getLanguageService()->createJapaneseLanguage($installContext->getContext());
         $this->getCurrencyService()->createJapaneseCurrency($installContext->getContext());
         $this->getPrefectureService()->createJapanesePrefectures($installContext->getContext());
+        $this->getProductSortingService()->updateProductSortingTranslations($installContext->getContext());
     }
 
     public function uninstall(UninstallContext $uninstallContext): void
@@ -28,10 +30,6 @@ class JapaneseLanguagePack extends Plugin
         if ($uninstallContext->keepUserData()) {
             return;
         }
-
-        $this->getPrefectureService()->removeJapanesePrefectures($uninstallContext->getContext());
-        $this->getCurrencyService()->removeJapaneseCurrency($uninstallContext->getContext());
-        $this->getLanguageService()->removeJapaneseLanguage($uninstallContext->getContext());
     }
 
     public function activate(ActivateContext $activateContext): void
@@ -47,6 +45,7 @@ class JapaneseLanguagePack extends Plugin
         $this->getLanguageService()->createJapaneseLanguage($updateContext->getContext());
         $this->getCurrencyService()->createJapaneseCurrency($updateContext->getContext());
         $this->getPrefectureService()->createJapanesePrefectures($updateContext->getContext());
+        $this->getProductSortingService()->updateProductSortingTranslations($updateContext->getContext());
     }
 
     public function postInstall(InstallContext $installContext): void
@@ -90,6 +89,18 @@ class JapaneseLanguagePack extends Plugin
                 $this->container->get('country.repository'),
                 $this->container->get('country_state.repository'),
                 $this->container->get('language.repository'),
+            );
+        }
+    }
+
+    private function getProductSortingService(): JapaneseProductSortingService
+    {
+        try {
+            return $this->container->get(JapaneseProductSortingService::class);
+        } catch (\Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException $e) {
+            return new JapaneseProductSortingService(
+                $this->container->get('language.repository'),
+                $this->container->get(\Doctrine\DBAL\Connection::class)
             );
         }
     }

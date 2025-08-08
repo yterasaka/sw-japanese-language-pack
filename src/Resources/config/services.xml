@@ -20,5 +20,10 @@
             <argument type="service" id="country_state.repository"/>
             <argument type="service" id="language.repository"/>
         </service>
+
+        <service id="JapaneseLanguagePack\Service\JapaneseProductSortingService">
+            <argument type="service" id="language.repository"/>
+            <argument type="service" id="Doctrine\DBAL\Connection"/>
+        </service>
     </services>
 </container>
