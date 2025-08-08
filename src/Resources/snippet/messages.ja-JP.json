@@ -1,0 +1,58 @@
+{
+  "document": {
+    "invoiceNumber": "請求書 %invoiceNumber%",
+    "invoiceHeadline": "請求書 %invoiceNumber%",
+    "stornoHeadline": "請求書 %invoiceNumber% のキャンセル処理 %stornoNumber%",
+    "stornoNumber": "キャンセル番号 %stornoNumber%",
+    "stornoDate": "キャンセル日 %date%",
+    "deliveryNoteNumber": "納品書 %deliveryNoteNumber%",
+    "deliveryNoteHeadline": "注文 %orderNumber% の納品書 %deliveryNoteNumber%",
+    "creditNoteNumber": "返金通知書 %creditNoteNumber%",
+    "creditNoteHeadline": "請求書 %invoiceNumber% の返金通知書 %creditNoteNumber%",
+    "customerNumber": "顧客番号 %customerNumber%",
+    "date": "日付 %date%",
+    "comment": "備考: %comment%",
+    "orderDate": "注文日 %orderDate%",
+    "deliveryDate": "配送日: %deliveryDate%",
+    "page": "ページ %pageNumber%",
+    "orderNumber": "注文番号 %orderNumber%",
+    "taxNumber": "税務番号: %taxNumber%",
+    "vatId": "消費税登録番号: %vatId%",
+    "taxOffice": "税務署: %taxOffice%",
+    "bankAccount": "銀行口座",
+    "bankIban": "IBAN: %bankIban%",
+    "bankBic": "BIC: %bankBic%",
+    "placeOfJurisdiction": "<strong>管轄地:</strong> %placeOfJurisdiction%",
+    "serviceDateNotice": "サービス提供日：請求書発行日",
+    "placeOfFulfillment": "<strong>履行地:</strong> %placeOfFulfillment%",
+    "intraCommunity": "EU域内配送",
+    "shippingAddress": "配送先住所",
+    "phoneNumber": "電話番号 %phoneNumber%",
+    "email": "メールアドレス: %email%",
+    "ceo": "代表取締役",
+    "lineItems": {
+      "header": {
+        "position": "番号",
+        "label": "商品・サービス",
+        "tax": "消費税",
+        "quantity": "数量",
+        "unitPrice": "単価",
+        "productNumber": "商品番号",
+        "total": "合計"
+      },
+      "tax": "消費税 %taxRate%%:",
+      "taxLabeled": "%label% %taxRate%%:",
+      "total": "合計:",
+      "roundedTotal": "四捨五入後合計:",
+      "totalNet": "税抜合計:",
+      "shippingCosts": "送料",
+      "inclVAT": "税込",
+      "exclVAT": "税抜"
+    },
+    "paymentShippingInfo": {
+      "paymentMethod": "<strong>支払い方法:</strong> %paymentMethod%",
+      "shippingMethod": "<strong>配送方法:</strong> %shippingMethod%",
+      "additionalInfo": "商品の所有権は代金完済まで当社に留保されます。"
+    }
+  }
+}

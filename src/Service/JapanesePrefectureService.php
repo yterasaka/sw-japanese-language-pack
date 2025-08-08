@@ -44,22 +44,38 @@ class JapanesePrefectureService
     private function createJapanCountry(Context $context): ?object
     {
         try {
-            $this->countryRepository->create([
-                [
-                    'iso' => 'JP',
-                    'iso3' => 'JPN',
-                    'name' => 'Japan',
-                    'position' => 1,
-                    'active' => true,
-                    'shippingAvailable' => true,
-                    'taxFree' => false,
-                    'forceStateInRegistration' => true,
-                    'displayStateInRegistration' => true,
-                    'postalCodeRequired' => true,
-                    'checkPostalCodePattern' => true,
-                    'defaultPostalCodePattern' => '^[0-9]{3}-[0-9]{4}$'
-                ]
-            ], $context);
+            $translations = [];
+        
+            $enLanguageId = $this->getLanguageId($context, 'en-GB');
+            if ($enLanguageId) {
+                $translations[$enLanguageId] = ['name' => 'Japan'];
+            }
+            
+            $jaLanguageId = $this->getLanguageId($context, 'ja-JP');
+            if ($jaLanguageId) {
+                $translations[$jaLanguageId] = ['name' => '日本'];
+            }
+
+            $countryData = [
+                'iso' => 'JP',
+                'iso3' => 'JPN',
+                'name' => 'Japan',
+                'position' => 1,
+                'active' => true,
+                'shippingAvailable' => true,
+                'taxFree' => false,
+                'forceStateInRegistration' => true,
+                'displayStateInRegistration' => true,
+                'postalCodeRequired' => true,
+                'checkPostalCodePattern' => true,
+                'defaultPostalCodePattern' => '^[0-9]{3}-[0-9]{4}$',
+            ];
+
+            if (!empty($translations)) {
+                $countryData['translations'] = $translations;
+            }
+
+            $this->countryRepository->create([$countryData], $context);
             return $this->findJapan($context);
         } catch (\Exception $e) {
             return null;
@@ -102,21 +118,31 @@ class JapanesePrefectureService
         $stateData = [];
         $position = 1;
         foreach ($prefectures as $prefecture) {
-            $stateData[] = [
+            $translations = [];
+        
+            $enLanguageId = $this->getLanguageId($context, 'en-GB');
+            if ($enLanguageId) {
+                $translations[$enLanguageId] = ['name' => $prefecture['nameEn']];
+            }
+            
+            $jaLanguageId = $this->getLanguageId($context, 'ja-JP');
+            if ($jaLanguageId) {
+                $translations[$jaLanguageId] = ['name' => $prefecture['nameJa']];
+            }
+
+            $prefectureData = [
                 'countryId' => $countryId,
                 'shortCode' => $prefecture['shortCode'],
                 'name' => $prefecture['nameEn'],
                 'position' => $position,
                 'active' => true,
-                'translations' => [
-                    $this->getLanguageId($context, 'en-GB') => [
-                        'name' => $prefecture['nameEn']
-                    ],
-                    $this->getLanguageId($context, 'ja-JP') => [
-                        'name' => $prefecture['nameJa']
-                    ]
-                ]
             ];
+
+            if (!empty($translations)) {
+                $prefectureData['translations'] = $translations;
+            }
+
+            $stateData[] = $prefectureData;
             $position++;
         }
 
