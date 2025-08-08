@@ -4,9 +4,9 @@
 
 ## 概要 / Overview
 
-このプラグインは、Shopware 6 に日本語サポートを追加します。ストアフロントの日本語翻訳、日本円（JPY）通貨サポート、日本の 47 都道府県対応、商品ソートオプションの日本語化、および日本の国旗アイコンが含まれています。
+このプラグインは、Shopware 6 に包括的な日本語サポートを追加します。ストアフロントの日本語翻訳、日本円（JPY）通貨サポート、日本の 47 都道府県対応、商品ソートオプションの日本語化、メールテンプレートの日本語化、ステート管理の日本語化、および日本の国旗アイコンが含まれています。
 
-This plugin adds Japanese language support to Shopware 6, including complete Japanese translations for the storefront, Japanese Yen (JPY) currency support, all 47 Japanese prefectures, localized product sorting options, and Japanese flag icon.
+This plugin adds comprehensive Japanese language support to Shopware 6, including complete Japanese translations for the storefront, Japanese Yen (JPY) currency support, all 47 Japanese prefectures, localized product sorting options, Japanese email templates, Japanese state management, and Japanese flag icon.
 
 ## 機能 / Features
 
@@ -20,12 +20,13 @@ This plugin adds Japanese language support to Shopware 6, including complete Jap
 - **都道府県サポート** - Japanese prefectures (47 prefectures) with bilingual names
 - **商品ソートオプション** - Product sorting options localization:
 - **ストアフロント** - Complete storefront translation including:
+- **メールテンプレート日本語化** - Comprehensive Japanese email templates including:
+- **ステート管理の日本語化** - Japanese translations for state management:
 - **ドキュメント** - document translations with Japanese formatting
 
 ### 今後の予定 / Planned
 
 - **管理画面翻訳** - Administration panel translations
-- **メールテンプレート** - Email template translations
 
 ## インストール / Installation
 
@@ -66,26 +67,12 @@ For data integrity reasons, the following data will **NOT be deleted** when unin
 - 日本円（JPY）通貨設定 / Japanese Yen (JPY) currency configuration
 - 日本国・都道府県データ / Japan country and prefecture data
 - 商品ソートオプションの日本語翻訳 / Japanese translations for product sorting options
+- メールテンプレートの日本語翻訳 / Japanese translations for email templates
+- ステート管理の日本語翻訳 / Japanese translations for state management
 - 既存の注文・顧客データとの関連性 / Relationships with existing orders and customer data
 
 これらのデータの削除が必要な場合は、管理画面から手動で削除してください。
 If you need to remove this data, please delete it manually from the administration panel.
-
-### 自動設定内容 / Auto-Configuration
-
-プラグインインストール時に以下が自動的に設定されます：
-The following will be automatically configured during plugin installation:
-
-- **日本国の作成** - Japan country creation (if not exists)
-- **国コード**: JP
-- **ISO3 コード**: JPN
-- **通貨**: 日本円 (JPY)
-- **都道府県**: 47 都道府県の英語・日本語名称
-  - 北海道 (Hokkaido)
-  - 青森県 (Aomori)
-  - 岩手県 (Iwate)
-  - ...など全 47 都道府県
-- **商品ソートオプション**: 日本語翻訳の自動追加
 
 ## 貢献 / Contributing
 
@@ -100,6 +87,11 @@ If you have suggestions for translation improvements:
 2. フォークしてプルリクエストを送信 / Fork and submit a pull request
 
 ## 変更履歴 / Changelog
+
+### v1.2.0
+
+- メールテンプレート日本語化 / Japanese email templates added
+- ステート管理日本語化 / Japanese state management added
 
 ### v1.1.0
 
