@@ -15,7 +15,6 @@ use Shopware\Core\System\StateMachine\Aggregation\StateMachineState\StateMachine
  * - 注文状態の日本語翻訳追加
  * - 配送状態の日本語翻訳追加  
  * - 支払い状態の日本語翻訳追加
- * - 既存翻訳の保護（上書きしない）
  */
 class JapaneseStateMachineStateService
 {
@@ -102,10 +101,6 @@ class JapaneseStateMachineStateService
 
             foreach ($states->getElements() as $state) {
                 /** @var StateMachineStateEntity $state */
-                
-                if ($this->hasExistingJapaneseTranslation($state, $languageId)) {
-                    continue;
-                }
 
                 $this->stateMachineStateRepository->upsert([
                     [
@@ -125,37 +120,5 @@ class JapaneseStateMachineStateService
                 $e->getMessage()
             ));
         }
-    }
-
-    private function hasExistingJapaneseTranslation(StateMachineStateEntity $state, string $languageId): bool
-    {
-        $translations = $state->getTranslations();
-        if (!$translations) {
-            return false;
-        }
-
-        $japaneseTranslations = $translations->filterByLanguageId($languageId);
-        
-        return $japaneseTranslations->count() > 0;
-    }
-
-    public function hasJapaneseTranslations(Context $context): bool
-    {
-        $japaneseLanguageId = $this->getJapaneseLanguageId($context);
-        if (!$japaneseLanguageId) {
-            return false;
-        }
-
-        $criteria = new Criteria();
-        $criteria->addFilter(new EqualsFilter('technicalName', 'open'));
-        $criteria->addAssociation('translations');
-
-        $state = $this->stateMachineStateRepository->search($criteria, $context)->first();
-        
-        if (!$state) {
-            return false;
-        }
-
-        return $this->hasExistingJapaneseTranslation($state, $japaneseLanguageId);
     }
 }
