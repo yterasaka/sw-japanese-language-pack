@@ -4,9 +4,9 @@
 
 ## 概要 / Overview
 
-このプラグインは、Shopware 6 に包括的な日本語サポートを追加します。ストアフロントの日本語翻訳、日本円（JPY）通貨サポート、日本の 47 都道府県対応、商品ソートオプションの日本語化、メールテンプレートの日本語化、ステート管理の日本語化、および日本の国旗アイコンが含まれています。
+このプラグインは、Shopware 6 に包括的な日本語サポートを追加します。ストアフロントの日本語翻訳、管理画面の日本語翻訳、日本円（JPY）通貨サポート、日本の 47 都道府県対応、商品ソートオプションの日本語化、メールテンプレートの日本語化、ステート管理の日本語化、および日本の国旗アイコンが含まれています。
 
-This plugin adds comprehensive Japanese language support to Shopware 6, including complete Japanese translations for the storefront, Japanese Yen (JPY) currency support, all 47 Japanese prefectures, localized product sorting options, Japanese email templates, Japanese state management, and Japanese flag icon.
+This plugin adds comprehensive Japanese language support to Shopware 6, including complete Japanese translations for both storefront and administration panel, Japanese Yen (JPY) currency support, all 47 Japanese prefectures, localized product sorting options, Japanese email templates, Japanese state management, and Japanese flag icon.
 
 ## 機能 / Features
 
@@ -18,15 +18,12 @@ This plugin adds comprehensive Japanese language support to Shopware 6, includin
 - **日本国の自動作成** - Automatic creation of Japan country if not exists
 - **最適化された国設定** - Optimized country configuration for Japan
 - **都道府県サポート** - Japanese prefectures (47 prefectures) with bilingual names
-- **商品ソートオプション** - Product sorting options localization:
-- **ストアフロント** - Complete storefront translation including:
-- **メールテンプレート日本語化** - Comprehensive Japanese email templates including:
-- **ステート管理の日本語化** - Japanese translations for state management:
+- **商品ソートオプション** - Product sorting options localization
+- **ストアフロント** - Complete storefront translation including
+- **管理画面翻訳** - Comprehensive administration panel translations including
+- **メールテンプレート日本語化** - Comprehensive Japanese email templates including
+- **ステート管理の日本語化** - Japanese translations for state management
 - **ドキュメント** - document translations with Japanese formatting
-
-### 今後の予定 / Planned
-
-- **管理画面翻訳** - Administration panel translations
 
 ## インストール / Installation
 
@@ -69,10 +66,19 @@ For data integrity reasons, the following data will **NOT be deleted** when unin
 - 商品ソートオプションの日本語翻訳 / Japanese translations for product sorting options
 - メールテンプレートの日本語翻訳 / Japanese translations for email templates
 - ステート管理の日本語翻訳 / Japanese translations for state management
+- 管理画面の日本語翻訳 / Japanese translations for administration panel
 - 既存の注文・顧客データとの関連性 / Relationships with existing orders and customer data
 
 これらのデータの削除が必要な場合は、管理画面から手動で削除してください。
 If you need to remove this data, please delete it manually from the administration panel.
+
+## 翻訳について / About Translations
+
+このプラグインの翻訳は、生成 AI を活用して作成されています。
+The translations in this plugin are created using generative AI.
+
+翻訳の改善案やフィードバックをお待ちしています。
+I welcome suggestions for translation improvements and feedback.
 
 ## 貢献 / Contributing
 
@@ -87,6 +93,10 @@ If you have suggestions for translation improvements:
 2. フォークしてプルリクエストを送信 / Fork and submit a pull request
 
 ## 変更履歴 / Changelog
+
+### v1.3.0
+
+- 管理画面の包括的な日本語翻訳を追加 / Added comprehensive Japanese translations for administration panel
 
 ### v1.2.0
 
