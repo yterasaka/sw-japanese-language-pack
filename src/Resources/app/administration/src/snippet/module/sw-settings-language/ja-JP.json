@@ -1,0 +1,49 @@
+{
+  "sw-settings-language": {
+    "general": {
+      "mainMenuItemGeneral": "言語",
+      "placeholderSearchBar": "言語を検索..."
+    },
+    "list": {
+      "textHeadline": "言語",
+      "textDeleteConfirm": "\"{name}\"という言語を削除してもよろしいですか？この言語のすべてのコンテンツが削除され、元に戻すことはできません！",
+      "columnName": "名前",
+      "columnLocaleName": "ロケール",
+      "columnIsoCode": "ISOコード",
+      "columnInherit": "継承元",
+      "columnDefault": "デフォルト",
+      "buttonAddLanguage": "言語を追加",
+      "contextMenuEdit": "編集",
+      "messageDeleteSuccess": "言語 \"{name}\" が削除されました。",
+      "buttonDelete": "削除",
+      "titleSidebarFilter": "フィルター",
+      "titleSidebarQuickFilter": "クイックフィルター",
+      "textFilterRootLanguages": "「ルート」言語のみ表示",
+      "textFilterInheritedLanguages": "継承された言語のみ表示"
+    },
+    "detail": {
+      "textHeadline": "新しい言語",
+      "titleCard": "設定",
+      "messageSaveSuccess": "言語 \"{name}\" が保存されました。",
+      "labelName": "名前",
+      "labelLocale": "ロケール",
+      "labelParent": "継承元",
+      "labelIsoCode": "ISOコード",
+      "placeholderName": "名前を入力してください...",
+      "placeholderPleaseSelect": "選択してください...",
+      "buttonSave": "保存",
+      "tooltipLanguageNotChoosable": "すでに他の言語を継承している言語は使用できません。",
+      "tooltipInheritanceNotPossible": "システムのデフォルト言語は、他の言語を継承することはできません。",
+      "textAlertChangeParent": "親言語を変更すると、翻訳に不整合が生じる可能性があります。",
+      "textIsoCodeIsInUse": "このISOコードはすでに使用されています。",
+      "textLanguageHasParent": "この言語はすでに他の言語を継承しています。"
+    }
+  },
+  "sw-privileges": {
+    "permissions": {
+      "language": {
+        "label": "言語"
+      }
+    }
+  }
+}

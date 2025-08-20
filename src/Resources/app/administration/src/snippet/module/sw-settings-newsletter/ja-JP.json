@@ -1,0 +1,11 @@
+{
+  "sw-settings-newsletter": {
+    "general": {
+      "mainMenuItemGeneral": "ニュースレター",
+      "description": "ここでニュースレターの設定を変更します。",
+      "textHeadline": "ニュースレター",
+      "buttonSave": "保存",
+      "messageSaveSuccess": "設定が保存されました。"
+    }
+  }
+}

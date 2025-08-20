@@ -1,0 +1,43 @@
+{
+  "sw-settings-logging": {
+    "general": {
+      "mainMenuItemGeneral": "イベントログ",
+      "placeholderSearchBar": "ログを検索..."
+    },
+    "list": {
+      "title": "ログ",
+      "columnDate": "日付",
+      "columnMessage": "メッセージ",
+      "columnLevel": "優先度",
+      "columnContent": "内容",
+      "actionShowInfo": "詳細を見る...",
+      "levelDebug": "デバッグ",
+      "levelInfo": "情報",
+      "levelNotice": "通知",
+      "levelWarning": "警告",
+      "levelError": "エラー",
+      "levelCritical": "重大",
+      "levelAlert": "アラート",
+      "levelEmergency": "緊急",
+      "titleSidebarItemRefresh": "更新"
+    },
+    "entryInfo": {
+      "title": "ログ情報",
+      "tabRaw": "生データ",
+      "actionClose": "閉じる"
+    },
+    "mailInfo": {
+      "tabHTML": "HTML",
+      "tabPlain": "テキスト",
+      "recipientsTitle": "送信先",
+      "contentsTitle": "内容"
+    }
+  },
+  "sw-privileges": {
+    "additional_permissions": {
+      "system": {
+        "logging": "イベントログ"
+      }
+    }
+  }
+}

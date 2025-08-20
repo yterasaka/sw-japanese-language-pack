@@ -1,0 +1,639 @@
+{
+  "sw-order": {
+    "general": {
+      "mainMenuItemGeneral": "注文",
+      "mainMenuItemList": "概要",
+      "descriptionTextModule": "ここで受注を管理します。",
+      "placeholderSearchBar": "すべての注文を検索..."
+    },
+    "list": {
+      "columnCustomerCompany": "会社",
+      "columnCustomerName": "顧客名",
+      "columnBillingAddress": "請求先住所",
+      "columnDeliveryAddress": "配送先住所",
+      "columnAmount": "合計",
+      "columnState": "注文ステータス",
+      "columnTransactionState": "支払いステータス",
+      "columnDeliveryState": "配送ステータス",
+      "columnOrderNumber": "注文番号",
+      "columnSalesChannel": "販売チャネル",
+      "columnAffiliateCode": "アフィリエイトコード",
+      "columnCampaignCode": "キャンペーンコード",
+      "orderDate": "注文日",
+      "buttonAddOrder": "注文を追加",
+      "textOrders": "注文",
+      "textOrdersTotal": "注文なし | 1件の注文 | {count} 件の注文",
+      "contextMenuView": "表示",
+      "contextMenuDelete": "削除",
+      "contextMenuConfirmPayment": "支払いを確認",
+      "messageEmpty": "注文はまだありません",
+      "titleSidebarItemRefresh": "更新",
+      "titleSidebarItemFilter": "フィルター",
+      "titleSidebarItemFilterAffiliateCode": "アフィリエイトコード",
+      "titleSidebarItemFilterCampaignCode": "キャンペーンコード",
+      "buttonDelete": "削除",
+      "textDeleteConfirm": "本当にこの注文 ({orderNumber}) を削除しますか？",
+      "labelManualOrder": "管理者によって作成されました"
+    },
+    "detail": {
+      "buttonCancel": "変更を破棄",
+      "tabOrderDetails": "注文詳細",
+      "tabDeliveries": "配送情報",
+      "textHeadline": "注文",
+      "textHeadlineNew": "新しい注文",
+      "tabGeneral": "一般",
+      "tabDetails": "詳細",
+      "tabDocuments": "ドキュメント",
+      "messageRecalculationError": "価格計算中にエラーが発生しました: <br>",
+      "messageSaveError": "保存中にエラーが発生しました",
+      "messageShippingNotAvailable": "選択された国への配送はできません。",
+      "labelManualOrder": "管理者によって作成されました",
+      "textUnsavedOrderWarning": "未保存の変更があります。ページを離れる前に注文を保存してください。",
+      "messageEmptyLineItems": "注文を保存できません。商品項目がありません。"
+    },
+    "create": {
+      "textNewOrder": "新しい注文",
+      "buttonSaveOrder": "注文を保存",
+      "messageSaveError": "注文を保存できませんでした。",
+      "messageSwitchCustomerError": "顧客切り替え中にエラーが発生しました",
+      "messageFetchCustomerAddressesError": "顧客住所の取得中にエラーが発生しました",
+      "remindPaymentModal": {
+        "title": "支払いのリマインド",
+        "text": "顧客に「{paymentMethodName}」での支払いをリマインドしますか？",
+        "primaryAction": "リマインドする"
+      }
+    },
+    "createBase": {
+      "labelEmail": "メールアドレス",
+      "labelPhoneNumber": "電話番号",
+      "placeholderEmail": "メールアドレスを入力...",
+      "placeholderPhoneNumber": "電話番号を入力...",
+      "labelBillingAddress": "請求先住所",
+      "labelShippingAddress": "配送先住所",
+      "placeholderBillingAddress": "請求先住所を選択...",
+      "placeholderShippingAddress": "配送先住所を選択...",
+      "labelSalesChannel": "販売チャネル",
+      "labelPaymentMethod": "支払い方法",
+      "labelShippingMethod": "配送方法",
+      "labelOrderLanguage": "注文言語",
+      "labelCurrency": "通貨",
+      "placeholderSalesChannel": "販売チャネルを選択...",
+      "placeholderPaymentMethod": "支払い方法を選択...",
+      "placeholderShippingMethod": "配送方法を選択...",
+      "placeholderOrderLanguage": "注文言語を選択...",
+      "placeholderCurrency": "通貨を選択...",
+      "helpTextPaymentMethod": "注文後の支払い処理に対応した支払いのみ利用可能です。",
+      "labelToggleAutomaticPromotions": "自動適用プロモーションを無効化",
+      "labelPromotions": "プロモーション",
+      "generalTab": {
+        "labelLineItemsCard": "商品",
+        "labelGeneralInfoCard": "情報"
+      },
+      "detailsTab": {
+        "labelTransactionCard": "支払い",
+        "labelDeliveryCard": "配送",
+        "labelOrderCard": "注文"
+      },
+      "labelDetailsCard": "詳細",
+      "detailsHeader": {
+        "textCustomer": "顧客",
+        "placeholder": "顧客を選択...",
+        "buttonAddNewCustomer": "新しい顧客を追加"
+      },
+      "detailsBody": {
+        "labelEmail": "メール",
+        "labelPhoneNumber": "電話番号",
+        "placeholderEmail": "メールアドレスを入力...",
+        "placeholderPhoneNumber": "電話番号を入力...",
+        "labelAddressCompany": "住所の会社名",
+        "labelBillingAddress": "請求先住所",
+        "labelShippingAddress": "配送先住所",
+        "placeholder": "まず顧客を選択または追加してください...",
+        "textIdentical": "請求先住所と配送先住所は同じです",
+        "buttonAddNewAddress": "新しい住所を追加",
+        "placeholderAddress": "住所を選択..."
+      },
+      "detailsFooter": {
+        "labelSalesChannel": "販売チャネル",
+        "labelPaymentMethod": "支払い方法",
+        "labelShippingMethod": "配送方法",
+        "labelOrderLanguage": "注文言語",
+        "labelCurrency": "通貨",
+        "placeholderSalesChannel": "販売チャネルを選択...",
+        "placeholderPaymentMethod": "支払い方法を選択...",
+        "placeholderShippingMethod": "配送方法を選択...",
+        "placeholderOrderLanguage": "注文言語を選択...",
+        "placeholderCurrency": "通貨を選択...",
+        "helpTextPaymentMethod": "注文後の支払い処理に対応した支払いのみ利用可能です。"
+      },
+      "cardTitleLineItems": "商品",
+      "placeholderSearchBarItem": "商品を検索...",
+      "columnProductName": "商品",
+      "columnQuantity": "数量",
+      "columnPriceNet": "価格（税抜）",
+      "columnPriceGross": "価格（税込）",
+      "columnPriceTaxFree": "価格（非課税）",
+      "columnTotalPriceNet": "合計",
+      "columnPrice": "価格",
+      "columnTotalPrice": "合計",
+      "columnTotalPriceGross": "小計",
+      "columnTax": "消費税",
+      "textCreditTax": "自動",
+      "taxDetail": "{taxRate}%: {tax}",
+      "contextMenuShowProduct": "商品を表示",
+      "messageEmptyItem": "まだ商品が追加されていません",
+      "buttonAddItems": "商品を追加",
+      "buttonAddProduct": "製品を追加",
+      "buttonAddBlankProduct": "カスタム商品を追加",
+      "buttonAddCredit": "クレジットを追加",
+      "summaryLabelAmount": "小計",
+      "summaryLabelAmountGrandTotal": "合計金額",
+      "summaryLabelAmountWithoutTaxes": "消費税抜き合計",
+      "summaryLabelAmountTotal": "消費税込み合計",
+      "summaryLabelAmountTotalRounded": "消費税込み合計（端数処理）",
+      "labelShippingCosts": "送料",
+      "summaryLabelShippingCosts": "送料を加算",
+      "discountLabelShippingCosts": "送料割引",
+      "summaryLabelTaxes": "{taxRate}%の消費税を加算",
+      "tax": "内消費税：",
+      "shippingCostsTax": "{taxRate}%: {tax}",
+      "labelAddPromotion": "プロモーションを追加",
+      "placeholderAddPromotion": "プロモーションコードを入力...",
+      "textInvalidPromotionCode": "無効なプロモーションコード",
+      "textPromotionDescription": {
+        "cart": {
+          "percentage": "カートに対して {value}% 割引",
+          "absolute": "カートに対して {value} 割引",
+          "absoluteUpto": "最大 {value} の割引。（このカートに対して合計 {totalPrice} 割引）",
+          "fixed_unit": "カート内の特定商品ごとに固定 {value}"
+        },
+        "delivery": {
+          "percentage": "送料に対して {value}% 割引",
+          "absolute": "送料に対して {value} 割引",
+          "fixed_unit": "送料に対して固定 {value}",
+          "fixed": "送料に対して固定 {value}"
+        },
+        "set": {
+          "percentage": "商品セットに対して {value}% 割引",
+          "absolute": "商品セットに対して {value} 割引",
+          "fixed_unit": "商品セット内の特定商品ごとに固定 {value}",
+          "fixed": "商品セットごとに固定 {value}"
+        },
+        "setgroup": {
+          "percentage": "セットグループ {groupId} に対して {value}% 割引",
+          "absolute": "セットグループ {groupId} に対して {value} 割引",
+          "fixed_unit": "セットグループ {groupId} の特定商品ごとに固定 {value}",
+          "fixed": "セットグループ {groupId} ごとに固定 {value}"
+        }
+      }
+    },
+    "detailBase": {
+      "cardTitleDetails": "詳細",
+      "cardTitleLineItems": "商品",
+      "cardTitleGeneralInfo": "情報",
+      "cardTitlePromotions": "プロモーション",
+      "columnProductName": "名前",
+      "columnQuantity": "数量",
+      "columnPriceNet": "価格（税抜）",
+      "columnPriceGross": "価格（税込）",
+      "columnPriceTaxFree": "価格（非課税）",
+      "columnTotalPriceNet": "合計",
+      "columnPrice": "価格",
+      "columnTotalPrice": "合計",
+      "columnTotalPriceGross": "小計",
+      "columnTax": "消費税",
+      "columnProductNumber": "商品番号",
+      "columnType": "タイプ",
+      "contextMenuShowProduct": "商品を表示",
+      "contextMenuDelete": "注文から削除",
+      "summaryLabelAmount": "小計",
+      "summaryLabelAmountGrandTotal": "合計金額",
+      "summaryLabelAmountWithoutTaxes": "消費税抜き合計",
+      "summaryLabelAmountTotal": "消費税込み合計",
+      "summaryLabelAmountTotalRounded": "消費税込み合計（端数処理）",
+      "summaryLabelShippingCosts": "送料を加算",
+      "discountLabelShippingCosts": "送料割引",
+      "summaryLabelTaxes": "{taxRate}%の消費税を加算",
+      "labelOrderStatus": "注文ステータス",
+      "labelPaymentStatus": "支払いステータス",
+      "labelSalesChannel": "販売チャネル",
+      "labelOrderDate": "注文日",
+      "headlineBillingAddress": "請求先住所",
+      "headlineDeliveryAddress": "配送先住所",
+      "buttonPrint": "注文を印刷",
+      "buttonCancel": "注文をキャンセル",
+      "buttonArchive": "注文をアーカイブ",
+      "buttonDelete": "注文を削除",
+      "buttonAddProduct": "製品を追加",
+      "buttonAddBlankProduct": "カスタム商品を追加",
+      "buttonAddCredit": "クレジットを追加",
+      "buttonEditAddress": "編集",
+      "tooltipNestedLineItemsButton": "この商品項目にはサブアイテムが含まれています。",
+      "labelNoPhoneNumber": "まだ電話番号がありません",
+      "labelNoEmail": "まだメールアドレスがありません",
+      "labelCustomerPhoneNumber": "電話番号",
+      "labelLanguage": "注文言語",
+      "labelPaymentMethod": "支払い方法",
+      "labelShippingMethod": "配送方法",
+      "labelPartnerCode": "パートナーコード",
+      "labelCustomerEmail": "メールアドレス",
+      "labelNoDeliveriesYet": "まだ配送がありません",
+      "labelNoDeliveryTrackingCodeYet": "なし",
+      "labelLastChange": "最終変更日",
+      "labelNoChangesYet": "まだ変更がありません",
+      "labelTrackingCodes": "追跡コード",
+      "labelAffiliateCode": "アフィリエイトコード",
+      "labelCampaignCode": "キャンペーンコード",
+      "labelCustomerComment": "追加情報",
+      "labelInternalComment": "内部コメント",
+      "buttonAddDeliveryAddress": "新しい住所を追加",
+      "labelSameDeliveryAndBillingAddress": "請求先／配送先住所は同じです",
+      "buttonContinueOnVersionedOrder": "読み込む",
+      "tax": "内消費税：",
+      "shippingCostsTax": "{taxRate}%: {tax}",
+      "placeholderTagSelect": "タグを検索...",
+      "placeholderTrackingCodeSelect": "追跡コードを追加...",
+      "addTrackingCode": "ここをクリックしてコードを追加",
+      "enterValidTrackingCode": "追跡コードを入力してください",
+      "textCreditTax": "自動",
+      "taxDetail": "{taxRate}%: {tax}",
+      "textPromotionRemoved": "割引 {promotion} が削除されました",
+      "textUnsavedChanges": "未保存の変更があります。このフィールドを編集する前に保存してください。",
+      "textMissingProductLineItems": "以下の商品は削除された製品に関連付けられています:",
+      "textMissingProductLineItemsDescription": "これらの製品の価格は再計算できません。したがって、この注文を保存するとこれらはカスタム商品に変換されます。",
+      "textConvertedProductLineItems": "以下の商品は削除された製品に関連付けられていました:",
+      "textConvertedProductLineItemsDescription": "これらの製品の価格は再計算できません。注文編集時は特にご注意ください。",
+      "textDeleteLineItemConfirm": "位置（{label}）を本当に削除しますか？",
+      "helpTextCustomerComment": "顧客はこのコメントを送信できます。変更は顧客に表示されます。",
+      "helpTextInternalComment": "このコメントは内部専用で、顧客には表示されません。"
+    },
+    "lineItemType": {
+      "credit": "クレジット",
+      "product": "製品",
+      "custom": "カスタム",
+      "promotion": "プロモーション",
+      "discount": "割引",
+      "container": "コンテナ"
+    },
+    "nestedLineItemsModal": {
+      "titlePrefix": "商品: {lineItemLabel} - {price}",
+      "headerLabel": "名前",
+      "headerUnitPrice": "価格（税込）",
+      "headerQuantity": "数量",
+      "headerTotalPrice": "小計",
+      "headerTax": "消費税"
+    },
+    "detailDeliveries": {
+      "cardTitleItems": "配送 {count}",
+      "labelShippingMethod": "配送方法",
+      "labelDeliveryDate": "配送日",
+      "labelShippingCosts": "送料",
+      "labelDeliveryState": "配送状況",
+      "buttonMerge": "注文を統合"
+    },
+    "detailCustomerComment": {
+      "title": "追加情報"
+    },
+    "addressSelection": {
+      "modalTitleEditAddress": "住所",
+      "modalTitleSelectAddress": "住所を変更",
+      "modalTitleAddBillingAddress": "新しい請求先住所を追加",
+      "modalTitleEditBillingAddress": "請求先住所を変更",
+      "modalTitleAddShippingAddress": "新しい配送先住所を追加",
+      "modalTitleEditShippingAddress": "配送先住所を変更",
+      "headlineTabEditAddress": "住所を編集",
+      "headlineTabSelectAddress": "住所を選択",
+      "headlineTabCreateAddress": "住所を追加",
+      "currentlySelected": "現在選択中",
+      "searchAddressToolbarPlaceholder": "住所を検索...",
+      "emptySearchResults": "住所が見つかりません。"
+    },
+    "leavePageModal": {
+      "headline": "警告",
+      "description": "未保存の変更があります。保存せずにページを離れますか？",
+      "confirmButton": "ページを離れる",
+      "cancelButton": "ページにとどまる"
+    },
+    "saveChangesBeforehandModal": {
+      "headline": "警告",
+      "statusDescription": "ステータスを変更する前に、変更を保存する必要があります。今すぐ変更を保存しますか？",
+      "confirmButton": "変更を保存"
+    },
+    "stateCard": {
+      "cardTitle": "ステータス",
+      "headlineOrderState": "注文ステータス",
+      "headlineTransactionState": "支払いステータス",
+      "headlineDeliveryState": "配送ステータス",
+      "draftPlaceholder": "下書き",
+      "labelHistory": "{time} に {author} がステータスを設定しました",
+      "labelShowHistoryModal": "ステータス履歴を表示",
+      "labelLastEditedBy": "最終編集者",
+      "labelSystemUser": "システム",
+      "labelSelectStatePlaceholder": "ステータスを選択...",
+      "labelSelectStateButton": "ステータス更新",
+      "labelSendMailSwitch": "顧客にメールを送信",
+      "labelErrorStateChange": "ステータス更新中にエラーが発生しました:",
+      "labelErrorNoAction": "ステータスは変更されませんでした。",
+      "labelNoTransactionState": "まだ取引がありません",
+      "labelNoDeliveryState": "まだ配送がありません",
+      "labelLastEditedByIntegration": "{integrationName}（連携）による最終編集",
+      "labelIntegration": "連携"
+    },
+    "assignMailTemplateCard": {
+      "cardTitle": "メールテンプレートの割り当て",
+      "headline": "この注文ステータスに割り当てられたメールテンプレートがありません。テンプレートを割り当ててください。",
+      "placeholderAssignMailTemplate": "メールテンプレートを割り当て...",
+      "alertHeadline": "ヒント",
+      "alertMessage": "この割り当ては、この販売チャネル経由で受信するすべての今後の注文に影響します。",
+      "buttonCreateMailTemplate": "メールテンプレートを作成",
+      "buttonAssignMailTemplate": "メールテンプレートを割り当て",
+      "buttonNotAssignMailTemplate": "メールテンプレートを割り当てない",
+      "gridColumnType": "タイプ",
+      "gridColumnDescription": "説明"
+    },
+    "documentCard": {
+      "searchBarPlaceholder": "ドキュメントを検索...",
+      "cardTitle": "ドキュメント",
+      "modalTitle": "ステータス更新",
+      "labelDate": "日付",
+      "labelNumber": "番号",
+      "labelType": "タイプ",
+      "labelSent": "送信済み",
+      "labelAttach": "添付",
+      "labelAmount": "注文金額",
+      "labelOpenDocument": "ドキュメントを開く",
+      "labelDownloadPdf": "ドキュメントをダウンロード",
+      "labelPrintDocument": "ドキュメントを印刷",
+      "labelSendDocument": "ドキュメントを送信",
+      "labelMarkAsSent": "送信済みに設定",
+      "labelMarkAsUnsent": "未送信に設定",
+      "labelCreateNew": "新しいドキュメントを作成",
+      "labelAvailableFormats": "利用可能なフォーマット",
+      "messageEmptyTitle": "まだドキュメントは作成されていません",
+      "messageNoDocumentFound": "ドキュメントが見つかりません",
+      "messageEmptySubline": "ここでドキュメントを管理します。",
+      "error": {
+        "DOCUMENT__NUMBER_ALREADY_EXISTS": "ドキュメント番号 {number} はすでに割り当てられています。"
+      },
+      "info": {
+        "DOCUMENT__NUMBER_WAS_CHANGED": "重複するドキュメント番号です。対応する番号範囲から連番が自動的に割り当てられました。"
+      }
+    },
+    "generalTab": {
+      "info": {
+        "summary": {
+          "and": "および",
+          "on": "に",
+          "by": "によって",
+          "lastChanged": "最終変更日時",
+          "with": "で"
+        }
+      },
+      "tagSelect": {
+        "placeholder": "タグを追加..."
+      }
+    },
+    "detailsTab": {
+      "labelTransactionCard": "支払い",
+      "labelDeliveryCard": "配送",
+      "labelOrderCard": "注文",
+      "promotionsField": {
+        "labelPromotions": "コード付きプロモーション",
+        "placeholderPromotions": "プロモーションコードを入力...",
+        "automaticPromotion": "自動適用",
+        "labelToggleAutomaticPromotions": "自動適用プロモーションを無効化",
+        "automaticPromotions": {
+          "title": "プロモーションを更新",
+          "text": "有効でなくなったプロモーションを削除し、新たに適用可能なプロモーションを追加して注文を更新します。条件変更や無効化による変更の可能性があります。コード付きプロモーションは変更されません。",
+          "labelButton": "プロモーションを更新"
+        },
+        "updatesModal": {
+          "title": "更新されたプロモーション",
+          "description": "以下のプロモーションが更新されました：",
+          "promotionAddedTitle": "追加:",
+          "promotionRemovedTitle": "削除:"
+        }
+      }
+    },
+    "documentTab": {
+      "tooltipSaveBeforeCreateDocument": "注文は未保存です。ドキュメント作成前に注文を保存してください。"
+    },
+    "documentModal": {
+      "modalTitle": "ドキュメント作成",
+      "labelDocumentDate": "日付",
+      "labelDeliveryDate": "配送日",
+      "labelDocumentNumber": "番号",
+      "labelDocumentStornoNumber": "キャンセル番号",
+      "labelInvoiceNumber": "請求書番号",
+      "selectInvoiceNumber": "請求書番号を選択",
+      "labelDeliveryNoteNumber": "納品書番号",
+      "labelDocumentComment": "コメント",
+      "labelCreateDownloadPdf": "作成してPDFをダウンロード",
+      "labelCreateSend": "作成して送信",
+      "labelCreate": "作成",
+      "labelCancel": "閉じる",
+      "labelPreview": "プレビュー",
+      "labelHighlightedItemsHeader": "名前",
+      "labelHighlightedItemsEntry": "合計",
+      "labelNoItems": "クレジットが表示されていません",
+      "fileInputLabel": "カスタムドキュメントをアップロード",
+      "labelPreviewOnlyHtml": "HTMLプレビューのみ"
+    },
+    "documentSendModal": {
+      "labelNumber": "番号",
+      "labelType": "タイプ",
+      "labelDate": "日付",
+      "labelMailTemplate": "メールテンプレート",
+      "labelRecipient": "メールアドレス",
+      "labelContent": "メール内容",
+      "labelSubject": "件名",
+      "labelClose": "閉じる",
+      "errorMessage": "メール送信中にエラーが発生しました。"
+    },
+    "stateModal": {
+      "modalTitle": "ドキュメントを追加"
+    },
+    "stateHistoryModal": {
+      "modalTitle": "ステータス履歴",
+      "labelSystemUser": "システム",
+      "labelIntegration": "連携",
+      "column": {
+        "createdAt": "日付",
+        "entity": "変更内容",
+        "user": "変更者",
+        "transaction": "支払い",
+        "delivery": "配送",
+        "order": "注文"
+      }
+    },
+    "newCustomerModal": {
+      "labelDetails": "詳細",
+      "labelGuest": "ゲストアカウント"
+    },
+    "invalidPromotionModal": {
+      "modalTitle": "無効なプロモーションコードの削除",
+      "modalDescription": "以下の無効なプロモーションコードが削除されます：",
+      "buttonConfirm": "OK"
+    },
+    "promotionModal": {
+      "labelTitle": "自動プロモーションの無効化",
+      "message": "以下の自動プロモーションが無効化されます：",
+      "messageNoItems": "有効な自動プロモーションはありません。",
+      "buttonDisable": "無効化"
+    },
+    "initialModal": {
+      "titleNewOrder": "新しい注文",
+      "tabCustomer": "顧客",
+      "tabProducts": "商品",
+      "tabCustomItem": "カスタム商品",
+      "tabOptions": "オプション",
+      "tabCredit": "クレジット",
+      "buttonPreviewOrder": "注文をプレビュー",
+      "customerGrid": {
+        "buttonAddNewCustomer": "新しい顧客を追加",
+        "placeholderSearchCustomer": "顧客名を入力...",
+        "textEmptySearch": "{name} のデータがありません",
+        "contextOpenButton": "開く",
+        "columnCustomerName": "名前",
+        "columnCustomerNumber": "顧客番号",
+        "columnSalesChannel": "販売チャネル",
+        "columnEmailAddress": "メールアドレス",
+        "titleSelectSalesChannel": "販売チャネルを選択",
+        "descriptionSelectSalesChannel": "選択した顧客は複数の販売チャネルにアクセスできます。使用する販売チャネルを選択してください。",
+        "alertSelectSalesChannel": "選択した販売チャネルによって利用可能な商品やオプションが変わります。変更すると商品が削除されオプションがリセットされます。",
+        "labelSalesChannel": "販売チャネルを使用",
+        "placeholderSalesChannel": "販売チャネルを選択...",
+        "buttonSelectSalesChannel": "選択",
+        "labelAllChannel": "すべてのチャネル",
+        "titleCustomerChanges": "顧客変更",
+        "descriptionCustomerChanges": "この注文の顧客を変更してもよろしいですか？この顧客は異なる販売チャネルを持っており、商品が削除されオプションがリセットされます。",
+        "buttonChangeCustomer": "顧客を変更"
+      },
+      "options": {
+        "textHeadlineOrder": "注文",
+        "textHeadlinePayment": "支払い",
+        "textHeadlineShipment": "配送",
+        "placeholderAddPromotion": "プロモーションを追加",
+        "labelSameAsBillingAddress": "配送先は請求先と同じ",
+        "textSameAsBillingAddress": "請求先と同じ",
+        "labelShippingCosts": "送料"
+      },
+      "tooltip": {
+        "customerUnavailable": "この顧客は1つの販売チャネルのみ利用可能です。現在、販売チャネルは非アクティブか存在しません。"
+      }
+    },
+    "filters": {
+      "documentFilter": {
+        "label": "ドキュメント",
+        "placeholder": "ドキュメントステータスを選択...",
+        "textHasCriteria": "少なくとも1つのドキュメントが割り当てられています",
+        "textNoCriteria": "ドキュメントは割り当てられていません"
+      },
+      "orderDateFilter": {
+        "label": "注文日",
+        "options": {
+          "lastYear": "昨年",
+          "lastQuarter": "前四半期",
+          "lastMonth": "先月",
+          "lastWeek": "先週",
+          "lastDay": "前日",
+          "custom": "カスタム"
+        }
+      },
+      "orderValueFilter": {
+        "label": "注文金額"
+      },
+      "statusFilter": {
+        "label": "注文ステータス",
+        "placeholder": "注文ステータスを選択..."
+      },
+      "paymentStatusFilter": {
+        "label": "支払いステータス",
+        "placeholder": "支払いステータスを選択..."
+      },
+      "deliveryStatusFilter": {
+        "label": "配送ステータス",
+        "placeholder": "配送ステータスを選択..."
+      },
+      "paymentMethodFilter": {
+        "label": "支払い方法",
+        "placeholder": "支払い方法を選択..."
+      },
+      "shippingMethodFilter": {
+        "label": "配送方法",
+        "placeholder": "配送方法を選択..."
+      },
+      "salesChannelFilter": {
+        "label": "販売チャネル",
+        "placeholder": "販売チャネルを選択..."
+      },
+      "orderNumberFilter": {
+        "label": "注文番号",
+        "placeholder": "注文番号を入力..."
+      },
+      "customerNumberFilter": {
+        "label": "顧客番号",
+        "placeholder": "顧客番号を入力..."
+      },
+      "billingCountryFilter": {
+        "label": "請求先国",
+        "placeholder": "請求先国を選択..."
+      },
+      "shippingCountryFilter": {
+        "label": "配送先国",
+        "placeholder": "配送先国を選択..."
+      },
+      "customerGroupFilter": {
+        "label": "顧客グループ",
+        "placeholder": "顧客グループを選択..."
+      },
+      "tagFilter": {
+        "label": "タグ",
+        "placeholder": "タグを選択..."
+      },
+      "productFilter": {
+        "label": "商品",
+        "placeholder": "商品を選択..."
+      },
+      "affiliateCodeFilter": {
+        "label": "アフィリエイトコード",
+        "placeholder": "アフィリエイトコードを入力..."
+      },
+      "campaignCodeFilter": {
+        "label": "キャンペーンコード",
+        "placeholder": "キャンペーンコードを入力..."
+      },
+      "promotionCodeFilter": {
+        "label": "プロモーションコード",
+        "placeholder": "プロモーションコードを入力..."
+      },
+      "messageEmptyTitle": "該当なし",
+      "messageEmptySubline": "フィルターを変更して検索してください。"
+    },
+    "components": {
+      "selectDocumentTypeModal": {
+        "title": "ドキュメント作成",
+        "primaryAction": "ドキュメントを作成",
+        "helpText": {
+          "storno": "キャンセル請求書は元請求書なしでは作成できません。",
+          "credit_note": "クレジットノートを作成するには、先にクレジット項目を追加してください。"
+        }
+      }
+    }
+  },
+  "sw-privileges": {
+    "permissions": {
+      "order": {
+        "label": "注文"
+      },
+      "order_refund": {
+        "label": "返金"
+      }
+    },
+    "additional_permissions": {
+      "orders": {
+        "create_discounts": "クレジット商品を作成"
+      }
+    }
+  }
+}

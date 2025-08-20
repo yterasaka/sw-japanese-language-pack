@@ -1,0 +1,367 @@
+{
+  "sw-flow": {
+    "labelDescription": {
+      "labelEntity": "エンティティ",
+      "labelTag": "タグ"
+    },
+    "general": {
+      "mainMenuItemGeneral": "フロービルダー",
+      "descriptionTextModule": "フロービルダー",
+      "placeholderSearchBar": "フローを検索...",
+      "tabMyFlows": "マイフロー",
+      "tabFlowTemplates": "フローテンプレート"
+    },
+    "list": {
+      "textHeadline": "フロービルダー",
+      "buttonAddFlow": "フローを追加",
+      "labelColumnActive": "有効",
+      "labelColumnName": "名前",
+      "labelColumnTrigger": "トリガー",
+      "labelColumnDescription": "説明",
+      "warningDeleteText": "このフローを削除すると、このトリガーのアクションは実行されなくなります。",
+      "confirmText": "本当にこのフローを削除してもよろしいですか？",
+      "emptyStateTitle": "フローがまだありません",
+      "emptyStateSubTitle": "\"フローを追加\" ボタンをクリックして、フローを追加してください。",
+      "unknownTrigger": "不明なトリガー"
+    },
+    "template": {
+      "create": "テンプレートから新しいフローを作成"
+    },
+    "detail": {
+      "textHeadline": "新しいフロー",
+      "labelGeneralCard": "一般情報",
+      "labelLogCard": "ログ",
+      "labelGeneralInformationName": "名前",
+      "placeholderGeneralInformationName": "名前を入力...",
+      "labelGeneralInformationDescription": "説明",
+      "placeholderGeneralInformationDescription": "説明を入力...",
+      "labelGeneralInformationPriority": "優先度",
+      "labelGeneralInformationActive": "有効",
+      "trigger": {
+        "name": "トリガー",
+        "placeholder": "イベントを選択...",
+        "title": "トリガーを定義",
+        "helpText": "トリガーはフローの開始点であり、特定のイベントに紐づきます。トリガーの後に条件を追加し、アクションを定義できます。利用できるアクションは選択したイベントによって異なります。",
+        "textNoEvent": "イベントが見つかりません",
+        "textHint": "現在、このイベントは利用可能なアクションがないためトリガーとして使用できません。",
+        "unknownTriggerPlaceholder": "不明なトリガー"
+      },
+      "sequence": {
+        "selectorTitle": "条件またはアクションを追加",
+        "selectorHelpTextTrueCondition": "左側の式が「true」の場合にこれらのアクションや条件が適用されます。",
+        "selectorHelpTextFalseCondition": "上記の式が「false」の場合にこれらのアクションや条件が適用されます。",
+        "selectorHelpText": "条件はフローのトリガーを絞り込み、「true」か「false」のいずれかになります。<br/><br/>アクションはトリガーまたは条件の「true」か「false」の分岐に追加できます。メール送信、ドキュメント作成、タグ付けなどに使用されます。",
+        "selectorTitleAddSequence": "シーケンスを追加",
+        "selectorHelpTextAddSequence": "フローは1つのトリガーから始まりますが、複数のシーケンスで構成できます。<br/><br/>シーケンスは順番に実行されます。任意の段階で「停止」アクションを追加してフローを完全に終了できます。",
+        "selectorIfCondition": "条件を追加（IF）",
+        "selectorThenAction": "アクションを追加（THEN）",
+        "conditionTitle": "条件",
+        "conditionDescription": "(IF)",
+        "conditionExplainsTitle": "条件を作成",
+        "conditionExplainsDescription": "条件はルールから構成されます。既存のルールを選択するか、新規作成して条件を設定できます。",
+        "actionTitle": "アクション",
+        "actionDescription": "(THEN)",
+        "contextButton": {
+          "deleteCondition": "条件を削除",
+          "deleteActionContainer": "すべてのアクションを削除"
+        },
+        "labelTrue": "True（真）",
+        "labelFalse": "False（偽）",
+        "noActions": "まだアクションが追加されていません",
+        "noRule": "まだルールが定義されていません"
+      },
+      "warningText": "このフローには、エディション変更、無効化、アンインストール、更新された拡張機能によって利用できなくなったアクションが含まれています。フローがトリガーされても、利用不可のアクションは実行されません。"
+    },
+    "page": {
+      "tabGeneral": "一般",
+      "tabFlow": "フロー"
+    },
+    "flowNotification": {
+      "emptyFields": {
+        "general": "保存前にすべての必須項目を入力してください",
+        "sequences": "保存前にルール名またはアクション名を入力してください"
+      },
+      "messageDeleteSuccess": "フローが削除されました。",
+      "messageDeleteError": "フローを削除できませんでした。",
+      "messageSaveError": "フローを保存できませんでした。",
+      "messageWarningSave": "フローテンプレートは編集できません。",
+      "messageError": "エラーが発生しました。",
+      "messageRequiredEventName": "保存前にトリガーイベントを選択してください。",
+      "messageDuplicateSuccess": "フローが複製されました。",
+      "messageDuplicateError": "フローを複製できませんでした。",
+      "messageCreateSuccess": "フローが作成されました。",
+      "messageUpdateTemplateSuccess": "フローテンプレートが更新されました。",
+      "messageCreateError": "フローを作成できませんでした。",
+      "messageUnknownTriggerWarning": "このフローは利用できなくなったトリガーを使用しているため無効化されました。これは、エディションの変更やそのトリガーを提供する拡張機能が無効化またはアンインストールされた可能性があります。",
+      "textIntroduce": "トリガーを再び利用可能にするため、以下のいずれかの方法をお試しください：",
+      "textGuide1": "トリガーを提供した拡張機能を再インストールする",
+      "textGuide2": "トリガーを提供した拡張機能を再度有効化する",
+      "textGuide3": "適切なエディションを選択する"
+    },
+    "actions": {
+      "addTag": "タグを追加",
+      "generateDocument": "ドキュメントを生成",
+      "removeTag": "タグを削除",
+      "mailSend": "メールを送信",
+      "grantDownloadAccess": "ダウンロードアクセスを設定",
+      "setOrderState": "ステータスを設定",
+      "stopFlow": "フローを停止",
+      "changeCustomerGroup": "顧客グループを割り当て",
+      "changeCustomerStatus": "アカウントステータスを割り当て",
+      "changeCustomFieldContent": "カスタムフィールドの内容を変更",
+      "addAffiliateAndCampaignCode": "アフィリエイトおよびキャンペーンコードを割り当て",
+      "textStopFlowDescription": "以降のアクションやシーケンスは実行されません。",
+      "labelDescription": "説明: {description}",
+      "contextButton": {
+        "editAction": "アクションを編集",
+        "deleteAction": "アクションを削除",
+        "moveUpAction": "上に移動",
+        "moveDownAction": "下に移動"
+      },
+      "addAction": "アクションを追加",
+      "labelTo": "エンティティ: {entity}",
+      "labelTag": "タグ: {tagNames}",
+      "labelTemplate": "テンプレート: {template}",
+      "labelCustomFieldSet": "カスタムフィールドセット: {customFieldSet}",
+      "labelCustomField": "カスタムフィールド: {customField}",
+      "labelCustomFieldOption": "モード: {customFieldOption}",
+      "placeholderSelectAction": "アクションを選択...",
+      "labelAffiliateCode": "アフィリエイトコード: {affiliateCode}",
+      "labelCampaignCode": "キャンペーンコード: {campaignCode}",
+      "tooltipActionDisabled": "このアクションは無効化または削除された拡張機能によって提供されています。アクションを使用するには拡張機能を有効化または再インストールしてください。",
+      "group": {
+        "tag": "タグ",
+        "customer": "顧客",
+        "general": "一般",
+        "order": "注文"
+      },
+      "unknownLabel": "不明なアクション",
+      "warningText": "このアクションは無効化またはインストールされていない拡張機能によって提供されています。",
+      "downloadAccessLabel": {
+        "granted": "許可",
+        "revoked": "取り消し"
+      }
+    },
+    "rule": {
+      "addRule": "ルールを追加",
+      "createNewRule": "新しいルールを作成",
+      "contextButton": {
+        "editRule": "ルールを編集",
+        "changeRule": "ルールを変更",
+        "deleteRule": "ルールを削除"
+      },
+      "placeholderSelectRule": "ルールを選択..."
+    },
+    "modals": {
+      "buttonAddAction": "アクションを追加",
+      "buttonSaveAction": "アクションを保存",
+      "rule": {
+        "labelAddNewRule": "新しいルールを追加",
+        "labelEditRule": "ルールを編集",
+        "tabRule": "条件",
+        "tabDetail": "一般",
+        "buttonAddRule": "保存して適用",
+        "labelName": "名前",
+        "placeholderName": "ルール名を入力...",
+        "labelPriority": "優先度",
+        "placeholderPriority": "ルールの優先度を入力...",
+        "labelDescription": "説明",
+        "placeholderDescription": "ルールの説明を入力...",
+        "labelType": "タイプ",
+        "placeholderType": "ルールタイプを選択...",
+        "placeholderDelayType": "遅延を選択..."
+      },
+      "tag": {
+        "labelAddTag": "タグを追加",
+        "labelRemoveTag": "タグを削除",
+        "labelToField": "エンティティ",
+        "placeholderToField": "エンティティを選択...",
+        "labelTagsField": "タグ",
+        "placeholderTagsField": "タグを入力/選択..."
+      },
+      "status": {
+        "titleSetStatus": "ステータスを割り当て",
+        "labelOrderStatus": "注文ステータス",
+        "labelPaymentStatus": "支払いステータス",
+        "labelDeliveryStatus": "配送ステータス",
+        "placeholderOrderStatus": "注文ステータスを選択...",
+        "placeholderPaymentStatus": "支払いステータスを選択...",
+        "placeholderDeliveryStatus": "配送ステータスを選択...",
+        "messageNoStatusError": "少なくとも1つのステータスを選択してください",
+        "forceTransition": "ステータス遷移を強制",
+        "forceTransitionHelpText": "通常の遷移パス（ステートマシン）を無視して、どの状態からでもステータス変更を行います。"
+      },
+      "document": {
+        "titleCreateDocument": "ドキュメントを生成",
+        "labelDocumentType": "ドキュメント",
+        "placeholderDocumentType": "ドキュメントを選択..."
+      },
+      "downloadAccess": {
+        "titleSetDownloadAccess": "ダウンロードアクセスを設定",
+        "labelValueField": "アクセス",
+        "placeholderValueField": "操作を選択...",
+        "options": {
+          "grant": "許可",
+          "revoke": "取り消し"
+        }
+      },
+      "customerGroup": {
+        "titleChangeCustomerGroup": "顧客グループを割り当て",
+        "labelCustomerGroup": "顧客グループ",
+        "placeholderCustomerGroup": "顧客グループを選択..."
+      },
+      "customerStatus": {
+        "titleChangeCustomerStatus": "アカウントステータスを割り当て",
+        "labelCustomerStatus": "アカウントステータス",
+        "placeholderCustomerStatus": "アカウントステータスを選択...",
+        "active": "有効",
+        "inactive": "無効"
+      },
+      "mail": {
+        "columnRecipientName": "受取人名",
+        "columnRecipientMail": "受取人メールアドレス",
+        "placeholderRecipientEmailAddress": "メールアドレスを入力...",
+        "placeholderRecipientName": "名前を入力...",
+        "fieldMailTemplateDetailLink": "メールテンプレートを開く",
+        "titleSendMail": "メールを送信",
+        "labelEmailTemplate": "テンプレート",
+        "placeholderEmailTemplate": "メールテンプレートを選択...",
+        "titleNewEmailTemplate": "新しいメールテンプレート",
+        "tabGeneral": "一般",
+        "tabMailText": "メール本文",
+        "labelMailType": "タイプ",
+        "placeholderMailType": "タイプを選択...",
+        "labelSubject": "件名",
+        "labelSenderName": "送信者名",
+        "placeholderSubject": "件名を入力...",
+        "placeholderSenderName": "送信者名を入力...",
+        "labelDescription": "説明",
+        "placeholderDescription": "説明を入力...",
+        "labelContentPlain": "テキスト形式",
+        "labelContentHtml": "HTML形式",
+        "placeholderPlain": "メールテンプレートのテキストを入力...",
+        "placeholderHtml": "メールテンプレートのHTMLを入力...",
+        "buttonAddMailTemplate": "メールテンプレートを追加",
+        "labelDefault": "デフォルト",
+        "labelCustomer": "顧客用",
+        "labelAdmin": "管理者用",
+        "labelCustom": "カスタム",
+        "labelContactFormMail": "問い合わせ者",
+        "labelRecipient": "受取人",
+        "placeholderRecipient": "メールの受取人を選択...",
+        "useDifferentReplyToLabel": "送信者",
+        "labelReplyTo": "カスタム送信者アドレス",
+        "placeholderReplyTo": "メールアドレスを入力...",
+        "tooltipDifferentReplyTo": "メールはデフォルトでショップ所有者のメールアドレスから送信されます。ショップ所有者のメールアドレスは<a href=\"{settingsLink}\">設定</a>で編集可能です。",
+        "labelLatestDocuments": "添付ファイル",
+        "placeholderLatestDocuments": "ドキュメントを選択...",
+        "documentDescription": "選択したドキュメントが存在しない場合は添付および送信できません。このアクション実行前にドキュメントが生成されていることを確認してください。"
+      },
+      "setEntityCustomField": {
+        "labelToField": "エンティティ",
+        "placeholderToField": "エンティティを選択...",
+        "title": "カスタムフィールドを割り当て",
+        "customFieldSet": "カスタムフィールドセット",
+        "customFieldSetPlaceHolder": "カスタムフィールドセットを選択...",
+        "customField": "カスタムフィールド",
+        "customFieldPlaceHolder": "カスタムフィールドを選択...",
+        "requiredMessageError": "「{item}」は空にできません！",
+        "customFieldOption": "モード",
+        "prefixFieldName": "内容: ",
+        "options": {
+          "overwrite": "上書きする",
+          "notOverwrite": "上書きしない",
+          "clear": "クリア"
+        }
+      },
+      "affiliateAndCampaignCode": {
+        "labelEntity": "エンティティ",
+        "placeholderEntity": "エンティティを選択...",
+        "title": "アフィリエイトコードとキャンペーンコードを追加",
+        "labelAffiliateCode": "アフィリエイトコード",
+        "placeholderAffiliateCode": "アフィリエイトコードを入力...",
+        "labelCampaignCode": "キャンペーンコード",
+        "placeholderCampaignCode": "キャンペーンコードを入力...",
+        "overwrite": "上書きする"
+      },
+      "confirmation": {
+        "textConfirmChangeTrigger": "トリガーを変更してもよろしいですか？<br> 確認するとフローは完全にリセットされます。"
+      }
+    },
+    "leavePageModal": {
+      "headline": "警告",
+      "description": "未保存の変更があります。本当にこのページを離れてもよろしいですか？",
+      "confirmButton": "ページを離れる"
+    },
+    "triggers": {
+      "checkout": "チェックアウト",
+      "customer": "顧客",
+      "before": "前",
+      "order": "注文",
+      "paymentMethod": "支払い方法",
+      "contactForm": "問い合わせフォーム",
+      "reviewForm": "商品レビュー",
+      "group": "グループ",
+      "recovery": "リカバリー",
+      "registration": "登録",
+      "mail": "メール",
+      "after": "後",
+      "create": "作成",
+      "newsletter": "ニュースレター",
+      "productExport": "商品エクスポート",
+      "stateEnter": "状態に入る",
+      "state": "状態",
+      "orderDelivery": "注文配送",
+      "orderTransaction": "注文取引",
+      "orderTransactionCapture": "注文取引キャプチャ",
+      "orderTransactionCaptureRefund": "注文取引キャプチャ返金",
+      "stateLeave": "状態を離れる",
+      "user": "ユーザー",
+      "login": "ログイン",
+      "logout": "ログアウト",
+      "register": "サインアップ",
+      "changedPaymentMethod": "支払い方法変更",
+      "deleted": "削除済み",
+      "doubleOptInGuestOrder": "ゲスト注文のダブルオプトイン",
+      "doubleOptInRegistration": "サインアップのダブルオプトイン",
+      "guestRegister": "ゲストサインアップ",
+      "placed": "注文済み",
+      "send": "送信",
+      "accepted": "承認済み",
+      "declined": "拒否済み",
+      "request": "リクエスト",
+      "message": "メッセージ",
+      "sent": "送信済み",
+      "confirm": "確認",
+      "unsubscribe": "購読解除",
+      "log": "ログ",
+      "cancelled": "キャンセル済み",
+      "completed": "完了",
+      "inProgress": "進行中",
+      "open": "オープン",
+      "returned": "返品済み",
+      "returnedPartially": "一部返品済み",
+      "shipped": "出荷済み",
+      "shippedPartially": "一部出荷済み",
+      "authorized": "承認済み",
+      "chargeback": "チャージバック",
+      "failed": "失敗",
+      "paid": "支払い済み",
+      "paidPartially": "一部支払い済み",
+      "refunded": "返金済み",
+      "refundedPartially": "一部返金済み",
+      "reminded": "リマインダー済み",
+      "unconfirmed": "未確認",
+      "pending": "保留中",
+      "changed": "変更済み",
+      "update": "更新"
+    }
+  },
+  "sw-privileges": {
+    "permissions": {
+      "flow": {
+        "label": "フロービルダー"
+      }
+    }
+  }
+}

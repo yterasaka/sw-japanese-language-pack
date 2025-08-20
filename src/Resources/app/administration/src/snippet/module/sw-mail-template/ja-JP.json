@@ -1,0 +1,149 @@
+{
+  "sw-mail-template": {
+    "general": {
+      "mainMenuItemList": "概要",
+      "mainMenuItemGeneral": "メールテンプレート",
+      "placeholderSearchBar": "メールテンプレートを検索...",
+      "notificationTestMailSalesChannelErrorMessage": "販売チャネルを選択してください",
+      "notificationTestMailErrorMessage": "テストメールの送信中にエラーが発生しました。",
+      "notificationTestMailSuccessMessage": "テストメールが送信されました。",
+      "notificationSyntaxValidationErrorMessage": "無効なテンプレートです。構文を確認してください: {errorMsg}",
+      "notificationGeneralSyntaxValidationErrorMessage": "無効なテンプレートです。構文を確認してください。",
+      "missingMailTemplateTypeErrorMessage": "必要なメールテンプレートタイプが存在しません。"
+    },
+    "list": {
+      "textMailTemplateOverview": "メールテンプレート",
+      "titleMailTemplateList": "テンプレート",
+      "titleMailFooterList": "フッター",
+      "buttonAddMailTemplate": "メールテンプレートを追加",
+      "columnMailType": "タイプ",
+      "columnDescription": "説明",
+      "columnSalesChannels": "販売チャネル",
+      "contextMenuDelete": "削除",
+      "contextMenuEdit": "編集",
+      "contextMenuDuplicate": "複製",
+      "textDeleteConfirm": "メールテンプレート「{subject}」を削除してもよろしいですか？",
+      "buttonDelete": "削除",
+      "titleSidebarItemRefresh": "更新",
+      "errorMediaItemDuplicated": "メディアアイテムはすでに割り当てられています",
+      "columnFilename": "ファイル名",
+      "emptyStateTitle": "まだメールテンプレートはありません",
+      "emptyStateSubTitle": "「追加」ボタンをクリックしてメールテンプレートを追加してください。"
+    },
+    "detail": {
+      "basic": {
+        "titleCard": "情報",
+        "labelMailType": "タイプ",
+        "labelDescription": "説明",
+        "labelSalesChannels": "販売チャネル",
+        "placeholderMailType": "タイプを選択...",
+        "placeholderDescription": "メールテンプレートの説明を入力...",
+        "placeholderSalesChannels": "販売チャネルを選択..."
+      },
+      "options": {
+        "titleCard": "オプション",
+        "labelSenderMail": "送信元メール",
+        "labelSenderName": "送信者名",
+        "labelSubject": "件名",
+        "placeholderSenderMail": "shop{'@'}example.com...",
+        "placeholderSenderName": "例：ショップ名...",
+        "placeholderSubject": "メールテンプレートの件名を入力..."
+      },
+      "mailText": {
+        "titleCard": "メール本文",
+        "labelContentPlain": "プレーンテキスト",
+        "labelContentHtml": "HTML",
+        "placeholderPlain": "メールテンプレートのプレーンテキストを入力...",
+        "placeholderHtml": "メールテンプレートのHTMLテキストを入力..."
+      },
+      "media": {
+        "titleCard": "添付ファイル",
+        "buttonDelete": "削除"
+      },
+      "sidebar": {
+        "labelContextMenuAddToMailTemplate": "添付ファイルとして追加",
+        "placeholderTestMail": "メールアドレスを入力...",
+        "buttonTestMail": "送信",
+        "labelTestMail": "受信者アドレス",
+        "titleTestMail": "テストメールを送信",
+        "titleShowPreview": "プレビューを表示",
+        "titleShowAvailableVariables": "変数一覧",
+        "copyTooltip": "クリップボードにコピー",
+        "languageNotAssignedToSalesChannel": "現在の言語は選択された販売チャネルに割り当てられていません。"
+      },
+      "previewModalTitle": "プレビュー",
+      "buttonSave": "保存",
+      "textHeadline": "新規メールテンプレート",
+      "textHeadlineEdit": "メールテンプレートの編集",
+      "titleResult": "メールテンプレート",
+      "messageSaveSuccess": "メールテンプレート「{subject}」が保存されました。",
+      "messageSaveError": "メールテンプレート「{subject}」の保存に失敗しました。",
+      "textErrorMessage": "エラーメッセージ"
+    }
+  },
+  "sw-mail-header-footer": {
+    "general": {
+      "mainMenuItemList": "ヘッダーとフッター",
+      "placeholderSearchBar": "メールヘッダーとフッターを検索...",
+      "mainMenuItemGeneral": "ヘッダー＆フッター"
+    },
+    "list": {
+      "textMailHeaderFooterOverview": "ヘッダーとフッター",
+      "buttonAddMailHeaderFooter": "ヘッダーとフッターを追加",
+      "columnName": "名前",
+      "columnDescription": "説明",
+      "columnSalesChannels": "販売チャネル",
+      "contextMenuDelete": "削除",
+      "contextMenuEdit": "編集",
+      "contextMenuDuplicate": "複製",
+      "textDeleteConfirm": "ヘッダーとフッター「{name}」を削除してもよろしいですか？",
+      "buttonDelete": "削除",
+      "titleSidebarItemRefresh": "更新",
+      "messageDeleteError": "販売チャネルが設定されている間はヘッダーとフッター「{name}」を削除できません。",
+      "emptyStateTitle": "まだメールヘッダーとフッターはありません",
+      "emptyStateSubTitle": "「追加」ボタンをクリックしてメールヘッダーとフッターを追加してください。"
+    },
+    "detail": {
+      "basic": {
+        "titleCard": "情報",
+        "labelName": "名前",
+        "labelDescription": "説明",
+        "labelSalesChannels": "販売チャネル",
+        "placeholderName": "名前を入力...",
+        "placeholderDescription": "説明を入力...",
+        "placeholderSalesChannels": "関連する販売チャネルを選択..."
+      },
+      "header": {
+        "titleCard": "メールヘッダー",
+        "labelPlain": "プレーンテキスト",
+        "labelHtml": "HTML",
+        "placeholderPlain": "プレーンテキストのメールヘッダーを入力...",
+        "placeholderHtml": "フォーマット済みのメールヘッダーを入力..."
+      },
+      "footer": {
+        "titleCard": "メールフッター",
+        "labelPlain": "プレーンテキスト",
+        "labelHtml": "HTML",
+        "placeholderPlain": "プレーンテキストのメールフッターを入力...",
+        "placeholderHtml": "フォーマット済みのメールフッターを入力..."
+      },
+      "buttonSave": "保存",
+      "textHeadline": "新規メールヘッダー／フッター",
+      "titleResult": "メールヘッダー／フッター",
+      "messageSaveSuccess": "メールヘッダー／フッター「{name}」が保存されました。",
+      "messageSaveError": "メールヘッダー／フッター「{name}」の保存に失敗しました。"
+    },
+    "modal": {
+      "title": "複数割り当て",
+      "mainContent": "以下の販売チャネルには既にヘッダーとフッターのテンプレートが割り当てられています。保存を続行すると、その割り当ては変更内容で上書きされます。",
+      "affectedList": "影響を受ける販売チャネル:"
+    }
+  },
+  "sw-privileges": {
+    "permissions": {
+      "mail_templates": {
+        "label": "メールテンプレート"
+      }
+    }
+  }
+}

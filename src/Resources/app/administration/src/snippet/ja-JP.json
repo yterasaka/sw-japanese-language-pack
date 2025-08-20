@@ -1,0 +1,1668 @@
+{
+  "global": {
+    "error-codes": {
+      "FRAMEWORK__MISSING_PRIVILEGE_ERROR": "権限がありません。",
+      "FRAMEWORK__DELETE_RESTRICTED": "削除に失敗しました。",
+      "c1051bb4-d103-4f74-8988-acbcafc7fdc3": "この項目は空にできません。",
+      "PARENT_MUST_NOT_BE_EMPTY": "このフィールドの継承元は空にできません。",
+      "INVALID_MEDIA_URL": "アップロードするファイルの有効なURLを入力してください。",
+      "CONTENT__MISSING_RULE_TYPE_EXCEPTION": "このルールのタイプを選択してください。",
+      "CONTENT__INVALID_CATEGORY_TYPE_AS_ENTRY_POINT": "エントリーポイントとして設定されているカテゴリーにはタイプを割り当てられません。",
+      "SHOPWARE_INVALID_IP": "有効なIPアドレスを入力してください。",
+      "SHOPWARE_INVALID_IP_CIDR": "有効なIPアドレスまたはCIDRマスク付きのIPアドレスを入力してください。",
+      "INVALID_URL": "有効なURLを入力してください。",
+      "INVALID_MAIL": "有効なメールアドレスを入力してください。",
+      "FRAMEWORK__RATE_LIMIT_EXCEEDED": "リクエストが多すぎます。{seconds}秒間待ってから再度お試しください。",
+      "DUPLICATED_URL": "このURLはすでに使用されています。別のURLを選択してください。",
+      "DUPLICATED_NAME": "この名前はすでに使用されています。",
+      "CONTENT__MEDIA_EMPTY_FILE": "有効なファイル名を指定してください。",
+      "CONTENT__INVALID_CUSTOM_ENTITY_FIELD_TYPE": "フィールドタイプが表示できません。管理者にお問い合わせください。",
+      "THEME__INVALID_SCSS_VAR": "SCSSの値「{value}」はタイプ「{type}」に対して無効です。"
+    },
+    "default": {
+      "add": "追加",
+      "apply": "適用",
+      "cancel": "キャンセル",
+      "delete": "削除",
+      "remove": "削除",
+      "edit": "編集",
+      "duplicate": "複製",
+      "copy": "コピー",
+      "error": "エラー",
+      "warning": "警告",
+      "save": "保存",
+      "success": "成功",
+      "info": "情報",
+      "yes": "はい",
+      "no": "いいえ",
+      "confirm": "確認",
+      "view": "表示",
+      "ascending": "昇順",
+      "descending": "降順",
+      "xTimesIn": "{n}回",
+      "open": "開く",
+      "close": "閉じる",
+      "from": "開始",
+      "to": "終了",
+      "bulkEdit": "一括編集",
+      "back": "戻る",
+      "discard": "破棄",
+      "submit": "送信",
+      "attention": "注意"
+    },
+    "notification": {
+      "notificationSaveErrorMessage": "エンティティ「{entityName}」の保存中にエラーが発生しました。",
+      "notificationSaveErrorMessageRequiredFieldsInvalid": "必須項目をすべて入力してください。",
+      "unspecifiedSaveErrorMessage": "エラーが発生しました。",
+      "notificationSaveSuccessMessage": "エンティティ「{entityName}」が保存されました。",
+      "messageDeleteSuccess": "「{name}」を削除しました。",
+      "messageDeleteFailed": "エンティティ「{entityName}」は以下のモジュールでまだ使用されています: ",
+      "noTitle": "タイトルが未定義です",
+      "noMessage": "メッセージが未定義です",
+      "notificationLoadingDataErrorMessage": "データの読み込み中にエラーが発生しました"
+    },
+    "sw-desktop": {
+      "stagingBarText": "ショップはステージングモードです。"
+    },
+    "sw-skip-link": {
+      "label": "コンテンツにスキップ"
+    },
+    "notification-center": {
+      "title": "通知",
+      "emptyText": "最近は特にありません。",
+      "deleteModal": {
+        "title": "通知を削除",
+        "textConfirm": "本当にすべての通知を削除してよろしいですか？"
+      },
+      "worker-listener": {
+        "thumbnailGeneration": {
+          "title": "サムネイルを生成中",
+          "message": "サムネイルの残りはありません。 | サムネイルが1つ残っています... | {n}個のサムネイルが残っています...",
+          "messageSuccess": "サムネイルが生成されました。"
+        },
+        "esIndexing": {
+          "message": "Elasticsearchがインデックスされました。 | まだ残っています... | {n}件残っています...",
+          "messageSuccess": "Elasticsearchのインデックスが完了しました。"
+        },
+        "dalIndexing": {
+          "message": "すべてのデータをインデックスしました。 | データをインデックス中です。",
+          "messageSuccess": "インデックスが完了しました。"
+        },
+        "productStream": {
+          "title": "動的商品グループをインデックス中",
+          "message": "動的商品グループがインデックスされました。 | 動的商品グループが1つ残っています... | {n}個の動的商品グループが残っています...",
+          "messageSuccess": "動的商品グループがインデックスされました。"
+        },
+        "category": {
+          "title": "カテゴリーをインデックス中",
+          "message": "カテゴリーがインデックスされました。 | カテゴリーが1つ残っています... | {n}個のカテゴリーが残っています...",
+          "messageSuccess": "カテゴリーがインデックスされました。"
+        },
+        "media": {
+          "title": "メディアをインデックス中",
+          "message": "メディアがインデックスされました。 | メディアが1つ残っています... | {n}個のメディアが残っています...",
+          "messageSuccess": "メディアがインデックスされました。"
+        },
+        "salesChannel": {
+          "title": "販売チャネルをインデックス中",
+          "message": "販売チャネルがインデックスされました。 | 販売チャネルが1つ残っています... | {n}個の販売チャネルが残っています...",
+          "messageSuccess": "販売チャネルがインデックスされました。"
+        },
+        "rule": {
+          "title": "ルールをインデックス中",
+          "message": "ルールがインデックスされました。 | ルールが1つ残っています... | {n}個のルールが残っています...",
+          "messageSuccess": "ルールがインデックスされました。"
+        },
+        "product": {
+          "title": "商品をインデックス中",
+          "message": "商品がインデックスされました。 | 商品が1つ残っています... | {n}個の商品が残っています...",
+          "messageSuccess": "商品がインデックスされました。"
+        },
+        "promotion": {
+          "title": "プロモーションをインデックス中",
+          "message": "プロモーションがインデックスされました。 | プロモーションが1つ残っています... | {n}個のプロモーションが残っています...",
+          "messageSuccess": "プロモーションがインデックスされました。"
+        },
+        "importExport": {
+          "title": "インポート/エクスポート",
+          "message": "データをインポート/エクスポート中です。",
+          "messageSuccess": "すべてのインポート/エクスポートが完了しました。"
+        },
+        "flow": {
+          "title": "情報/成功",
+          "message": "フローをインデックス中です。",
+          "messageSuccess": "フローがインデックスされました。"
+        },
+        "newsletterRecipient": {
+          "title": "情報/成功",
+          "message": "ニュースレター受信者をインデックス中です。",
+          "messageSuccess": "ニュースレター受信者がインデックスされました。"
+        }
+      },
+      "plugin-updates-listener": {
+        "updatesAvailableTitle": "更新があります",
+        "updatesAvailableMessage": "拡張機能の最新バージョンを今すぐダウンロードしてください。"
+      },
+      "shopware-updates-listener": {
+        "updatesAvailableTitle": "新しいShopwareバージョン{version}が利用可能です",
+        "updatesAvailableMessage": "自動アップデーターを起動して更新を開始してください",
+        "updateNow": "アップデートを開く"
+      }
+    },
+    "sw-admin-menu": {
+      "linkLogout": "ログアウト",
+      "linkMinimizeMenu": "メニューを折りたたむ",
+      "textShopwareAdmin": "Shopware管理画面",
+      "textProjectName": "管理",
+      "administrator": "管理者",
+      "navigation": {
+        "label": "メインナビゲーション",
+        "mainMenuItemCatalogue": "カタログ",
+        "mainMenuItemContent": "コンテンツ",
+        "mainMenuItemMarketing": "マーケティング"
+      }
+    },
+    "entity-components": {
+      "deleteMessage": "この項目を本当に削除してもよろしいですか？ | {count}件の項目を削除してもよろしいですか？",
+      "deleteTitle": "エントリーの削除",
+      "placeholderToManyAssociationCard": "関連項目を検索...",
+      "labelRemoveAssociation": "関連付けを解除",
+      "productStreamPreview": {
+        "emptyMessageNoStream": "動的商品グループが選択されていません",
+        "emptyMessageNoProducts": "商品が見つかりません",
+        "emptyMessageNoSearchResults": "「{term}」に一致する商品がありません"
+      }
+    },
+    "accessibility": {
+      "optionWarning": "アクセシビリティの観点から、このオプションの有効化は推奨されません。"
+    },
+    "sw-field": {
+      "notification": {
+        "notificationCopySuccessMessage": "テキストがクリップボードにコピーされました。",
+        "notificationCopyFailureMessage": "テキストをクリップボードにコピーできませんでした。"
+      },
+      "titleShowPassword": "パスワードを表示",
+      "titleHidePassword": "パスワードを隠す",
+      "tooltipRestoreInheritance": "継承を復元",
+      "tooltipRemoveInheritance": "継承を解除"
+    },
+    "sw-field-copyable": {
+      "tooltip": {
+        "wasCopied": "クリップボードにコピーされました。",
+        "canCopy": "クリップボードにコピー"
+      }
+    },
+    "sw-file-input": {
+      "buttonChoose": "ファイルを選択",
+      "notification": {
+        "invalidFileType": {
+          "message": "選択されたファイル「{name}」の形式はサポートされていません。以下のタイプのいずれかを使用してください: {supportedTypes}."
+        },
+        "invalidFileSize": {
+          "message": "選択されたファイル「{name}」はアップロードに大きすぎます。ファイルサイズは{limit}を超えてはいけません。"
+        }
+      },
+      "caption": "ここにファイルをドラッグしてアップロード"
+    },
+    "sw-gtc-checkbox": {
+      "label": "私は",
+      "link": "利用規約に同意します。",
+      "url": "https://www.shopware.com/en/gtc"
+    },
+    "sw-price-field": {
+      "labelPriceGross": "価格（税込）",
+      "labelPriceNet": "価格（税抜）",
+      "toggleLinkedCurrency": "税込価格と税抜価格の連動を切り替え"
+    },
+    "sw-list-price-field": {
+      "labelListPriceGross": "定価（税込）",
+      "helpTextListPriceGross": "定価は割引対象の商品を示します。定価は「元の」価格として表示され、取り消し線が引かれ赤色で表示されます。実際の割引価格は通常のテキスト色で表示されます。",
+      "labelListPriceNet": "定価（税抜）",
+      "labelRegulationPriceGross": "最安値（過去30日間、税込）",
+      "helpTextRegulationPriceGross": "EUで価格引き下げを広告する場合、この欄を入力する必要があります。顧客が検証できる情報として、現価格の割引だけでなく、価格引き下げ前の過去30日間の最安値も示す必要があります。これは指令98/6/EC第6条aにより義務付けられています。",
+      "labelRegulationPriceNet": "最安値（過去30日間、税抜）"
+    },
+    "sw-text-editor": {
+      "labelTextLength": "{count}文字 | {count}文字"
+    },
+    "sw-code-editor": {
+      "sanitizeInfo": "潜在的に有害なコードは自動的にサニタイズされ、エディタから削除されます。",
+      "sanitizedHint": "一部の入力がサニタイズされました。内容を再確認してください。"
+    },
+    "sw-tag-field": {
+      "title": "タグ",
+      "listItemAdd": "「{term}」を追加",
+      "placeholder": "タグを検索..."
+    },
+    "sw-snippet-field": {
+      "tooltip": "スニペットを編集・翻訳"
+    },
+    "sw-snippet-field-edit-modal": {
+      "title": "スニペット",
+      "labelName": "名前"
+    },
+    "sw-data-grid": {
+      "tooltipListSettings": "リスト設定",
+      "labelSettingsCompactMode": "コンパクトビューを使用",
+      "labelSettingsPreviewImages": "プレビュー画像を表示",
+      "labelColumnHide": "列を非表示",
+      "labelSelectionCount": "選択中:",
+      "labelDeSelectAll": "全ての選択を解除",
+      "maximumSelectionExceed": "選択可能な最大数を超えています",
+      "columnsActions": "列操作",
+      "actionsMenu": "アクションメニューを開く",
+      "labelSelectAll": "全て選択",
+      "labelSelected": "選択中"
+    },
+    "sw-pagination": {
+      "labelItemsPerPage": "1ページあたりのアイテム数:",
+      "previousPage": "前のページへ",
+      "nextPage": "次のページへ",
+      "page": "{page}ページへ"
+    },
+    "sw-modal": {
+      "labelClose": "閉じる"
+    },
+    "sw-text-preview": {
+      "showMoreButton": "もっと見る"
+    },
+    "sw-time-ago": {
+      "justNow": "たった今",
+      "minutesAgo": "1分前 | {minutesAgo}分前",
+      "aboutNow": "今頃",
+      "minutesFromNow": "1分後 | {minutesFromNow}分後"
+    },
+    "sw-media-field": {
+      "labelToggleSearchExisting": "メディアを検索...",
+      "labelToggleUploadNew": "新しいメディアをアップロード",
+      "labelUnlink": "メディアのリンクを解除"
+    },
+    "sw-media-folder-item": {
+      "labelContextMenuRename": "名前を変更",
+      "labelContextMenuMove": "移動",
+      "labelContextMenuShowMedia": "メディアを表示",
+      "labelContextMenuShowSettings": "設定",
+      "labelContextMenuDissolve": "フォルダーを解散",
+      "notification": {
+        "errorBlankItemName": {
+          "message": "フォルダーを保存できませんでした：名前を入力してください。"
+        },
+        "renamingError": {
+          "message": "フォルダーの保存中にエラーが発生しました。"
+        },
+        "errorInvalidItemName": {
+          "message": "フォルダーを保存できませんでした：有効な名前を入力してください。"
+        }
+      }
+    },
+    "sw-media-media-item": {
+      "labelContextMenuCopyLink": "リンクをコピー",
+      "labelContextMenuReplace": "置き換え",
+      "labelContextMenuRename": "名前を変更",
+      "labelContextMenuDetail": "詳細",
+      "labelContextMenuMove": "移動",
+      "notification": {
+        "errorBlankItemName": {
+          "message": "メディアを保存できませんでした：名前を入力してください。"
+        },
+        "renamingSuccess": {
+          "message": "メディア名を変更しました。"
+        },
+        "renamingError": {
+          "message": "ファイルの保存中にエラーが発生しました。"
+        },
+        "fileNameTooLong": {
+          "message": "指定されたファイル名が長すぎます。最大長は{length}文字です。"
+        },
+        "settingsSuccess": {
+          "message": "設定が保存されました。"
+        }
+      },
+      "labelUploading": "アップロード中..."
+    },
+    "sw-media-modal-delete": {
+      "titleModal": {
+        "media": "メディアファイルを削除",
+        "folder": "フォルダーを削除",
+        "mediaAndFolder": "フォルダーおよびメディアファイルを削除"
+      },
+      "deleteMessage": {
+        "media": "「{name}」を本当に削除してもよろしいですか？ | {count}個のメディアファイルを本当に削除してもよろしいですか？",
+        "folder": "フォルダー「{name}」を本当に削除してもよろしいですか？<br>すべてのサブフォルダーと含まれるメディアも削除されます。 | {count}個のフォルダーを本当に削除してもよろしいですか？<br>すべてのサブフォルダーと含まれるメディアも削除されます。",
+        "mediaAndFolder": "{mediaCount}個のメディアアイテムと{folderCount}個のフォルダーを本当に削除してもよろしいですか？<br>すべてのサブフォルダーおよび含まれるすべてのメディアアイテムも削除されます。"
+      },
+      "mediaQuickInfoMessage": "このメディアファイルは現在以下に使用されています",
+      "mediaInUsagesMessage": "以下のメディアファイルはまだ使用中です",
+      "notification": {
+        "errorSingle": {
+          "message": {
+            "media": "ファイル「{name}」の削除エラー。",
+            "folder": "フォルダー「{name}」の削除エラー。"
+          }
+        },
+        "successOverall": {
+          "message": {
+            "media": "ファイルは削除されませんでした。 | ファイルが削除されました。 | {count} / {total} ファイルが削除されました。",
+            "folder": "フォルダーは削除されませんでした。 | フォルダーが削除されました。 | {count} / {total}フォルダーが削除されました。",
+            "mediaAndFolder": "ファイルまたはフォルダーは削除されませんでした。 | ファイルまたはフォルダーが削除されました。 | {count} / {total} ファイルまたはフォルダーが削除されました。"
+          }
+        },
+        "errorOverall": {
+          "message": {
+            "media": "ファイルの削除に失敗しました。",
+            "folder": "フォルダーの削除に失敗しました。",
+            "mediaAndFolder": "ファイルおよびフォルダーの削除に失敗しました。"
+          }
+        }
+      }
+    },
+    "sw-media-modal-folder-dissolve": {
+      "dissolveMessage": "「{folderName}」を本当に解散してもよろしいですか？ | {count}個のフォルダーを本当に解散してもよろしいですか？",
+      "buttonDissolve": "解散",
+      "notification": {
+        "successSingle": {
+          "message": "フォルダー「{folderName}」は解散されました。"
+        },
+        "errorSingle": {
+          "message": "「{folderName}」の解散中にエラーが発生しました。"
+        },
+        "successOverall": {
+          "message": "フォルダーは解散されました。"
+        },
+        "errorOverall": {
+          "message": "フォルダーの解散中にエラーが発生しました。"
+        }
+      }
+    },
+    "sw-duplicated-media": {
+      "titleModal": "ファイルはすでに存在します",
+      "description": "「{fileName}」という名前のファイルは既に存在します。",
+      "buttonReplace": "ファイルを置き換える",
+      "buttonRename": "ファイル名を変更する",
+      "buttonSkip": "ファイルをスキップ",
+      "labelSaveSelection": "選択を保存し、さらに{count}件に適用",
+      "labelOptionReplace": "アップロードして置き換える",
+      "labelOptionRename": "アップロードして名前を変更",
+      "labelOptionSkip": "ファイルをスキップ",
+      "labelOldFile": "既存のファイル",
+      "labelNewFile": "アップロードしたファイル"
+    },
+    "sw-duplicated-media-v2": {
+      "titleModal": "ファイルはすでに存在します",
+      "description": "「{fileName}」という名前のファイルは既に存在します。",
+      "buttonReplace": "ファイルを置き換える",
+      "buttonRename": "ファイル名を変更する",
+      "buttonKeep": "ファイルを使う",
+      "buttonSkip": "ファイルをスキップ",
+      "labelSaveSelection": "選択を保存し、さらに{count}件に適用",
+      "labelOptionReplace": "アップロードして置き換える",
+      "labelOptionRename": "アップロードして名前を変更",
+      "labelOptionKeep": "既存のファイルを使用",
+      "labelOptionSkip": "ファイルをスキップ",
+      "labelOldFile": "既存のファイル",
+      "labelNewFile": "アップロードしたファイル"
+    },
+    "sw-media-modal-move": {
+      "titleModal": "「{mediaName}」を移動 | {count}件の項目を移動",
+      "buttonMove": "移動",
+      "notification": {
+        "successSingle": {
+          "message": "フォルダー「{mediaName}」を移動しました。"
+        },
+        "errorSingle": {
+          "message": "「{mediaName}」を移動できませんでした。"
+        },
+        "successOverall": {
+          "message": "メディア項目を移動しました。"
+        },
+        "errorOverall": {
+          "message": "項目を移動できませんでした。"
+        },
+        "errorFetchNavigation": {
+          "message": "フォルダーのナビゲーションを取得できませんでした。"
+        }
+      }
+    },
+    "sw-media-modal-replace": {
+      "titleModal": "メディアファイルを置き換え",
+      "buttonUpload": "アップロード",
+      "buttonReplace": "置き換え",
+      "warningFileExtension": "新しいファイルは異なる拡張子({extension})です。検索エンジンによる再インデックスが必要になる場合があります。"
+    },
+    "sw-media-preview": {
+      "fallbackVideoTagSupport": "お使いのブラウザはvideoタグに対応していません",
+      "fallbackAudioTagSupport": "お使いのブラウザはaudioタグに対応していません",
+      "textNoMedia": "メディアがありません"
+    },
+    "sw-media-preview-v2": {
+      "fallbackVideoTagSupport": "お使いのブラウザはvideoタグに対応していません",
+      "fallbackAudioTagSupport": "お使いのブラウザはaudioタグに対応していません",
+      "textNoMedia": "メディアがありません"
+    },
+    "sw-media-upload": {
+      "buttonFileUpload": "ファイルをアップロード",
+      "buttonUrlUpload": "URLからファイルをアップロード",
+      "buttonSwitchToFileUpload": "パソコンからファイルをアップロード",
+      "buttonSwitchToUrlUpload": "URLからファイルをアップロード",
+      "buttonOpenMedia": "メディアを開く",
+      "notification": {
+        "success": {
+          "message": "ファイルは保存されませんでした。 | ファイルが保存されました。 | {count} / {total} ファイルが保存されました。"
+        },
+        "assigned": {
+          "message": "メディアファイルが割り当てられました。"
+        },
+        "failure": {
+          "message": "ファイルのアップロード中にエラーが発生しました。"
+        },
+        "illegalFilename": {
+          "message": "ファイル名「{fileName}」に無効な文字が含まれています。"
+        },
+        "illegalFileUrl": {
+          "title": "無効なURL",
+          "message": "ローカルURLからのアップロードは許可されていません。"
+        }
+      },
+      "caption": "ここにファイルをドラッグしてアップロード"
+    },
+    "sw-media-upload-v2": {
+      "switchMode": "アップロードモードを切り替え",
+      "buttonFileUpload": "ファイルをアップロード",
+      "buttonFilesUpload": "ファイルをアップロード",
+      "buttonUrlUpload": "URLからファイルをアップロード",
+      "buttonSwitchToFileUpload": "パソコンからファイルをアップロード",
+      "buttonSwitchToUrlUpload": "URLからファイルをアップロード",
+      "buttonOpenMedia": "メディアを開く",
+      "notification": {
+        "success": {
+          "title": "メディアアップロード",
+          "message": "ファイルは保存されませんでした。 | ファイルが保存されました。 | {count} / {total} ファイルが保存されました。"
+        },
+        "failure": {
+          "message": "ファイルのアップロード中にエラーが発生しました。"
+        },
+        "illegalFilename": {
+          "title": "無効なファイル名",
+          "message": "ファイル名「{fileName}」に無効な文字が含まれています。"
+        },
+        "invalidFileType": {
+          "message": "選択されたファイル「{name}」の形式はサポートされていません。以下のタイプのいずれかを使用してください: {supportedTypes}."
+        },
+        "invalidFileSize": {
+          "message": "選択されたファイル「{name}」はアップロードに大きすぎます。ファイルサイズは{limit}を超えてはいけません。"
+        },
+        "invalidUrl": {
+          "message": "指定されたURLは無効です。"
+        }
+      },
+      "caption": "ここにファイルをドラッグしてアップロード"
+    },
+    "sw-media-url-form": {
+      "title": "URLからファイルをアップロード",
+      "upload": "アップロード",
+      "example": "https://www.example.com",
+      "labelFileExtension": "ファイル拡張子",
+      "missingFileExtension": "URLにファイル拡張子が含まれていません。下記にファイル拡張子を指定してください。"
+    },
+    "sw-media-modal-folder-settings": {
+      "labelSettings": "設定",
+      "labelSystem": "システムフォルダー",
+      "labelThumbnails": "サムネイル",
+      "labelFolderName": "名前",
+      "labelInheritSettings": "親フォルダーから設定を継承",
+      "labelGenerateThumbnails": "このフォルダーのサムネイルを生成",
+      "labelThumbnailQuality": "サムネイル品質",
+      "labelThumbnailSize": "サムネイルサイズ",
+      "labelKeepProportions": "縦横比を維持する",
+      "notification": {
+        "success": {
+          "message": "設定が保存されました。"
+        },
+        "error": {
+          "message": "設定の保存中にエラーが発生しました。",
+          "messageThumbnailSizeExisted": "サムネイルサイズはすでに存在します。"
+        }
+      },
+      "labelDefaultFolder": "デフォルトメディア保存先",
+      "placeholderDefaultFolder": "エンティティを選択...",
+      "tooltipCanNotDeleteThumbnailSize": "このサムネイルサイズは現在使用中のため削除できません。"
+    },
+    "sw-media-add-thumbnail-form": {
+      "labelMaximumSize": "最大サイズ"
+    },
+    "sw-sidebar-media-item": {
+      "title": "メディア",
+      "placeholderSearch": "検索...",
+      "labelLoadMore": "さらに読み込む"
+    },
+    "sw-media-list-selection-item": {
+      "buttonRemove": "削除"
+    },
+    "sw-media-list-selection-item-v2": {
+      "buttonRemove": "削除"
+    },
+    "sw-select": {
+      "messageNoResults": "「{term}」に一致する結果がありません。"
+    },
+    "sw-select-base": {
+      "buttonClear": "すべてクリア"
+    },
+    "sw-select-result-list": {
+      "messageNoResults": "結果が見つかりません。"
+    },
+    "sw-single-select": {
+      "messageNoResults": "「{term}」に一致する結果がありません。",
+      "valuePlaceholder": "選択してください...",
+      "labelEntity": "要素",
+      "labelEntityAdd": "新規{entity}を作成「{term}」",
+      "labelEntityAddedSuccess": "名前「{term}」の{entity}が正常に作成されました。"
+    },
+    "sw-meteor-single-select": {
+      "messageNoResults": "「{term}」に一致する結果がありません。",
+      "valuePlaceholder": "選択してください..."
+    },
+    "sw-multi-select": {
+      "messageNoResults": "「{term}」に一致する結果がありません。"
+    },
+    "sw-multi-tag-select": {
+      "enterValidData": "有効な値を入力してください...",
+      "addData": "新しいエントリーを追加"
+    },
+    "sw-multi-tag-ip-select": {
+      "enterValidIp": "有効なIPv4またはIPv6アドレスを入力してください",
+      "addIpAddress": "IPアドレスを追加",
+      "knownIps": {
+        "you": "あなた",
+        "youIPv6Block56": "あなたと他のユーザー（同じエンドサイト）",
+        "youIPv6Block64": "あなたと他のユーザー（ホームネットワーク）"
+      }
+    },
+    "sw-entity-advanced-selection-modal": {
+      "link": "高度な選択を使用",
+      "title": "高度な選択：{entity}",
+      "searchPlaceholder": "検索...",
+      "filter": "フィルター",
+      "resetFilters": "フィルターをリセット",
+      "applySelection": "選択を適用",
+      "entity": {
+        "product": "商品",
+        "rule": "ルール"
+      }
+    },
+    "sw-entity-multi-select": {
+      "messageNoResults": "「{term}」に一致する結果がありません。"
+    },
+    "sw-entity-many-to-many-select": {
+      "messageNoResults": "「{term}」に一致する結果がありません。"
+    },
+    "sw-search-bar": {
+      "messageNoResults": "「{term}」に一致する結果がありません。",
+      "messageNoTypeResults": "タイプが見つかりません。",
+      "placeholderSearchField": "商品、顧客、注文を検索...",
+      "placeholderTypeSearchField": "{entity}を検索...",
+      "placeholderShortcutInfo": "ヒント: 「f」キーで検索バーにすばやく移動。",
+      "placeholderSearchShortcutInfo": "<strong>ヒント:</strong> どこからでも検索を開くには<span>f</span>を押してください。",
+      "placeholderESSearchShortcutInfo": "<strong>ヒント:</strong> Elasticsearchの<a href=\"https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-simple-query-string-query.html#simple-query-string-syntax\" target=\"_blank\">シンプルクエリ文字列</a>を使うとより精密な結果が得られます。",
+      "moduleFiltersHeadline": "モジュールフィルター",
+      "placeholderFilterShortcutInfo": "検索に<span>#products</span>と入力してモジュールフィルターを設定。",
+      "searchTypeAll": "すべて",
+      "moduleFilter": "モジュールフィルター",
+      "messageNoResultsV2": "「{term}」に一致する結果が見つかりません。",
+      "messageNoResultsDetailV2": "異なるキーワードを試すか検索設定を確認してください。",
+      "addNew": "新規追加"
+    },
+    "sw-search-bar-item": {
+      "typeLabelCustomer": "顧客",
+      "typeLabelProduct": "商品",
+      "typeLabelOrder": "注文",
+      "typeLabelMedia": "メディア",
+      "typeLabelCategory": "カテゴリー",
+      "typeLabelCms": "CMS",
+      "typeLabelModule": "モジュール",
+      "typeLabelAction": "アクション",
+      "addNewEntity": "新規{entity}を追加",
+      "shortcuts": {
+        "product": "G P | A P",
+        "category": "G C | &nbsp;",
+        "customers": "G U | A U",
+        "property": "G P R | A P R",
+        "manufacturer": "G M | A M",
+        "settings-rule": "G S R | A R",
+        "sales-channel": " | A S",
+        "cms": "G E | A E",
+        "dashboard": "G H | &nbsp;",
+        "product-stream": "G D | &nbsp;",
+        "order": "G O | &nbsp;",
+        "media": "G M E | &nbsp;",
+        "promotion-v2": "G P O | &nbsp;",
+        "settings": "G S | &nbsp;",
+        "newsletter-recipient": "G N | &nbsp;",
+        "settings-snippet": "G S | &nbsp;",
+        "settings-payment": "G S P | &nbsp;",
+        "settings-shipping": "G S S | &nbsp;"
+      }
+    },
+    "sw-search-more-results": {
+      "labelShowResultsInModule": "モジュールで{count}件の結果を表示",
+      "labelShowResultsInModuleV2": "{entityNameLower}内のすべての一致結果を表示..."
+    },
+    "sw-tagged-field": {
+      "text-default-placeholder": "Enterキーを押して値を追加してください。"
+    },
+    "sw-condition": {
+      "operator": {
+        "placeholder": "演算子を選択...",
+        "lowerThanEquals": "以下 | 以下",
+        "equals": "等しい | 等しい",
+        "greaterThanEquals": "以上 | 以上",
+        "lowerThan": "未満 | 未満",
+        "greaterThan": "より大きい | より大きい",
+        "notEquals": "等しくない | 等しくない",
+        "isOneOf": "いずれか | いずれか",
+        "isNoneOf": "いずれでもない | いずれでもない",
+        "gross": "税込",
+        "net": "税抜",
+        "empty": "空 | 空"
+      },
+      "placeholderErrorMessage": "プレースホルダは保存できません。",
+      "dataErrorMessage": "必須フィールドが入力されていません。",
+      "condition": {
+        "dateRangeRule": {
+          "label": "日付範囲",
+          "useTime": "時刻も含める"
+        },
+        "placeholder": "条件を検索...",
+        "orderCountRule": "完了した注文数",
+        "salesChannelRule": "販売チャネル",
+        "currencyRule": "通貨",
+        "languageRule": "言語",
+        "customerIsActiveRule": "顧客がアクティブ",
+        "billingCountryRule": "請求先住所：国",
+        "billingCityRule": "請求先住所：市区町村",
+        "billingStreetRule": "請求先住所：番地・建物名",
+        "billingStateRule": "請求先住所：都道府県",
+        "billingZipCodeRule": "請求先住所：郵便番号",
+        "customerGroupRule": "顧客グループ",
+        "customerRequestedGroupRule": "申請中の顧客グループ",
+        "customerTagRule": "タグ付き顧客",
+        "customerNumberRule": "顧客番号",
+        "differentAddressesRule": "配送先住所が異なる顧客",
+        "emailRule": {
+          "label": "顧客のメールアドレス",
+          "placeholder": "特定のメールアドレスを入力、またはワイルドカード「*」を使用..."
+        },
+        "lastNameRule": "顧客の姓",
+        "isCompanyRule": "法人顧客",
+        "cartTaxDisplay": {
+          "label": "税表示方法",
+          "gross": "税込",
+          "net": "税抜"
+        },
+        "isGuestRule": "ゲストアカウント",
+        "isNewsletterRecipient": "ニュースレター受信者",
+        "daysSinceLastOrderRule": "最終注文からの日数",
+        "shippingCountryRule": "配送先住所：国",
+        "shippingCityRule": "配送先住所：市区町村",
+        "shippingStreetRule": "配送先住所：番地・建物名",
+        "shippingStateRule": "配送先住所：都道府県",
+        "shippingZipCodeRule": "配送先住所：郵便番号",
+        "customerLoggedInRule": "顧客がログイン中",
+        "customerAgeRule": "顧客の年齢",
+        "customerDaysSinceLastLogin": "最終ログインからの日数",
+        "customerDaysSinceFirstLogin": "初回ログインからの日数",
+        "customerAffiliateCodeRule": "アフィリエイトコード（顧客）",
+        "customerCampaignCodeRule": "キャンペーンコード（顧客）",
+        "orderAffiliateCodeRule": "アフィリエイトコード（注文）",
+        "orderCampaignCodeRule": "キャンペーンコード（注文）",
+        "cartAmountRule": "合計金額",
+        "cartPositionPrice": "合計",
+        "goodsCountRule": "種類ごとの商品数合計",
+        "goodsPriceRule": "全商品の小計",
+        "cartTotalPurchasePrice": "全仕入れ価格の合計",
+        "lineItemOfTypeRule": {
+          "label": "タイプの項目",
+          "product": "商品",
+          "discount_surcharge": "割引/加算"
+        },
+        "lineItemRule": "カート内の項目",
+        "lineItemsInCartCountRule": "種類ごとの項目数",
+        "promotionsInCartCountRule": "割引数",
+        "lineItemUnitPriceRule": "項目単価",
+        "lineItemTotalPriceRule": "項目小計",
+        "lineItemWithQuantityRule": "項目数量",
+        "orderTagRule": "タグ付き注文",
+        "orderTrackingCodeRule": "追跡コード",
+        "orderDeliveryStatusRule": "配送ステータス",
+        "orderCreatedByAdminRule": "管理者作成の注文（フロー）",
+        "adminSalesChannelSourceRule": "管理画面適用",
+        "orderTransactionStatusRule": "支払いステータス",
+        "orderStatusRule": "注文ステータス",
+        "orderCustomFieldRule": "カスタムフィールド付き注文",
+        "orderDocumentTypeRule": "書類付き注文",
+        "orderDocumentTypeSentRule": "送信済み書類付き注文",
+        "withTime": "タイムスタンプを含む",
+        "withoutTime": "タイムスタンプを除く",
+        "and": "かつ",
+        "or": "または",
+        "field": {
+          "valuePlaceholder": "値を入力..."
+        },
+        "placeholder-warning": "条件を選択してください...",
+        "not-found": {
+          "label": "条件が見つかりません",
+          "error-message": "条件タイプ{type}が見つかりません。条件には以下のフィールドが含まれています: {fields} | 条件タイプ{type}が見つかりません。条件は以下のフィールドを含みます: {fields}"
+        },
+        "lineItemCondition": {
+          "any": "いずれか",
+          "all": "すべて"
+        },
+        "AddAndCondition": "AND条件を追加",
+        "AddOrCondition": "OR条件を追加",
+        "AddSubCondition": "サブ条件を追加",
+        "deleteConditions": "コンテナを削除",
+        "deleteAllConditions": "すべての条件を削除",
+        "createBefore": "前に作成",
+        "createAfter": "後に作成",
+        "hasDeliveryFreeItemRule": "送料無料の項目",
+        "timeRangeRule": "時間範囲",
+        "weightOfCartRule": "商品の総重量",
+        "volumeOfCartRule": "商品の総体積",
+        "cartShippingCost": "送料",
+        "dayOfWeekRule": "曜日",
+        "lineItemTagRule": "タグ付き項目",
+        "alwaysValidRule": "常に有効",
+        "lineItemPropertyRule": "バリアントまたはプロパティ値を持つ項目",
+        "lineItemNoveltyRule": "新商品",
+        "lineItemCustomFieldRule": "カスタムフィールド付き項目",
+        "lineItemIsNewRule": "「新しい」とマークされた項目",
+        "lineItemOfManufacturerRule": "メーカー付き項目",
+        "lineItemPurchasePriceRule": "仕入れ価格付き項目",
+        "lineItemCreationDateRule": "作成日付き項目",
+        "lineItemReleaseDateRule": "発売日付き項目",
+        "lineItemClearanceSale": "クリアランス品付き項目",
+        "lineItemPromotedRule": "プロモートされた項目",
+        "lineItemInCategoryRule": "カテゴリ内の項目",
+        "categoryWithProductStreamTooltip": "このカテゴリー内の商品は動的商品グループで割り当てられています。動的商品グループの項目条件を使用してください。",
+        "lineItemInProductStreamRule": "動的商品グループ内の項目",
+        "lineItemTaxationRule": "税率付き項目",
+        "lineItemDimensionWidthRule": "幅付き項目",
+        "lineItemDimensionHeightRule": "高さ付き項目",
+        "lineItemDimensionLengthRule": "長さ付き項目",
+        "lineItemDimensionWeightRule": "重量付き項目",
+        "lineItemDimensionVolumeRule": "体積付き項目",
+        "lineItemListPriceRule": "定価付き項目",
+        "lineItemListPriceRatioRule": "価格/定価比率付き項目",
+        "lineItemStockRule": "在庫あり項目",
+        "lineItemActualStockRule": "実在庫あり項目",
+        "lineItemProductStates": "商品状態付き項目",
+        "numberOfReviews": "承認済みレビュー数",
+        "paymentMethodRule": "適用された支払方法",
+        "shippingMethodRule": "適用された配送方法",
+        "lineItemGoodsTotalRule": "全商品の数量合計",
+        "orderTotalAmountRule": "完了注文の総額",
+        "promotionValueRule": "割引の小計",
+        "promotionCodeOfType": "コード付きプロモーション",
+        "promotionCodeOfTypeRule": {
+          "global": "なし",
+          "fixed": "固定",
+          "individual": "個別"
+        },
+        "promotionLineItemRule": "プロモーション",
+        "lineItemCustomField": {
+          "field": {
+            "fieldSetSelect": {
+              "placeholder": "フィールドセットを選択..."
+            },
+            "customFieldSelect": {
+              "placeholder": "カスタムフィールドを選択...",
+              "tooltip": "このカスタムフィールドは現在カートでは無効です。設定でカート用に有効化できます。<a href=\"{customFieldSettingsLink}\" target=\"_blank\">設定</a>をご覧ください。"
+            }
+          }
+        },
+        "customerCustomFieldRule": "カスタムフィールド付き顧客",
+        "zipCodeWildcardPlaceholder": "ワイルドカード文字として「*」を使用してください...",
+        "customerBirthdayRule": "顧客生年月日",
+        "customerCreatedByAdminRule": "管理者による顧客作成",
+        "customerSalutationRule": "顧客の敬称",
+        "lineItemPropertyValueRule": "プロパティ値付き項目",
+        "lineItemVariantValueRule": "バリアント値付き項目"
+      }
+    },
+    "sw-condition-generic": {
+      "dayOfWeek": {
+        "dayOfWeek": {
+          "options": {
+            "1": "月曜日",
+            "2": "火曜日",
+            "3": "水曜日",
+            "4": "木曜日",
+            "5": "金曜日",
+            "6": "土曜日",
+            "7": "日曜日"
+          }
+        }
+      },
+      "cartLineItemOfType": {
+        "lineItemType": {
+          "options": {
+            "product": "商品",
+            "promotion": "割引 / 加算"
+          }
+        }
+      },
+      "cartTaxDisplay": {
+        "taxDisplay": {
+          "options": {
+            "gross": "税込",
+            "net": "税抜"
+          }
+        }
+      },
+      "cartTotalPurchasePrice": {
+        "type": {
+          "options": {
+            "gross": "税込",
+            "net": "税抜"
+          }
+        }
+      },
+      "promotionCodeOfType": {
+        "promotionCodeType": {
+          "options": {
+            "global": "なし",
+            "fixed": "固定",
+            "individual": "個別"
+          }
+        }
+      },
+      "cartLineItemProductStates": {
+        "productState": {
+          "options": {
+            "is-download": "デジタル",
+            "is-physical": "物理的"
+          }
+        }
+      },
+      "units": {
+        "dimension": "mm",
+        "weight": "kg",
+        "volume": "mm³",
+        "age": "年",
+        "kg": "キログラム",
+        "g": "グラム",
+        "mg": "ミリグラム",
+        "oz": "オンス",
+        "lb": "ポンド",
+        "m": "メートル",
+        "cm": "センチメートル",
+        "mm": "ミリメートル",
+        "km": "キロメートル",
+        "in": "インチ",
+        "ft": "フィート",
+        "mi": "マイル",
+        "hr": "時間",
+        "yr": "年",
+        "mth": "月",
+        "wk": "週",
+        "d": "日",
+        "min": "分",
+        "m3": "立方メートル",
+        "cm3": "立方センチメートル",
+        "mm3": "立方ミリメートル",
+        "in3": "立方インチ",
+        "ft3": "立方フィート",
+        "short": {
+          "min": "分",
+          "d": "日",
+          "wk": "週",
+          "mth": "月",
+          "yr": "年",
+          "hr": "時",
+          "lb": "ポンド",
+          "oz": "オンス",
+          "mg": "ミリグラム",
+          "g": "グラム",
+          "kg": "キロ",
+          "m": "m",
+          "cm": "cm",
+          "mm": "mm",
+          "km": "km",
+          "in": "インチ",
+          "mi": "マイル",
+          "ft": "フィート",
+          "m3": "m³",
+          "cm3": "cm³",
+          "mm3": "mm³",
+          "in3": "in³",
+          "ft3": "ft³"
+        }
+      }
+    },
+    "sw-product-image": {
+      "context": {
+        "buttonAsCover": "カバー画像として使用",
+        "buttonRemove": "削除",
+        "buttonPreviewImage": "プレビュー画像"
+      }
+    },
+    "sw-simple-search-field": {
+      "defaultPlaceholder": "検索..."
+    },
+    "sw-tabs-item": {
+      "tooltipTabHasErrors": "このページにはエラーがあります。",
+      "tooltipTabHasWarnings": "このページには警告があります。"
+    },
+    "entities": {
+      "all": "すべて",
+      "custom_field": "カスタムフィールド | カスタムフィールド",
+      "cart": "カート | カート",
+      "category": "カテゴリー | カテゴリー",
+      "cms_page": "レイアウト | レイアウト",
+      "document": "ドキュメント | ドキュメント",
+      "property": "プロパティ | プロパティ",
+      "country": "国 | 国",
+      "currency": "通貨 | 通貨",
+      "customer": "顧客 | 顧客",
+      "customer_address": "住所 | 住所",
+      "customer_group": "顧客グループ | 顧客グループ",
+      "extension": "拡張機能 | 拡張機能",
+      "integration": "連携 | 連携",
+      "language": "言語 | 言語",
+      "mail_header_footer": "ヘッダーとフッター | ヘッダーとフッター",
+      "mail_template": "メールテンプレート | メールテンプレート",
+      "media": "メディア",
+      "media_default_folder": "デフォルトフォルダー | デフォルトフォルダー",
+      "media_folder": "フォルダー | フォルダー",
+      "media_thumbnail": "サムネイル | サムネイル",
+      "media_thumbnail_size": "サムネイルサイズ | サムネイルサイズ",
+      "newsletter_recipient": "ニュースレター受信者 | ニュースレター受信者",
+      "number_range": "番号範囲 | 番号範囲",
+      "order": "注文 | 注文",
+      "order_address": "住所 | 住所",
+      "order_delivery": "配送 | 配送",
+      "order_line_item": "ラインアイテム | ラインアイテム",
+      "order_state": "注文状態 | 注文状態",
+      "order_transaction": "トランザクション | トランザクション",
+      "order_transaction_state": "トランザクション状態 | トランザクション状態",
+      "payment_method": "支払い方法 | 支払い方法",
+      "plugin_manager": "プラグイン",
+      "privacy": "プライバシー",
+      "product": "商品 | 商品",
+      "product_manufacturer": "メーカー | メーカー",
+      "product_media": "商品メディア",
+      "product_price": "商品価格 | 商品価格",
+      "product_stream": "動的商品グループ | 動的商品グループ",
+      "product_variation": "バリアント | バリアント",
+      "product_review": "レビュー | レビュー",
+      "promotion": "プロモーション | プロモーション",
+      "promotion_order_rule": "プロモーション適用注文 | プロモーション適用注文",
+      "promotion_cart_rule": "プロモーション適用カート | プロモーション適用カート",
+      "promotion_persona_rule": "プロモーション対象グループ | プロモーション対象グループ",
+      "rule": "ルール | ルール",
+      "rule_condition": "条件 | 条件",
+      "sales_channel": "販売チャネル | 販売チャネル",
+      "sales_channel_type": "販売チャネルタイプ | 販売チャネルタイプ",
+      "salutation": "敬称 | 敬称",
+      "seo_url": "SEO URL | SEO URL",
+      "shipping_method": "配送方法 | 配送方法",
+      "snippet": "スニペット | スニペット",
+      "tag": "タグ | タグ",
+      "tax": "税 | 税",
+      "tax_rule": "税ルール | 税ルール",
+      "theme": "テーマ | テーマ",
+      "unit": "単位 | 単位",
+      "user": "ユーザー | ユーザー",
+      "landing_page": "ランディングページ | ランディングページ",
+      "delivery_time": "配送時間 | 配送時間",
+      "import_export_profile": "インポート/エクスポートプロファイル | インポート/エクスポートプロファイル",
+      "feature_set": "テンプレート | テンプレート",
+      "property_group": "プロパティグループ | プロパティグループ",
+      "document_base_config": "ドキュメント基本設定 | ドキュメント基本設定",
+      "product_feature_set": "新テンプレート | 新テンプレート",
+      "custom-field-set": "カスタムフィールドセット",
+      "store_settings": "商品並び替え",
+      "flow": "フロービルダー",
+      "module": "モジュール",
+      "frequently_used": "よく使う",
+      "recently_searched": "最近検索された",
+      "flow_sequence": "フロー"
+    },
+    "day-of-week": {
+      "monday": "月曜日",
+      "tuesday": "火曜日",
+      "wednesday": "水曜日",
+      "thursday": "木曜日",
+      "friday": "金曜日",
+      "saturday": "土曜日",
+      "sunday": "日曜日"
+    },
+    "businessEvents": {
+      "checkout_customer_before_login": "顧客がログインを要求しました",
+      "checkout_customer_changed-payment-method": "顧客が支払い方法を変更しました",
+      "checkout_customer_deleted": "顧客アカウントが削除されました",
+      "checkout_customer_double_opt_in_guest_order": "ゲストアカウントがダブルオプトインで登録されました",
+      "checkout_customer_double_opt_in_registration": "顧客アカウントがダブルオプトインで登録されました",
+      "checkout_customer_guest_register": "ゲストアカウントが登録されました",
+      "checkout_customer_login": "顧客がログインしました",
+      "checkout_customer_logout": "顧客がログアウトしました",
+      "checkout_customer_register": "顧客アカウントが登録されました",
+      "checkout_order_placed": "注文が完了しました",
+      "checkout_order_payment_method_changed": "注文の支払い方法が変更されました",
+      "contact_form_send": "お問い合わせフォームが送信されました",
+      "review_form_send": "レビューが送信されました",
+      "customer_group_registration_accepted": "顧客グループの登録申請が承認されました",
+      "customer_group_registration_declined": "顧客グループの登録申請が拒否されました",
+      "customer_recovery_request": "顧客がパスワード再設定を要求しました",
+      "mail_after_create_message": "メールが作成されました",
+      "mail_before_send": "メールが送信されています",
+      "mail_sent": "メールが送信されました",
+      "newsletter_confirm": "ニュースレター登録が確認されました",
+      "newsletter_register": "ニュースレター登録が完了しました",
+      "newsletter_unsubscribe": "ニュースレターの登録を解除しました",
+      "newsletter_update": "ニュースレター登録が更新されました",
+      "product_export_log": "商品エクスポートが実行されました",
+      "state_enter_order_state_cancelled": "注文がキャンセル状態に入りました",
+      "state_enter_order_state_completed": "注文が完了状態に入りました",
+      "state_enter_order_state_in_progress": "注文が進行中状態に入りました",
+      "state_enter_order_state_open": "注文がオープン状態に入りました",
+      "state_enter_order_delivery_state_cancelled": "配送がキャンセル状態に入りました",
+      "state_enter_order_delivery_state_open": "配送がオープン状態に入りました",
+      "state_enter_order_delivery_state_returned": "配送が返品状態に入りました",
+      "state_enter_order_delivery_state_returned_partially": "配送が部分返品状態に入りました",
+      "state_enter_order_delivery_state_shipped": "配送が発送状態に入りました",
+      "state_enter_order_delivery_state_shipped_partially": "配送が部分発送状態に入りました",
+      "state_enter_order_transaction_state_authorized": "支払いが認証状態に入りました",
+      "state_enter_order_transaction_state_cancelled": "支払いがキャンセル状態に入りました",
+      "state_enter_order_transaction_state_chargeback": "支払いが返金状態に入りました",
+      "state_enter_order_transaction_state_failed": "支払いが失敗状態に入りました",
+      "state_enter_order_transaction_state_in_progress": "支払いが進行中状態に入りました",
+      "state_enter_order_transaction_state_open": "支払いがオープン状態に入りました",
+      "state_enter_order_transaction_state_paid": "支払いが完了状態に入りました",
+      "state_enter_order_transaction_state_paid_partially": "支払いが部分完了状態に入りました",
+      "state_enter_order_transaction_state_refunded": "支払いが返金状態に入りました",
+      "state_enter_order_transaction_state_refunded_partially": "支払いが部分返金状態に入りました",
+      "state_enter_order_transaction_state_reminded": "支払いが督促送信状態に入りました",
+      "state_enter_order_transaction_state_unconfirmed": "支払いが未確認状態に入りました",
+      "state_leave_order_state_cancelled": "注文がキャンセル状態を離れました",
+      "state_leave_order_state_completed": "注文が完了状態を離れました",
+      "state_leave_order_state_in_progress": "注文が進行中状態を離れました",
+      "state_leave_order_state_open": "注文がオープン状態を離れました",
+      "state_leave_order_delivery_state_cancelled": "配送がキャンセル状態を離れました",
+      "state_leave_order_delivery_state_open": "配送がオープン状態を離れました",
+      "state_leave_order_delivery_state_returned": "配送が返品状態を離れました",
+      "state_leave_order_delivery_state_returned_partially": "配送が部分返品状態を離れました",
+      "state_leave_order_delivery_state_shipped": "配送が発送状態を離れました",
+      "state_leave_order_delivery_state_shipped_partially": "配送が部分発送状態を離れました",
+      "state_leave_order_transaction_state_authorized": "支払いが認証状態を離れました",
+      "state_leave_order_transaction_state_cancelled": "支払いがキャンセル状態を離れました",
+      "state_leave_order_transaction_state_chargeback": "支払いが返金状態を離れました",
+      "state_leave_order_transaction_state_failed": "支払いが失敗状態を離れました",
+      "state_leave_order_transaction_state_in_progress": "支払いが進行中状態を離れました",
+      "state_leave_order_transaction_state_open": "支払いがオープン状態を離れました",
+      "state_leave_order_transaction_state_paid": "支払いが完了状態を離れました",
+      "state_leave_order_transaction_state_paid_partially": "支払いが部分完了状態を離れました",
+      "state_leave_order_transaction_state_refunded": "支払いが返金状態を離れました",
+      "state_leave_order_transaction_state_refunded_partially": "支払いが部分返金状態を離れました",
+      "state_leave_order_transaction_state_reminded": "支払いが督促送信状態を離れました",
+      "state_leave_order_transaction_state_unconfirmed": "支払いが未確認状態を離れました",
+      "user_recovery_request": "ユーザーのパスワード回復リクエストが送信されました"
+    },
+    "tax-rates": {
+      "Standard rate": "標準税率",
+      "Reduced rate": "軽減税率",
+      "Reduced rate 2": "特別軽減税率"
+    },
+    "sw-bulk-edit-modal": {
+      "bulkEdit": "一括編集",
+      "startBulkEdit": "一括編集を開始",
+      "bulkEditModalTitle": "一括編集 - {count} 件選択中 | 一括編集 - {count} 件選択中"
+    },
+    "sw-search-preferences-modal": {
+      "title": "検索設定",
+      "description": "選択した要素のみが検索結果に表示されます。詳細設定は<span id='sw-search-preferences-modal-link'>検索設定を開く &#8594;</span>",
+      "columnActive": "有効",
+      "columnModuleName": "モジュール名"
+    },
+    "sw-help-center": {
+      "title": "サポート",
+      "documentation": {
+        "headline": "お困りですか？",
+        "linkText": "ドキュメントを見る",
+        "linkUrl": "https://docs.shopware.com/en/shopware-6-en"
+      },
+      "support": {
+        "headline": "サポートをご利用ください！",
+        "paragraph": "ドキュメントで解決しなかった場合は、Shopwareサポートまでお問い合わせください。問題を確認いたします。",
+        "linkText": "サポートリクエストを作成",
+        "linkUrl": "https://account.shopware.com/shops/support"
+      }
+    },
+    "sw-page": {
+      "backButton": "戻る"
+    }
+  },
+  "sw-text-editor-toolbar": {
+    "link": {
+      "openInNewTab": "新しいタブでリンクを開く",
+      "displayAsButton": "リンクをボタンとして表示",
+      "buttonVariant": "ボタンの種類",
+      "buttonVariantPrimary": "プライマリ",
+      "buttonVariantSecondary": "セカンダリ",
+      "buttonVariantPrimarySmall": "プライマリ（小）",
+      "buttonVariantSecondarySmall": "セカンダリ（小）",
+      "linkTo": "リンク先",
+      "placeholder": "URLを入力...",
+      "labelUrl": "URL",
+      "labelType": "リンクタイプ",
+      "labelLink": "リンク",
+      "labelProduct": "商品",
+      "labelCategory": "カテゴリー",
+      "labelMedia": "ファイル",
+      "labelEmail": "メールアドレス",
+      "labelPhoneNumber": "電話番号",
+      "placeholderPhoneNumber": "電話番号を入力...",
+      "placeholderEmail": "メールアドレスを入力...",
+      "placeholderProduct": "商品を選択...",
+      "placeholderCategory": "カテゴリーを選択..."
+    },
+    "table": {
+      "addHeading": "表ヘッダーを追加",
+      "cols": "列",
+      "rows": "行",
+      "editInfo": "表は後で拡張可能です。"
+    },
+    "title": {
+      "format": "書式",
+      "paragraph": "段落",
+      "h1": "見出し 1",
+      "h2": "見出し 2",
+      "h3": "見出し 3",
+      "h4": "見出し 4",
+      "h5": "見出し 5",
+      "h6": "見出し 6",
+      "blockquote": "引用",
+      "text-color": "文字色",
+      "bold": "太字",
+      "italic": "斜体",
+      "underline": "下線",
+      "strikethrough": "取り消し線",
+      "superscript": "上付き文字",
+      "subscript": "下付き文字",
+      "textAlign": "文字の配置",
+      "alignLeft": "左揃え",
+      "alignCenter": "中央揃え",
+      "alignRight": "右揃え",
+      "justify": "両端揃え",
+      "insert-unordered-list": "番号なしリストを挿入",
+      "insert-ordered-list": "番号付きリストを挿入",
+      "link": "リンク",
+      "data-mapping": "変数を挿入",
+      "undo": "元に戻す",
+      "redo": "やり直し",
+      "insert-table": "表を挿入",
+      "code-switch": "編集モードを切り替え"
+    }
+  },
+  "mt-text-editor-toolbar-button-link": {
+    "label": "リンク"
+  },
+  "sw-text-editor-toolbar-button-link": {
+    "modalTitle": "リンクの挿入／編集",
+    "linkTo": "リンク先",
+    "linkUrl": "URL",
+    "linkPhone": "電話番号",
+    "linkPhonePrefix": "tel:",
+    "linkDetail": "商品",
+    "linkEmail": "メール",
+    "linkEmailPlaceholder": "メールアドレスを入力...",
+    "detailPlaceholder": "商品を選択...",
+    "categoryPlaceholder": "カテゴリーを選択...",
+    "displayAsButton": "ボタン表示",
+    "openInNewTab": "新しいタブで開く",
+    "applyLink": "適用",
+    "linkType": "リンクタイプ",
+    "removeLink": "リンクを削除",
+    "linkOptions": {
+      "link": "URL",
+      "product": "商品",
+      "category": "カテゴリー",
+      "media": "ファイル",
+      "email": "メール",
+      "phoneNumber": "電話番号"
+    },
+    "buttonVariantPrimary": "プライマリ",
+    "buttonVariantSecondary": "セカンダリ",
+    "buttonVariantPrimarySmall": "プライマリ（小）",
+    "buttonVariantSecondarySmall": "セカンダリ（小）"
+  },
+  "sw-text-editor-toolbar-button-cms-data-mapping": {
+    "label": "変数を挿入"
+  },
+  "sw-tree": {
+    "general": {
+      "placeholderSearch": "検索...",
+      "treeHeadSelected": "{count}件選択中",
+      "treeHeadline": "ツリー構造",
+      "buttonCreate": "要素を作成",
+      "actions": {
+        "createSub": "新しいサブ要素",
+        "createBefore": "前に新しい要素",
+        "createAfter": "後に新しい要素",
+        "actionsDisabledInLanguage": "要素はシステムのデフォルト言語でのみ作成可能です"
+      }
+    },
+    "modal": {
+      "textDeleteConfirm": "本当に「{name}」を削除してもよろしいですか？",
+      "textDeleteMultipleConfirm": "選択した{count}件を本当に削除してもよろしいですか？",
+      "textDeleteChildrenConfirm": "すべてのサブカテゴリも削除されます。"
+    }
+  },
+  "sw-tree-item": {
+    "toggleTreeItem": "ツリー項目「{name}」を切り替え",
+    "toggleItem": "項目「{name}」を切り替え",
+    "childrenLabel": "「{name}」のサブ項目"
+  },
+  "sw-sidebar-collapse": {
+    "collapseIndicator": "サイドバーを折りたたむ"
+  },
+  "sw-category-tree-field": {
+    "emptySearchResults": "カテゴリーが見つかりません。"
+  },
+  "sw-error": {
+    "general": {
+      "messagePlaceholder": "申し訳ありません、問題が発生しました。",
+      "textLink": "戻る"
+    }
+  },
+  "sw-property-search": {
+    "placeholderSearch": "値を検索...",
+    "selected": "{count}件の値を選択 | {count}件の値を選択",
+    "noPropertiesFound": "プロパティ値が見つかりません",
+    "noPropertiesFoundDescription": "別の検索語をお試しください。"
+  },
+  "sw-property-assignment": {
+    "columnGroup": "プロパティ",
+    "columnOptions": "値",
+    "messageEmptyTitle": "プロパティがありません",
+    "messageEmptySubline": "プロパティを追加するには、プロパティモジュールへ移動してください。"
+  },
+  "sw-language-info": {
+    "infoTextChildLanguage": "\"{entityDescription}\"はコンテンツ言語<span>「{language}」</span>で表示され、継承元は以下です。",
+    "infoTextRootLanguage": "\"{entityDescription}\"はコンテンツ言語<span>「{language}」</span>で表示されます。フォールバックはシステムのデフォルト言語です。",
+    "infoTextNewEntity": "\"{entityDescription}\"はシステムのデフォルト言語で表示されます。新しいデータは必ず選択したシステムのデフォルト言語で管理してください。"
+  },
+  "sw-language-switch": {
+    "messageModalUnsavedChanges": "現在の言語で保存されていない変更があります。保存しますか？",
+    "titleModalUnsavedChanges": "保存されていない変更",
+    "titleModalButtonRevertUnsavedChanges": "変更を破棄する"
+  },
+  "sw-inheritance-warning": {
+    "infoTextInheritedField": "{moduleName}には継承されたフィールドがあります。継承状態が有効な限り、コンテンツは継承されます。継承フィールドはリンクアイコンをクリックしてリンクを解除できます。再度クリックすると継承状態に戻ります。"
+  },
+  "sw-license-violation": {
+    "title": "拡張機能の警告",
+    "reload": "再読み込み",
+    "alertText": "このインストールにある少なくとも1つの拡張機能でライセンス違反が検出されました。違反を修正し法的影響を回避するため、サブスクリプションを契約するか拡張機能を購入・レンタルしてください（違反の種類によります）。拡張機能をもう使わない場合は、「拡張機能を完全に削除」ボタンまたはマイエクステンションから削除してください。これらの対応がされない場合、shopware AG はライセンス違反に対して罰金を請求する権利を保有します。",
+    "deletePlugin": "拡張機能を完全に削除",
+    "messageDeleteConfirm": "拡張機能「{pluginName}」を完全に削除してよろしいですか？",
+    "checkboxMessage": "このメッセージとその結果について承知しました。",
+    "closeModal": "通知を閉じる",
+    "ignorePlugin": "永続的に無視",
+    "successfullyDeleted": "拡張機能が削除されました",
+    "table": {
+      "plugin": "拡張機能",
+      "warning": "警告"
+    }
+  },
+  "sw-sales-channel-switch": {
+    "messageModalUnsavedChanges": "現在の販売チャネルに保存されていない変更があります。今すぐ保存しますか？",
+    "placeholderSelect": "検索...",
+    "titleModalUnsavedChanges": "保存されていない変更",
+    "titleModalButtonRevertUnsavedChanges": "変更を破棄",
+    "labelDefaultOption": "すべての販売チャネル"
+  },
+  "sw-config-form-renderer": {
+    "placeholder": "{name}を入力してください...",
+    "option": "ロケール「{locale}」のラベルは設定されていません...",
+    "configLoadErrorMessage": "設定の読み込み中にエラーが発生しました: | 設定の読み込み中に以下のエラーが発生しました:"
+  },
+  "locale": {
+    "de-DE": "ドイツ語",
+    "en-GB": "英語（英国）",
+    "bg-BG": "ブルガリア語",
+    "bs-BA": "ボスニア語",
+    "cs-CZ": "チェコ語",
+    "da-DK": "デンマーク語",
+    "el-GR": "ギリシャ語",
+    "en-US": "英語（米国）",
+    "es-ES": "スペイン語",
+    "fi-FI": "フィンランド語",
+    "fr-FR": "フランス語",
+    "hi-IN": "ヒンディー語",
+    "hr-HR": "クロアチア語",
+    "hu-HU": "ハンガリー語",
+    "id-ID": "インドネシア語",
+    "it-IT": "イタリア語",
+    "ko-KR": "韓国語",
+    "lv-LV": "ラトビア語",
+    "nl-NL": "オランダ語",
+    "nn-NO": "ノルウェー語",
+    "pl-PL": "ポーランド語",
+    "pt-PT": "ポルトガル語",
+    "ro-RO": "ルーマニア語",
+    "ru-RU": "ロシア語",
+    "sk-SK": "スロバキア語",
+    "sl-SI": "スロベニア語",
+    "sr-RS": "セルビア語",
+    "sv-SE": "スウェーデン語",
+    "tr-TR": "トルコ語",
+    "uk-UA": "ウクライナ語",
+    "vi-VN": "ベトナム語"
+  },
+  "sw-image-slider": {
+    "imageAlt": "画像 {index} / {total}"
+  },
+  "sw-confirm-modal": {
+    "defaultText": "本当に実行しますか？"
+  },
+  "sw-rule-modal": {
+    "modalTitleNew": "新しいグローバルルールを作成",
+    "modalTitleModify": "グローバルルールを編集",
+    "labelDescription": "説明",
+    "placeholderDescription": "ルールの説明を入力...",
+    "labelName": "名前",
+    "placeholderName": "ルール名を入力...",
+    "labelPriority": "優先度",
+    "placeholderPriority": "このルールの優先度を設定...",
+    "messageSaveSuccess": "ルール「{name}」が保存されました。",
+    "messageSaveError": "ルールの保存中にエラーが発生しました",
+    "ruleCard": "条件"
+  },
+  "sw-select-rule-create": {
+    "addNewRule": "新しいルールを作成..."
+  },
+  "sw-shortcut-overview": {
+    "title": "キーボードショートカット",
+    "iconTooltip": "`{key}`キーを押すと利用可能なショートカット一覧を表示します",
+    "modalTitle": "キーボードショートカット",
+    "sectionAddingItems": "項目の追加",
+    "sectionNavigation": "ナビゲーション",
+    "sectionSpecialShortcuts": "特別なショートカット",
+    "function": "機能",
+    "keyboardShortcut": "キーボードショートカット",
+    "functionAddProduct": "商品を追加",
+    "keyboardShortcutAddProduct": "A P",
+    "functionAddCategory": "カテゴリーを追加",
+    "keyboardShortcutAddCategory": "A C",
+    "functionAddShoppingExperienceLayout": "ショッピング体験レイアウトを追加",
+    "keyboardShortcutAddShoppingExperienceLayout": "A E",
+    "functionAddCustomer": "顧客を追加",
+    "keyboardShortcutAddCustomer": "A U",
+    "functionAddProperties": "プロパティを追加",
+    "keyboardShortcutAddProperties": "A P R",
+    "functionAddManufacturer": "メーカーを追加",
+    "keyboardShortcutAddManufacturer": "A M",
+    "functionAddRule": "ルールを追加",
+    "keyboardShortcutAddRule": "A R",
+    "functionAddSaleschannel": "販売チャネルを追加",
+    "keyboardShortcutAddSaleschannel": "A S",
+    "functionGoToDashboard": "ダッシュボードへ移動",
+    "keyboardShortcutGoToDashboard": "G H",
+    "functionGoToProducts": "商品へ移動",
+    "keyboardShortcutGoToProducts": "G P",
+    "functionGoToCategories": "カテゴリーへ移動",
+    "keyboardShortcutGoToCategories": "G C",
+    "functionGoToDynamicProductGroups": "動的商品グループへ移動",
+    "keyboardShortcutGoToDynamicProductGroups": "G D",
+    "functionGoToProperties": "プロパティへ移動",
+    "keyboardShortcutGoToProperties": "G P R",
+    "functionGoToManufacturers": "メーカーへ移動",
+    "keyboardShortcutGoToManufacturers": "G M",
+    "functionGoToOrders": "注文へ移動",
+    "keyboardShortcutGoToOrders": "G O",
+    "functionGoToCustomers": "顧客へ移動",
+    "keyboardShortcutGoToCustomers": "G U",
+    "functionGoToShoppingExperience": "ショッピング体験へ移動",
+    "keyboardShortcutGoToShoppingExperience": "G E",
+    "functionGoToMedia": "メディアへ移動",
+    "keyboardShortcutGoToMedia": "G M E",
+    "functionGoToPromotion": "プロモーションへ移動",
+    "keyboardShortcutGoToPromotion": "G P O",
+    "functionGoToNewsletterRecipients": "ニュースレター受信者へ移動",
+    "keyboardShortcutGoToNewsletterRecipients": "G N",
+    "functionGoToSettingsListing": "設定へ移動",
+    "keyboardShortcutGoToSettingsListing": "G S",
+    "functionGoToSnippets": "スニペットへ移動",
+    "keyboardShortcutGoToSnippets": "G S N",
+    "functionGoToPayment": "支払い設定へ移動",
+    "keyboardShortcutGoToPayment": "G S P",
+    "functionGoToShipping": "配送設定へ移動",
+    "keyboardShortcutGoToShipping": "G S S",
+    "functionGoToRuleBuilder": "ルールビルダーへ移動",
+    "keyboardShortcutGoToRuleBuilder": "G S R",
+    "functionGoToPlugins": "「マイエクステンション」へ移動",
+    "keyboardShortcutGoToPlugins": "G A",
+    "functionSpecialShortcutFocusSearch": "検索にフォーカス",
+    "keyboardShortcutSpecialShortcutFocusSearch": "F",
+    "functionSpecialShortcutShortcutListing": "ショートカット一覧",
+    "keyboardShortcutSpecialShortcutShortcutListing": "Shift-?",
+    "functionSpecialShortcutSaveDetailViewWindows": "Windows: 詳細ビューを保存",
+    "keyboardShortcutSpecialShortcutSaveDetailViewWindows": "ALT-S",
+    "functionSpecialShortcutSaveDetailViewMac": "Mac: 詳細ビューを保存",
+    "keyboardShortcutSpecialShortcutSaveDetailViewMac": "CONTROL-S",
+    "functionSpecialShortcutSaveDetailViewLinux": "Linux: 詳細ビューを保存",
+    "keyboardShortcutSpecialShortcutSaveDetailViewLinux": "ALT-S",
+    "functionSpecialShortcutCancelDetailView": "詳細ビューをキャンセル",
+    "keyboardShortcutSpecialShortcutCancelDetailView": "ESC",
+    "functionSpecialShortcutClearCacheWindows": "Windows: キャッシュクリア",
+    "keyboardShortcutSpecialShortcutClearCacheWindows": "ALT-C",
+    "functionSpecialShortcutClearCacheMac": "Mac: キャッシュクリア",
+    "keyboardShortcutSpecialShortcutClearCacheMac": "CONTROL-C",
+    "functionSpecialShortcutClearCacheLinux": "Linux: キャッシュクリア",
+    "keyboardShortcutSpecialShortcutClearCacheLinux": "ALT-C"
+  },
+  "sw-discard-changes-modal": {
+    "title": "保存されていない変更を破棄しますか？",
+    "message": "保存されていない変更があります。ページを離れて破棄しますか？",
+    "actions": {
+      "discard": "変更を破棄",
+      "keepEditing": "編集を続ける"
+    }
+  },
+  "sw-maintain-currencies-modal": {
+    "title": "通貨別価格設定",
+    "columnPrice": "価格（税込 / 税抜）",
+    "columnListPriceHeader": "定価（税込 / 税抜）",
+    "columnReferencePriceHeader": "最安値（過去30日間、税込 / 税抜）"
+  },
+  "sw-privileges": {
+    "tooltip": {
+      "warning": "権限が不足しています。"
+    },
+    "error": {
+      "description": "この操作に必要な権限がありません。管理者に許可を依頼してください。必要な権限："
+    }
+  },
+  "sw-custom-field-set-renderer": {
+    "labelCustomFieldSetSelectSwitch": "カスタムフィールドセットを選択",
+    "placeholderCustomFieldSetSelect": "カスタムフィールドセットを選択...",
+    "labelCustomFieldSetSelect": "カスタムフィールドセット",
+    "messagePluginSets": "プラグインのカスタムフィールドセット（削除不可）"
+  },
+  "sw-rating-stars": {
+    "ratingTooltipText": "{actual} / {max} 星"
+  },
+  "sw-app": {
+    "component": {
+      "sw-app-actions": {
+        "messageErrorFetchButtons": "アプリアクションの取得中にエラーが発生しました。",
+        "closeWindow": "ウィンドウを閉じる",
+        "iframeModalConfirmMessage": "「{title}」を閉じてもよろしいですか？",
+        "iframeModalConfirmMessageDescription": "すべての処理が完了していることを確認してください。",
+        "dontAskMeAgain": "今後表示しない"
+      },
+      "sw-app-app-url-changed-modal": {
+        "move-shop-permanently": {
+          "name": "アプリを新しいドメインに移行",
+          "description": "ショップを旧ドメインから新ドメインに恒久的に移動した場合に適したオプションです。Shopwareはアプリサーバへ新ドメインを通知（再登録）し、アプリはそのままインストールされます。ショップ識別子は変わりません。"
+        },
+        "reinstall-apps": {
+          "name": "アプリを現在のドメインにコピー",
+          "description": "ショップのコピー（例：ステージング環境やテスト環境）でアプリを使用したい場合の適切な選択肢です。Shopwareはアプリを再インストールし、新ドメインでアプリサーバへ新規登録します。新しいショップ識別子が生成されます。"
+        },
+        "uninstall-apps": {
+          "name": "アプリをアンインストール",
+          "description": "ショップのコピー（例：ステージング環境やテスト環境）でアプリを使わない場合に適切な選択肢です。Shopwareはアプリを削除し、アプリサーバへ通知しません。新しいショップ識別子が生成されます。"
+        },
+        "title": "ドメイン変更が検出されました",
+        "oldLabel": "旧ドメイン: ",
+        "newLabel": "新ドメイン: ",
+        "explanationHeader": "ショップのドメイン変更を検出しました。",
+        "explanation": "インストール済みのアプリはまだ旧ドメインに連携されており、新ドメインでは機能しません。続行するには3つの方法があります。",
+        "confirmation": "確認",
+        "success": "ドメインが変更されました。",
+        "error": "アプリのドメイン変更中にエラーが発生しました"
+      },
+      "sw-app-wrong-app-url-modal": {
+        "title": "誤ったAPP_URL設定",
+        "explanationHeader": "拡張機能の接続にエラーがあります。",
+        "explanation": "システム設定の誤りにより、拡張機能がショップに接続できません。",
+        "textDetails": "技術的詳細: APP_URLの設定不備。",
+        "labelLearnMoreButton": "詳細を学ぶ",
+        "linkToDocsArticle": "https://docs.shopware.com/en/shopware-6-en/tutorials-and-faq/notes-to-the-APP-URL"
+      }
+    }
+  },
+  "sw-wizard": {
+    "backButton": "戻る",
+    "closeButton": "閉じる",
+    "finishButton": "完了",
+    "nextButton": "次へ"
+  },
+  "sw-meteor": {
+    "navigation": {
+      "backButton": "戻る"
+    }
+  },
+  "sw-base-filter": {
+    "resetButton": "リセット"
+  },
+  "sw-boolean-filter": {
+    "placeholder": "すべて",
+    "active": "有効",
+    "inactive": "無効"
+  },
+  "sw-date-filter": {
+    "selectTimeframe": {
+      "placeholder": "期間を選択"
+    }
+  },
+  "sw-existence-filter": {
+    "placeholder": "すべて",
+    "noCriteria": "{criteriaName}がない",
+    "hasCriteria": "{criteriaName}がある"
+  },
+  "sw-filter-panel": {
+    "titleSidebarItemFilter": "フィルター"
+  },
+  "sw-sidebar-filter-panel": {
+    "resetButton": "すべてリセット"
+  },
+  "sw-empty-state": {
+    "messageNoResultTitle": "結果が見つかりません",
+    "messageNoResultSublineSimple": "フィルターや検索語を編集して結果を見つけてください。",
+    "messageNoResultSubline": "フィルターや検索語を編集して結果を見つけてください。検索設定もご確認ください。",
+    "messageNoResultSublineBefore": "フィルターや検索語を編集して結果を見つけてください。設定もご確認ください",
+    "messageNoResultSublineLink": "検索設定",
+    "messageNoResultSublineAfter": "を確認してください。"
+  },
+  "sw-restricted-rules": {
+    "restrictedAssignment": {
+      "general": "このルールは{relation}への割り当てに許可されていない条件を使用しています。",
+      "productPrices": "価格ルール",
+      "shippingMethodPrices": "価格ルール",
+      "shippingMethodPriceCalculations": "送料計算ルール",
+      "shippingMethods": "配送方法利用可能性ルール",
+      "paymentMethods": "支払い方法利用可能性ルール",
+      "flowSequences": "フロービルダールール",
+      "personaPromotions": "顧客ルール",
+      "orderPromotions": "注文ルール",
+      "cartPromotions": "カートルール",
+      "promotionDiscounts": "商品ルール",
+      "promotionSetGroups": "商品ルール",
+      "notEqualsViolationTooltip": "このルールは{entityLabel}への割り当てを阻止する条件を含みます。条件: {conditions}。",
+      "equalsAnyViolationTooltip": "このルールは{entityLabel}へ割り当てるために以下の条件の少なくとも1つを含む必要があります: {conditions}。"
+    },
+    "restrictedConditions": {
+      "restrictedConditionTooltip": "このルールは以下に割り当てられています:<br/><br/>{assignments}</br></br>この条件の使用はこのコンテキストでは許可されていません。",
+      "relation": {
+        "flowTrigger": "フローのトリガー: {assignments}",
+        "promotion": "プロモーション: {assignments}",
+        "productPrices": "商品: {assignments}",
+        "shippingMethods": "配送方法: {assignments}",
+        "shippingMethodPrices": "配送方法: {assignments}",
+        "paymentMethods": "支払い方法: {assignments}"
+      }
+    },
+    "and": "かつ",
+    "or": "または"
+  },
+  "sw-ai-copilot-warning": {
+    "text": "AIの回答は不正確または誤解を招く可能性があります。"
+  },
+  "sw-in-app-purchase-checkout": {
+    "exsTitle": "Shopware Extension Storeを有効化してください"
+  },
+  "sidebar": {
+    "ariaLabelButtonClose": "サイドバーを閉じる",
+    "ariaLabelButtonOpen": "サイドバーを開く"
+  },
+  "help-center": {
+    "sidebar": {
+      "title": "ヘルプ",
+      "ariaLabelButtonOpen": "ヘルプを開く",
+      "ariaLabelButtonClose": "ヘルプを閉じる",
+      "ariaLabelButtonShortcut": "キーボードショートカットを開く",
+      "support": {
+        "title": "サポート",
+        "documentation": {
+          "text": "ドキュメント",
+          "href": "https://docs.shopware.com/en"
+        },
+        "createSupportRequest": {
+          "text": "サポートリクエストを作成",
+          "href": "https://account.shopware.com/"
+        }
+      }
+    }
+  },
+  "sw-datepicker": {
+    "date": {
+      "placeholder": "日付を選択..."
+    },
+    "time": {
+      "placeholder": "時刻を選択..."
+    },
+    "datetime": {
+      "placeholder": "日付と時刻を選択..."
+    }
+  },
+  "sw-context-button": {
+    "ariaLabel": "コンテキストメニューを開く"
+  },
+  "sales-channel-theme": {
+    "title": "テーマの割り当て",
+    "changeTheme": "テーマを変更",
+    "changeThemeEmpty": "テーマを割り当て",
+    "createTheme": "新しいテーマを作成",
+    "editContent": "テーマを編集",
+    "defaultTitle": "テーマが割り当てられていません",
+    "defaultAuthor": "作成者",
+    "modal": {
+      "modalTitleChange": "テーマを変更",
+      "textChangeTheme": "本当にテーマを変更しますか？これによりショップの表示が変わる可能性があります。",
+      "buttonChange": "テーマを変更",
+      "buttonCancel": "キャンセル"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "sw-settings-services": {
+    "general": {
+      "title": "Shopware サービス",
+      "description": "Shopware インスタンスで利用可能なサービスを管理します。",
+      "activate": "有効化",
+      "deactivate": "無効化"
+    },
+    "exception": {
+      "service-list": "サービスの読み込み中にエラーが発生しました"
+    },
+    "sw-settings-services-hero": {
+      "title": "Shopware サービスで未来へ備える店舗運営",
+      "intro": "サービスはクラウドベースの拡張機能で、Shopware ストアに特定の機能を追加します。従来のソフトウェアコンポーネントとは異なり、サービスはコア製品から独立して動作し、コア製品に変更を加えることなく有効化や更新が可能です。これによりメインシステムの安定性と効率性を保ちながら、新しいニーズに迅速に対応できます。",
+      "bullet-point-integrated": "シームレスに統合され自動で更新される",
+      "bullet-point-flexible": "高度に柔軟で Shopware コアから独立している",
+      "bullet-point-transparent": "透明性があり、利用には同意が必要",
+      "bullet-point-scalable": "AIや機械学習を含む高度なワークフローに対応するスケーラビリティと信頼性",
+      "give-feedback": "フィードバックを送る",
+      "learn-more": "詳しく知る"
+    },
+    "index": {
+      "available-services": "利用可能なサービス",
+      "services-are-disabled": "Shopware サービスは無効化されています",
+      "services-are-disabled-cta": "現在、Shopware サービス（高度な AI ツールなど含む）を利用できていません。すべての現在および将来のサービスをご利用いただくには、Shopware サービスを有効化してください。",
+      "services-are-disabled-button-label": "サービスを有効化",
+      "services-enabled": "サービスが有効化されています",
+      "services-scheduled": "サービスのインストールと有効化が予定されています。少々お待ちください。",
+      "label-documentation-link": "ドキュメント",
+      "label-tos-link": "利用規約",
+      "installing-services-title": "Shopware サービスをインストール中",
+      "installing-services-description": "しばらく時間がかかる場合があります。インストールが完了次第お知らせします。その間も管理画面は自由にご利用いただけます。"
+    },
+    "service-card": {
+      "status-active": "有効",
+      "status-awaiting-permissions": "権限を待機中",
+      "status-inactive": "無効",
+      "updated-at-label": "最終更新：{updatedAt}",
+      "version": "バージョン：{version}",
+      "deactivate-modal": {
+        "warning": "「{serviceName}」を無効化してもよろしいですか？",
+        "consequences": "この操作により、サービスおよび関連するすべての機能へのアクセスが直ちに失われます。"
+      }
+    },
+    "grant-permissions": {
+      "title": "Shopware サービスの全機能を解放する",
+      "description": "Shopware サービスの効果的な提供には、商品情報や注文データなどストアの重要な領域へのアクセス権限が必要な場合があります。これらの権限は Shopware 拡張機能で用いられるものと同じで、各サービスは必要な権限のみを利用します。お客様のデータは常に適切に取り扱われます。",
+      "label-button-grant-permissions": "権限を付与する",
+      "label-link-more-information": "詳細情報"
+    },
+    "revoke-permissions-modal": {
+      "title": "権限を取り消す",
+      "p-1": "権限を取り消してもよろしいですか？",
+      "p-2": "これにより一部の Shopware サービスが無効化され、関連するすべての機能が利用できなくなります。",
+      "label-button-revoke-permissions": "権限を取り消す"
+    },
+    "deactivate-modal": {
+      "title": "Shopware サービスを無効化する",
+      "p-1": "Shopware サービスを無効化してもよろしいですか？",
+      "p-2": "これにより現在および将来の全ての Shopware サービスへのアクセスを失います。Shopware サービスについてお気に召さない点があればお聞かせください。皆様のフィードバックは今後のサービス改善に役立てます！",
+      "label-feedback-link": "フィードバックを送る"
+    },
+    "dashboard-banner": {
+      "title": "Shopware サービスのご紹介",
+      "description": "クラウドベースのサービスで Shopware の管理画面を革新的に進化させましょう。自動更新や最新機能を Shopware の力で提供し、ビジネスを次のレベルへ導きます。",
+      "label-button-explore": "今すぐ詳しく"
+    }
+  }
+}

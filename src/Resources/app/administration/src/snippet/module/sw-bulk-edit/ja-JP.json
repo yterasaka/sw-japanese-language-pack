@@ -1,0 +1,398 @@
+{
+  "sw-bulk-edit": {
+    "general": {
+      "mainMenuTitle": "一括編集",
+      "descriptionTextModule": "データの一括編集モジュール",
+      "defaultChangeLabel": "変更："
+    },
+    "changeTypes": {
+      "overwrite": "上書き",
+      "clear": "クリア"
+    },
+    "product": {
+      "textTitle": "一括編集: {productTotal} 商品 | 一括編集: {productTotal} 商品",
+      "messageEmptyTitle": "一括編集の対象商品が選択されていません",
+      "messageEmptySubline": "戻って商品を選択してください",
+      "alertInheritance": {
+        "message": "これらのバリアントには継承されたフィールドがあります。継承されたフィールドの内容はそれぞれの親商品から取得されます。チェーンアイコンをクリックすると継承の有効・無効を切り替えられます。"
+      },
+      "alertRestrictedFields": {
+        "title": "制限された一括編集",
+        "message": "一括編集は、選択されたすべての商品で利用可能なフィールドのみに適用できます。<br><br>選択されたすべての商品で利用できない項目：",
+        "stock": "在庫",
+        "isCloseout": "クリアランスセール",
+        "restockTime": "再入荷予定時間",
+        "maxPurchase": "最大購入数量",
+        "purchaseSteps": "購入ステップ",
+        "minPurchase": "最小購入数量",
+        "shippingFree": "送料無料"
+      },
+      "generalInformation": {
+        "cardTitle": "一般情報",
+        "description": {
+          "changeLabel": "変更：説明"
+        },
+        "manufacturer": {
+          "changeLabel": "変更：メーカー",
+          "placeholderManufacturer": "メーカーを選択..."
+        },
+        "active": {
+          "changeLabel": "変更：有効",
+          "switchLabel": "有効"
+        },
+        "productPromotion": {
+          "changeLabel": "変更：商品プロモーション",
+          "switchLabel": "商品プロモーション"
+        }
+      },
+      "prices": {
+        "cardTitle": "価格",
+        "taxRate": {
+          "changeLabel": "変更：税率",
+          "placeholderTax": "税率を選択..."
+        },
+        "isPriceInherited": {
+          "changeLabel": "変更：価格の継承"
+        },
+        "price": {
+          "label": "価格",
+          "changeLabel": "変更：価格",
+          "placeholderPrice": "価格を入力..."
+        },
+        "purchasePrices": {
+          "label": "仕入価格",
+          "changeLabel": "変更：仕入価格",
+          "placeholderPurchasePrices": "仕入価格を入力..."
+        },
+        "listPrice": {
+          "label": "定価",
+          "changeLabel": "変更：定価",
+          "placeholderListPrice": "定価を入力..."
+        },
+        "regulationPrice": {
+          "label": "最安値（過去30日間）",
+          "changeLabel": "変更：最安値（過去30日間）",
+          "placeholderRegulationPrice": "最安値を入力..."
+        }
+      },
+      "advancedPrices": {
+        "cardTitle": "詳細な価格設定",
+        "changeLabel": "変更：詳細な価格設定",
+        "selectRule": "価格ルールを選択...",
+        "newAdvancedPrices": "{count} 件の新しい詳細価格を作成"
+      },
+      "property": {
+        "cardTitle": "プロパティ",
+        "changeLabel": "変更：プロパティ"
+      },
+      "deliverability": {
+        "cardTitle": "配送可能性",
+        "stock": {
+          "changeLabel": "変更：在庫",
+          "placeholderStock": "在庫数量を入力..."
+        },
+        "isCloseout": {
+          "changeLabel": "変更：クリアランスセール",
+          "switchLabel": "クリアランスセール"
+        },
+        "deliveryTime": {
+          "changeLabel": "変更：配送時間",
+          "placeholderDeliveryTime": "配送時間を選択..."
+        },
+        "restockTime": {
+          "changeLabel": "変更：再入荷予定時間",
+          "placeholderRestockTime": "再入荷予定日数を入力..."
+        },
+        "freeShipping": {
+          "changeLabel": "変更：送料無料",
+          "switchLabel": "送料無料"
+        },
+        "minOrderQuantity": {
+          "changeLabel": "変更：最小注文数量",
+          "placeholderMinOrderQuantity": "最小注文数量を入力..."
+        },
+        "purchaseSteps": {
+          "changeLabel": "変更：購入ステップ",
+          "placeholderPurchaseSteps": "購入単位を入力..."
+        },
+        "maxOrderQuantity": {
+          "changeLabel": "変更：最大注文数量",
+          "placeholderMaxOrderQuantity": "最大注文数量を入力..."
+        }
+      },
+      "assignment": {
+        "cardTitle": "表示＆構造",
+        "categories": {
+          "changeLabel": "変更：カテゴリー",
+          "placeholder": "カテゴリーを選択..."
+        },
+        "tags": {
+          "changeLabel": "変更：タグ",
+          "placeholder": "タグを入力..."
+        },
+        "visibilities": {
+          "changeLabel": "変更：販売チャネル",
+          "placeholder": "販売チャネルを選択..."
+        },
+        "searchKeywords": {
+          "changeLabel": "変更：検索キーワード",
+          "placeholder": "キーワードを入力..."
+        }
+      },
+      "media": {
+        "cardTitle": "メディア",
+        "changeLabel": "変更：メディア"
+      },
+      "labelling": {
+        "cardTitle": "ラベリング",
+        "releaseDate": {
+          "changeLabel": "変更：発売日",
+          "placeholderReleaseDate": "発売日を入力..."
+        }
+      },
+      "seo": {
+        "cardTitle": "SEO",
+        "metaTitle": {
+          "changeLabel": "変更：メタタイトル",
+          "placeholderMetaTitle": "メタタイトルを入力..."
+        },
+        "metaDescription": {
+          "changeLabel": "変更：メタ説明",
+          "placeholderMetaDescription": "メタ説明を入力..."
+        },
+        "seoKeywords": {
+          "changeLabel": "変更：SEOキーワード",
+          "placeholderSeoKeywords": "キーワードを入力..."
+        }
+      },
+      "measurements": {
+        "cardTitle": "商品寸法",
+        "width": {
+          "changeLabel": "変更：幅",
+          "placeholder": "例）500..."
+        },
+        "height": {
+          "changeLabel": "変更：高さ",
+          "placeholder": "例）500..."
+        },
+        "length": {
+          "changeLabel": "変更：長さ",
+          "placeholder": "例）500..."
+        },
+        "weight": {
+          "changeLabel": "変更：重量",
+          "placeholder": "例）5..."
+        }
+      },
+      "sellingPackaging": {
+        "cardTitle": "販売・包装情報",
+        "purchaseUnit": {
+          "changeLabel": "変更：販売単位",
+          "placeholder": "例）6..."
+        },
+        "unitId": {
+          "changeLabel": "変更：商品単位",
+          "placeholder": "商品単位を選択..."
+        },
+        "referenceUnit": {
+          "changeLabel": "変更：基準単位",
+          "placeholder": "例）1..."
+        },
+        "packUnit": {
+          "changeLabel": "変更：包装単位",
+          "placeholder": "例）ボトル..."
+        },
+        "packUnitPlural": {
+          "changeLabel": "変更：包装単位（複数形）",
+          "placeholder": "例）ボトルズ..."
+        }
+      },
+      "featureSets": {
+        "cardTitle": "重要な特徴",
+        "changeLabel": "変更：テンプレート",
+        "placeholder": "テンプレートを選択..."
+      },
+      "customFields": {
+        "cardTitle": "カスタムフィールド",
+        "changeLabel": "変更：{name}"
+      }
+    },
+    "variant": {
+      "textTitle": "一括編集: {variantTotal} バリアント | 一括編集: {variantTotal} バリアント"
+    },
+    "modal": {
+      "confirm": {
+        "title": "一括編集 - 適用しますか？",
+        "description": "{itemCount} 件の選択されたアイテムに変更を適用しますか？この操作は取り消せません。 | {itemCount} 件の選択されたアイテムに変更を適用しますか？この操作は取り消せません。",
+        "switchLabel": "この一括編集でフローを起動",
+        "switchHelpText": "このアクションが有効の場合、Flow Builder で作成されたすべてのトリガーがこの一括編集のすべての変更に対して実行されます。場合によってはフローが二重に実行されることがあります。",
+        "alertTitle": "以下のトリガー／フローが実行される可能性があります：",
+        "triggeredFlows": {
+          "orderDeliveries": {
+            "key": "orderDeliveries",
+            "label": "配送ステータスの変更"
+          },
+          "orderTransactions": {
+            "key": "orderTransactions",
+            "label": "支払いステータスの変更"
+          },
+          "orders": {
+            "key": "orders",
+            "label": "注文ステータスの変更"
+          },
+          "requestedCustomerGroupId": {
+            "key": "requestedCustomerGroupId",
+            "label": "顧客グループ登録リクエスト"
+          }
+        },
+        "buttons": {
+          "applyChanges": "変更を適用"
+        }
+      },
+      "process": {
+        "title": "一括編集 - 処理中",
+        "description": "変更量によっては時間がかかる場合があります。",
+        "helpText": "一括編集の処理中に選択されたアイテムの手動変更は、意図しない結果を招く可能性があります。"
+      },
+      "success": {
+        "title": "一括編集 - 成功",
+        "description": "一括編集が完了しました。",
+        "instruction": "一括編集が正常に完了しました。",
+        "buttonDownload": "ダウンロード",
+        "messageNoDocumentsFound": "ドキュメントが見つかりません"
+      },
+      "error": {
+        "title": "一括編集 - エラー",
+        "description": "一括編集はエラーを伴って終了しました。",
+        "buttons": {
+          "openLog": "ログファイルを開く"
+        }
+      },
+      "warningText": "一括編集の完了までお待ちください。時間がかかる場合があります。ブラウザタブを閉じるか処理を中止すると、変更がすべて適用されない場合があります。一括編集はいつでも再実行できます。",
+      "messageBeforeTabLeave": "一括編集が進行中です。タブを閉じると一部の変更が適用されない可能性があります。"
+    },
+    "order": {
+      "textTitle": "一括編集: {orderTotal} 注文 | 一括編集: {orderTotal} 注文",
+      "messageEmptyTitle": "注文が選択されていません",
+      "messageEmptySubline": "戻って注文を選択してください。",
+      "alertRestrictedFields": {
+        "title": "制限された一括編集",
+        "message": "一括編集は、選択されたすべての注文で利用可能なフィールドのみに適用できます。<br><br>すべての選択された注文で利用できない項目：",
+        "orderDeliveries": "配送状況"
+      },
+      "status": {
+        "cardTitle": "ステータス",
+        "payment": {
+          "label": "変更：支払いステータス",
+          "placeholder": "支払いステータスを選択..."
+        },
+        "shipping": {
+          "label": "変更：配送ステータス",
+          "placeholder": "配送ステータスを選択..."
+        },
+        "order": {
+          "label": "変更：注文ステータス",
+          "placeholder": "注文ステータスを選択..."
+        },
+        "statusMails": {
+          "label": "送信：ステータスメール",
+          "helpText": "ステータスが変更された場合のみ利用可能です。"
+        },
+        "documents": {
+          "label": "送信：ドキュメント",
+          "helpText": "既存のドキュメントはステータスメールの添付ファイルとして送信できます。常に最新のドキュメントが使用されます。一括編集でドキュメントが生成された場合、それが使用されます。",
+          "options": {
+            "newest": "最新",
+            "all": "すべて"
+          },
+          "documentType": {
+            "invoices": "請求書",
+            "deliveryNotes": "納品書",
+            "creditNotes": "クレジットノート",
+            "cancellationInvoices": "キャンセル請求書"
+          },
+          "skipSentDocuments": "既に送信済みのドキュメントをスキップ"
+        }
+      },
+      "documents": {
+        "cardTitle": "ドキュメント",
+        "warning": "一括編集では改良されたドキュメント作成機能を使用しますが、システムの拡張機能の一部は新しいドキュメント作成で異なる結果を出す場合があります。そのため、一括編集の有無でドキュメントが異なるかを必ずご確認ください。",
+        "generateInvoice": {
+          "label": "生成：請求書",
+          "helpText": "この操作は該当する番号範囲の値を増加させます。",
+          "labelDatePicker": "日付",
+          "labelTextarea": "コメント",
+          "placeholderTextarea": ""
+        },
+        "generateCancellationInvoice": {
+          "label": "生成：キャンセル請求書",
+          "helpText": "この操作は該当する番号範囲の値を増加させます。",
+          "changeSubLabel": "最新の参照請求書番号が使用されます。"
+        },
+        "generateDeliveryNote": {
+          "label": "生成：納品書",
+          "helpText": "この操作は該当する番号範囲の値を増加させます。",
+          "labelDeliveryDatePicker": "配送日"
+        },
+        "generateCreditNote": {
+          "label": "生成：クレジットノート",
+          "helpText": "クレジットノートは通常、最新の対応する請求書番号を参照に使用します。",
+          "changeSubLabel": "注文にクレジットポジションが存在する場合にのみ生成されます。"
+        },
+        "downloadDocuments": {
+          "label": "ダウンロード：ドキュメント",
+          "helpText": "このオプションでは、利用可能な最新のドキュメントをダウンロード用に提供します。複数のドキュメントは同一ファイルに結合されます。ダウンロードは複数変更完了後に利用可能です。"
+        },
+        "forceDocumentCreation": "ドキュメント作成を強制",
+        "forceDocumentCreationHelpText": "注文に既にこのタイプのドキュメントがあっても生成されます。"
+      },
+      "customFields": {
+        "cardTitle": "カスタムフィールド",
+        "changeLabel": "変更：{name}"
+      },
+      "tags": {
+        "cardTitle": "タグ",
+        "changeLabel": "変更：タグ",
+        "placeholder": "タグを入力..."
+      }
+    },
+    "customer": {
+      "textTitle": "一括編集: {customerTotal} 顧客 | 一括編集: {customerTotal} 顧客",
+      "messageEmptyTitle": "顧客が選択されていません",
+      "messageEmptySubline": "戻って顧客を選択してください。",
+      "account": {
+        "cardTitle": "アカウント",
+        "customerGroup": {
+          "label": "変更：顧客グループ",
+          "placeholder": "顧客グループを選択..."
+        },
+        "status": {
+          "label": "変更：アカウントステータス"
+        },
+        "language": {
+          "label": "変更：言語",
+          "placeholder": "言語を選択..."
+        },
+        "customerGroupRequest": {
+          "label": "返信：顧客グループリクエスト",
+          "helpText": "選択した顧客にメールが送信されます。リクエストのない顧客はスキップされます。",
+          "placeholder": "顧客グループリクエストの返信を選択...",
+          "options": {
+            "accept": "承認",
+            "decline": "拒否"
+          }
+        }
+      },
+      "customFields": {
+        "cardTitle": "カスタムフィールド",
+        "changeLabel": "変更：{name}"
+      },
+      "tags": {
+        "cardTitle": "タグ",
+        "changeLabel": "変更：タグ",
+        "placeholder": "タグを追加..."
+      }
+    },
+    "applyChanges": "変更を適用"
+  }
+}

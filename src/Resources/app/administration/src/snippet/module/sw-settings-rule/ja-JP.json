@@ -1,0 +1,158 @@
+{
+  "sw-settings-rule": {
+    "error-codes": {
+      "INVALID_DATE_RANGE": "無効な日付範囲：開始日は終了日より前でなければなりません。"
+    },
+    "general": {
+      "mainMenuItemGeneral": "ルールビルダー",
+      "placeholderSearchBar": "すべてのルールを検索...",
+      "descriptionTextModule": "ここでルールを管理します。"
+    },
+    "filter": {
+      "conditionFilter": {
+        "label": "条件",
+        "placeholder": "条件を選択..."
+      },
+      "groupFilter": {
+        "label": "条件タイプ",
+        "placeholder": "条件タイプを選択..."
+      },
+      "assignmentFilter": {
+        "label": "割り当て",
+        "placeholder": "割り当てを選択...",
+        "values": {
+          "cartPromotions": "カートプロモーションルール",
+          "orderPromotions": "注文プロモーションルール",
+          "personaPromotions": "顧客プロモーションルール",
+          "promotionSetGroups": "プロモーションセットグループルール",
+          "promotionDiscounts": "プロモーション割引商品ルール",
+          "flowSequences": "フロー",
+          "paymentMethods": "支払い方法",
+          "productPrices": "商品価格ルール",
+          "shippingMethodPriceCalculations": "配送方法価格マトリックス",
+          "shippingMethodPrices": "配送方法価格ルール",
+          "shippingMethods": "配送方法利用可能性ルール"
+        }
+      },
+      "tagFilter": {
+        "label": "タグ",
+        "placeholder": "タグを選択..."
+      }
+    },
+    "list": {
+      "columnTaxProviders": "税プロバイダー割り当て",
+      "columnWarehouseGroup": "倉庫グループ割り当て",
+      "textHeadline": "ルールビルダー",
+      "buttonAddRule": "ルールを作成",
+      "columnName": "ルール",
+      "columnDescription": "説明",
+      "columnDateCreated": "作成日",
+      "columnDateUpdated": "更新日",
+      "columnPriority": "優先度",
+      "columnStatus": "ステータス",
+      "columnTags": "タグ",
+      "columnCartPromotions": "カートプロモーションルール割り当て",
+      "columnOrderPromotions": "注文プロモーションルール割り当て",
+      "columnPersonaPromotions": "顧客プロモーションルール割り当て",
+      "columnPromotionSetGroups": "プロモーションセットグループルール割り当て",
+      "columnPromotionDiscounts": "プロモーション割引商品ルール割り当て",
+      "columnFlowSequences": "フロー割り当て",
+      "columnPaymentMethods": "支払い方法割り当て",
+      "columnProductPrices": "商品価格割り当て",
+      "columnShippingMethodPriceCalculations": "配送方法価格マトリックス割り当て",
+      "columnShippingMethodPrices": "配送方法価格割り当て",
+      "columnShippingMethods": "配送方法割り当て",
+      "contextMenuDuplicate": "複製",
+      "titleSidebarItemRefresh": "更新",
+      "valid": "有効",
+      "invalid": "無効",
+      "messageEmpty": "ルールがまだありません",
+      "assignments": {
+        "taxProviders": "税プロバイダー | 税プロバイダー",
+        "warehouseGroup": "倉庫グループ | 倉庫グループ",
+        "cartPromotions": "カートプロモーションルール | カートプロモーションルール",
+        "orderPromotions": "注文プロモーションルール | 注文プロモーションルール",
+        "personaPromotions": "顧客プロモーションルール | 顧客プロモーションルール",
+        "promotionSetGroups": "プロモーションセットグループルール | プロモーションセットグループルール",
+        "promotionDiscounts": "プロモーション割引商品ルール | プロモーション割引商品ルール",
+        "flowSequences": "フロー | フロー",
+        "paymentMethods": "支払い方法 | 支払い方法",
+        "productPrices": "商品価格 | 商品価格",
+        "shippingMethodPriceCalculations": "配送方法価格マトリックス | 配送方法価格マトリックス",
+        "shippingMethodPrices": "配送方法価格 | 配送方法価格",
+        "shippingMethods": "配送方法 | 配送方法"
+      }
+    },
+    "detail": {
+      "textHeadline": "新規ルール",
+      "buttonSave": "保存",
+      "titleCard": "一般",
+      "labelName": "名前",
+      "labelDescription": "説明",
+      "labelPriority": "優先度",
+      "labelType": "タイプ",
+      "placeholderName": "このルールの名前を設定...",
+      "placeholderDescription": "このルールの説明を設定...",
+      "placeholderPriority": "このルールの優先度を設定...",
+      "placeholderTags": "タグを入力...",
+      "messageSaveSuccess": "ルール「{name}」が保存されました。",
+      "ruleCard": "条件",
+      "messageSaveError": "ルールの保存中にエラーが発生しました",
+      "tabGeneral": "一般",
+      "tabAssignments": "割り当て",
+      "buttonAddAssignment": "割り当てを追加",
+      "associations": {
+        "shippingMethods": "配送方法",
+        "promotions": "プロモーション",
+        "products": "商品価格ルール",
+        "shippingMethodPrices": "配送方法価格ルール",
+        "paymentMethods": "支払い方法",
+        "promotionCustomerRules": "顧客プロモーションルール",
+        "promotionOrderRules": "注文プロモーションルール",
+        "promotionCartRules": "カートプロモーションルール",
+        "promotionDiscountRules": "プロモーション割引商品ルール",
+        "promotionGroupRules": "プロモーションセットグループルール",
+        "shippingMethodAvailabilityRule": "配送方法利用可能性ルール",
+        "flows": "フロービルダー",
+        "taxProviders": "税プロバイダー"
+      },
+      "typeHasNoAssociations": "割り当てられたルールはありません",
+      "hasNoAssociations": "このルールは使用されていません",
+      "associationsLoadingError": "ルールの割り当てを読み込みできませんでした。",
+      "textModalDelete": "本当にこの割り当てを削除しますか？",
+      "textModalBulkDelete": "本当にこの割り当てを削除しますか？ | 本当にこれらの{count}件の割り当てを削除しますか？",
+      "titleModalDelete": "割り当てを削除",
+      "types": {
+        "shipping": "配送",
+        "payment": "支払い",
+        "price": "価格",
+        "flowBuilder": "フロービルダー"
+      },
+      "groups": {
+        "general": "一般",
+        "cart": "ショッピングカート",
+        "items": "カート内の商品",
+        "customers": "顧客",
+        "promotions": "マーケティング・プロモーション",
+        "flow": "フロービルダー",
+        "orders": "注文",
+        "misc": "その他"
+      },
+      "textUnsavedConditions": "このルールには保存されていない変更があります。割り当てを追加するには変更を保存してください。"
+    },
+    "conditionFilter": {
+      "infoText": "この条件を満たすラインアイテムを定義するためにフィルターを使用します。"
+    },
+    "conditionModal": {
+      "modalTitle": "フィルター",
+      "messageSaveError": "フィルターの保存中にエラーが発生しました。"
+    }
+  },
+  "sw-privileges": {
+    "permissions": {
+      "rule": {
+        "label": "ルールビルダー"
+      }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "sw-settings-tag": {
+    "general": {
+      "mainMenuItemGeneral": "タグ",
+      "placeholderSearchBar": "タグを検索..."
+    },
+    "list": {
+      "textHeadline": "タグ",
+      "textDeleteConfirm": "タグ「{name}」を削除してもよろしいですか？",
+      "columnName": "タグ",
+      "columnConnections": "割り当て",
+      "buttonAddTag": "タグを追加",
+      "contextMenuEdit": "タグを編集",
+      "contextMenuDuplicate": "タグを複製",
+      "contextMenuDelete": "タグを削除",
+      "messageDeleteSuccess": "タグ「{name}」を削除しました。",
+      "buttonDelete": "削除",
+      "titleEmptyStateList": "タグが見つかりません。",
+      "searchPlaceholder": "タグを検索...",
+      "filter": "フィルター",
+      "filterAssignemnt": "割り当てられたエンティティでフィルター",
+      "placeholderFilterAssignemnt": "割り当てを検索...",
+      "filterEmpty": "割り当てなしのタグのみ表示",
+      "filterDuplicate": "重複したタグのみ表示",
+      "resetFilters": "フィルターをリセット",
+      "bulkMerge": "統合",
+      "bulkMergeTitle": "タグの統合",
+      "bulkMergeMessage": "本当に",
+      "bulkMergeMessageAnd": "と",
+      "bulkMergeMessageFinal": "を統合してよろしいですか？",
+      "bulkMergeName": "新しいタグ",
+      "bulkMerging": "統合中",
+      "bulkMergeNotice": "統合処理が完了するまでお待ちください。処理には時間がかかる場合があります。ブラウザのタブを閉じたり、処理を途中でキャンセルすると、すべての変更が適用されず、既存のタグはそのままです。統合処理はいつでも再実行できます。",
+      "bulkMergeNoUndoNotice": "この操作は元に戻せません。",
+      "bulkMergeTimeNotice": "割り当てられたエンティティの数により、処理に時間がかかることがあります。",
+      "bulkMergeInto": "に",
+      "placeholderTagName": "タグ名を入力...",
+      "assignments": {
+        "header": {
+          "products": "商品割り当て",
+          "media": "メディア割り当て",
+          "categories": "カテゴリ割り当て",
+          "customers": "顧客割り当て",
+          "orders": "注文割り当て",
+          "shippingMethods": "配送方法割り当て",
+          "newsletterRecipients": "ニュースレター受信者割り当て",
+          "landingPages": "ランディングページ割り当て",
+          "rules": "ルール割り当て"
+        },
+        "content": {
+          "products": "商品 | 商品 | 商品",
+          "media": "メディア",
+          "categories": "カテゴリ | カテゴリ | カテゴリ",
+          "customers": "顧客 | 顧客 | 顧客",
+          "orders": "注文 | 注文 | 注文",
+          "shippingMethods": "配送方法 | 配送方法 | 配送方法",
+          "newsletterRecipients": "ニュースレター受信者 | ニュースレター受信者 | ニュースレター受信者",
+          "landingPages": "ランディングページ | ランディングページ | ランディングページ",
+          "rules": "ルール | ルール | ルール"
+        },
+        "filter": {
+          "products": "商品",
+          "media": "メディア",
+          "categories": "カテゴリ",
+          "customers": "顧客",
+          "orders": "注文",
+          "shippingMethods": "配送方法",
+          "newsletterRecipients": "ニュースレター受信者",
+          "landingPages": "ランディングページ",
+          "rules": "ルール"
+        }
+      }
+    },
+    "detail": {
+      "editTitle": "「{name}」の編集",
+      "generalTab": "一般",
+      "assignmentsTab": "割り当て",
+      "buttonSave": "保存",
+      "assignments": {
+        "searchPlaceholder": "エンティティを検索...",
+        "assignments": "割り当て済み",
+        "selected": "割り当てられたエンティティ",
+        "showSelected": "割り当てされていないエンティティを非表示",
+        "products": "商品",
+        "media": "メディア",
+        "categories": "カテゴリ",
+        "customers": "顧客",
+        "orders": "注文",
+        "shippingMethods": "配送方法",
+        "newsletterRecipients": "ニュースレター受信者",
+        "landingPages": "ランディングページ",
+        "rules": "ルール"
+      }
+    }
+  },
+  "sw-privileges": {
+    "permissions": {
+      "tag": {
+        "label": "タグ"
+      }
+    }
+  }
+}
