@@ -1,0 +1,243 @@
+{
+  "sw-import-export": {
+    "general": {
+      "mainMenuItemGeneral": "インポート／エクスポート",
+      "descriptionTextModule": "インポートおよびエクスポートの管理"
+    },
+    "activity": {
+      "invalidHelpText": "無効なレコードはコンテキストメニューからダウンロードできます",
+      "dryrun": "ドライラン",
+      "columns": {
+        "size": "サイズ",
+        "profile": "プロファイル",
+        "date": "日付",
+        "user": "ユーザー",
+        "state": "状態",
+        "records": "レコード",
+        "invalidRecords": "無効なレコード"
+      },
+      "contextMenu": {
+        "showLog": "ログエントリを開く",
+        "showLogInfo": "ログ情報を開く",
+        "abortProcess": "プロセスを中止",
+        "downloadFile": "ファイルをダウンロード",
+        "downloadImportFile": "インポートファイルをダウンロード",
+        "downloadExportFile": "エクスポートファイルをダウンロード",
+        "showProfile": "プロファイルを表示",
+        "downloadInvalidFile": "無効なレコードをダウンロード",
+        "showResults": "概要を表示"
+      },
+      "logInfo": {
+        "modalTitle": "ログ情報",
+        "labelClose": "閉じる",
+        "labelFilename": "ファイル名",
+        "labelType": "タイプ",
+        "labelExportRecords": "エクスポートされたレコード",
+        "labelSize": "ファイルサイズ",
+        "labelUser": "ユーザー",
+        "labelDate": "日付／時間",
+        "labelState": "状態",
+        "labelProfile": "プロファイル",
+        "exportLabel": "エクスポート",
+        "importLabel": "インポート",
+        "dryrunLabel": "ドライラン",
+        "labelDownloadFile": "エクスポートファイルのダウンロード"
+      },
+      "result": {
+        "modalTitle": "インポート概要",
+        "activityHeadline": "インポート活動: 関連変更",
+        "activityDescription": "{entity} インポートによって影響を受けたエンティティです。",
+        "entityName": "データセット",
+        "changes": "変更",
+        "errors": "エラー",
+        "skipped": "スキップ",
+        "labelDownloadFile": "インポートファイルをダウンロード",
+        "labelDownloadInvalidFile": "失敗したレコードをダウンロード",
+        "mainEntity": {
+          "title": "インポート活動: {entity}",
+          "insert": "作成済み",
+          "update": "更新済み",
+          "insertError": "作成エラー",
+          "updateError": "更新エラー",
+          "otherError": "その他のエラー",
+          "insertSkip": "作成をスキップ",
+          "updateSkip": "更新をスキップ"
+        },
+        "logInfo": {
+          "title": "ログ情報",
+          "labelFilename": "ファイル名",
+          "labelType": "タイプ",
+          "labelImported": "インポートされたレコード",
+          "labelSize": "ファイルサイズ",
+          "labelState": "状態",
+          "labelUser": "ユーザー",
+          "labelProfile": "プロファイル",
+          "labelDate": "日付／時間"
+        }
+      },
+      "status": {
+        "progress": "処理中",
+        "merging_files": "ファイルをマージ中",
+        "succeeded": "成功",
+        "failed": "失敗",
+        "aborted": "中止"
+      },
+      "emptyState": {
+        "titleExport": "エクスポートはありません",
+        "titleImport": "インポートはありません",
+        "subLineExport": "まだ記録されたエクスポート活動はありません。",
+        "subLineImport": "まだ記録されたインポート活動はありません。"
+      }
+    },
+    "profile": {
+      "messageSaveSuccess": "プロファイルが保存されました。",
+      "messageSaveError": "プロファイルを保存できませんでした。",
+      "messageDeleteSuccess": "プロファイルが削除されました。",
+      "messageDeleteError": "プロファイルを保存できませんでした。すべてのプロファイルのログを削除してください。",
+      "messageDuplicateSuccess": "プロファイルが複製されました。",
+      "messageDuplicateError": "プロファイルを複製できませんでした。",
+      "messageSearchParentProfileError": "リクエストを処理できません",
+      "messageCsvTemplateUploadError": "CSVファイルを処理できません。",
+      "messageCsvTemplateUploadEmptyError": "CSVファイルに列が含まれていません。",
+      "messageCsvTemplateUploadWarning": "インポートされたマッピングが正しくない可能性があります。CSVファイルには列が1つだけ含まれています。CSV区切り記号の設定を確認してください。",
+      "productLabel": "商品",
+      "customerLabel": "顧客",
+      "categoriesLabel": "カテゴリ",
+      "orderLabel": "注文",
+      "mediaLabel": "メディア",
+      "newsletterRecipientLabel": "ニュースレター受信者",
+      "caretsLabel": "キャレット（^）",
+      "commasLabel": "コンマ（,）",
+      "semicolonLabel": "セミコロン（;）",
+      "doubleQuoteLabel": "ダブルクォート（\"）",
+      "newProfileLabel": "新しいプロファイル",
+      "editProfileLabel": "プロファイル編集",
+      "addProfileLabel": "プロファイル追加",
+      "addNewProfileLabel": "新しいプロファイルを追加",
+      "addNewProfileTooltipLanguage": "プロファイルはシステムのデフォルト言語でのみ作成可能です",
+      "openLabel": "編集",
+      "indicatorHeadline": "フィールドインジケーター",
+      "duplicateLabel": "複製",
+      "copyOfLabel": "コピー:",
+      "saveProfileLabel": "プロファイルを保存",
+      "closeProfileLabel": "プロファイルを閉じる",
+      "generalTab": "一般",
+      "fieldIndicatorsTab": "フィールドインジケーター",
+      "csvUploadTab": "CSVファイルのアップロード",
+      "mappingsTab": "マッピング",
+      "advancedTab": "詳細設定",
+      "profileNameFieldLabel": "プロファイル名",
+      "technicalNameFieldLabel": "技術名",
+      "objectTypeFieldLabel": "オブジェクトタイプ",
+      "separatorFieldLabel": "区切り文字",
+      "enclosureFieldLabel": "囲み文字",
+      "addMappingTooltipText": "まずオブジェクトタイプを定義してください。",
+      "objectTypeFieldTooltipText": "マッピングオプションが存在するときはオブジェクトタイプを変更できません。",
+      "descriptionBlock": "オブジェクトタイプはデータのインポートおよびエクスポートの特定のモードを定義します。オブジェクトタイプを選択するとマッピングオプションが制限されます。マッピングオプションを設定後はオブジェクトタイプを変更できません。",
+      "mappingDescriptionBlock": "\"マッピング\"タブの表を使い、CSVのフィールド名とデータベースの対応フィールドをマッピングしてください。",
+      "csvDescriptionBlock": "区切り文字と囲み文字はCSVファイル内のフィールドを示すために使用します。区切り文字は単一フィールドを分割し、囲み文字は複数フィールドをグループ化します。",
+      "addMappingLabel": "新しいマッピングを追加",
+      "deleteMappingLabel": "マッピングを削除",
+      "downloadTemplateLabel": "テンプレートをダウンロード",
+      "deleteLabel": "プロファイルを削除",
+      "systemDefaultInfoText": "これはシステムのデフォルトプロファイルで、変更できません。新規プロファイルを作成するか、システムデフォルトのプロファイルを複製してください。",
+      "mapping": {
+        "fileValueLabel": "CSVの名前",
+        "entityLabel": "データベースエントリ",
+        "isRequired": "必須",
+        "defaultValue": "デフォルト値",
+        "position": "位置",
+        "notMapped": "未マッピング"
+      },
+      "identifiers": {
+        "identifierNameLabel": "エンティティ",
+        "mappedKeyLabel": "識別子"
+      },
+      "typeColumn": "タイプ",
+      "nameColumn": "名前",
+      "technicalNameColumn": "技術名",
+      "customTypeLabel": "カスタム",
+      "defaultTypeLabel": "デフォルト",
+      "propertyLabel": "プロパティ",
+      "mappingAutomatedDescription": "Shopwareが自動的に{automatedCount}件のデータベースエントリをマッピングしました。マッピングされていないエントリは手動で正しいデータベースエントリに割り当ててください。必須フィールドが空のままだと、デフォルト値が設定されていない場合はインポート時にエラーとなります。空欄のデータベースエントリはデフォルト値で埋められます。",
+      "mappingDescription": "以下の表を用いてCSVカラム名とShopwareデータベースエントリをマッピングしてください。空の必須フィールドはデフォルト値が設定されていない場合インポートエラーとなります。",
+      "mappingEmptyState": "カスタムマッピングはまだ提供されていません。",
+      "advancedDescription": "識別子は更新可能なエンティティを一意に決定するのに使われ、したがって一意である必要があります。",
+      "configuratorSettingLabel": "バリアント設定",
+      "productCrossSellingLabel": "クロスセリング",
+      "promotionDiscountLabel": "プロモーション割引",
+      "promotionIndividualCodesLabel": "プロモーションコード",
+      "productPriceLabel": "高度な価格設定",
+      "closeViolation": "閉じる",
+      "violationMessage": "プロファイルはまだ有効ではありません。以下に表示されている必須フィールドのマッピングを追加する必要があります:",
+      "importSettingsHeadline": "インポート設定",
+      "fieldIndicatorsHeadline": "フィールドインジケーター",
+      "createEntitiesLabel": "新規エンティティを作成",
+      "updateEntitiesLabel": "既存データを更新",
+      "typeFieldLabel": "使用方法",
+      "types": {
+        "importExportLabel": "インポートおよびエクスポート",
+        "importLabel": "インポート",
+        "exportLabel": "エクスポート"
+      },
+      "profileTypeDisabledText": "'オブジェクトタイプ'をクリアすると任意の'使用方法'を選択可能です。",
+      "objectTypeDisabledText": "'使用方法'をクリアすると任意の'オブジェクトタイプ'を選択可能です。",
+      "csvUploadText": "既存のCSVファイルからマッピングを作成。",
+      "skipCsvUpload": "CSVアップロードをスキップ"
+    },
+    "exporter": {
+      "messageExportStarted": "エクスポートを開始しました。",
+      "messageExportSuccess": "エクスポート「{profile}」は完了しました。",
+      "messageExportError": "エクスポートファイルを作成できませんでした。 | エクスポートファイルを作成できませんでした。詳細は「無効なレコード」ファイルをダウンロードしてください。",
+      "startExportLabel": "エクスポート開始",
+      "showLogLabel": "ログファイルを表示",
+      "exportActivityLabel": "エクスポート活動",
+      "exportActivityDescription": "30日より古い活動は自動的に削除されます。",
+      "exportLabel": "エクスポート",
+      "directExportVariantsLabel": "バリアント設定をエクスポート",
+      "directExportPropertiesLabel": "プロパティをエクスポート",
+      "close": "閉じる",
+      "variantsWarning": "<strong>警告：</strong> エクスポートするCSVファイルに紐づく商品のプロパティとバリアントが新しいシステムにも存在することを確認してください。存在しない場合は、それらを対応するプロファイルで単独のCSVファイルとして別途エクスポートできます。いずれも該当しない場合は、エクスポート後に新しいシステムで商品バリアントを手動で作成する必要があります。",
+      "exportVariants": "商品バリアントをエクスポート"
+    },
+    "importer": {
+      "messageImportStarted": "インポートを開始しました。",
+      "messageImportSuccess": "インポート「{profile}」は完了しました。",
+      "messageImportError": "プロファイル「{profile}」を使ってデータをインポートできませんでした。 | プロファイル「{profile}」を使ってデータをインポートできませんでした。詳細は「無効なレコード」ファイルをダウンロードしてください。",
+      "messageImportWarning": "レコードがインポートされませんでした。区切り記号が現在のプロファイルと一致しているかご確認ください。",
+      "uploadCsvLabel": "CSVファイルをアップロード",
+      "startImportLabel": "インポート開始",
+      "selectProfileLabel": "プロファイルを選択",
+      "profileLabel": "プロファイル",
+      "warningBlock": "<strong>警告：</strong> アップロードしたCSVファイルに紐づく商品のプロパティとバリアントがショップ内に存在することを確認してください。存在しない場合は、別々のCSVファイルとして対応するプロファイルでプロパティとバリアントをインポートできます。いずれも該当しない場合は、インポート後に商品モジュールで商品バリアントを手動で管理する必要があります。",
+      "importActivityLabel": "インポート活動",
+      "importLabel": "インポート",
+      "directImportVariantsLabel": "バリアント設定をインポート",
+      "directImportPropertiesLabel": "プロパティをインポート",
+      "close": "閉じる",
+      "labelUploadCaption": "アップロードするCSVファイルを選択してください",
+      "variantsWarning": "<strong>注意：</strong> バリアント付き商品をインポートする場合、必ずバリアント設定がインポート可能なプロファイルを使用してください。<br>使用しない場合は、メイン商品だけがインポートされ、バリアントは管理者が手動で作成する必要があります。",
+      "importVariants": "商品バリアントをインポート"
+    },
+    "page": {
+      "profileTab": "プロファイル",
+      "importTab": "インポート",
+      "exportTab": "エクスポート"
+    },
+    "progress": {
+      "startImportLabel": "インポート開始",
+      "startImportDryrunLabel": "ドライラン開始",
+      "startExportLabel": "エクスポート開始"
+    },
+    "errors": {
+      "CONTENT__IMPORT_EXPORT__DUPLICATE_TECHNICAL_NAME": "技術名が一意ではありません。"
+    }
+  },
+  "sw-privileges": {
+    "additional_permissions": {
+      "system": {
+        "import_export": "インポート／エクスポート"
+      }
+    }
+  }
+}

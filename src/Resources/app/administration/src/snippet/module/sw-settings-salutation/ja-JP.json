@@ -1,0 +1,39 @@
+{
+  "global": {
+    "error-codes": {
+      "DUPLICATED_SALUTATION_KEY": "技術名はすでに使用されています。別のものを選択してください。"
+    }
+  },
+  "sw-settings-salutation": {
+    "general": {
+      "mainMenuItemGeneral": "敬称",
+      "buttonCreate": "敬称を追加",
+      "buttonSave": "保存",
+      "placeholderSearchBar": "敬称を検索…"
+    },
+    "list": {
+      "columnSalutationKey": "技術名",
+      "columnDisplayName": "敬称",
+      "columnLetterName": "手紙用敬称"
+    },
+    "detail": {
+      "cardTitle": "敬称",
+      "fieldDisplayNameLabel": "敬称",
+      "fieldDisplayNamePlaceholder": "敬称を入力してください…",
+      "fieldLetterNameLabel": "手紙用敬称",
+      "fieldLetterNamePlaceholder": "手紙用敬称を入力してください…",
+      "fieldSalutationKeyTooltip": "メールテンプレートなどで敬称を含めるために必要な、固有の技術名を選択してください。",
+      "fieldSalutationKeyLabel": "技術名",
+      "fieldSalutationKeyPlaceholder": "技術名を入力してください…",
+      "placeholderNewSalutation": "新しい敬称…",
+      "notificationErrorMessage": "敬称の保存中にエラーが発生しました。"
+    }
+  },
+  "sw-privileges": {
+    "permissions": {
+      "salutation": {
+        "label": "敬称"
+      }
+    }
+  }
+}

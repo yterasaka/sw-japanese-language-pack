@@ -1,0 +1,89 @@
+{
+  "sw-settings-tax": {
+    "general": {
+      "mainMenuItemGeneral": "税金",
+      "taxRateSymbol": "&#037;",
+      "placeholderSearchBar": "税率を検索..."
+    },
+    "list": {
+      "textHeadline": "税金",
+      "textDeleteConfirm": "税金「{name}」を本当に削除しますか？",
+      "columnName": "名前",
+      "columnDefaultTaxRate": "税率",
+      "columnDefault": "デフォルト",
+      "buttonAddTax": "税金を追加",
+      "contextMenuEdit": "編集",
+      "contextMenuDelete": "削除",
+      "messageDeleteSuccess": "税金「{name}」を削除しました。",
+      "buttonDelete": "削除",
+      "taxCardTitle": "税金",
+      "taxProvider": {
+        "cardTitle": "税金プロバイダー",
+        "changePriorityButton": "優先順位を変更",
+        "editDetailsLink": "詳細を編集",
+        "labelActive": "アクティブ",
+        "messageEmptyTitle": "税金プロバイダーが見つかりません",
+        "statusChangedSuccess": {
+          "active": "税金プロバイダー「{name}」がアクティブになりました。",
+          "inactive": "税金プロバイダー「{name}」が非アクティブになりました。"
+        },
+        "sorting-modal": {
+          "modalTitle": "税計算の優先順位を変更",
+          "subTitle": "ドラッグ＆ドロップで上から下へ順番を設定してください。上のエントリーが最も優先されます。",
+          "saveSuccessful": "税金プロバイダーの優先順位を保存しました。",
+          "errorMessage": "保存中にエラーが発生しました。"
+        }
+      }
+    },
+    "detail": {
+      "textHeadline": "新しい税率",
+      "taxProviderInfoTitle": "税金プロバイダーは設定した税率を上書きする場合があります",
+      "taxProviderInfoText": "税金プロバイダーは固定税率より優先されます。ここで設定された固定税率は上書きされることがあります。",
+      "titleCard": "設定",
+      "labelName": "名前",
+      "labelDefaultTaxRate": "税率",
+      "placeholderName": "名前を入力...",
+      "placeholderDefaultTaxRate": "デフォルトの税率を入力...",
+      "buttonSave": "保存",
+      "messageSaveError": "税率の保存中にエラーが発生しました。",
+      "messageSaveSuccess": "税率を保存しました。",
+      "defaultTaxLabel": "デフォルトとして使用",
+      "defaultTaxHelpText": "新しい商品の作成時にこの税率が初期選択されます。デフォルト設定できる税率は1件のみです。"
+    },
+    "taxRuleCard": {
+      "tooltipCountries": "表示されていない国にアクセスするには名前を入力してください。国は「設定／国」から作成または編集できます。",
+      "labelTaxRate": "税率",
+      "labelAppliesOn": "適用対象",
+      "labelCountryName": "国",
+      "cardTitle": "国",
+      "searchBarPlaceholder": "国を検索...",
+      "labelCreateNew": "国を追加",
+      "labelStates": "州",
+      "labelZipCode": "郵便番号",
+      "labelFromZipCode": "から...",
+      "labelToZipCode": "まで...",
+      "emptyStateDescription": "国ごとに個別の税率を追加してください。",
+      "createStateDescription": "まずこの税率を保存してから国を追加してください。",
+      "textDeleteConfirm": "この国「{name}」を本当に削除しますか？",
+      "placeholderStates": "州を追加...",
+      "labelActiveFrom": "有効開始日"
+    },
+    "taxProviderDetail": {
+      "textHeadline": "税金プロバイダー",
+      "infoTitle": "チェックアウト時の最終的な税計算のみ対応",
+      "infoText": "ショッピングカートのルールに影響を与える場合があります。配送方法、利用可能ルール等を確認してください。",
+      "cardTitleSettings": "設定",
+      "cardTitleAvailability": "利用可能性",
+      "labelPriority": "優先順位",
+      "labelActive": "アクティブ",
+      "placeholderAvailabilityRule": "利用可能ルールを選択..."
+    }
+  },
+  "sw-privileges": {
+    "permissions": {
+      "tax": {
+        "label": "税金"
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "global": {
+    "error-codes": {
+      "DUPLICATED_SNIPPET_KEY": "\"{key}\" のスニペットはすでに存在します。新しい名前を選択してください。"
+    }
+  },
+  "sw-settings-snippet": {
+    "general": {
+      "mainMenuItemGeneral": "スニペット",
+      "description": "ここでスニペットを管理します。",
+      "copyName": "コピー",
+      "errorBackRoutingTitle": "無効なページリクエスト",
+      "errorBackRoutingMessage": "リクエストされたページを読み込めませんでした。リダイレクトします。",
+      "placeholderSearchBarSets": "スニペットセットを検索...",
+      "placeholderSearchBarSnippets": "スニペットを検索...",
+      "placeholderValue": "内容を定義...",
+      "searchBarTitleSets": "スニペットセット",
+      "searchBarTitleSnippets": "スニペット"
+    },
+    "detail": {
+      "buttonSave": "保存",
+      "cardGeneralTitle": "情報",
+      "cardSnippetSetsTitle": "翻訳",
+      "labelContent": "スニペットセット: {name}",
+      "labelName": "名前",
+      "labelNamePlaceholder": "名前を追加...",
+      "labelNamespace": "セクション",
+      "labelNamespacePlaceholder": "セクションを選択",
+      "messageSaveError": "\"{key}\" のスニペットを保存できませんでした。",
+      "messageSaveSuccess": "\"{key}\" のスニペットを保存しました。",
+      "textHeadline": "新しいスニペット"
+    },
+    "list": {
+      "identifier": "{setName} | スニペットセット比較",
+      "buttonAdd": "新しいスニペット",
+      "buttonDelete": "削除",
+      "buttonEmpty": "標準スニペットに戻る",
+      "columnKey": "名前",
+      "columnValue": "値",
+      "contextMenuDelete": "削除 | リセット",
+      "contextMenuEdit": "編集",
+      "columnHeaderGridColumnTitleSet": "スニペットセット",
+      "columnHeaderResetTo": "元に戻す",
+      "emptyStateHeadLine": "まだスニペットがありません。",
+      "messageDeleteSuccess": "\"{key}\" のスニペットをリセットしました。",
+      "messageSaveError": "\"{key}\" のスニペットを保存できませんでした。 | \"{key}\" のスニペットを保存できませんでした。",
+      "messageSaveSuccess": "\"{key}\" のスニペットを保存しました。 | \"{key}\" のスニペットを保存しました。",
+      "textDeleteConfirm": "本当に \"{key}\" のスニペットを削除しますか？",
+      "textResetConfirm": "本当にこのセットの \"{key}\" のスニペットをリセットしますか？ | 本当に \"{key}\" のスニペットをリセットしますか？",
+      "textSnippetList": "\"{setName}\" のスニペット | スニペット",
+      "resetErrorMessage": "\"{key}\" のスニペットをリセットできませんでした。 | \"{key}\" のスニペットを削除できませんでした。",
+      "resetSuccessMessage": "\"{key}\" のスニペットをデフォルト値にリセットしました。 | \"{key}\" のスニペットを削除しました。",
+      "titleSidebarCustomItems": "カスタムスニペット",
+      "titleSidebarItemRefresh": "更新",
+      "titleSidebarItemFilter": "フィルター"
+    },
+    "setList": {
+      "cardTitle": "スニペットセット",
+      "buttonAddSet": "スニペットセットを追加",
+      "buttonClone": "コピー",
+      "buttonImport": "インポート",
+      "newSnippetName": "# 新しいスニペットセット",
+      "cloneErrorMessage": "スニペットセットのコピー中にエラーが発生しました。",
+      "cloneSuccessMessage": "スニペットセットをコピーしました。",
+      "columnBaseFile": "ベースファイル",
+      "columnIso": "ロケール",
+      "columnChangedAt": "最終更新",
+      "columnName": "名前",
+      "contextMenuClone": "複製",
+      "contextMenuDelete": "削除",
+      "contextMenuEdit": "編集",
+      "deleteNoteErrorMessage": "スニペットセットを削除できませんでした。",
+      "deleteNoteSuccessMessage": "スニペットセットを削除しました。",
+      "inlineEditErrorMessage": "スニペットセットを保存できませんでした | スニペットセット \"{name}\" を保存できませんでした。",
+      "inlineEditSuccessMessage": "スニペットセット \"{name}\" を保存しました。",
+      "modalTitleClone": "スニペットセットをコピー",
+      "notEditableNoteErrorMessage": "スニペットセットの編集中にエラーが発生しました。",
+      "placeholderName": "スニペットセット名を入力...",
+      "placeholderBaseFile": "ベースファイルを選択...",
+      "textDeleteConfirm": "本当にスニペットセット \"{name}\" を削除しますか？"
+    },
+    "filter": {
+      "showOnlyEmpty": "空のスニペットのみ表示",
+      "showOnlyCustom": "編集されたスニペットのみ表示",
+      "showOnlyAdded": "追加されたスニペットのみ表示",
+      "author": "作成者",
+      "more": "その他のフィルター"
+    }
+  },
+  "sw-privileges": {
+    "permissions": {
+      "snippet": {
+        "label": "スニペット"
+      }
+    }
+  }
+}

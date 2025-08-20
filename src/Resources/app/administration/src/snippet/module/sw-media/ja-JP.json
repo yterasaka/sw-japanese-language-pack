@@ -1,0 +1,111 @@
+{
+  "sw-media": {
+    "general": {
+      "mainMenuItemGeneral": "メディア",
+      "descriptionTextModule": "ここでメディアを管理します。",
+      "placeholderSearchBar": "現在のフォルダーを検索…",
+      "notification": {
+        "urlCopied": {
+          "message": "URLがクリップボードにコピーされました。"
+        }
+      }
+    },
+    "sidebar": {
+      "labelHeadlineMultiple": "{count} 件のファイルが選択されています",
+      "labelNoMediaSelected": "メディアが選択されていません",
+      "actions": {
+        "copyLink": "リンクをコピー",
+        "delete": "削除",
+        "dissolve": "解除",
+        "download": "ダウンロード",
+        "move": "移動",
+        "replace": "置換",
+        "settings": "設定",
+        "ar": "ARビューを有効化",
+        "arHelpText": "ストアフロントで表示したときにAR機能が有効になります。デフォルトは<a href=\"{settingsLink}\">3D設定</a>で変更可能です。"
+      },
+      "sections": {
+        "actions": "操作",
+        "configuration": "設定",
+        "preview": "プレビュー",
+        "metadata": "メタデータ",
+        "usage": "使用箇所",
+        "selectedFiles": "選択中のファイル"
+      },
+      "infoMissingFile": {
+        "titleMissingFile": "ファイルが見つかりません",
+        "descriptionMissingFile": "リクエストされたファイルが見つかりません。新しいファイルをアップロードするか、プレースホルダーを削除してください。"
+      },
+      "metadata": {
+        "name": "名前",
+        "fileType": "ファイルタイプ",
+        "altText": "代替テキスト",
+        "title": "タイトル",
+        "mimeType": "MIMEタイプ",
+        "fileSize": "サイズ",
+        "createdAt": "アップロード日時",
+        "width": "幅",
+        "height": "高さ",
+        "totalSize": "合計"
+      },
+      "usage": {
+        "tooltipFoundInProducts": "製品で使用されています",
+        "tooltipFoundInLandingPages": "ランディングページで使用されています",
+        "tooltipFoundInCategories": "カテゴリーで使用されています",
+        "tooltipFoundInManufacturers": "メーカーで使用されています",
+        "tooltipFoundInMailTemplate": "メールテンプレートで使用されています",
+        "tooltipFoundInDocument": "ドキュメントで使用されています",
+        "tooltipFoundInUser": "ユーザーで使用されています",
+        "tooltipFoundInPayment": "支払い方法で使用されています",
+        "tooltipFoundShipping": "配送方法で使用されています",
+        "tooltipFoundLayout": "ショッピング体験で使用されています",
+        "titleMediaNotUsed": "未使用のメディア",
+        "labelMediaNotUsed": "このメディア項目は現在使用されていません。"
+      }
+    },
+    "index": {
+      "buttonCreateFolder": "新しいフォルダーを追加",
+      "rootFolderName": "メディア"
+    },
+    "mediaLibrary": {
+      "labelButtonLoadMore": "もっと読み込む",
+      "titleEmptyState": "まだメディア項目がありません",
+      "descriptionEmptyState": "ここでメディア項目を管理します。"
+    },
+    "sorting": {
+      "labelSort": "並び替え：",
+      "labelSortByNameAsc": "名前、A〜Z",
+      "labelSortByNameDsc": "名前、Z〜A",
+      "labelSortBySizeAsc": "サイズ、小さい順",
+      "labelSortBySizeDsc": "サイズ、大きい順",
+      "labelSortByCreatedAsc": "作成日、古い順",
+      "labelSortByCreatedDsc": "作成日、新しい順"
+    },
+    "presentation": {
+      "labelPresentation": "表示形式：",
+      "labelPresentationSmall": "小さいプレビュー",
+      "labelPresentationMedium": "通常のプレビュー",
+      "labelPresentationLarge": "大きいプレビュー",
+      "labelPresentationList": "リスト"
+    },
+    "sw-media-modal": {
+      "titleModal": "メディアを選択",
+      "labelTabItemLibrary": "メディアライブラリ",
+      "labelTabItemUpload": "ファイルをアップロード",
+      "labelButtonSaveSelection": "メディアを追加"
+    },
+    "sw-media-modal-v2": {
+      "titleModal": "メディアを選択",
+      "labelTabItemLibrary": "メディアライブラリ",
+      "labelTabItemUpload": "ファイルをアップロード",
+      "labelButtonSaveSelection": "メディアを追加"
+    }
+  },
+  "sw-privileges": {
+    "permissions": {
+      "media": {
+        "label": "メディア"
+      }
+    }
+  }
+}

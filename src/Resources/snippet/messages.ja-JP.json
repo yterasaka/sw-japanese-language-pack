@@ -54,5 +54,12 @@
       "shippingMethod": "<strong>配送方法:</strong> %shippingMethod%",
       "additionalInfo": "商品の所有権は代金完済まで当社に留保されます。"
     }
+  },
+  "filter": {
+    "sortByNameAscending": "名前 (A-Z)",
+    "sortByNameDescending": "名前 (Z-A)",
+    "sortByPriceAscending": "価格 (安い順)",
+    "sortByPriceDescending": "価格 (高い順)",
+    "sortByScore": "関連度順"
   }
 }

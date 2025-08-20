@@ -1,0 +1,49 @@
+{
+  "sw-settings-state-machine": {
+    "general": {
+      "mainMenuItemGeneral": "ステータス管理"
+    },
+    "list": {
+      "grid": {
+        "columnName": "名前",
+        "columnTechnicalName": "技術名"
+      }
+    },
+    "detail": {
+      "stateMachineCardTitle": "ステートマシン",
+      "fieldLabels": {
+        "name": "名前",
+        "technicalName": "技術名"
+      }
+    },
+    "notification": {
+      "successMessage": "ステートマシンが保存されました。",
+      "errorMessage": "ステートマシンを保存できませんでした。必須項目をすべて入力してください。"
+    },
+    "state": {
+      "list": {
+        "stateMachineStateCardTitle": "ステート",
+        "grid": {
+          "columnName": "名前",
+          "columnTechnicalName": "技術名"
+        }
+      },
+      "detail": {
+        "stateMachineStateCardTitle": "ステートマシンのステート",
+        "labelName": "名前",
+        "labelTechnicalName": "技術名"
+      },
+      "notification": {
+        "successMessage": "ステートマシンのステートが保存されました。",
+        "errorMessage": "ステートマシンのステートを保存できませんでした。必須項目をすべて入力してください。"
+      }
+    }
+  },
+  "sw-privileges": {
+    "permissions": {
+      "state_machine": {
+        "label": "ステートマシン"
+      }
+    }
+  }
+}

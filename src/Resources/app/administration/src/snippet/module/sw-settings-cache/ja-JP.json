@@ -1,0 +1,64 @@
+{
+  "sw-settings-cache": {
+    "general": {
+      "mainMenuItemGeneral": "キャッシュとインデックス"
+    },
+    "toolbar": {
+      "environment": "環境",
+      "environmentDev": "開発",
+      "environmentProd": "本番",
+      "httpCache": "HTTPキャッシュ",
+      "httpCacheOff": "オフ",
+      "httpCacheOn": "オン",
+      "cacheAdapter": "キャッシュアダプター"
+    },
+    "section": {
+      "clearCachesHeadline": "キャッシュのクリア",
+      "clearCachesText": "すべてのアダプターのキャッシュされたデータを即時に同期的にクリアします。",
+      "clearCachesButton": "キャッシュをクリア",
+      "clearDataCachesHeadline": "キャッシュの更新",
+      "clearDataCachesText": "最近変更されたキャッシュデータのみを選択的にクリアします。このオプションを使うことで、自動キャッシュ更新を待つことなく、またはすべてのキャッシュデータを一度に削除することなく、ショップデータの変更を即座に反映させることができます。",
+      "clearDataCachesButton": "キャッシュを更新",
+      "indexesHeadline": "インデックス",
+      "indexesText": "すべてのインデックスは非同期で更新されます。通知を監視して進行状況を確認してください。",
+      "indexesButton": "インデックスを更新",
+      "indexingModeLabel": "方法",
+      "indexingModeOptionSkipLabel": "すべて更新、ただし選択したものはスキップ",
+      "indexingModeOptionOnlyLabel": "選択したもののみ更新",
+      "indexesSkipSelectLabel": "スキップするインデクサーおよび／またはアップデーター",
+      "indexesOnlySelectLabel": "インデクサーおよび／またはアップデーター",
+      "indexesSkipSelectPlaceholder": "スキップするインデクサーおよび／またはアップデーターを選択",
+      "indexesOnlySelectPlaceholder": "インデクサーおよび／またはアップデーターを選択"
+    },
+    "notifications": {
+      "clearCache": {
+        "started": "キャッシュをクリアしています。",
+        "success": "すべてのキャッシュをクリアしました。",
+        "error": "キャッシュをクリアできませんでした。"
+      },
+      "clearDataCache": {
+        "started": "データキャッシュをクリアしています。",
+        "success": "保留中の変更をすべて適用しました。",
+        "error": "データキャッシュをクリアできませんでした。"
+      },
+      "index": {
+        "started": "インデックスを構築しています。",
+        "success": "すべてのインデックスを構築しました。"
+      }
+    },
+    "modal": {
+      "title": "キャッシュをクリア",
+      "message": "すべてのキャッシュをクリアしてもよろしいですか？",
+      "actions": {
+        "clear": "クリア"
+      }
+    }
+  },
+  "sw-privileges": {
+    "additional_permissions": {
+      "system": {
+        "clear_cache": "キャッシュをクリア"
+      }
+    }
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "sw-settings-country": {
+    "page": {
+      "generalTab": "設定",
+      "stateTab": "州／地域",
+      "addressHandlingTab": "住所処理"
+    },
+    "general": {
+      "mainMenuItemGeneral": "国",
+      "placeholderSearchBar": "国を検索...",
+      "actions": {
+        "newSnippet": "新しいスニペットを追加",
+        "createBefore": "前に行を追加",
+        "createAfter": "後に行を追加",
+        "moveTop": "行を上に移動",
+        "moveBottom": "行を下に移動"
+      }
+    },
+    "list": {
+      "textHeadline": "国一覧",
+      "textDeleteConfirm": "国「{name}」を削除してよろしいですか？",
+      "columnName": "名前",
+      "columnPosition": "位置",
+      "columnIso": "ISO2",
+      "columnIso3": "ISO3",
+      "columnActive": "有効",
+      "buttonAddCountry": "国を追加",
+      "contextMenuEdit": "編集",
+      "contextMenuDelete": "削除",
+      "messageDeleteSuccess": "国「{name}」は削除されました。",
+      "buttonDelete": "削除"
+    },
+    "detail": {
+      "textHeadline": "新しい国",
+      "titleCard": "一般",
+      "messageSaveSuccess": "国「{name}」は保存されました。",
+      "messageSaveError": "国「{name}」を保存できませんでした。",
+      "labelName": "名前",
+      "labelPosition": "位置",
+      "labelIso": "ISO2",
+      "labelIso3": "ISO3",
+      "labelActive": "有効",
+      "labelShippingAvailable": "配送可能",
+      "labelTaxFree": "非課税 (B2C)",
+      "labelCompanyTaxFree": "非課税 (B2B)",
+      "helpTextCompanyTaxFree": "非課税のB2B取引を実施するには、該当する顧客アカウントに有効なVAT登録番号が必要です。",
+      "labelCheckVatIdFormat": "VAT登録番号の形式を検証",
+      "helpTextCheckVatIdFormat": "ヨーロッパのVAT登録番号の形式を検証します。",
+      "labelForceStateInRegistration": "州／地域の入力を必須化",
+      "placeholderName": "名前を入力...",
+      "placeholderPosition": "1",
+      "placeholderStateSearch": "州／地域を検索...",
+      "placeholderIso": "2文字のISOコードを入力...",
+      "placeholderIso3": "3文字のISOコードを入力...",
+      "buttonSave": "保存",
+      "buttonAddCountryState": "州／地域を追加",
+      "editAction": "編集",
+      "columnStateNameLabel": "名前",
+      "columnStateShortCodeLabel": "ISO",
+      "taxFreeFrom": "非課税の最小カート金額（税抜）",
+      "baseCurrency": "基準通貨",
+      "taxFreeFromHelpText": "カート合計が「非課税の最小カート金額（税抜）」より高い場合、カート全体が非課税となります。",
+      "labelVatIdRequired": "VAT登録番号必須",
+      "labelIsEu": "欧州連合加盟国",
+      "helpTextIsEu": "「域内（intra-community）」配送表示を有効にします。",
+      "helpTextLabelVatIdRequired": "「設定 > ログイン／登録」のグローバルスイッチもご確認ください。",
+      "titleOptions": "オプション",
+      "currencyDependentValues": "通貨依存の値",
+      "labelPostalCodeRequired": "郵便番号必須",
+      "labelCheckPostalCodePattern": "郵便番号検証",
+      "labelCheckAdvancedPostalCodePattern": "高度な検証ルール",
+      "placeholderAdvancedPostalCodePattern": "郵便番号パターンを入力...",
+      "helpTextAdvancedPostalCodePattern": "使用可能なフォーマット:<ul><li>^\\d{5}$ - 正確に5桁の数字、例: 12345</li><li>^(\\d{4})\\s*([A-Z]{2})$ - 正確に4桁の数字と2文字のアルファベット、例: 1234 AB</li></ul>",
+      "labelCheckDefaultAddressFormat": "カスタム住所フォーマット",
+      "labelAddressFormatPlain": "フォーマット",
+      "titleFormatting": "住所マークアップ",
+      "helpTextCheckPostalCodePattern": "複数の国の郵便番号検証を有効にします",
+      "previewTitle": "プレビュー",
+      "labelCustomer": "顧客",
+      "placeholderSelectCustomer": "顧客を選択...",
+      "buttonResetMarkup": "住所マークアップをリセット",
+      "newSnippetModalTitle": "スニペットを挿入",
+      "buttonInsertSnippet": "スニペットを挿入",
+      "placeholderSearchSnippet": "スニペットを検索..."
+    }
+  },
+  "sw-country-state-detail": {
+    "titleNew": "新しい州／地域",
+    "titleEdit": "州／地域を編集",
+    "buttonSave": "保存",
+    "labelName": "名前",
+    "labelPosition": "位置",
+    "labelShortCode": "ISO",
+    "tooltipPosition": "リスト内の州／地域の並び順を変更します。",
+    "createNewStateError": "現在選択されている言語で地域を作成できません。まずはデフォルトのシステム言語で地域を作成してください。",
+    "emptyTitle": "利用可能な地域がありません",
+    "emptySubline": "地域を追加してください"
+  },
+  "sw-privileges": {
+    "permissions": {
+      "country": {
+        "label": "国"
+      }
+    }
+  },
+  "sw-custom-snippet": {
+    "address": {
+      "countryState": "州",
+      "salutation": "敬称",
+      "country": "国",
+      "zipcode": "郵便番号",
+      "lastName": "姓",
+      "firstName": "名",
+      "street": "住所（町名・番地など）",
+      "city": "市区町村",
+      "company": "会社名",
+      "phoneNumber": "電話番号",
+      "department": "部署",
+      "title": "役職"
+    },
+    "symbol": {
+      "tilde": "〜",
+      "dash": "－",
+      "comma": "、"
+    }
+  }
+}
