@@ -1,0 +1,152 @@
+{
+  "sw-profile": {
+    "general": {
+      "mainMenuItemGeneral": "プロフィール",
+      "description": "ここでプロフィールを管理します。",
+      "headlineProfile": "あなたのプロフィール"
+    },
+    "index": {
+      "buttonSaveLabel": "保存",
+      "titleInfoCard": "プロフィール情報",
+      "titleImageCard": "プロフィール画像",
+      "titlePasswordCard": "パスワード",
+      "labelFirstNameField": "名",
+      "labelLastNameField": "姓",
+      "labelUsernameField": "ユーザー名",
+      "labelEmailField": "メールアドレス",
+      "labelTimezoneField": "タイムゾーン",
+      "labelOldPassword": "現在のパスワード",
+      "placeholderOldPassword": "現在のパスワードを入力してください...",
+      "labelNewPassword": "新しいパスワード",
+      "placeholderNewPassword": "新しいパスワードを入力してください...",
+      "labelNewPasswordConfirm": "パスワードの確認",
+      "placeholderNewPasswordConfirm": "新しいパスワードを再入力してください...",
+      "notificationPasswordErrorMessage": "入力されたパスワードが一致しません。",
+      "notificationNewPasswordIsSameAsOldErrorMessage": "新しいパスワードが現在のパスワードと同じです。別のパスワードを選択してください。",
+      "notificationInvalidEmailErrorMessage": "有効なメールアドレスを入力してください。",
+      "notificationSaveSuccessMessage": "プロフィール情報が保存されました。",
+      "notificationSaveErrorMessage": "プロフィール情報を保存できませんでした。",
+      "labelUploadAvatar": "アバターをアップロード",
+      "labelUseAsAvatar": "アバターとして使用"
+    },
+    "tabGeneral": {
+      "title": "一般"
+    },
+    "tabSearchPreferences": {
+      "title": "検索設定",
+      "alert_elasticsearch": {
+        "title": "Elasticsearch が有効になりました",
+        "text": "管理画面の検索に Elasticsearch が有効化されています。これらのフィールドは検索可能で、無効にはできませんが、どのエンティティを検索対象にするかは選択できます。"
+      },
+      "cardSearchableElements": {
+        "title": "検索可能な要素",
+        "description": "各モジュールおよびエントリーの検索対象コンテンツを設定します。",
+        "buttonSelect": "すべて選択",
+        "buttonDeselect": "すべて解除",
+        "buttonReset": "デフォルトにリセット"
+      },
+      "modules": {
+        "order": {
+          "countryName": "国",
+          "city": "市区町村",
+          "street": "住所",
+          "company": "会社名",
+          "zipcode": "郵便番号",
+          "lastName": "姓",
+          "firstName": "名",
+          "phoneNumber": "電話番号",
+          "additionalAddressLine1": "住所補足1",
+          "additionalAddressLine2": "住所補足2",
+          "trackingCodes": "追跡コード",
+          "amountTotal": "合計金額",
+          "orderNumber": "注文番号",
+          "email": "メールアドレス",
+          "tagsName": "タグ",
+          "customerNumber": "顧客番号",
+          "documentNumber": "書類番号",
+          "promotionCode": "適用中のプロモーションコード"
+        },
+        "customer": {
+          "tagsName": "タグ",
+          "email": "メールアドレス",
+          "company": "会社名",
+          "firstName": "名",
+          "lastName": "姓",
+          "customerNumber": "顧客番号",
+          "countryName": "国",
+          "city": "市区町村",
+          "street": "住所",
+          "zipcode": "郵便番号",
+          "phoneNumber": "電話番号",
+          "additionalAddressLine1": "住所補足1",
+          "additionalAddressLine2": "住所補足2"
+        },
+        "product": {
+          "ean": "GTIN/EAN",
+          "name": "名前",
+          "tagsName": "タグ",
+          "productNumber": "商品番号",
+          "manufacturerNumber": "メーカー品番",
+          "customSearchKeywords": "SEOキーワード"
+        },
+        "media": {
+          "alt": "代替テキスト",
+          "tagsName": "タグ",
+          "title": "タイトル",
+          "fileName": "ファイル名",
+          "mediaFolderName": "フォルダー",
+          "path": "パス"
+        },
+        "landing_page": {
+          "name": "名前",
+          "tagsName": "タグ"
+        },
+        "category": {
+          "name": "名前",
+          "tagsName": "タグ"
+        },
+        "shipping_method": {
+          "name": "名前"
+        },
+        "payment_method": {
+          "name": "名前"
+        },
+        "customer_group": {
+          "name": "名前"
+        },
+        "sales_channel": {
+          "name": "名前"
+        },
+        "property": {
+          "name": "名前"
+        },
+        "property_group": {
+          "name": "名前"
+        },
+        "promotion": {
+          "name": "名前",
+          "code": "コード"
+        },
+        "product_stream": {
+          "name": "名前"
+        },
+        "newsletter_recipient": {
+          "email": "メールアドレス"
+        },
+        "product_manufacturer": {
+          "name": "名前"
+        },
+        "cms_page": {
+          "name": "名前"
+        }
+      }
+    }
+  },
+  "sw-privileges": {
+    "additional_permissions": {
+      "user": {
+        "update_profile": "自分のプロフィールを更新"
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "sw-settings-basic-information": {
+    "general": {
+      "mainMenuItemGeneral": "基本情報",
+      "description": "ここで基本情報を変更します。",
+      "textHeadline": "基本情報",
+      "buttonSave": "保存",
+      "messageSaveSuccess": "設定が保存されました。"
+    },
+    "captcha": {
+      "label": {
+        "honeypot": "ハニーポット",
+        "basicCaptcha": "基本 CAPTCHA",
+        "googleReCaptchaV2": "Google reCAPTCHA v2",
+        "googleReCaptchaV2SiteKey": "Google reCAPTCHA v2 サイトキー",
+        "googleReCaptchaV2SecretKey": "Google reCAPTCHA v2 シークレットキー",
+        "googleReCaptchaV2Invisible": "Invisible Google reCAPTCHA v2（インビジブル reCAPTCHA v2）",
+        "googleReCaptchaV3": "Google reCAPTCHA v3",
+        "googleReCaptchaV3SiteKey": "Google reCAPTCHA v3 サイトキー",
+        "googleReCaptchaV3SecretKey": "Google reCAPTCHA v3 シークレットキー",
+        "googleReCaptchaV3ThresholdScore": "Google reCAPTCHA v3 閾値スコア",
+        "googleReCaptchaV2CheckboxDescription": "「私はロボットではありません」チェックボックスは、ユーザーが自分がロボットでないことを示すためにクリックする必要があります。これにより、ユーザーは直ちに通過（CAPTCHAなし）するか、人間であることを検証するチャレンジを受けます。最もシンプルに統合でき、チェックボックスを表示するのにHTML２行のみ必要です。",
+        "googleReCaptchaV2InvisibleDescription": "Invisible reCAPTCHAバッジは、ユーザーがチェックボックスをクリックする必要がなく、サイト上の既存のボタンをクリックした際やJavaScript API呼び出しによって直接起動されます。統合にはreCAPTCHA検証完了時のJavaScriptコールバックが必要です。デフォルトでは、最も疑わしいトラフィックのみがCAPTCHAの解答を求められます。この挙動は「詳細設定」内のサイトセキュリティ設定で変更可能です。",
+        "googleReCaptchaV3Description": "reCAPTCHA v3は、ユーザーの操作を伴わずに正当なやり取りかを確認できます。純粋なJavaScript APIでスコアを返し、サイトの状況に応じて追加認証要求や投稿のモデレーション送信、スクレイピングBotの制限などの対応が可能です。",
+        "googleReCaptchaV3DescriptionThresholdScore": "reCAPTCHA v3はユーザーの操作なしに各リクエストにスコアを返します。スコアはサイトでのやり取りに基づき、サイトに適した対応を取ることが可能です。閾値スコアは0.0から1.0の範囲です。"
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "sw-newsletter-recipient": {
+    "general": {
+      "description": "ここでニュースレターの受信者を管理します。",
+      "information": "情報",
+      "language": "言語",
+      "salutation": "敬称",
+      "salesChannel": "販売チャネル",
+      "buttonSave": "保存",
+      "mainMenuItemGeneral": "ニュースレター受信者",
+      "placeholderSearchBarSnippets": "すべてのニュースレター受信者を検索...",
+      "tags": "タグ"
+    },
+    "detail": {
+      "messageSaveSuccess": "\"{key}\" のデータが保存されました。",
+      "messageSaveError": "\"{key}\" のデータを保存できませんでした。"
+    },
+    "list": {
+      "titleSidebarItemRefresh": "更新",
+      "titleSidebarItemFilter": "フィルター",
+      "status": "ステータス",
+      "textHeadline": "ニュースレター受信者",
+      "email": "メールアドレス",
+      "name": "名前",
+      "title": "肩書き",
+      "firstName": "名",
+      "lastName": "姓",
+      "salesChannel": "販売チャネル",
+      "zipCode": "郵便番号",
+      "city": "市区町村",
+      "street": "住所",
+      "notSet": "アクティベーション待ち",
+      "createdAt": "作成日",
+      "updatedAt": "更新日",
+      "optIn": "有効",
+      "optOut": "削除待ち",
+      "direct": "即時有効",
+      "messageEmpty": "まだニュースレター受信者がいません"
+    }
+  },
+  "sw-privileges": {
+    "permissions": {
+      "newsletter_recipient": {
+        "label": "ニュースレター受信者"
+      }
+    },
+    "additional_permissions": {
+      "marketing": {
+        "send_newsletter": "ニュースレターを送信"
+      }
+    }
+  }
+}

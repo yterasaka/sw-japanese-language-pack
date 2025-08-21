@@ -1,0 +1,33 @@
+{
+  "sw-settings": {
+    "general": {
+      "mainMenuItemGeneral": "設定"
+    },
+    "index": {
+      "title": "設定",
+      "tabShop": "ショップ",
+      "tabSystem": "システム",
+      "tabGeneral": "一般",
+      "tabLocalization": "ローカライズ",
+      "tabCustomer": "顧客",
+      "tabCommerce": "コマース",
+      "tabContent": "コンテンツ",
+      "tabAutomation": "自動化",
+      "tabPlugins": "拡張機能",
+      "textSettingRenameBanner": "「<b>Scale units</b>」の設定が「<b>Product units</b>」に名前変更されました。"
+    },
+    "system-config": {
+      "labelSalesChannelSelect": "販売チャネル",
+      "inherited": "継承",
+      "compileNotice": "この設定はテーマで使用できるフィールドを含んでいます。変更を反映させるにはテーマをコンパイルしてください。",
+      "scssHelpText": "SCSS 変数名: "
+    }
+  },
+  "sw-privileges": {
+    "additional_permissions": {
+      "system": {
+        "system_config": "基本設定"
+      }
+    }
+  }
+}

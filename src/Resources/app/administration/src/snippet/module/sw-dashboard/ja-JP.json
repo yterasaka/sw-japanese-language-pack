@@ -1,0 +1,92 @@
+{
+  "sw-dashboard": {
+    "general": {
+      "mainMenuItemGeneral": "ダッシュボード",
+      "descriptionTextModule": "管理画面のトップページで、統計情報やシステム情報を表示します"
+    },
+    "introduction": {
+      "headlineUnkownUser": "Shopwareへようこそ。",
+      "daytimeHeadline": {
+        "5h": [
+          "おはようございます、{greetingName}さん。",
+          "こんにちは、{greetingName}さん！"
+        ],
+        "11h": [
+          "こんにちは、{greetingName}さん。",
+          "ごきげんよう、{greetingName}さん。",
+          "やあ、{greetingName}さん！"
+        ],
+        "18h": [
+          "こんばんは、{greetingName}さん。",
+          "やあ、{greetingName}さん！"
+        ],
+        "23h": [
+          "お会いできて嬉しいです、{greetingName}さん。",
+          "まだ起きていますか、{greetingName}さん？"
+        ]
+      },
+      "daytimeWelcomeText": {
+        "5h": [
+          "コーヒーの時間ですね？",
+          "素晴らしいスタートを切っています！",
+          "今日はやることが多いですか？影響力の大きいタスクに集中しましょう。",
+          "今日はとても素敵に見えますね！"
+        ],
+        "11h": [
+          "新しい一日、新しいビジネス成長のチャンスです。",
+          "今日は誰かの人生に影響を与えられます。",
+          "今日は素晴らしく見えますよ！",
+          "今日のあなたの行動が、望む明日を形作ります。"
+        ],
+        "18h": [
+          "もうすぐ一日が終わります。ショップの最新の活動をチェックしましょう。",
+          "振り返りの時間です—今日のショップの調子を見てみましょう。",
+          "今日の行動が明日の結果となります。"
+        ],
+        "23h": [
+          "すべてに美しさを見出して、自分を鼓舞しましょう。",
+          "外では誰かがダークモードを切り替えましたよ。",
+          "ほとんどのものは数分間電源を切るとまた動きます。あなたも休憩をとりましょう。"
+        ]
+      }
+    },
+    "helpcard": {
+      "headline": "商品販売の準備をしましょう。",
+      "helpcenter": "Shopware ヘルプセンター",
+      "helpcenterLink": "https://docs.shopware.com/en/shopware-6-en",
+      "takeOffTip": "最初の販売方法を学ぶ",
+      "takeOffTipLink": "https://www.shopware.com/en/news/take-off-in-ecommerce-10-tips-for-your-initial-sales/",
+      "getToKnowSales": "販売チャネルを知る",
+      "getToKnowSalesLink": "https://www.youtube.com/watch?v=RsEeersOgIo"
+    },
+    "feedbackCard": {
+      "headline": "第一印象が大切です。",
+      "text": "あなたの第一印象を共有して、Shopware体験の改善にご協力ください。",
+      "feedback": "フィードバックを送る",
+      "feedbackLink": "https://feedback.shopware.com"
+    },
+    "todayStats": {
+      "headline": "本日の統計",
+      "orders": "注文数",
+      "turnover": "合計金額",
+      "orderTime": "時間"
+    },
+    "monthStats": {
+      "headline": "統計情報",
+      "dateRanges": {
+        "30Days": "過去30日間",
+        "14Days": "過去14日間",
+        "7Days": "過去7日間",
+        "24Hours": "過去24時間",
+        "yesterday": "昨日以降"
+      },
+      "orderNumber": "注文数",
+      "turnover": "売上高",
+      "numberOfOrders": "件数",
+      "totalTurnover": "合計",
+      "helperText": "売上グラフには「支払い済み」ステータスの注文のみ表示されます。",
+      "linkOrders": "注文を見る",
+      "linkPaidOrders": "支払い済みの注文を見る"
+    }
+  }
+}

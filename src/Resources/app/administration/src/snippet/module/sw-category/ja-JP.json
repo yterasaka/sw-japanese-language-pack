@@ -1,0 +1,262 @@
+{
+  "sw-category": {
+    "general": {
+      "mainMenuItemIndex": "カテゴリー",
+      "mainMenuItemList": "一覧",
+      "descriptionTextModule": "ここでカテゴリーを管理します。",
+      "headlineCategories": "カテゴリー",
+      "placeholderSearchBar": "カテゴリーを検索…",
+      "buttonCreate": "カテゴリーを作成",
+      "buttonSafeCategory": "保存",
+      "descriptionLabel": "説明",
+      "messageSaveSuccess": "カテゴリー「{name}」が保存されました。",
+      "useAsLogo": "表示画像として使用",
+      "treeHeadline": "カテゴリー",
+      "treeHeadSelected": "{count} 選択済み",
+      "emptyStateHeadline": "カテゴリーが選択されていません",
+      "errorNavigationEntryPoint": "このカテゴリーは少なくとも1つの販売チャネルの{entryPointLabel}として定義されているため、削除できません。",
+      "errorNavigationEntryPointMultiple": "1つ以上のカテゴリーが少なくとも1つの販売チャネルのメインナビゲーションとして定義されているため、削除できません。",
+      "actions": {
+        "actionsDisabledInLanguage": "カテゴリーはデフォルト言語でのみ作成できます。",
+        "createSub": "新しいサブカテゴリー",
+        "createBefore": "前に新しいカテゴリー",
+        "createAfter": "後に新しいカテゴリー"
+      }
+    },
+    "view": {
+      "general": "一般",
+      "cms": "レイアウト",
+      "products": "商品",
+      "customEntity": "カスタムエンティティ",
+      "seo": "SEO",
+      "columnInfoHeader": "フッター要素",
+      "columnInfo": "このカテゴリーはフッター内に指定されたカラムを設定します。カテゴリー名はカラムの見出しとして表示されます。このカテゴリーの下の第一階層にあるすべてのカテゴリーがカラム見出しの下の行として表示されます。"
+    },
+    "base": {
+      "general": {
+        "categoryNameLabel": "名前",
+        "headlineInformationCard": "一般",
+        "isCategoryActiveLabel": "有効",
+        "useAsLink": "リンクとして使用",
+        "labelCategoryTags": "タグ",
+        "labelCategoryTagsPlaceholder": "タグを個別に入力…",
+        "types": {
+          "title": "カテゴリータイプ",
+          "page": "ページ / 一覧",
+          "folder": "構造要素 / エントリポイント",
+          "customEntity": "カスタムエンティティ",
+          "link": "リンク",
+          "linkUnavailable": "リンク（カテゴリーがエントリポイントとして定義されている場合は選択不可）",
+          "help": "構造カテゴリーは単独では参照できず、アウトラインの目的でのみ使用されます。",
+          "helpText": {
+            "page": "ページ／一覧は関連付けられた商品があり、割り当てられたレイアウトで直接アクセス可能です。",
+            "folder": "構造要素／エントリポイントは構造内でのみ表示され、販売チャネルのエントリポイントとして割り当てられていない限り直接アクセスできません。",
+            "link": "リンクは商品、他のカテゴリー、ランディングページ、または外部サイトへの参照を可能にします。"
+          }
+        }
+      },
+      "entry-point-card": {
+        "cardTitle": "ナビゲーション",
+        "labelEntryPoint": "エントリポイント",
+        "placeholderEntryPoint": "エントリポイントを選択…",
+        "existingNavigationDescription": "このカテゴリーは次の販売チャネルのメインナビゲーションのエントリポイントとして割り当てられています：",
+        "labelSalesChannelsAdd": "販売チャネル割り当て",
+        "placeholderSalesChannels": "販売チャネルを追加…",
+        "buttonConfigureHome": "ホームページを設定",
+        "types": {
+          "labelMainNavigation": "メインナビゲーション",
+          "helpTextMainNavigation": "メインナビゲーションのエントリポイントは販売チャネルに必須のフィールドです。1つ以上の販売チャネルにこのカテゴリーをメインナビゲーションのエントリポイントとして割り当てた場合、その割り当ては販売チャネル側でのみ変更可能です。",
+          "labelFooterNavigation": "フッターナビゲーション",
+          "helpTextFooterNavigation": "このカテゴリーを1つ以上の販売チャネルのフッターナビゲーションのエントリポイントとして割り当てると、次のレベルにあるカテゴリーがカラムとして表示されます。これによりフッターナビゲーションを複数のエリアに分割できます。",
+          "labelServiceNavigation": "フッターサービスナビゲーション",
+          "helpTextServiceNavigation": "このカテゴリーを1つ以上の販売チャネルのサービスナビゲーションのエントリポイントとして割り当てると、次のレベルのカテゴリーがフッター領域の第2のナビゲーションとして表示されます。"
+        }
+      },
+      "entry-point-modal": {
+        "modalTitle": "ホームページを設定",
+        "salesChannelSelection": "販売チャネル",
+        "showInMainNavigation": "メインナビゲーションに表示",
+        "mainNavigationName": "表示名",
+        "mainNavigationNamePlaceholder": "代替ホームページ名を入力…",
+        "mainNavigationNameHelpText": "デフォルトではこのカテゴリーは「ホーム」と表示されます。デフォルトの設定が現在の販売チャネルに合わない場合は代替表示名を入力してください。",
+        "layoutHeadline": "レイアウト",
+        "seoSettingsHeadline": "SEO設定",
+        "metaTitleLabel": "メタタイトル",
+        "metaTitlePlaceholder": "メタタイトルを入力…",
+        "metaDescriptionLabel": "メタ説明",
+        "metaDescriptionPlaceholder": "メタ説明を入力…",
+        "seoKeywordsLabel": "SEOキーワード",
+        "seoKeywordsPlaceholder": "1つ以上のキーワードを入力…"
+      },
+      "seo": {
+        "title": "SEO",
+        "labelMetaTitle": "メタタイトル",
+        "labelMetaDescription": "説明",
+        "labelKeywords": "キーワード",
+        "placeholderMetaTitle": "メタタイトルを入力…",
+        "placeholderMetaDescription": "説明を入力…",
+        "placeholderKeywords": "1つ以上のキーワードを入力…"
+      },
+      "menu": {
+        "title": "メニュー設定",
+        "visible": "ナビゲーションから非表示",
+        "imageLabel": "表示画像",
+        "descriptionLabel": "説明",
+        "descriptionPlaceholder": "説明を入力…"
+      },
+      "customEntity": {
+        "cardTitle": "割り当てられた記事",
+        "assignment": {
+          "label": "投稿タイプ",
+          "helpText": "このカテゴリーに表示する投稿タイプを選択してください。"
+        },
+        "instanceAssignment": {
+          "title": "タイトル",
+          "label": "エントリー",
+          "placeholder": "エントリーを検索して割り当て…",
+          "emptyState": {
+            "title": "割り当てられたエントリーがありません"
+          }
+        }
+      },
+      "cms": {
+        "title": "レイアウト割り当て",
+        "changeLayout": "レイアウトを変更",
+        "changeLayoutEmpty": "レイアウトを割り当て",
+        "editInPagebuilder": "デザイナーで編集",
+        "editInPagebuilderEmpty": "新しいレイアウトを作成",
+        "editContent": "コンテンツを編集",
+        "defaultTitle": "デフォルトレイアウト",
+        "defaultDesc": "カテゴリー ページ"
+      },
+      "link": {
+        "title": "カスタマイズ可能なリンク",
+        "mainTypeLabel": "リンクタイプ",
+        "mainTypePlaceholder": "リンクタイプを選択…",
+        "internalTypeLabel": "エンティティ",
+        "internalTypePlaceholder": "エンティティを選択…",
+        "categoryPlaceholder": "カテゴリーを選択…",
+        "productPlaceholder": "商品を選択…",
+        "landingPagePlaceholder": "ランディングページを選択…",
+        "example": "例：",
+        "internalExampleText": "/my-category",
+        "externalDesc": "外部リンクを設定するには、完全なウェブアドレスを入力してください：",
+        "internalDesc": "内部リンクを作成する場合は、ドメインに続くパスのみを入力してください：",
+        "linkLabel": "リンク先",
+        "linkNewTabLabel": "新しいタブで開く",
+        "categoryHelpText": "カテゴリーへの内部リンクは次のカテゴリータイプをサポートします：{types}。",
+        "type": {
+          "internal": "内部",
+          "external": "外部"
+        }
+      },
+      "products": {
+        "productAssignmentHeadline": "商品割り当て",
+        "productAssignmentPlaceholder": "商品を検索して割り当て…",
+        "productAssignmentLabel": "商品",
+        "productAssignmentEmptyStateDescription": "割り当てられた商品はありません",
+        "productStreamAssignmentEmptyStateDescription": "動的商品グループが割り当てられていません",
+        "columnNameLabel": "名前",
+        "columnManufacturerLabel": "メーカー",
+        "productAssignmentTypeLabel": "タイプ",
+        "productAssignmentTypeManualLabel": "手動選択",
+        "productAssignmentTypeStreamLabel": "動的商品グループ",
+        "productAssignmentTypeStreamPlaceholder": "動的商品グループを検索して割り当て…",
+        "alertManualAssignedProductsOnAssignmentTypeStream": "このカテゴリーにはまだ手動で割り当てられた商品があります。これらの商品はこのカテゴリーでは表示されませんが、親カテゴリーでは表示される可能性があります。",
+        "dynamicProductGroupDetailLinkText": "動的商品グループの詳細",
+        "dynamicProductGroupInvalidMessage": "選択された動的商品グループは無効です。動的商品グループの詳細を確認してください。",
+        "dynamicProductGroupHelpText": {
+          "label": "商品は、その商品グループの条件を満たす場合、動的商品グループに属します。条件は{link}モジュール内で定義できます。",
+          "linkText": "動的商品グループ",
+          "videoUrl": "",
+          "videoLink": ""
+        }
+      }
+    },
+    "modal": {
+      "textDeleteConfirm": "カテゴリー「{name}」を本当に削除してもよろしいですか？",
+      "textDeleteChildrenConfirm": "すべてのサブカテゴリーも削除されます。",
+      "textDeleteMultipleConfirm": "{count} 件の選択されたカテゴリーを本当に削除してもよろしいですか？"
+    },
+    "entry-point-overwrite-modal": {
+      "textBefore": "次の販売チャネルにエントリポイントがすでに割り当てられています: | 次の販売チャネルにエントリポイントがすでに複数割り当てられています:",
+      "textAfter": "この割り当てを上書きしますか？ | これらの割り当てを上書きしますか？"
+    }
+  },
+  "sw-landing-page": {
+    "view": {
+      "general": "一般",
+      "cms": "レイアウト"
+    },
+    "general": {
+      "placeholderSearchBar": "ランディングページを検索…",
+      "treeHeadSelected": "{count} 選択済み",
+      "buttonCreate": "ランディングページを追加",
+      "treeHeadline": "ランディングページ",
+      "actions": {
+        "actionsDisabledInLanguage": "ランディングページはシステムのデフォルト言語でのみ作成できます。"
+      }
+    },
+    "base": {
+      "general": {
+        "labelName": "名前",
+        "headlineInformationCard": "一般",
+        "isActiveLabel": "有効",
+        "labelTags": "タグ",
+        "labelTagsPlaceholder": "タグを個別に入力…"
+      },
+      "seo": {
+        "title": "SEO",
+        "titleGeneralInformation": "一般情報",
+        "titleSocialMedia": "ソーシャルメディア",
+        "labelSalesChannel": "販売チャネル",
+        "labelMetaTitle": "メタタイトル",
+        "labelSocialMediaTitle": "タイトル",
+        "labelMetaDescription": "メタ説明",
+        "labelSocialMediaDescription": "説明",
+        "labelKeywords": "SEOキーワード",
+        "labelUrl": "SEO URL",
+        "labelPreviewImage": "プレビュー画像",
+        "placeholderSalesChannel": "販売チャネルを選択…",
+        "placeholderMetaTitle": "メタタイトルを入力…",
+        "placeholderSocialMediaTitle": "ソーシャルメディア用タイトルを入力…",
+        "placeholderMetaDescription": "メタ説明を入力…",
+        "placeholderSocialMediaDescription": "説明を入力…",
+        "placeholderKeywords": "1つ以上のキーワードを入力…",
+        "placeholderUrl": "URLを入力…",
+        "socialMediaPreview": "ソーシャルメディアプレビュー",
+        "searchResultPreview": "検索結果プレビュー",
+        "helpTextMetaTitle": "メタタイトルは70文字以内にしてください。余分なテキストはGoogleにより切り捨てられ、SERPスニペットで完全に表示されません。",
+        "helpTextMetaDescription": "Googleでのメタ説明の最大長は約175文字でピクセル幅により切り捨てられます。説明が切れないように約150文字を推奨します。Shopwareは最大255文字を許容します。",
+        "notification": {
+          "noLayoutAssigned": "このランディングページにはレイアウトが割り当てられていません。レイアウトが無い場合、ランディングページはSEO経由でアクセスできません。"
+        }
+      },
+      "cms": {
+        "title": "レイアウト割り当て",
+        "changeLayout": "レイアウトを変更",
+        "changeLayoutEmpty": "レイアウトを割り当て",
+        "editInPagebuilder": "デザイナーで編集",
+        "editInPagebuilderEmpty": "新しいレイアウトを作成",
+        "editContent": "コンテンツを編集",
+        "defaultTitle": "デフォルトレイアウト",
+        "defaultDesc": "カテゴリー ページ",
+        "cmsLayoutModalHeadline": "ランディングページ"
+      }
+    },
+    "modal": {
+      "textDeleteConfirm": "ランディングページ「{name}」を本当に削除してもよろしいですか？",
+      "textDeleteMultipleConfirm": "{count} 件の選択されたランディングページを本当に削除してもよろしいですか？"
+    }
+  },
+  "sw-privileges": {
+    "permissions": {
+      "category": {
+        "label": "カテゴリー"
+      },
+      "landing_page": {
+        "label": "ランディングページ"
+      }
+    }
+  }
+}

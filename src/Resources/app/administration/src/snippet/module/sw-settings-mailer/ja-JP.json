@@ -1,0 +1,62 @@
+{
+  "sw-settings-mailer": {
+    "general": {
+      "mainMenuItemGeneral": "メール送信設定",
+      "textHeadline": "メール送信設定",
+      "buttonSave": "保存",
+      "helpText": "詳細は<a href='https://docs.shopware.com/en/shopware-6-en'>ドキュメント</a>をご覧ください"
+    },
+    "mailer-configuration": {
+      "card-title": "メール送信設定",
+      "agent": "優先メールエージェント",
+      "local-agent": "ローカルメールエージェント",
+      "local-helptext": "このオプションはシステムのデフォルトメール送信プログラム（Sendmail）を使用します。Sendmailが稼働し、ご自身のホスティング環境で使用可能であることを確認してください。",
+      "smtp-server": "SMTPサーバー",
+      "smtp-server-oauth": "OAuth 2対応SMTPサーバー",
+      "env-file": "環境設定を使用"
+    },
+    "first-configuration": {
+      "headline": "メール通信の設定",
+      "description": "顧客とのコミュニケーションはECの日常業務において重要です。そのため、メール送信設定はできるだけ早く完了させるべき項目です。"
+    },
+    "sendmail": {
+      "sync": "同期メール送信",
+      "async": "非同期メール送信"
+    },
+    "card-smtp": {
+      "host": "ホスト",
+      "host-placeholder": "ホスト名を入力してください…",
+      "port": "ポート",
+      "port-placeholder": "ポート番号を入力してください…",
+      "username": "ユーザー名",
+      "username-placeholder": "ユーザー名を入力してください…",
+      "password": "パスワード",
+      "password-placeholder": "パスワードを入力してください…",
+      "oauth-url": "OAuth URL",
+      "oauth-url-placeholder": "OAuth URLを入力してください…",
+      "oauth-scope": "OAuth スコープ",
+      "oauth-scope-placeholder": "OAuth スコープを入力してください…",
+      "oauth-client-id": "クライアントID",
+      "oauth-client-id-placeholder": "クライアントIDを入力してください…",
+      "oauth-client-secret": "クライアントシークレット",
+      "oauth-client-secret-placeholder": "クライアントシークレットを入力してください…",
+      "encryption": "暗号化方式",
+      "encryption-placeholder": "暗号化方式を選択してください…",
+      "sender-address": "送信元アドレス",
+      "sender-address-placeholder": "アクセス可能なメールアドレスを入力してください…",
+      "delivery-address": "配信先アドレス",
+      "delivery-address-placeholder": "テスト用のメールアドレスを入力してください…",
+      "delivery-address-helptext": "送信される全てのメールは、対象受信者宛とこのアドレス宛の両方に送信されます。テスト目的のみ使用してください。",
+      "disable-delivery": "メール送信を無効にする",
+      "error": {
+        "notificationMessage": "入力されたSMTP設定は無効の可能性があります。"
+      }
+    },
+    "encryption": {
+      "no-encryption": "暗号化なし",
+      "ssl": "SSL",
+      "tls": "TLS"
+    },
+    "helpText": "詳しくは<a target=\"_blank\" href=\"https://docs.shopware.com/en/shopware-6-en\">ドキュメント</a>をご確認ください。"
+  }
+}

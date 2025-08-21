@@ -1,0 +1,15 @@
+{
+  "sw-settings-media": {
+    "general": {
+      "title": "メディア",
+      "description": "ここでメディアの設定を管理します。",
+      "buttonSave": "保存"
+    },
+    "3d": {
+      "lightIntensity": {
+        "label": "光の強さ",
+        "helpText": "3Dビューの光の強さを変更します。"
+      }
+    }
+  }
+}

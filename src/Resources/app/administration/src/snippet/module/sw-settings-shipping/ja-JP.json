@@ -1,0 +1,130 @@
+{
+  "sw-settings-shipping": {
+    "general": {
+      "mainMenuItemGeneral": "配送",
+      "placeholderSearchBar": "すべての配送方法を検索...",
+      "descriptionTextModule": "ここで配送方法を管理します。"
+    },
+    "list": {
+      "textHeadline": "配送",
+      "buttonAddShippingMethod": "配送方法を追加",
+      "buttonDelete": "削除",
+      "columnName": "名前",
+      "columnDescription": "説明",
+      "columnActive": "有効",
+      "columnPosition": "位置",
+      "contextMenuEdit": "編集",
+      "contextMenuDelete": "削除",
+      "contextMenuDuplicate": "複製",
+      "messageEmpty": "まだ配送方法はありません",
+      "textDeleteConfirm": "本当に配送方法「{name}」を削除してもよろしいですか？",
+      "titleSidebarItemRefresh": "更新",
+      "messageSaveSuccess": "配送方法「{name}」が保存されました。",
+      "messageSaveError": "配送方法「{name}」を保存できませんでした。",
+      "messageDeleteError": "配送方法「{name}」を削除できませんでした。",
+      "messageDeleteSuccess": "配送方法「{name}」が削除されました。",
+      "columnTaxType": "税計算",
+      "columnTaxRate": "税率",
+      "placeholderTaxType": "税タイプを選択"
+    },
+    "detail": {
+      "textHeadline": "新しい配送方法",
+      "titleCard": "設定",
+      "messageSaveSuccess": "配送料金「{name}」が保存されました。",
+      "messageSaveError": "配送方法「{name}」を保存できませんでした。",
+      "labelName": "名前",
+      "labelTechnicalName": "技術名",
+      "labelActive": "有効",
+      "labelPosition": "位置",
+      "labelDeliveryTime": "配送時間",
+      "placeholderDeliveryTime": "配送時間を検索...",
+      "placeholderName": "名前を入力...",
+      "placeholderTechnicalName": "技術名を入力...",
+      "placeholderPosition": "位置を入力...",
+      "placeholderDescription": "説明を入力...",
+      "labelDescription": "説明",
+      "buttonSave": "保存",
+      "labelSetRules": "ルールを選択",
+      "labelBasicInfo": "基本情報",
+      "topRule": "利用可能性",
+      "placeholderTopRule": "利用可能性ルールを検索または作成...",
+      "labelLogoUpload": "ロゴをアップロード",
+      "labelTrackingUrl": "追跡URL",
+      "placeholderTrackingUrl": "URLを入力...",
+      "helpTextTrackingUrl": "配送業者の追跡URLを入力し、実際の追跡コードを挿入する場所に \"%s\" をプレースホルダーとして挿入してください。追跡コードは個別の注文から自動的に挿入されます。",
+      "helpTextTechnicalName": "技術名は配送方法を一意に識別するために使用されます。技術名の後の変更は、それに依存した配送連携機能が動作しなくなることがあります。",
+      "tax": {
+        "fieldName": "税計算",
+        "labelTaxType": "タイプ",
+        "labelTaxRate": "率",
+        "placeholderTaxType": "税タイプを選択...",
+        "placeholderTaxRate": "税率を選択...",
+        "helpText": "配送費にかかる税金の計算方法を以下のモードから選択します:<ul style='margin-left: 15px'><li>自動 - カートに含まれるすべての税率に基づいて計算</li><li>最高 - カートに含まれる最も高い税率に基づいて計算 </li><li>固定 - 手動で選択した税率に基づいて計算</li></ul>"
+      }
+    },
+    "constants": {
+      "weight": "重量",
+      "price": "価格",
+      "lineItemCount": "商品数量"
+    },
+    "priceMatrix": {
+      "titleCard": "価格マトリックス",
+      "noRestriction": "無制限",
+      "addNewRule": "新しいルールを追加",
+      "addNewShippingPrice": "価格レベルを追加",
+      "duplicateMatrixContextLabel": "価格マトリックスを複製",
+      "deleteMatrixContextLabel": "価格マトリックスを削除",
+      "contextMenuDeletePrice": "価格レベルを削除",
+      "selectProperty": "カートのプロパティを選択...",
+      "useRules": "ルールを作成",
+      "emptyText": "事前定義されたカートプロパティおよび/またはカスタムルールに基づく価格マトリックスを作成してください。選択してください:",
+      "chooseCustomRule": "カスタムルールを選択",
+      "calculationLineItemCount": "商品数量",
+      "calculationPrice": "カート価格",
+      "calculationWeight": "重量",
+      "calculationVolume": "体積",
+      "columnQuantityStart": "数量（開始）...",
+      "columnQuantityEnd": "まで...",
+      "columnWeightStart": "重量（開始）...",
+      "columnWeightEnd": "まで...",
+      "columnPriceStart": "カート価格（開始）...",
+      "columnPriceEnd": "まで...",
+      "columnVolumeStart": "体積（開始）...",
+      "columnVolumeEnd": "まで...",
+      "columnPrice": "価格",
+      "columnCalculationRule": "ルール",
+      "buttonAddAdditionalPriceMatrix": "価格マトリックスを追加",
+      "any": "∞",
+      "buttonDelete": "削除",
+      "textDeleteConfirm": "本当に価格マトリックス「{name}」を削除しますか？ | 本当にこれらの価格マトリックスを削除しますか？",
+      "deletionNotPossibleMessage": "少なくとも一つの価格階層が必要です。代わりに価格ルール全体の削除を試してください。",
+      "labelGrossNet": "(税込 / 税抜)",
+      "ruleAlreadyUsedOrRestricted": "このルールはすでに使用されているか、または高度な価格設定に適用できない条件を含んでいます。",
+      "ruleAlreadyUsedInMatrix": "このルールはすでにこの価格マトリックスで使用されています。",
+      "textOr": "または",
+      "chooseOrCreateRule": "ルールを選択または作成",
+      "unrestrictedRuleAlreadyExistsMessage": "すでに無制限の価格マトリックスがあります。",
+      "newMatrixAlreadyExists": "ルールが割り当てられていない新しい価格マトリックスがすでに存在します。",
+      "newMatrixAlertMessage": "この価格マトリックスを保存するにはルールを割り当てる必要があります。",
+      "buttonLoadAllPrices": "すべての価格を読み込む"
+    },
+    "sidebar": {
+      "labelUseAsLogo": "ロゴとして使用"
+    },
+    "shippingPriceModal": {
+      "modalTitle": "配送価格ルールを追加"
+    },
+    "shippingCostOptions": {
+      "auto": "自動",
+      "highest": "最高",
+      "fixed": "固定"
+    }
+  },
+  "sw-privileges": {
+    "permissions": {
+      "shipping": {
+        "label": "配送"
+      }
+    }
+  }
+}

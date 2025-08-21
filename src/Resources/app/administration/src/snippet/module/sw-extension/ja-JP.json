@@ -1,0 +1,653 @@
+{
+  "sw-extension": {
+    "store": {
+      "tabs": {
+        "apps": "アプリ",
+        "themes": "テーマ"
+      },
+      "listing": {
+        "anyOption": "すべて",
+        "sort": "並び替え"
+      }
+    },
+    "my-extensions": {
+      "listing": {
+        "initialSearchType": "拡張機能",
+        "placeholderSearchBar": "拡張機能を探す...",
+        "controls": {
+          "labelActiveStateSwitch": "非アクティブの拡張機能を非表示",
+          "filterOptions": {
+            "last-updated": "最終更新日時",
+            "name-asc": "名前 A - Z",
+            "name-desc": "名前 Z - A"
+          }
+        },
+        "version": "バージョン",
+        "update": "アップデート"
+      },
+      "account": {
+        "headline": "Shopwareアカウント",
+        "isLoggedIn": "Shopwareアカウントに正常に接続しました。「アプリ」または「テーマ」タブに移動して、購入済みの拡張機能が表示されているかご確認ください。表示されていない場合は、Shopwareアカウントにアクセスし、拡張機能用の正しいドメインが設定されているかご確認ください。",
+        "login": "ログイン",
+        "logout": "ログアウト",
+        "loginMessage": "store.shopware.comで購入した拡張機能にアクセスするには、Shopwareアカウントでログインしてください。",
+        "register": "今すぐ登録して、Shopwareコミュニティの一員になろう！",
+        "registerNow": "今すぐサインアップ",
+        "registerUrl": "https://account.shopware.com/register?lang=ja",
+        "mailLabel": "メールアドレス",
+        "mailPlaceholder": "メールアドレスを入力してください...",
+        "passwordLabel": "パスワード",
+        "passwordPlaceholder": "パスワードを入力してください...",
+        "recoveryUrl": "https://account.shopware.com/recovery?lang=ja",
+        "passwordForgot": "パスワードをお忘れですか？",
+        "loginNotificationMessage": "Shopwareアカウントにログインしています。"
+      },
+      "tabs": {
+        "app": "アプリ",
+        "theme": "テーマ",
+        "recommendation": "おすすめ",
+        "shopwareAccount": "Shopwareアカウント"
+      },
+      "fileUpload": {
+        "buttonFileUpload": "拡張機能をアップロード",
+        "messageUploadSuccess": "拡張機能がアップロードされました。",
+        "titleWarningModal": "警告",
+        "descriptionWarningModal": "Shopwareストア以外からの拡張機能は当社による審査を受けていません。お店にリスクをもたらす可能性があります。可能な限りShopwareストアの拡張機能をご利用されることを推奨します。",
+        "textHideWarning": "今後この警告を表示しない"
+      }
+    },
+    "errors": {
+      "messageToTheShopwareDocumentation": "<a href=\"{documentationLink}\" target=\"_blank\">Shopwareドキュメントを開く</a>",
+      "messageGenericFailure": "操作に失敗しました。",
+      "messageUploadFailureNotAZipFile": "アップロードされたファイルはZIPファイルではありません。",
+      "messageUploadFailureUnzipFailed": "ZIPファイルの解凍に失敗しました。",
+      "messageUploadFailureNoPluginFoundInZipFile": "ZIPファイル内に拡張機能が見つかりません。",
+      "messageLoginDataInvalid": "ログイン情報が不完全です。",
+      "messageStoreLicenseDomainMissing": "ログインに失敗しました。設定＞Shopwareアカウントで、正しい拡張機能用ドメインが指定されていることを確認してください。",
+      "messageStoreNotAvailable": "Shopwareストアは現在利用できません。",
+      "messagePluginBaseClassNotFound": "拡張機能のベースクラスがロードできませんでした。composer.jsonのオートローディング設定をご確認ください。",
+      "messagePluginInstallationFailed": "拡張機能をインストールできませんでした:「{message}」。",
+      "messagePluginUninstallationFailed": "拡張機能をアンインストールできませんでした:「{message}」。",
+      "messagePluginActivationFailed": "拡張機能を有効化できませんでした:「{message}」。",
+      "messagePluginDeactivationFailed": "拡張機能を無効化できませんでした:「{message}」。",
+      "messageDeactivationFailedDependencies": "拡張機能「{dependency}」は他の拡張機能が依存しているため無効化できません。アップデートを再起動する前に次の拡張機能を無効化してください: {dependantNames}",
+      "messageDeactivationFailedThemeAssignment": "テーマ「{themeName}」の割り当てを解除してください: {assignments}。",
+      "messagePluginUpdateFailed": "拡張機能を更新できませんでした:「{message}」。{pluginDeactivatedHint}",
+      "pluginDeactivatedHint": "拡張機能は無効化されました。",
+      "messagePluginRequirementMismatch": "この拡張機能はインストール済みのShopwareバージョンと互換性のない技術要件があります。メーカーへお問い合わせください。",
+      "appIsNotCompatible": "拡張機能「{name}」はこのShopwareバージョンと互換性がありません",
+      "appLicenseCouldNotBeVerified": {
+        "title": "この拡張機能のライセンスが確認できませんでした",
+        "message": "拡張機能用ドメインが正しく設定されていること、この拡張機能が紐付いているShopwareアカウントでログインしていることをご確認ください。",
+        "actionSetLicenseDomain": "ライセンスドメインを設定",
+        "actionLogin": "ログイン"
+      },
+      "storeSessionExpired": {
+        "title": "Shopwareアカウントのセッションが切れました",
+        "message": "ライセンス認証済みの拡張機能へアクセスするには再度ログインしてください。",
+        "actionLabel": "ログイン"
+      }
+    },
+    "mainMenu": {
+      "mainMenuItemExtensionStore": "拡張機能",
+      "store": "ストア",
+      "purchased": "購入済み拡張機能",
+      "support": "サポート"
+    },
+    "sw-extension-app-module-error-page": {
+      "error": {
+        "heading": "おっと！操作が早すぎたため、ページを見失いました。",
+        "phrase": "あなたが探しているページに辿り着けませんでした。ページが移動した、削除された、もしくはあなたが404ページ好きなのかもしれません。理由は不明です。",
+        "info": "心配しないでください！あなたを導く宇宙猫(レスキュー猫)が向かっています。",
+        "lblBackButton": "戻る"
+      }
+    }
+  },
+  "sw-extension-store": {
+    "landing-page": {
+      "enablingShopwareStore": "Shopwareストアを有効化中...",
+      "takeMinutes": "この処理には数分かかる場合があります。",
+      "activationErrorTitle": "有効化中にエラーが発生しました",
+      "activationErrorDescription": "再度お試しください。それでもうまくいかない場合は管理者へご相談ください。",
+      "retryButton": "再試行",
+      "activationSuccessTitle": "有効化が成功しました",
+      "activationSuccessDescription": "Shopwareストアの探索をお楽しみください。",
+      "label": "利用可能になりました",
+      "activationDescriptionTitleFirst": "拡張機能を簡単に探して購入可能 -",
+      "activationDescriptionTitleSecond": "ご自身のShopwareショップから直接。",
+      "activationDescriptionTitleDescription": "Shopwareストアを有効化して、数多くの便利な拡張機能や最新のテーマへシームレスにアクセスできます。プログラミングスキル不要です。",
+      "activate": "有効化"
+    },
+    "title": "ストア",
+    "descriptionTextModule": "拡張機能を管理する",
+    "general": {
+      "labelPrice": "無料 | {price}/月 | {price}",
+      "labelDiscountedPrice": "無料 | <s>{price}</s> <strong>{discountedPrice}</strong>/月 | <s>{price}</s> <strong>{discountedPrice}</strong>"
+    },
+    "listing": {
+      "tabs": {
+        "themes": "テーマ"
+      },
+      "placeHolderCategories": "すべてのカテゴリ",
+      "placeholderRatings": "すべての評価",
+      "sorting": {
+        "releaseDateAsc": "リリース日 古い順 - 新しい順",
+        "releaseDateDesc": "リリース日 新しい順 - 古い順",
+        "nameAsc": "名前 A - Z",
+        "nameDesc": "名前 Z - A",
+        "ratingAsc": "評価が低い順",
+        "ratingDesc": "評価が高い順"
+      }
+    },
+    "detail": {
+      "labelButtonAddExtension": "拡張機能を追加",
+      "labelButtonAddTheme": "テーマを追加",
+      "labelButtonOpenExtension": "拡張機能を開く",
+      "labelButtonOpenTheme": "テーマを開く",
+      "labelButtonInstallExtension": "拡張機能をインストール",
+      "labelButtonInstallTheme": "テーマをインストール",
+      "labelBy": "提供元",
+      "numberOfRatings": "{count}件のレビュー",
+      "noRatings": "まだ評価がありません",
+      "cardTitleInformation": "情報",
+      "labelButtonReadMore": "もっと読む",
+      "cardTitleDetails": "詳細",
+      "details": {
+        "labelCategory": "カテゴリ",
+        "labelVersion": "バージョン",
+        "labelUpdatedAt": "最終更新日",
+        "labelLanguages": "対応言語",
+        "labelWebsite": "開発者ウェブサイト",
+        "labelPrivacy": "プライバシーポリシー"
+      },
+      "cardTitleFAQ": "よくある質問(FAQ)",
+      "cardTitleChangelog": "変更履歴",
+      "labelButtonShowPermissions": "権限を表示",
+      "labelDiscountInfo": "このオファーは{endDate}まで有効",
+      "labelDiscountPeriod": "*初月のみ - | *最初の{months}ヶ月のみ - "
+    },
+    "component": {
+      "sw-extension-meteor-page-context-item": {
+        "labelButtonMore": "詳細"
+      },
+      "sw-extension-buy-modal": {
+        "title": "拡張機能を追加",
+        "labelAcceptPermissions": "この拡張機能に追加の権限が必要であることを理解しています",
+        "labelAcceptPrivacyExtensions": "プライバシーポリシーの拡張が必要なことを理解しています",
+        "buttonShowPrivacyExtensions": "詳細を表示",
+        "variantCard": {
+          "free": "無料版を利用",
+          "rent": "{price} /月で契約",
+          "buy": "{price} で購入",
+          "hasTrialPhase": "トライアル月含む"
+        },
+        "variantSummary": {
+          "labelVat": "税別",
+          "labelPrice": "価格",
+          "renewal": "{renewalDate}に自動更新"
+        },
+        "purchaseButtonsLabels": {
+          "free": "無料で拡張機能を追加",
+          "rent": "拡張機能をサブスクリプション契約",
+          "buy": "今すぐ購入"
+        },
+        "successNotification": {
+          "titleSuccess": "拡張機能を追加しました！",
+          "subtitleSuccess": "新しい拡張機能を今すぐお試しいただけます。",
+          "labelButtonBack": "詳細に戻る"
+        },
+        "alertCanNotBuy": {
+          "text": "この操作にはShopwareストアへのログインが必要です"
+        }
+      },
+      "sw-extension-adding-failed": {
+        "titleFailure": "拡張機能の追加に失敗しました",
+        "textProblem": "拡張機能の追加中に問題が発生しました。",
+        "installationFailed": {
+          "titleFailure": "インストール失敗",
+          "textProblem": "拡張機能のインストール中に問題が発生しました。メーカーへご報告いたします。",
+          "notificationLicense": "ご注意：この拡張機能へのサブスクリプションは継続されます。",
+          "textSupport": "ライセンスについてご不明な点はShopware Financial Servicesまでお問い合わせください。メール: {0} または電話: {1}",
+          "supportEmail": "financial.services{'@'}shopware.com",
+          "supportPhone": "+49 (0)2555 / 9288510"
+        }
+      },
+      "sw-extension-adding-success": {
+        "titleSuccess": "拡張機能の追加に成功しました！",
+        "subtitleSuccess": "今すぐ新しい拡張機能をお試しいただけます。"
+      },
+      "sw-extension-ratings": {
+        "sw-review-reply": {
+          "labelCreationDate": "{creationDate}に返信"
+        },
+        "sw-extension-review-creation": {
+          "submitBtn": "送信"
+        },
+        "sw-extension-ratings-summary": {
+          "labelRating": "評価なし | {numberOfRatings}件の評価"
+        },
+        "sw-extension-review": {
+          "labelLastChangeDate": "{author}、{lastChangeDate}",
+          "labelExtensionVersion": "バージョン: {extensionVersion}"
+        },
+        "sw-extension-ratings-card": {
+          "cardTitle": "評価とレビュー",
+          "labelMoreReviewsBtn": "さらにレビューを見る",
+          "footerHeadline": "レビューを追加",
+          "labelNoReviews": "この拡張機能にはまだ評価もレビューもありません。"
+        },
+        "sw-extension-review-creation-inputs": {
+          "title": "拡張機能を評価",
+          "labelHeadline": "タイトル",
+          "placeholderHeadline": "簡単なタイトルを入力してください...",
+          "labelRating": "評価",
+          "labelText": "レビュー（任意）"
+        },
+        "sw-extension-rating-modal": {
+          "title": "レビューを作成"
+        }
+      },
+      "sw-extension-card-base": {
+        "subscriptionLabel": "サブスクリプション：",
+        "inactiveLabel": "（非アクティブ）",
+        "purchasedLabel": "購入日：",
+        "installedLabel": "インストール日：",
+        "openExtensionLabel": "開く",
+        "installExtensionLabel": "インストール",
+        "labelAcceptAndInstall": "同意してインストール",
+        "allowDisableTooltip": "このアプリは独自のデータ構造を使用し、システムへ影響を及ぼすため、無効化することはできません。",
+        "contextMenu": {
+          "getHelpLabel": "ヘルプ",
+          "seeDetailsLabel": "詳細を見る",
+          "config": "設定",
+          "privacyAndSafetyLabel": "データプライバシーと安全",
+          "removeLabel": "削除",
+          "cancelAndRemoveLabel": "キャンセルして削除",
+          "uninstallLabel": "アンインストール",
+          "updateLabel": "{version}へアップデート",
+          "rateLabel": "拡張機能を評価",
+          "policyExtensions": "プライバシーポリシー拡張",
+          "permissions": "権限を見る",
+          "openExtension": "拡張機能を開く"
+        }
+      },
+      "sw-extension-card-bought": {
+        "rentWillExpireAt": "レンタルは{date}で失効します",
+        "rentExpiredAt": "レンタルは{date}に失効しました",
+        "testPhaseWillExpireAt": "試用期間は{date}で終了します",
+        "testPhaseExpiredAt": "試用期間は{date}に終了しました"
+      },
+      "sw-extension-deactivation-modal": {
+        "deactivateExtensionLabel": "「{extensionName}」を無効化",
+        "description": "「{extensionName}」拡張機能には月額のサブスクリプション料金がかかります。<br>拡張機能を無効化しても<b>サブスクリプションは解約されず</b>、料金は引き続き発生します。",
+        "descriptionCancel": "サブスクリプションを解約したい場合は、コンテキストメニューから「{removeLabel}」をクリックして削除できます。",
+        "alertDeactivate": "それでもこの拡張機能を無効化しますか？",
+        "deactivateLabel": "無効化"
+      },
+      "sw-extension-permissions-modal": {
+        "title": "{extensionLabel} の権限",
+        "titleNewPermissions": "新しい{extensionLabel}の権限",
+        "description": "{extensionLabel}は下記コンポーネントへのアクセスを求めています。エンティティの詳細はリンクをクリックしてください。",
+        "descriptionNewPermissions": "このアップデートでは{extensionLabel}の権限変更が要求されています。アップデートを続行する前に、すべての変更に同意していることを確認してください。",
+        "domainHint": "一部データは他のドメインとも共有・転送されます。詳細はドメインのリンクをご覧ください。",
+        "textEntities": "権限を表示",
+        "domains": "ドメイン",
+        "showDomains": "ドメインを表示",
+        "acceptAndUpdate": "同意してアップデート"
+      },
+      "sw-extension-domains-modal": {
+        "modalTitle": "{extensionLabel} - ドメイン",
+        "description": "下記のドメインに一部データが共有・転送されます。",
+        "listTitle": "ドメイン"
+      },
+      "sw-extension-privacy-policy-extensions-modal": {
+        "title": "{extensionLabel}: プライバシーポリシー拡張",
+        "intro": "このアプリは個人情報を処理します。メーカーはプライバシーポリシーの調整を推奨しています："
+      },
+      "sw-extension-permissions-details-modal": {
+        "operationRead": "閲覧",
+        "operationUpdate": "編集",
+        "operationCreate": "作成",
+        "operationDelete": "削除"
+      },
+      "sw-extension-my-extensions-listing": {
+        "apps": {
+          "noActivePlugins": "有効なアプリがありません。",
+          "titleEmptyState": "アプリはまだインストールされていません",
+          "textEmptyState": "アプリをインストールした場合、ここに表示されます。"
+        },
+        "themes": {
+          "noActivePlugins": "有効なテーマがありません。",
+          "titleEmptyState": "テーマはまだインストールされていません",
+          "textEmptyState": "テーマをインストールした場合、ここに表示されます。"
+        },
+        "btnOpenStore": "ストアを開く",
+        "alertExtensionManagement": {
+          "title": "ランタイム拡張機能管理が無効です",
+          "description": "このインストールではランタイム拡張機能管理が無効になっています。管理画面でのみ拡張機能の設定変更が可能です。"
+        }
+      },
+      "sw-extension-removal-modal": {
+        "titleCancel": "「{extensionName}」解約・削除",
+        "titleRemove": "「{extensionName}」を削除",
+        "description": "拡張機能を削除すると、再利用できなくなります。",
+        "alertCancel": "本当に拡張機能を解約・削除してよろしいですか？",
+        "alertRemove": "本当に拡張機能を削除してよろしいですか？",
+        "labelCancel": "解約して削除",
+        "labelRemove": "削除"
+      },
+      "sw-extension-uninstall-modal": {
+        "title": "「{extensionName}」アンインストール",
+        "description": "拡張機能をアンインストールすると再利用できなくなります。",
+        "alert": "本当にアンインストールしてよろしいですか？",
+        "buttonLabel": "アンインストール",
+        "labelRemovePluginData": "アプリデータをすべて完全に削除する",
+        "helpTextRemovePluginData": "警告：アプリのすべてのデータが完全に削除されます。この操作は元に戻せません。"
+      },
+      "sw-extension-listing-card": {
+        "labelInstalled": "インストール済み",
+        "labelLicensed": "購入済み"
+      },
+      "sw-extension-config": {
+        "messageSaveSuccess": "設定を保存しました。",
+        "imageDescription": "「{extensionName}」アイコン",
+        "labelBy": "提供元"
+      }
+    }
+  },
+  "entityCategories": {
+    "admin_user": {
+      "title": "管理ユーザー",
+      "entities": {
+        "integration": "連携",
+        "user": "ユーザー",
+        "user_access_key": "アクセスキー",
+        "user_recovery": "リカバリー"
+      }
+    },
+    "app": {
+      "title": "アプリ",
+      "entities": {
+        "app_template": "アプリテンプレート",
+        "app": "アプリ",
+        "app_translation": "アプリ翻訳",
+        "app_action_button": "アクションボタン",
+        "app_action_button_translation": "アクションボタン翻訳"
+      }
+    },
+    "category": {
+      "title": "カテゴリ",
+      "entities": {
+        "category": "カテゴリ",
+        "category_translation": "カテゴリ翻訳",
+        "category_tag": "タグ"
+      }
+    },
+    "cms": {
+      "title": "CMS",
+      "entities": {
+        "cms_block": "ブロック",
+        "cms_page": "ページ（レイアウト）",
+        "cms_page_translation": "ページ翻訳",
+        "cms_section": "セクション",
+        "cms_slot": "スロット",
+        "cms_slot_translation": "スロット翻訳"
+      }
+    },
+    "customer": {
+      "title": "顧客",
+      "entities": {
+        "customer": "顧客",
+        "customer_address": "住所",
+        "customer_group": "顧客グループ",
+        "customer_group_translation": "顧客グループ翻訳",
+        "customer_group_registration_sales_channels": "グループ登録先セールスチャンネル",
+        "customer_recovery": "リカバリー",
+        "customer_tag": "タグ"
+      }
+    },
+    "custom_fields": {
+      "title": "カスタムフィールド",
+      "entities": {
+        "custom_field": "カスタムフィールド",
+        "custom_field_set": "カスタムフィールドセット",
+        "custom_field_set_relation": "カスタムフィールドセット関連"
+      }
+    },
+    "documents": {
+      "title": "ドキュメント",
+      "entities": {
+        "document": "ドキュメント",
+        "document_base_config": "基本設定",
+        "document_base_config_sales_channel": "セールスチャンネル用基本設定",
+        "document_type": "タイプ",
+        "document_type_translation": "タイプ翻訳"
+      }
+    },
+    "google_shopping": {
+      "title": "Googleショッピング",
+      "entities": {
+        "swag_google_shopping_account": "アカウント",
+        "swag_google_shopping_ads_account": "広告アカウント",
+        "swag_google_shopping_list_ads_account": "リスト広告アカウント",
+        "swag_google_shopping_category": "カテゴリ",
+        "swag_google_shopping_merchant_account": "マーチャントアカウント"
+      }
+    },
+    "import_export": {
+      "title": "インポート/エクスポート",
+      "entities": {
+        "import_export_file": "ファイル",
+        "import_export_log": "ログ",
+        "import_export_profile": "プロファイル",
+        "import_export_profile_translation": "プロファイル翻訳"
+      }
+    },
+    "mail_templates": {
+      "title": "メールテンプレート",
+      "entities": {
+        "mail_header_footer": "ヘッダーとフッター",
+        "mail_header_footer_translation": "ヘッダー・フッター翻訳",
+        "mail_template": "メールテンプレート",
+        "mail_template_translation": "メールテンプレート翻訳",
+        "mail_template_media": "メディア",
+        "mail_template_sales_channel": "セールスチャンネル",
+        "mail_template_type": "タイプ",
+        "mail_template_type_translation": "タイプ翻訳"
+      }
+    },
+    "media": {
+      "title": "メディア",
+      "entities": {
+        "media": "メディア",
+        "media_translation": "メディア翻訳",
+        "media_default_folder": "デフォルトフォルダー",
+        "media_folder": "フォルダー",
+        "media_folder_configuration": "フォルダー設定",
+        "media_folder_configuration_media_thumbnail_size": "フォルダー設定 - サムネイルサイズ",
+        "media_tag": "タグ",
+        "media_thumbnail": "サムネイル",
+        "media_thumbnail_size": "サムネイルサイズ"
+      }
+    },
+    "newsletter": {
+      "title": "ニュースレター",
+      "entities": {
+        "newsletter_recipient": "受信者",
+        "newsletter_recipient_tag": "受信者タグ"
+      }
+    },
+    "order": {
+      "title": "注文",
+      "entities": {
+        "order": "注文",
+        "order_address": "住所",
+        "order_customer": "顧客",
+        "order_delivery": "配送",
+        "order_delivery_position": "配送ポジション",
+        "order_line_item": "明細",
+        "order_tag": "タグ",
+        "order_transaction": "取引"
+      }
+    },
+    "other": {
+      "title": "その他",
+      "entities": {
+        "acl_role": "ACLロール",
+        "acl_user_role": "ACLユーザーロール",
+        "dead_message": "無効メッセージ",
+        "message_queue_stats": "メッセージキュー統計",
+        "notification": "通知",
+        "plugin": "プラグイン",
+        "scheduled_task": "スケジュールタスク"
+      }
+    },
+    "payment": {
+      "title": "決済",
+      "entities": {
+        "payment_method": "決済方法",
+        "payment_method_translation": "決済方法翻訳"
+      }
+    },
+    "product": {
+      "title": "商品",
+      "entities": {
+        "product": "商品",
+        "product_category": "カテゴリ",
+        "product_category_tree": "カテゴリツリー",
+        "product_configurator_setting": "コンフィグ設定",
+        "product_cross_selling": "クロスセル",
+        "product_cross_selling_translation": "クロスセル翻訳",
+        "product_cross_selling_assigned_products": "クロスセル割当商品",
+        "product_export": "商品エクスポート",
+        "product_keyword_dictionary": "キーワード辞書",
+        "product_manufacturer": "メーカー",
+        "product_manufacturer_translation": "メーカー翻訳",
+        "product_media": "メディア",
+        "product_option": "商品オプション",
+        "product_price": "価格",
+        "product_property": "商品プロパティ",
+        "product_review": "レビュー",
+        "product_search_keyword": "検索キーワード",
+        "product_stream": "商品ストリーム",
+        "product_tag": "タグ",
+        "product_visibility": "表示可否",
+        "product_sorting": "並び順",
+        "product_translation": "商品翻訳",
+        "product_feature_set": "特徴セット",
+        "product_feature_set_translation": "特徴セット翻訳",
+        "product_custom_field_set": "カスタムフィールドセット"
+      }
+    },
+    "promotion": {
+      "title": "プロモーション",
+      "entities": {
+        "promotion": "プロモーション",
+        "promotion_translation": "プロモーション翻訳",
+        "promotion_cart_rule": "カートルール",
+        "promotion_discount": "割引",
+        "promotion_discount_prices": "割引価格",
+        "promotion_discount_rule": "割引用ルール",
+        "promotion_individual_code": "プロモーションコード",
+        "promotion_order_rule": "注文ルール",
+        "promotion_persona_customer": "ペルソナ顧客",
+        "promotion_persona_rule": "ペルソナルール",
+        "promotion_sales_channel": "セールスチャンネル",
+        "promotion_setgroup": "プロモーションセットグループ",
+        "promotion_setgroup_rule": "セットグループルール"
+      }
+    },
+    "rules": {
+      "title": "ルール",
+      "entities": {
+        "rule": "ルール",
+        "rule_condition": "ルール条件"
+      }
+    },
+    "sales_channel": {
+      "title": "セールスチャンネル",
+      "entities": {
+        "sales_channel": "セールスチャンネル",
+        "sales_channel_analytics": "アナリティクス",
+        "sales_channel_country": "国",
+        "sales_channel_currency": "通貨",
+        "sales_channel_domain": "ドメイン",
+        "sales_channel_language": "言語",
+        "sales_channel_payment_method": "決済方法",
+        "sales_channel_shipping_method": "配送方法",
+        "sales_channel_translation": "チャンネル翻訳",
+        "sales_channel_type": "タイプ",
+        "sales_channel_type_translation": "タイプ翻訳"
+      }
+    },
+    "settings": {
+      "title": "設定",
+      "entities": {
+        "country": "国",
+        "country_state": "州/地域",
+        "currency": "通貨",
+        "delivery_time": "配送時間",
+        "language": "言語",
+        "locale": "ロケール",
+        "locale_translation": "ロケール翻訳",
+        "number_range": "番号範囲",
+        "number_range_sales_channel": "番号範囲セールスチャンネル",
+        "number_range_state": "番号範囲状態",
+        "number_range_type": "番号範囲タイプ",
+        "salutation": "敬称",
+        "salutation_translation": "敬称翻訳",
+        "seo_url": "SEO URL",
+        "seo_url_template": "SEO URLテンプレート",
+        "state_machine": "ステートマシン",
+        "state_machine_history": "ステートマシン履歴",
+        "state_machine_state": "ステートマシン状態",
+        "state_machine_state_translation": "ステートマシン状態翻訳",
+        "state_machine_transition": "ステートマシン移行",
+        "state_machine_translation": "ステートマシン翻訳",
+        "system_config": "システム設定",
+        "tax": "税金",
+        "tax_rule": "税率ルール",
+        "tax_rule_type": "税率ルールタイプ",
+        "unit": "商品単位",
+        "version": "バージョン"
+      }
+    },
+    "social_shopping": {
+      "title": "ソーシャルショッピング",
+      "entities": {
+        "swag_social_shopping_sales_channel": "セールスチャンネル",
+        "swag_social_shopping_product_error": "商品エラー"
+      }
+    },
+    "tag": {
+      "title": "タグ",
+      "entities": {
+        "tag": "タグ"
+      }
+    },
+    "theme": {
+      "title": "テーマ",
+      "entities": {
+        "theme": "テーマ",
+        "theme_translation": "テーマ翻訳",
+        "theme_media": "メディア",
+        "theme_sales_channel": "セールスチャンネル"
+      }
+    },
+    "additional_privileges": {
+      "title": "追加権限",
+      "entities": {
+        "api_feature_flag_toggle": "機能フラグ切り替え API",
+        "api_service_toggle": "サービス切り替え API",
+        "api_service_list": "サービス一覧 API"
+      }
+    }
+  },
+  "sw-privileges": {
+    "additional_permissions": {
+      "system": {
+        "extension_store": "Shopwareストア"
+      }
+    }
+  }
+}

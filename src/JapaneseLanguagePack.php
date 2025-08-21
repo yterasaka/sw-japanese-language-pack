@@ -2,9 +2,12 @@
 
 namespace JapaneseLanguagePack;
 
-use Shopware\Core\Framework\Context;
-use Shopware\Core\Framework\DataAbstractionLayer\Search\Criteria;
-use Shopware\Core\Framework\DataAbstractionLayer\Search\Filter\EqualsFilter;
+use JapaneseLanguagePack\Service\JapaneseCurrencyService;
+use JapaneseLanguagePack\Service\JapaneseLanguageService;
+use JapaneseLanguagePack\Service\JapanesePrefectureService;
+use JapaneseLanguagePack\Service\JapaneseProductSortingService;
+use JapaneseLanguagePack\Service\JapaneseMailTemplateService;
+use JapaneseLanguagePack\Service\JapaneseStateMachineStateService;
 use Shopware\Core\Framework\Plugin;
 use Shopware\Core\Framework\Plugin\Context\ActivateContext;
 use Shopware\Core\Framework\Plugin\Context\DeactivateContext;
@@ -16,8 +19,12 @@ class JapaneseLanguagePack extends Plugin
 {
     public function install(InstallContext $installContext): void
     {
-        $this->createJapaneseLanguage($installContext->getContext());
-        $this->createJapaneseCurrency($installContext->getContext());
+        $this->getLanguageService()->createJapaneseLanguage($installContext->getContext());
+        $this->getCurrencyService()->createJapaneseCurrency($installContext->getContext());
+        $this->getPrefectureService()->createJapanesePrefectures($installContext->getContext());
+        $this->getProductSortingService()->updateProductSortingTranslations($installContext->getContext());
+        $this->getMailTemplateService()->createJapaneseMailTemplateTranslations($installContext->getContext());
+        $this->getStateMachineStateService()->addJapaneseStateTranslations($installContext->getContext());
     }
 
     public function uninstall(UninstallContext $uninstallContext): void
@@ -27,9 +34,6 @@ class JapaneseLanguagePack extends Plugin
         if ($uninstallContext->keepUserData()) {
             return;
         }
-
-        $this->removeJapaneseLanguage($uninstallContext->getContext());
-        $this->removeJapaneseCurrency($uninstallContext->getContext());
     }
 
     public function activate(ActivateContext $activateContext): void
@@ -42,8 +46,12 @@ class JapaneseLanguagePack extends Plugin
 
     public function update(UpdateContext $updateContext): void
     {
-        $this->createJapaneseLanguage($updateContext->getContext());
-        $this->createJapaneseCurrency($updateContext->getContext());
+        $this->getLanguageService()->createJapaneseLanguage($updateContext->getContext());
+        $this->getCurrencyService()->createJapaneseCurrency($updateContext->getContext());
+        $this->getPrefectureService()->createJapanesePrefectures($updateContext->getContext());
+        $this->getProductSortingService()->updateProductSortingTranslations($updateContext->getContext());
+        $this->getMailTemplateService()->createJapaneseMailTemplateTranslations($updateContext->getContext());
+        $this->getStateMachineStateService()->addJapaneseStateTranslations($updateContext->getContext());
     }
 
     public function postInstall(InstallContext $installContext): void
@@ -54,154 +62,76 @@ class JapaneseLanguagePack extends Plugin
     {
     }
 
-    private function createJapaneseLanguage(Context $context): void
+    private function getLanguageService(): JapaneseLanguageService
     {
-        $localeRepository = $this->container->get('locale.repository');
-        $languageRepository = $this->container->get('language.repository');
-        $snippetSetRepository = $this->container->get('snippet_set.repository');
-
-        $criteria = new Criteria();
-        $criteria->addFilter(new EqualsFilter('code', 'ja-JP'));
-        
-        $locale = $localeRepository->search($criteria, $context)->first();
-
-        if (!$locale) {
-            $localeRepository->create([
-                [
-                    'code' => 'ja-JP',
-                    'name' => '日本語',
-                    'territory' => 'Japan'
-                ]
-            ], $context);
-
-            $locale = $localeRepository->search($criteria, $context)->first();
-        }
-
-        if ($locale) {
-            $languageCriteria = new Criteria();
-            $languageCriteria->addFilter(new EqualsFilter('locale.code', 'ja-JP'));
-            
-            $language = $languageRepository->search($languageCriteria, $context)->first();
-
-            if (!$language) {
-                $languageRepository->create([
-                    [
-                        'name' => '日本語',
-                        'localeId' => $locale->getId(),
-                        'translationCodeId' => $locale->getId()
-                    ]
-                ], $context);
-
-                $language = $languageRepository->search($languageCriteria, $context)->first();
-            }
-
-            if ($language) {
-                $snippetSetCriteria = new Criteria();
-                $snippetSetCriteria->addFilter(new EqualsFilter('iso', 'ja-JP'));
-                
-                $snippetSet = $snippetSetRepository->search($snippetSetCriteria, $context)->first();
-
-                if (!$snippetSet) {
-                    $snippetSetRepository->create([
-                        [
-                            'name' => 'BASE ja-JP',
-                            'baseFile' => 'messages.ja-JP',
-                            'iso' => 'ja-JP'
-                        ]
-                    ], $context);
-                }
-            }
+        try {
+            return $this->container->get(JapaneseLanguageService::class);
+        } catch (\Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException $e) {
+            return new JapaneseLanguageService(
+                $this->container->get('locale.repository'),
+                $this->container->get('language.repository'),
+                $this->container->get('snippet_set.repository')
+            );
         }
     }
 
-    private function removeJapaneseLanguage(Context $context): void
+    private function getCurrencyService(): JapaneseCurrencyService
     {
-        $languageRepository = $this->container->get('language.repository');
-        $snippetSetRepository = $this->container->get('snippet_set.repository');
-
-        $snippetSetCriteria = new Criteria();
-        $snippetSetCriteria->addFilter(new EqualsFilter('iso', 'ja-JP'));
-        
-        $snippetSet = $snippetSetRepository->search($snippetSetCriteria, $context)->first();
-
-        if ($snippetSet) {
-            $snippetSetRepository->delete([
-                ['id' => $snippetSet->getId()]
-            ], $context);
-        }
-
-        $criteria = new Criteria();
-        $criteria->addFilter(new EqualsFilter('locale.code', 'ja-JP'));
-        
-        $language = $languageRepository->search($criteria, $context)->first();
-
-        if ($language) {
-            $languageRepository->delete([
-                ['id' => $language->getId()]
-            ], $context);
-        }
-
-        $localeRepository = $this->container->get('locale.repository');
-
-        $localeCriteria = new Criteria();
-        $localeCriteria->addFilter(new EqualsFilter('code', 'ja-JP'));
-        
-        $locale = $localeRepository->search($localeCriteria, $context)->first();
-
-        if ($locale) {
-            $localeRepository->delete([
-                ['id' => $locale->getId()]
-            ], $context);
+        try {
+            return $this->container->get(JapaneseCurrencyService::class);
+        } catch (\Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException $e) {
+            return new JapaneseCurrencyService(
+                $this->container->get('currency.repository')
+            );
         }
     }
 
-    private function createJapaneseCurrency(Context $context): void
+    private function getPrefectureService(): JapanesePrefectureService
     {
-        $currencyRepository = $this->container->get('currency.repository');
-
-        $criteria = new Criteria();
-        $criteria->addFilter(new EqualsFilter('isoCode', 'JPY'));
-        
-        $currency = $currencyRepository->search($criteria, $context)->first();
-
-        if (!$currency) {
-            $currencyRepository->create([
-                [
-                    'isoCode' => 'JPY',
-                    'name' => '日本円',
-                    'symbol' => '¥',
-                    'factor' => 1.0,
-                    'decimalPrecision' => 0,
-                    'shortName' => 'JPY',
-                    'position' => 1,
-                    'itemRounding' => [
-                        'decimals' => 0,
-                        'interval' => 1.0,
-                        'roundForNet' => true
-                    ],
-                    'totalRounding' => [
-                        'decimals' => 0,
-                        'interval' => 1.0,
-                        'roundForNet' => true
-                    ]
-                ]
-            ], $context);
+        try {
+            return $this->container->get(JapanesePrefectureService::class);
+        } catch (\Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException $e) {
+            return new JapanesePrefectureService(
+                $this->container->get('country.repository'),
+                $this->container->get('country_state.repository'),
+                $this->container->get('language.repository'),
+            );
         }
     }
 
-    private function removeJapaneseCurrency(Context $context): void
+    private function getProductSortingService(): JapaneseProductSortingService
     {
-        $currencyRepository = $this->container->get('currency.repository');
+        try {
+            return $this->container->get(JapaneseProductSortingService::class);
+        } catch (\Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException $e) {
+            return new JapaneseProductSortingService(
+                $this->container->get('language.repository'),
+                $this->container->get(\Doctrine\DBAL\Connection::class)
+            );
+        }
+    }
 
-        $criteria = new Criteria();
-        $criteria->addFilter(new EqualsFilter('isoCode', 'JPY'));
-        
-        $currency = $currencyRepository->search($criteria, $context)->first();
+    private function getMailTemplateService(): JapaneseMailTemplateService
+    {
+        try {
+            return $this->container->get(JapaneseMailTemplateService::class);
+        } catch (\Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException $e) {
+            return new JapaneseMailTemplateService(
+                $this->container->get('mail_template.repository'),
+                $this->container->get('language.repository'),
+            );
+        }
+    }
 
-        if ($currency) {
-            $currencyRepository->delete([
-                ['id' => $currency->getId()]
-            ], $context);
+    private function getStateMachineStateService(): JapaneseStateMachineStateService
+    {
+        try {
+            return $this->container->get(JapaneseStateMachineStateService::class);
+        } catch (\Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException $e) {
+            return new JapaneseStateMachineStateService(
+                $this->container->get('state_machine_state.repository'),
+                $this->container->get('language.repository')
+            );
         }
     }
 }

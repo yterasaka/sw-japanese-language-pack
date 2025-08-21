@@ -1,0 +1,54 @@
+{
+  "sw-settings-usage-data": {
+    "general": {
+      "mainMenuItemGeneral": "データ共有",
+      "textHeadline": "データ共有",
+      "description": "Shopwareの改善のために使用データを共有する設定を行います。"
+    }
+  },
+  "sw-settings-usage-data-general": {
+    "tabHeadline": "全般"
+  },
+  "sw-usage-data-consent-banner": {
+    "headline": "Eコマースの未来を創る",
+    "improvingDescription": "私たちは、お客様に提供するサービスを常に改善しています。次のステップに進むために、機械学習（例：パターン認識）などの技術を用いてデータを分析し、製品の開発・改善を行っています。お客様のデータは、ビジネスの成功を高めるためのデータ駆動型サービスの開発にも利用されます。収集しているデータは以下の通りです。",
+    "improvingDescriptionNotAccepted": "私たちは、お客様に提供するサービスを常に改善しています。次のステップに進むために、機械学習（例：パターン認識）などの技術を用いてデータを分析し、製品の開発・改善を行いたいと考えています。お客様のデータは、ビジネスの成功を高めるためのデータ駆動型サービスの開発にも利用されます。これから収集するデータは以下の通りです。",
+    "fullDetailsDescription": "同意内容の詳細は{link}でご確認いただけます。{fullDetailsDescriptionNotAccepted}",
+    "fullDetailsDescriptionNotAccepted": "データ共有はいつでもオプトアウトできます。",
+    "confirmAuthorization": "「同意する」をクリックすると、ご自身が企業を代表して本契約を締結する権限を有することを確認したことになります。",
+    "privacyPolicy": "shopware.com/en/data-use-details",
+    "privacyPolicyLink": "https://www.shopware.com/en/data-use-details/",
+    "collectionInformation": {
+      "orderData": "注文データ",
+      "usageData": "使用データ",
+      "diagnosticData": "診断データ",
+      "storeData": "ストアデータ",
+      "helpText": {
+        "orderDataHelp": "<strong>注文データ</strong>はShopware内での顧客が行った注文に関する詳細情報を指します。これには、注文された商品、数量、価格、出所、支払い方法、配送情報等が含まれます。私たちはこのデータを分析し、トレンドやパターンを把握することで、機能改善や新サービス開発を行い、お客様のビジネス成功を支援します。お客様の個人を特定できる個人情報は収集しません。",
+        "usageDataHelp": "<strong>使用データ</strong>は管理ユーザーやストア訪問者がプラットフォームとどのようにやり取りしているかに関する情報です。これには、各種Shopware管理モジュールの操作状況、閲覧ページ、滞在時間、クリック経路、プラットフォームやストア内のユーザーアクションなどが含まれます。使用データを評価することで、よく利用される機能や避けられている機能を把握し、レイアウト・デザイン・機能性の改善に役立てます。管理者や訪問者個人を特定できるデータは収集していません。",
+        "diagnosticDataHelp": "<strong>診断データ</strong>は、プラットフォームのシステム状態、エラーおよびパフォーマンス指標に関する情報です。これにはシステムログ、エラーメッセージ、サーバー応答時間、その他技術的指標が含まれます。このデータの分析により、問題や脆弱性の迅速な特定、対応、修正の展開が可能となり、プラットフォームの健全性を維持しています。",
+        "storeDataHelp": "<strong>ストアデータ</strong>は、オンラインストアに関わるすべての情報を指します。商品、リスティング、価格、画像、説明文などに加え、テーマやプラグインなどのストア設定に関するメタデータも含まれます。管理者や訪問者個人を特定できる個人情報は収集していません。集約したストアデータを用いて、機械学習を通じた市場動向の把握などのインサイトを提供し、商品提供やマーケティング戦略の調整に役立てることができます。"
+      }
+    },
+    "checkListDataSharing": {
+      "title": "以下を保証いたします：",
+      "gdprCompliant": "GDPRに準拠しています",
+      "personalData": "個人を特定できるデータは収集しません",
+      "securelyProcessed": "データは安全に処理・保管されます",
+      "thirdParty": "お客様のデータを第三者の独自目的で共有しません",
+      "helpText": {
+        "shareDataHelpText": "<strong>「共有」</strong>とは、受領者が自身の目的でデータを利用するための開示を指し、サービス提供者へのデータ開示は含みます。"
+      }
+    },
+    "acceptDataCollection": "同意する",
+    "declineDataCollection": "今は控える",
+    "togglePath": "設定",
+    "rejectedMessage": "いつでも同意を行い、{link}でデータ共有を許可することで、サービスの継続的な進化に貢献し利益を得ることができます。",
+    "thankYouMessage": "{thanksForParticipation} 本契約はいつでもオプトアウトでき、{link}でデータ共有を無効にすることで、サービスの継続的な開発への貢献と恩恵を停止できます。",
+    "thanksForParticipation": "ご参加いただきありがとうございます！",
+    "settings": {
+      "deactivateDataCollection": "データ共有を無効にする",
+      "sharingInformation": "データを共有しています"
+    }
+  }
+}

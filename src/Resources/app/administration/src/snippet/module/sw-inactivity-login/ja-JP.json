@@ -1,0 +1,17 @@
+{
+  "sw-inactivity-login": {
+    "general": {
+      "mainMenuItemIndex": "セッションタイムアウト",
+      "description": "非アクティビティによるログイン"
+    },
+    "modal": {
+      "title": "念のため、ログアウトしました。",
+      "actions": {
+        "backToLogin": "ログイン画面に戻る"
+      },
+      "errors": {
+        "password": "パスワードが正しくありません"
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "sw-settings-measurement": {
+    "general": {
+      "mainMenuItemGeneral": "計測システム",
+      "description": "デフォルトの計測単位を変更するモジュールです。",
+      "textHeadline": "計測システム"
+    },
+    "defaultUnits": {
+      "title": "デフォルト単位",
+      "description": "新しい販売チャネルで使用されるデフォルトの計測単位を設定します。お客様に表示される単位は、{link}で定義されています。",
+      "linkText": "販売チャネル設定",
+      "config": {
+        "type": "単位システム",
+        "lengthUnit": "長さの単位",
+        "weightUnit": "重さの単位"
+      }
+    },
+    "notification": {
+      "saveMeasurementSuccess": "計測システムの設定が正常に保存されました",
+      "saveMeasurementError": "計測システムの設定の保存に失敗しました"
+    }
+  },
+  "sw-privileges": {
+    "permissions": {
+      "measurement": {
+        "label": "計測システム"
+      }
+    }
+  }
+}

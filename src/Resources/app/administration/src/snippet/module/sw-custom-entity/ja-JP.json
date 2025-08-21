@@ -1,0 +1,15 @@
+{
+  "sw-custom-entity": {
+    "general": {
+      "mainMenuItemGeneral": "カスタムエンティティ",
+      "emptyState": "カスタムエンティティはまだありません",
+      "emptyStateSubline": "ここでカスタムエンティティを管理します。"
+    },
+    "detail": {
+      "tabs": {
+        "layout": "レイアウト",
+        "seo": "SEO"
+      }
+    }
+  }
+}

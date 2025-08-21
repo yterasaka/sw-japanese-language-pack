@@ -1,0 +1,224 @@
+{
+  "sw-theme": {
+    "Storefront": {
+      "default": {
+        "themeColors": {
+          "label": "テーマカラー",
+          "default": {
+            "sw-color-brand-primary": {
+              "label": "プライマリーカラー"
+            },
+            "sw-color-brand-secondary": {
+              "label": "セカンダリーカラー"
+            },
+            "sw-border-color": {
+              "label": "ボーダー"
+            },
+            "sw-background-color": {
+              "label": "背景"
+            }
+          }
+        },
+        "statusColors": {
+          "label": "ステータスメッセージ",
+          "default": {
+            "sw-color-success": {
+              "label": "成功"
+            },
+            "sw-color-danger": {
+              "label": "エラー"
+            },
+            "sw-color-warning": {
+              "label": "注意"
+            },
+            "sw-color-info": {
+              "label": "情報"
+            }
+          }
+        },
+        "typography": {
+          "label": "タイポグラフィ",
+          "default": {
+            "sw-font-family-base": {
+              "label": "本文フォント"
+            },
+            "sw-text-color": {
+              "label": "テキストカラー"
+            },
+            "sw-font-family-headline": {
+              "label": "見出しフォント"
+            },
+            "sw-headline-color": {
+              "label": "見出しカラー"
+            }
+          }
+        },
+        "eCommerce": {
+          "label": "Eコマース",
+          "default": {
+            "sw-color-price": {
+              "label": "価格"
+            },
+            "sw-color-buy-button": {
+              "label": "購入ボタン"
+            },
+            "sw-color-buy-button-text": {
+              "label": "購入ボタンテキスト"
+            }
+          }
+        },
+        "media": {
+          "label": "メディア",
+          "default": {
+            "sw-logo-desktop": {
+              "label": "デスクトップ",
+              "helpText": "991px以上のビューポートに表示され、他のロゴが設定されていない小さいビューポートのフォールバックとしても表示されます。"
+            },
+            "sw-logo-tablet": {
+              "label": "タブレット",
+              "helpText": "767px以上991px以下のビューポートに表示されます。"
+            },
+            "sw-logo-mobile": {
+              "label": "モバイル",
+              "helpText": "767px以下のビューポートに表示されます。"
+            },
+            "sw-logo-share": {
+              "label": "アプリ＆共有アイコン"
+            },
+            "sw-logo-favicon": {
+              "label": "ファビコン"
+            }
+          }
+        }
+      }
+    }
+  },
+  "sw-theme-manager": {
+    "general": {
+      "mainMenuItemGeneral": "テーマ",
+      "placeholderSearchBar": "利用可能なテーマを検索...",
+      "descriptionTextModule": "ここでテーマを管理します。",
+      "mainMenuHeader": "あなたのテーマ",
+      "captionMediaUpload": "画像をアップロード",
+      "lockedToolTip": "プラグイン経由でインストールされたテーマはロックされており、削除できません",
+      "titleError": "エラー",
+      "messageSaveError": "テーマを販売チャネルに割り当てられませんでした。",
+      "defaultTab": "一般"
+    },
+    "sorting": {
+      "labelSort": "並び替え:",
+      "labelSortByCreatedAsc": "作成日（昇順）",
+      "labelSortByCreatedDsc": "作成日（降順）",
+      "labelSortByUpdatedAsc": "更新日（昇順）",
+      "labelSortByUpdatedDsc": "更新日（降順）"
+    },
+    "themeListItem": {
+      "rename": "名前の変更",
+      "duplicate": "複製",
+      "emptyText": "割り当てられたテーマがありません",
+      "addPreviewImage": "プレビューを追加",
+      "removePreviewImage": "プレビューを削除",
+      "notificationDeleteErrorTitle": "エラー",
+      "notificationDeleteErrorMessage": "削除しようとしているテーマはまだ少なくとも1つの販売チャネルに割り当てられています。"
+    },
+    "modal": {
+      "textDeleteInfo": "本当にテーマ「{themeName}」を削除してもよろしいですか？",
+      "errorModalTitle": "テーマをコンパイルできません",
+      "modalTitleDuplicate": "複製を作成",
+      "textDuplicateInfo": "複製を作成すると、異なるカラ―設定で他の販売チャネル用にテーマを使用できます。",
+      "labelDuplicateThemeName": "複製の名前",
+      "placeholderDuplicateThemeName": "名前を入力してください",
+      "modalTitleRename": "名前の変更",
+      "textRenameInfo": "テーマの新しい名前を入力してください。",
+      "labelRenameThemeName": "新しいテーマ名",
+      "placeholderRenameThemeName": "名前を入力してください",
+      "modalTitleReset": "テーマのリセット",
+      "modalTextResetInfo": "テーマをデフォルト設定にリセットしてもよろしいですか？",
+      "modalTextResetAssigned": "これによりショップの見た目が変わります。",
+      "modalTitleSave": "テーマを保存",
+      "textSaveInfo": "変更内容を保存してよろしいですか？これによりショップの見た目が変わります。",
+      "addToMediaLabel": "{name}に追加",
+      "salesChannelAlreadyAssignedModal": {
+        "descriptionSingle": "この販売チャネルは既にテーマに割り当てられています。保存すると割り当てが<b>{newThemeName}</b>に置き換わります：",
+        "descriptionMultiple": "選択した一部の販売チャネルは既にテーマに割り当てられています。保存すると次のテーマ割り当てが<b>{newThemeName}</b>に置き換わります："
+      },
+      "salesChannelRemovedModal": {
+        "descriptionSingle": "テーマ割り当てを削除しました。保存すると割り当てが<b>{defaultThemeName}</b>に置き換わります：",
+        "descriptionMultiple": "いくつかのテーマ割り当てを削除しました。保存すると次の割り当てが<b>{defaultThemeName}</b>に置き換わります："
+      }
+    },
+    "list": {
+      "titleSidebarItemRefresh": "更新",
+      "textThemeOverview": "テーマ一覧",
+      "gridHeaderName": "名前",
+      "gridHeaderCreated": "作成日",
+      "gridHeaderAssignment": "割り当てられた販売チャネル"
+    },
+    "actions": {
+      "saveClean": "クリーン保存",
+      "saveCleanToolTip": "現在の値を完全に書き換えます。フィールドが削除されたりタイプが変更された後にクリーンな状態で保存する場合に使用してください。",
+      "validate": "検証",
+      "validateToolTip": "設定全体を検証します。変更は保存されません。",
+      "rename": "名前の変更",
+      "useImageAs": "画像の使用方法",
+      "buttonReset": "デフォルトにリセット",
+      "buttonUseTheme": "テーマを使用",
+      "deleteDisabledToolTip": "テーマはまだ販売チャネルに割り当てられています。"
+    },
+    "detail": {
+      "description": "説明",
+      "salesChannel": "以下の販売チャネルに割り当て済み",
+      "inheritanceInfo": "このテーマは「{parentThemeName}」テーマを継承しています。",
+      "showFullError": "全てのエラーを表示",
+      "salesChannelHelpText": "ここではこれらの割り当てを削除できません。販売チャネルのテーマ変更は各販売チャネルの設定画面で行ってください。",
+      "validate": {
+        "success": "検証成功",
+        "successMessage": "設定は正常に検証されました。変更を保存できます。",
+        "failed": "検証失敗",
+        "failedMessage": "設定に不備があります。変更を保存できません。"
+      },
+      "label": {
+        "media": "メディア",
+        "colors": "カラー",
+        "generalColors": "一般カラー",
+        "moreColors": "その他のカラー",
+        "fonts": "フォント",
+        "links": "リンク",
+        "textcolor": "テキストカラー",
+        "surface": "表面",
+        "frame": "フレーム",
+        "text": "テキスト",
+        "headlines": "見出し",
+        "socialMediaLinks": "ソーシャルメディアリンク",
+        "favicon": "ファビコン",
+        "shopLogo": "ショップロゴ"
+      },
+      "placeholder": {
+        "selectSalesChannel": "販売チャネルを選択..."
+      },
+      "error": {
+        "themeCompile": {
+          "title": "テーマのコンパイルエラー",
+          "message": "テーマをコンパイルできませんでした。この問題を解決するには完全なエラーメッセージを確認してください。"
+        },
+        "invalidConfiguration": {
+          "title": "無効な設定",
+          "message": "設定に問題があります。テーマを保存できません。"
+        }
+      }
+    },
+    "themeModal": {
+      "actionConfirm": "テーマを変更",
+      "modalTitle": "テーマを選択",
+      "modalSubtitle": "テーマを変更するとショップの表示が変わる可能性があります。",
+      "headline": "利用可能なテーマ"
+    }
+  },
+  "sw-privileges": {
+    "permissions": {
+      "theme": {
+        "label": "テーマ"
+      }
+    }
+  }
+}
