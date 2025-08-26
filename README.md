@@ -94,6 +94,11 @@ If you have suggestions for translation improvements:
 
 ## 変更履歴 / Changelog
 
+### v1.3.1
+
+- エラーハンドリングの改善 / Improved error handling
+- コードドキュメントの改善 / Improved code documentation
+
 ### v1.3.0
 
 - 管理画面の包括的な日本語翻訳を追加 / Added comprehensive Japanese translations for administration panel

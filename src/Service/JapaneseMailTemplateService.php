@@ -7,6 +7,10 @@ use Shopware\Core\Framework\DataAbstractionLayer\EntityRepository;
 use Shopware\Core\Framework\DataAbstractionLayer\Search\Criteria;
 use Shopware\Core\Framework\DataAbstractionLayer\Search\Filter\EqualsFilter;
 
+/**
+ * Service for managing Japanese mail template translations
+ * メールテンプレートの日本語翻訳を管理するサービス
+ */
 class JapaneseMailTemplateService
 {
     private EntityRepository $mailTemplateRepository;

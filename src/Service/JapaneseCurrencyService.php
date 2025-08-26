@@ -7,6 +7,10 @@ use Shopware\Core\Framework\DataAbstractionLayer\EntityRepository;
 use Shopware\Core\Framework\DataAbstractionLayer\Search\Criteria;
 use Shopware\Core\Framework\DataAbstractionLayer\Search\Filter\EqualsFilter;
 
+/**
+ * Service for managing Japanese currency (JPY) configuration
+ * 日本円（JPY）通貨の設定を管理するサービス
+ */
 class JapaneseCurrencyService
 {
     private EntityRepository $currencyRepository;

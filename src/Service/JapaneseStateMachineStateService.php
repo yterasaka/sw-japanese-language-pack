@@ -9,12 +9,8 @@ use Shopware\Core\Framework\DataAbstractionLayer\Search\Filter\EqualsFilter;
 use Shopware\Core\System\StateMachine\Aggregation\StateMachineState\StateMachineStateEntity;
 
 /**
+ * Service for managing Japanese state machine state translations
  * ステートマシンステータス（注文状態、配送状態、支払い状態等）の日本語翻訳を管理するサービス
- * 
- * 主な機能:
- * - 注文状態の日本語翻訳追加
- * - 配送状態の日本語翻訳追加  
- * - 支払い状態の日本語翻訳追加
  */
 class JapaneseStateMachineStateService
 {
