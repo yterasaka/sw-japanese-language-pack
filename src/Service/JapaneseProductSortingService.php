@@ -9,6 +9,10 @@ use Shopware\Core\Framework\DataAbstractionLayer\Search\Criteria;
 use Shopware\Core\Framework\DataAbstractionLayer\Search\Filter\EqualsFilter;
 use Shopware\Core\Framework\Uuid\Uuid;
 
+/**
+ * Service for managing Japanese product sorting translations
+ * 商品ソート機能の日本語翻訳を管理するサービス
+ */
 class JapaneseProductSortingService
 {
     private EntityRepository $languageRepository;
