@@ -78,6 +78,7 @@ class JapanesePrefectureService
             $this->countryRepository->create([$countryData], $context);
             return $this->findJapan($context);
         } catch (\Exception $e) {
+            error_log('Failed to create Japan country: ' . $e->getMessage());
             return null;
         }
     }
