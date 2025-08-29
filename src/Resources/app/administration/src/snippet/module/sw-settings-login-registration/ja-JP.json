@@ -1,0 +1,11 @@
+{
+  "sw-settings-login-registration": {
+    "general": {
+      "mainMenuItemGeneral": "ログイン＆サインアップ",
+      "description": "基本情報をここで変更します。",
+      "textHeadline": "ログイン＆サインアップ",
+      "buttonSave": "保存",
+      "messageSaveSuccess": "設定が保存されました。"
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "sw-settings-custom-field": {
+    "general": {
+      "description": "カスタムフィールドを管理します。",
+      "mainMenuItemGeneral": "カスタムフィールド",
+      "placeholderSearchBar": "すべてのカスタムフィールドを検索...",
+      "tooltipTechnicalName": "技術名は一意であり、後から変更できません。",
+      "tooltipType": "タイプは後から変更できません。"
+    },
+    "set": {
+      "list": {
+        "textHeadline": "カスタムフィールド",
+        "textDeleteConfirm": "セット「{name}」を本当に削除しますか？",
+        "buttonAdd": "新しいセットを追加",
+        "columnName": "ラベル",
+        "contextMenuEdit": "編集",
+        "buttonDelete": "削除",
+        "messageDeleteSuccess": "セット「{name}」が削除されました。",
+        "messageEmpty": "まだカスタムフィールドはありません。",
+        "helpTextGlobalSet": "このセットはグローバルであり、編集できません。"
+      },
+      "detail": {
+        "labelTechnicalName": "技術名",
+        "labelPosition": "位置",
+        "textHeadline": "カスタムフィールドセット",
+        "buttonSave": "保存",
+        "titleCardInformation": "一般情報",
+        "labelName": "セット名",
+        "placeholderName": "名前を入力してください...",
+        "labelCheckboxTranslated": "全ての管理画面言語でラベルを管理する",
+        "messageSaveSuccess": "セット「{name}」が保存されました。",
+        "messageCustomFieldsEmpty": "まだカスタムフィールドはありません。",
+        "addCustomField": "新しいカスタムフィールド",
+        "buttonApply": "保存",
+        "labelEntities": "割り当て先",
+        "placeholderEntities": "モジュールを選択...",
+        "messageNameNotUnique": "その技術名は既に存在します。",
+        "entityTypeRequired": "エンティティタイプを選択してください。",
+        "emptyStateDescription": "カスタムフィールドを追加する前に、このセットを保存してください。"
+      }
+    },
+    "customField": {
+      "detail": {
+        "titleNewCustomField": "新しいカスタムフィールド",
+        "titleEditCustomField": "カスタムフィールドを編集",
+        "buttonEditApply": "変更を適用",
+        "labelCustomFieldType": "タイプ",
+        "placeholderCustomFieldType": "選択してください...",
+        "labelTechnicalName": "技術名",
+        "labelLabel": "ラベル",
+        "buttonAddOption": "オプションを追加",
+        "labelDeleteOption": "削除",
+        "labelOption": "オプション {count}:",
+        "labelPlaceholder": "プレースホルダー",
+        "labelMax": "最大値",
+        "labelMin": "最小値",
+        "labelStep": "ステップ",
+        "labelFloat": "浮動小数点フィールド",
+        "labelInt": "整数フィールド",
+        "labelNumberType": "数値のタイプ",
+        "labelDatetime": "日時フィールド",
+        "labelDate": "日付",
+        "labelTime": "時間",
+        "labelDateType": "タイプ",
+        "labelHelpText": "ヘルプテキスト",
+        "labelTimeForm": "24時間表記",
+        "labelCustomFieldPosition": "位置",
+        "labelMultiSelect": "複数選択",
+        "helpTextMultiSelect": "複数選択オプションは、カスタムフィールド作成後に切り替えできません。",
+        "labelEntityTypeSelect": "エンティティタイプ",
+        "helpTextEntitySelect": "エンティティタイプは、カスタムフィールド作成後に変更できません。",
+        "tooltipCustomFieldPosition": "詳細ページでのこのカスタムフィールドの位置を制御します。",
+        "infoText": "カスタムフィールドを作成すると、すべてのスニペットセットに対応するスニペットが作成されます。スニペット名は「customFields.{name}」です。",
+        "labelAllowCustomerWrite": "Store APIでの書き換えを許可",
+        "tooltipAllowCustomerWrite": "有効にすると、このフィールドはStore APIで変更可能になります。ストアフロントに新しいフィールドを追加する際にカスタムデータを格納するために利用できます。例えば登録フォームの新しいフィールドなど。",
+        "labelAllowCartExpose": "カートで利用可能",
+        "tooltipAllowCartExpose": "有効にすると、このカスタムフィールドはショッピングカートのラインアイテムペイロードで利用可能になります。Rule Builderやカスタムテンプレートで最初にこのカスタムフィールドを使うには必要です。",
+        "tooltipCartExposeDisabled": "この設定は現在変更できません。カスタムフィールドがRule Builderの条件に一つ以上使用されているためです。",
+        "labelStoreApiAware": "Store APIで表示",
+        "tooltipStoreApiAware": "有効にすると、このフィールドはStore APIで利用可能になります。このオプションを無効にすると、カスタムデータを内部のみでストアし、Store APIを介しては利用不可にできます。"
+      },
+      "list": {
+        "labelCustomFieldLabel": "ラベル",
+        "labelCustomFieldType": "タイプ",
+        "labelCustomFieldPosition": "位置",
+        "contextMenuCustomFieldResetDelete": "復元",
+        "contextMenuCustomFieldView": "編集",
+        "contextMenuCustomFieldDelete": "削除",
+        "titleDeleteAction": "カスタムフィールドを削除 | カスタムフィールドを削除",
+        "textDeleteActionConfirmation": "このカスタムフィールドを本当に削除しますか？ | 本当にこれらの {count} 件のカスタムフィールドを削除しますか？"
+      },
+      "entity": {
+        "product": "商品",
+        "category": "カテゴリ",
+        "shippingMethod": "配送方法",
+        "paymentMethod": "支払い方法",
+        "country": "国",
+        "customer": "顧客",
+        "salesChannel": "販売チャネル",
+        "manufacturer": "メーカー",
+        "dynamicProductGroup": "動的商品グループ",
+        "shoppingExperienceLayout": "ショッピングエクスペリエンスレイアウト"
+      }
+    },
+    "types": {
+      "select": "選択フィールド",
+      "entity": "エンティティ選択",
+      "text": "テキストフィールド",
+      "number": "数値フィールド",
+      "media": "メディアフィールド",
+      "date": "日時フィールド",
+      "checkbox": "チェックボックス",
+      "switch": "アクティブスイッチ",
+      "textEditor": "テキストエディター",
+      "colorpicker": "カラーピッカー",
+      "price": "価格フィールド"
+    }
+  },
+  "sw-privileges": {
+    "permissions": {
+      "custom_field": {
+        "label": "カスタムフィールド"
+      }
+    }
+  }
+}

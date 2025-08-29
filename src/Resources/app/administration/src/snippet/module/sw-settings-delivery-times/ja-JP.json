@@ -1,0 +1,50 @@
+{
+  "global": {
+    "error-codes": {
+      "DELIVERY_TIME_MIN_INVALID": "最小値は最大値を超えてはいけません。"
+    }
+  },
+  "sw-settings-delivery-time": {
+    "general": {
+      "mainMenuItemGeneral": "配送時間",
+      "description": "配送時間の管理設定モジュール",
+      "buttonCreate": "配送時間を追加",
+      "buttonSave": "保存",
+      "placeholder": "すべての配送時間を検索..."
+    },
+    "list": {
+      "textHeadline": "配送時間",
+      "columnName": "名称",
+      "columnUnit": "単位",
+      "columnMin": "最小",
+      "columnMax": "最大",
+      "columnUnit_hour": "時間",
+      "columnUnit_day": "日",
+      "columnUnit_week": "週",
+      "columnUnit_month": "月",
+      "columnUnit_year": "年",
+      "errorLoad": "配送時間リストの読み込みに失敗しました。"
+    },
+    "detail": {
+      "textHeadlineNew": "新しい配送時間",
+      "labelName": "名称",
+      "labelUnit": "単位",
+      "labelMin": "最小",
+      "labelMax": "最大",
+      "selectionUnitHour": "時間",
+      "selectionUnitDay": "日",
+      "selectionUnitWeek": "週",
+      "selectionUnitMonth": "月",
+      "selectionUnitYear": "年",
+      "errorLoad": "配送時間の読み込みに失敗しました。",
+      "errorSave": "配送時間を保存できませんでした。"
+    }
+  },
+  "sw-privileges": {
+    "permissions": {
+      "delivery_times": {
+        "label": "配送時間"
+      }
+    }
+  }
+}

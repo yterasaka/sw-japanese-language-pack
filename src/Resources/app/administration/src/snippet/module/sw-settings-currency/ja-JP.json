@@ -1,0 +1,89 @@
+{
+  "sw-settings-currency": {
+    "general": {
+      "mainMenuItemGeneral": "通貨",
+      "placeholderSearchBar": "すべての通貨を検索..."
+    },
+    "list": {
+      "textHeadline": "通貨",
+      "textDeleteConfirm": "通貨「{name}」を本当に削除してよろしいですか？",
+      "columnName": "名前",
+      "columnIsoCode": "ISOコード",
+      "columnShortName": "略称",
+      "columnSymbol": "記号",
+      "columnFactor": "係数",
+      "columnDecimalPrecision": "小数点以下の桁数",
+      "buttonAddCurrency": "通貨を追加",
+      "contextMenuEdit": "編集",
+      "contextMenuDelete": "削除",
+      "messageDeleteSuccess": "通貨「{name}」は削除されました。",
+      "buttonDelete": "削除"
+    },
+    "detail": {
+      "textHeadline": "新しい通貨",
+      "labelPrecision": "小数点以下の桁数",
+      "placeholderPrecision": "表示する小数点以下の桁数を入力してください...",
+      "titleCard": "設定",
+      "messageSaveSuccess": "通貨「{name}」は保存されました。",
+      "labelName": "名前",
+      "labelIsoCode": "ISOコード",
+      "labelShortName": "略称",
+      "labelSymbol": "記号",
+      "labelFactor": "換算係数",
+      "placeholderName": "名前を入力してください...",
+      "placeholderIsoCode": "ISOコードを入力してください...",
+      "placeholderShortName": "略称を入力してください...",
+      "placeholderSymbol": "通貨記号を入力してください...",
+      "placeholderFactor": "換算係数を入力してください...",
+      "buttonSave": "保存",
+      "notificationErrorMessage": "通貨の保存中にエラーが発生しました。",
+      "titleRoundingCard": "価格の端数処理",
+      "titleCountryRoundingCard": "国別設定",
+      "searchbarPlaceholder": "国を検索...",
+      "notificationCountryErrorMessage": "国別通貨設定の保存中にエラーが発生しました。",
+      "notificationCountrySuccessMessage": "国別通貨設定は正常に保存されました。",
+      "currencyCountry": {
+        "countryColumn": "国",
+        "itemDecimalsColumn": "商品の小数点以下桁数",
+        "itemIntervalColumn": "商品の端数間隔",
+        "itemNetRoundingColumn": "商品の税込み端数処理",
+        "totalDecimalsColumn": "合計の小数点以下桁数",
+        "totalIntervalColumn": "合計の端数間隔",
+        "totalNetRoundingColumn": "合計の税込み端数処理"
+      },
+      "emptyCountryRoundings": "各国ごとに小数点以下の桁数や端数処理の設定を追加してください。",
+      "emptyCountryRoundingsNewCurrency": "基本情報を入力し、通貨を保存してから値を追加してください。",
+      "buttonAddCountry": "国を追加",
+      "taxFreeFrom": "非課税金額",
+      "taxFreeFromHelpText": "「非課税金額」に設定した値よりもショッピングカートの合計が高い場合、カート全体が非課税になります。これは「{currencyName}」で支払われるカートにのみ適用されます。"
+    },
+    "currency-country-modal": {
+      "labelCountrySelect": "国",
+      "titleNewCurrencyCountry": "国",
+      "countryAlreadyAssigned": "この通貨にはすでに国別設定があります。"
+    },
+    "price-rounding": {
+      "itemsHeadline": "商品",
+      "itemsSubline": "全ての商品に丸め処理が適用されます",
+      "labelDecimals": "小数点以下の桁数",
+      "labelInterval": "端数間隔",
+      "labelRoundForNet": "税込以外の顧客にも丸めを適用",
+      "grandHeadline": "合計",
+      "grandSubline": "合計金額に丸め処理が適用されます",
+      "headerWarning": "異なる丸め間隔が設定されています。会計上の問題を避けるために、必ず各サービス提供者に確認してください。",
+      "headerInfo": "税計算は丸め処理前の合計金額を基に行われます。発生した丸め差は課税計算対象外です。",
+      "helpTextDecimals": "小数点以下の桁数は、小数点以下の最大桁数を示します。",
+      "helpTextInterval": "物理的な最小通貨単位が廃止され現金端数処理が行われる市場向けに端数間隔を設定してください。<br><br>ヒント：「なし」を選択すると価格の丸め処理が適用されません。たとえば小数点以下2桁より大きい桁数を使用する場合などです。",
+      "helpTextRoundForNet": "税込み以外の顧客グループにも丸め処理を有効にします。",
+      "labelIntervalNone": "なし",
+      "tooltipIntervalDisabled": "小数点以下が2桁を超える場合は価格の丸め処理は適用されません。"
+    }
+  },
+  "sw-privileges": {
+    "permissions": {
+      "currencies": {
+        "label": "通貨"
+      }
+    }
+  }
+}

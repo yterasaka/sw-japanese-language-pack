@@ -1,0 +1,18 @@
+/*
+Japanese flag extension for language flags
+==================================================
+*/
+
+.language-flag {
+  &.country-jp {
+    background: radial-gradient(
+        5px at 50% 50%,
+        #bc002d 0,
+        #bc002d 35%,
+        transparent 35%,
+        transparent 100%
+      ),
+      white;
+    border: 1px solid $gray-500;
+  }
+}

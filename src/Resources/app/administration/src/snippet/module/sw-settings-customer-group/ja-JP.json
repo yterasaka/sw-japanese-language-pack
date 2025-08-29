@@ -1,0 +1,65 @@
+{
+  "sw-settings-customer-group": {
+    "general": {
+      "mainMenuItemGeneral": "顧客グループ",
+      "buttonCreate": "顧客グループを追加",
+      "buttonSave": "保存",
+      "placeholderSearchBar": "顧客グループを検索..."
+    },
+    "list": {
+      "columnName": "名前",
+      "columnDisplayGross": "税込表示"
+    },
+    "detail": {
+      "cardTitle": "顧客グループ",
+      "fieldNameLabel": "名前",
+      "fieldDisplayGrossLabel": "税込表示",
+      "fieldDisplayGrossValues": "税込 | 税抜",
+      "placeholderName": "名前を入力してください...",
+      "placeholderNewCustomerGroup": "新しい顧客グループ",
+      "notificationErrorMessage": "顧客グループの保存中にエラーが発生しました。",
+      "registrationForm": "カスタムサインアップフォーム"
+    },
+    "registration": {
+      "formTitle": "サインアップフォーム",
+      "placeholderTitle": "タイトルを入力してください...",
+      "placeholderIntroduction": "紹介文を入力してください...",
+      "placeholderSeoMetaDescription": "SEOメタディスクリプションを入力してください...",
+      "title": "タイトル",
+      "introduction": "紹介文",
+      "onlyCompaniesCanRegister": "法人専用サインアップフォーム",
+      "onlyCompaniesCanRegisterHelpText": "会社名、VAT登録番号、部署のフィールドを追加します。",
+      "seoMetaDescription": "SEOメタディスクリプション",
+      "linkUrlsTitle": "URL",
+      "linkUrlDescription": "右のボタンをクリックすると、全ての販売チャネルに対応したリクエストフォームへのURLが生成されます。",
+      "linkUrlButton": "URLを生成",
+      "technicalUrl": "技術用URL",
+      "technicalUrlHelpText": "技術用URLはカテゴリーモジュール内の「カスタマイズ可能なリンク」として使用でき、自動で言語マッピングが行われます。",
+      "availabilitySalesChannel": "利用可能な販売チャネル",
+      "infoText": "ショップユーザーはこのカスタムフォームからサインアップできますが、顧客モジュールでリクエストを承認した後に顧客グループに割り当てられます。以下のフィールドでフォームのカスタマイズが可能です。",
+      "seoUrlLabel": "{salesChannelName} URL ({languageName})",
+      "domainBanner": "SEO URLは販売チャネルごとに設定された各ドメインごとに一覧表示されます。"
+    },
+    "modal": {
+      "seoUrl": {
+        "title": "URL設定",
+        "salesChannel": "販売チャネル",
+        "urlSuffix": "URLサフィックス",
+        "exampleUrl": "例 URL",
+        "generate": "生成する"
+      }
+    },
+    "notification": {
+      "errorMessageCannotDeleteCustomerGroup": "この顧客グループにはまだ販売チャネルおよび/または顧客が割り当てられているため、削除できません。",
+      "errorUnableToCreateSeoUrls": "URLの生成に失敗しました",
+      "successfulGeneratedSeoUrls": "URLが生成されました"
+    }
+  },
+  "sw-privileges": {
+    "permissions": {
+      "customer_groups": {
+        "label": "顧客グループ"
+      }
+    }
+  }
+}

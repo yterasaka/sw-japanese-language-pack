@@ -1,0 +1,231 @@
+{
+  "sw-users-permissions": {
+    "general": {
+      "label": "ユーザーと権限"
+    },
+    "permissions": {},
+    "roles": {
+      "general": {
+        "labelCreateNewRole": "ロールを作成",
+        "cardLabel": "ロール"
+      },
+      "role-grid": {
+        "labelName": "名前",
+        "labelDescription": "説明",
+        "messageEmptyTitle": "ロールがありません",
+        "messageEmptySubline": "ロールを作成してユーザー権限の管理を開始しましょう。",
+        "contextMenuEdit": "編集",
+        "contextMenuDelete": "削除",
+        "titleModalDelete": "ロールの削除",
+        "textModalDelete": "本当にロール「{name}」を削除しますか？",
+        "labelButtonDelete": "削除",
+        "notification": {
+          "deleteSuccess": {
+            "message": "ロール「{name}」を削除しました。"
+          },
+          "deleteError": {
+            "message": "ロール「{name}」を削除できませんでした。"
+          }
+        }
+      },
+      "detail": {
+        "role": "ロール",
+        "basicInformation": "基本情報",
+        "labelName": "名前",
+        "labelDescription": "説明",
+        "permissions": "権限"
+      },
+      "grid": {
+        "title": "権限",
+        "disabledCheckboxMessage": "このオプションを無効にするには、まず他の有効なオプションを無効にしてください。"
+      },
+      "additional-permissions": {
+        "title": "追加の権限"
+      },
+      "detailed-additional-permissions": {
+        "title": "追加の権限"
+      },
+      "view": {
+        "detailed": {
+          "alertText": "詳細な権限を設定します。「一般」タブですでに付与されている権限のチェックボックスは無効化され、設定できません。拡張機能などによって新しいデータセットが追加されており、権限がない場合にここで設定できます。"
+        }
+      },
+      "tabs": {
+        "general": "一般",
+        "detailed": "詳細な権限"
+      }
+    },
+    "users": {
+      "general": {
+        "mainMenuItemGeneral": "ユーザーと権限",
+        "placeholderSearchBar": "ユーザーを検索…",
+        "labelUserList": "ユーザーと権限",
+        "labelCreateNewUser": "新規ユーザー作成",
+        "cardLabel": "ユーザー"
+      },
+      "user-grid": {
+        "labelUsername": "ユーザー名",
+        "labelFirstName": "名",
+        "labelLastName": "姓",
+        "labelRoles": "ロール",
+        "labelEmail": "メールアドレス",
+        "contextMenuEdit": "編集",
+        "contextMenuDelete": "削除",
+        "contextMenuDuplicate": "複製",
+        "titleModalDelete": "ユーザー削除",
+        "textModalDelete": "本当にユーザー「{name}」を削除しますか？",
+        "labelButtonDelete": "削除",
+        "notification": {
+          "deleteSuccess": {
+            "message": "ユーザー「{name}」を削除しました。"
+          },
+          "deleteError": {
+            "message": "ユーザー「{name}」を削除できませんでした。"
+          },
+          "deleteUserLoggedInError": {
+            "message": "自分自身を削除することはできません。"
+          }
+        }
+      },
+      "user-detail": {
+        "labelCard": "基本情報",
+        "labelIntegrationsCard": "連携",
+        "labelFirstName": "名",
+        "labelLastName": "姓",
+        "labelEmail": "メールアドレス",
+        "errorEmailUsed": "このメールアドレスはすでに使用されています。",
+        "errorUsernameUsed": "このユーザー名はすでに使用されています。",
+        "labelUsername": "ユーザー名",
+        "labelPassword": "パスワード",
+        "labelProfilePicture": "プロフィール写真",
+        "labelLanguage": "ユーザーインターフェースの言語",
+        "labelLanguagePlaceholder": "言語を選択…",
+        "labelChangePassword": "パスワードを変更",
+        "labelAdministrator": "管理者",
+        "labelTimezone": "タイムゾーン",
+        "labelJobTitle": "職種",
+        "labelRoles": "ロール",
+        "labelNewPassword": "新しいパスワード",
+        "labelNewUser": "新規ユーザー",
+        "placeholderNewPassword": "新しいパスワードを入力…",
+        "placeholderNewPasswordConfirm": "新しいパスワードを確認…",
+        "labelButtonChangePassword": "変更",
+        "labelButtonSave": "保存",
+        "writeAccess": "書込",
+        "readAccess": "読込",
+        "contextMenuEdit": "編集",
+        "contextMenuDelete": "削除",
+        "textChangePassword": "「変更」ボタンを押すと、新しいパスワードが直ちに保存されます！",
+        "addAccessKey": "アクセスキーを作成",
+        "noAccessKeysTitle": "アクセスキーがありません",
+        "noAccessKeysSubline": "ここでアクセスキーを作成します",
+        "labelAccessKey": "アクセスキー",
+        "labelPermissions": "権限",
+        "disabledRoleSelectWarning": "管理者権限を持たないユーザーのみロールを選択できます。",
+        "passwordConfirmation": {
+          "titleConfirmPasswordModal": "パスワードの確認",
+          "labelConfirmPassword": "パスワード",
+          "placeholderConfirmPassword": "現在のパスワードを入力…",
+          "labelButtonConfirm": "確認",
+          "notificationPasswordErrorTitle": "エラー",
+          "notificationPasswordErrorMessage": "正しい現在のパスワードを入力してください。"
+        },
+        "modal": {
+          "detailModalTitle": "連携を作成",
+          "detailModalTitleEdit": "編集",
+          "confirmDelete": "本当にこの連携を削除しますか？",
+          "buttonApply": "連携を保存",
+          "buttonApplyEdit": "変更を保存",
+          "buttonDelete": "削除",
+          "buttonCreateNewApiKeys": "新しいAPIキーを作成",
+          "hintCreateNewApiKeys": "新しいAPIアクセスキーを生成した場合、関連する全てのスクリプトやアプリケーションの更新を推奨します。",
+          "labelFieldLabel": "名前",
+          "idFieldLabel": "アクセスキーID",
+          "secretFieldLabel": "セキュアアクセスキー",
+          "secretHelpText": "今すぐアクセスキーをコピーしてください。安全のため保存後は表示されません。",
+          "messageSaveSuccess": "連携を保存しました。",
+          "messageSaveError": "連携を保存できませんでした。",
+          "messageCreateNewError": "連携を保存できませんでした。"
+        },
+        "notification": {
+          "saveError": {
+            "message": "ユーザー「{name}」を保存できませんでした。"
+          },
+          "saveSuccess": {
+            "message": "ユーザー「{name}」を保存しました。"
+          },
+          "invalidEmailErrorMessage": "有効なメールアドレスを入力してください。",
+          "duplicateEmailErrorMessage": "このメールアドレスはすでに登録されています。"
+        }
+      }
+    }
+  },
+  "sw-privileges": {
+    "roles": {
+      "all": "すべて",
+      "viewer": "閲覧",
+      "editor": "編集",
+      "creator": "作成",
+      "deleter": "削除"
+    },
+    "permissionType": {
+      "read": "読込",
+      "update": "更新",
+      "create": "作成",
+      "delete": "削除"
+    },
+    "permissions": {
+      "parents": {
+        "catalogues": "カタログ",
+        "content": "コンテンツ",
+        "customers": "顧客",
+        "marketing": "マーケティング",
+        "other": "その他",
+        "orders": "注文",
+        "settings": "設定"
+      },
+      "users_and_permissions": {
+        "label": "ユーザーと権限"
+      },
+      "routes": {
+        "label": "ルート"
+      }
+    },
+    "additional_permissions": {
+      "system": {
+        "label": "設定"
+      },
+      "user": {
+        "label": "ユーザー"
+      },
+      "marketing": {
+        "label": "マーケティング"
+      },
+      "orders": {
+        "label": "注文"
+      },
+      "routes": {
+        "label": "ルート",
+        "api_action_access-key_integration": "APIキーを作成",
+        "api_acl_privileges_get": "すべてのACL権限を読込",
+        "api_acl_privileges_route_get": "ACLルート権限を読込",
+        "api_action_cache_info": "キャッシュ情報を読込",
+        "api_action_cache_index": "インデクサをトリガー",
+        "api_action_cache_delete": "キャッシュを削除",
+        "api_action_cache_cleanup": "キャッシュをクリーンアップ",
+        "api_action_container-cache_delete": "コンテナキャッシュを削除",
+        "api_info_me": "自身のAPIユーザー情報を読込",
+        "api_info_ping": "認証トークンをリフレッシュ",
+        "system:clear:cache": "キャッシュをクリア",
+        "api_proxy_switch-customer": "顧客の代理で操作",
+        "api_proxy_imitate-customer": "顧客ログインを模倣",
+        "api_feature_flag_toggle": "フィーチャーフラグの切り替え"
+      },
+      "app": {
+        "label": "アプリ",
+        "all": "すべて",
+        "disabledCheckboxMessage": "このオプションを無効にするには、まずすべてのオプションを無効にしてください。"
+      }
+    }
+  }
+}

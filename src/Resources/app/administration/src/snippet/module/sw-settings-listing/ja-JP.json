@@ -1,0 +1,99 @@
+{
+  "sw-settings-listing": {
+    "general": {
+      "mainMenuItemGeneral": "商品",
+      "textHeadline": "商品",
+      "description": "ここで商品の表示を管理します。",
+      "buttonSave": "保存",
+      "messageSaveSuccess": "設定が保存されました。",
+      "messageSaveError": "設定を保存できませんでした:「{message}」",
+      "labelDefaultSorting": "デフォルトの並び順",
+      "labelDefaultSearchResultSorting": "デフォルトの検索結果の並び順",
+      "placeholderDefaultSorting": "デフォルトの並び順を選択してください...",
+      "placeholderDefaultSearchResultSorting": "デフォルトの検索結果の並び順を選択してください...",
+      "productSortingCriteriaGrid": {
+        "header": {
+          "name": "名称",
+          "order": "順序",
+          "priority": "優先度"
+        },
+        "options": {
+          "criteriaAlreadyUsed": "並べ替え基準「{criteriaName}」は既に使用されています。",
+          "customFieldCriteriaNotNull": "有効なカスタムフィールドを選択してください。",
+          "label": {
+            "product": {
+              "name": "商品名",
+              "ratingAverage": "商品の評価",
+              "productNumber": "商品番号",
+              "releaseDate": "発売日",
+              "stock": "商品の在庫",
+              "listingPrices": "商品の販売価格",
+              "cheapestPrice": "最安値",
+              "price": "デフォルト価格",
+              "sales": "販売数",
+              "createdAt": "作成日"
+            },
+            "customField": "カスタムフィールド",
+            "_score": "_score"
+          }
+        }
+      }
+    },
+    "index": {
+      "defaultSalesChannel": {
+        "title": "デフォルト販売チャネル",
+        "description": "新規作成された商品に自動で割り当てられるデフォルトの販売チャネルを選択してください。",
+        "linkAdvancedVisibility": "選択した販売チャネルの表示設定"
+      },
+      "productSorting": {
+        "title": "並べ替えオプション",
+        "addButton": "オプションを追加",
+        "messageDeleteError": "並べ替えオプションの削除中にエラーが発生しました",
+        "emptyState": {
+          "title": "オプションが見つかりません",
+          "subline": "オプションを作成してください"
+        },
+        "grid": {
+          "header": {
+            "name": "名称",
+            "criteria": "基準",
+            "priority": "優先度"
+          }
+        }
+      },
+      "deleteModal": {
+        "title": "並べ替えオプションの削除",
+        "description": "この並べ替えオプションを本当に削除してもよろしいですか？"
+      }
+    },
+    "create": {
+      "smartBarTitle": "商品並べ替えの作成"
+    },
+    "base": {
+      "smartBarTitle": "商品並べ替えの編集",
+      "general": {
+        "title": "一般",
+        "labelName": "名称",
+        "placeholderName": "名称を入力してください...",
+        "labelTechnicalName": "技術名",
+        "placeholderTechnicalName": "技術名を入力してください...",
+        "helpTextTechnicalName": "技術名は並べ替えオプションの参照に使用されます。すべての並べ替えオプションに対して一意で必須です。",
+        "labelActive": "有効"
+      },
+      "notification": {
+        "saveSuccess": "並べ替えオプション「{sortingOptionName}」を保存しました。",
+        "saveError": "並べ替えオプション「{sortingOptionName}」を保存できませんでした。",
+        "saveErrorAlreadyExists": "並べ替えオプション「{sortingOptionName}」は既に存在します。"
+      },
+      "criteria": {
+        "title": "並べ替え基準",
+        "selectPlaceholder": "基準を検索して追加...",
+        "emptyStateSubline": "この並べ替えオプションにはまだ基準が定義されていません。"
+      },
+      "delete": {
+        "modalTitle": "基準の削除",
+        "modalDescription": "この基準を本当に削除してもよろしいですか？"
+      }
+    }
+  }
+}

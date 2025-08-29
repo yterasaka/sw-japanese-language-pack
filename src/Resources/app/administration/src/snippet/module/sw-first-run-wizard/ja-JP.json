@@ -1,0 +1,152 @@
+{
+  "sw-first-run-wizard": {
+    "general": {
+      "mainMenuItemGeneral": "初回設定ウィザード",
+      "buttonNext": "次へ",
+      "buttonSkip": "スキップ",
+      "buttonNextPayPalInfo": "設定する",
+      "buttonBack": "戻る",
+      "buttonInstall": "インストール",
+      "buttonActivate": "有効化",
+      "buttonFinish": "完了",
+      "buttonConfigureLater": "後で設定する",
+      "pluginInstalled": "インストール済み"
+    },
+    "welcome": {
+      "modalTitle": "ようこそ",
+      "headlineWelcome": "Shopware 6管理画面へようこそ",
+      "messageWelcome": "このウィザードはセットアップを案内し、最も重要な設定でお手伝いします。<br>ショップを別の言語で利用し、他国のお客様にリーチしたいですか？その場合は、ここで希望する言語パックをインストールしてください。",
+      "headlineChangeLanguage": "追加の言語をインストールする",
+      "switchLanguageModalTitle": "インターフェースの言語を選択",
+      "confirmLanguageSwitch": "言語を変更する",
+      "switchLanguageMessage": "\"{pluginName}\" のインストールが完了しました。インターフェース言語を変更しますか？",
+      "pluginsInstalled": "拡張機能がインストールされました | 拡張機能が複数インストールされました",
+      "pluginsInstalledMessage": "言語拡張機能がインストールされました: | これらの言語拡張機能がインストールされました: ",
+      "pluginNotFoundMessage": "言語拡張機能 {languageName} が見つかりませんでした。",
+      "pluginInstallationFailedMessage": "拡張機能のインストールに失敗しました: ",
+      "pluginActivationFailedMessage": "拡張機能の有効化に失敗しました: ",
+      "tryAgainLater": "後でもう一度お試しください。",
+      "noConnectionMessage": "接続に問題があるようで、言語をインストールできませんでした。"
+    },
+    "dataImport": {
+      "modalTitle": "Shopware 6の始め方",
+      "headlineDemoData": "デモデータを使う",
+      "messageDemoData": "デモデータを追加してShopware 6を試しましょう。デモデータは実動ショップの印象を与えますが、テスト目的のみにご利用ください。",
+      "buttonInstallDemoData": "デモデータをインストール",
+      "headlineMigration": "ショップデータの移行",
+      "messageMigration": "移行アシスタントを使うと、前のショップシステムから新しいShopware 6環境へデータを接続・転送できます。",
+      "buttonInstallMigration": "移行アシスタントをインストール",
+      "loadingMessage": "拡張機能をインストール中<br>しばらくお待ちください..."
+    },
+    "mailerSelection": {
+      "headline": "メール通信の設定",
+      "modalTitle": "メール送信設定",
+      "description": "顧客とのコミュニケーションはECの重要な要素です。そのため、メール送信設定はできるだけ早く済ませましょう。",
+      "chooseSubline": "お好みのメール送信方法を選択してください。",
+      "localOption": "ローカルメール送信エージェントを使う",
+      "localOptionHelptext": "このオプションはシステムのデフォルトメール送信プログラム（Sendmail）を使用します。Sendmailが動作し、ご利用のホスティング環境で利用可能なことを確認してください。",
+      "localOptionSubline": "(Sendmail)",
+      "smtpOption": "独自SMTPサーバーを設定する",
+      "configurationNote": "メール設定は後から変更可能です。",
+      "buttonConfigure": "設定する"
+    },
+    "mailerSmtp": {
+      "headline": "SMTPサーバー"
+    },
+    "mailerLocal": {
+      "headline": "ローカルメール送信エージェント"
+    },
+    "paypalInfo": {
+      "modalTitle": "PayPalの設定",
+      "headline": "Shopwareに標準統合済みで、最も人気の支払方法をより簡単かつ迅速に有効化可能*",
+      "paymethod": {
+        "paypal": "PayPal",
+        "debit": "デビット",
+        "creditcard": "クレジットカード",
+        "invoice": "請求書"
+      },
+      "disclaimerLineOne": "* ECCケルン：ECC-Payment-Study Vol. 20, ケルン, 2016",
+      "disclaimerLineTwo": "** PayPalによるポジティブなリスク評価を条件とします"
+    },
+    "paypalInstall": {
+      "loadingMessage": "PayPalを設定中<br>しばらくお待ちください..."
+    },
+    "recommendedPlugins": {
+      "headline": "おすすめの拡張機能",
+      "modalTitle": "拡張機能",
+      "message": "ショップに役立つ拡張機能の選択肢です。まず関連する地域を選択してください。その後、カテゴリー別に閲覧できます。",
+      "availableInRegion": "対象地域",
+      "category": "カテゴリー",
+      "topRecommendations": "グローバルおすすめ",
+      "otherRecommendations": "地域別おすすめ"
+    },
+    "shopwareAccount": {
+      "headline": "Shopwareアカウント - ログイン",
+      "passwordLabel": "パスワード",
+      "passwordPlaceholder": "パスワードを入力してください...",
+      "emailAddressLabel": "メールアドレス",
+      "emailAddressPlaceholder": "メールアドレスを入力してください...",
+      "modalTitle": "Shopwareアカウント",
+      "message": "Shopwareアカウントは全てのShopwareサービスと連携するメインハブです。",
+      "registerAccountText": "Shopwareアカウントをお持ちでないですか？今すぐ",
+      "registerAccountHere": "こちら",
+      "registerAccountUrl": "https://account.shopware.com/register?lang=en",
+      "forgotPasswordText": "パスワードをお忘れですか？",
+      "forgotPasswordUrl": "https://account.shopware.com/recovery?lang=en"
+    },
+    "error": {
+      "messageLoginDataInvalid": "ログイン情報が正しくありません。もう一度お試しください。"
+    },
+    "shopwareDomain": {
+      "headline": "ドメインの確認",
+      "message": "このショップにリンクさせるドメインを選択または新規作成してください。",
+      "labelCreateDomain": "新しいショップドメインを作成する",
+      "testEnvironment": "テスト環境"
+    },
+    "store": {
+      "modalTitle": "Shopwareストア",
+      "loadStatusCollect": "ストア情報を取得中...",
+      "takeMinutes": "数分かかる場合があります。",
+      "alreadyActivated": "ストアはすでに正常に有効化されています。",
+      "enablingStore": "Shopwareストアを有効化中...",
+      "activationErrorTitle": "有効化エラー",
+      "activationErrorDescription": "管理者にお問い合わせください。",
+      "headingOne": "拡張機能を簡単に探して購入 -",
+      "headingTwo": "ご自身のShopwareショップ内から直接。",
+      "description": "新しいShopwareストアを有効化すると、多くの便利な拡張機能や最新テーマにアクセスでき、プログラミング不要でスムーズにショップに統合できます。"
+    },
+    "defaults": {
+      "modalTitle": "初期値の設定"
+    },
+    "finish": {
+      "headlineAllDone": "すべて完了しました！",
+      "message": "あなたのShopware 6 {edition}は認証されました。",
+      "messageNotLicensed": "あなたのShopware 6は準備が整いました。",
+      "headlineUsefulLinks": "便利なリンク",
+      "loadingMessage": "アプリケーションを再起動中<br>しばらくお待ちください...",
+      "documentationLabel": "ドキュメント",
+      "documentationUrl": "https://docs.shopware.com/en",
+      "forumLabel": "フォーラム",
+      "forumUrl": "https://forum.shopware.com/",
+      "roadmapLabel": "ロードマップ",
+      "roadmapUrl": "https://www.shopware.com/en/roadmap/",
+      "modalTitle": "完了"
+    },
+    "stepItemTitle": {
+      "dataImport": "データインポート",
+      "mailer": "メール送信設定",
+      "setupPaypal": "PayPal設定",
+      "plugins": "拡張機能",
+      "shopware": "Shopwareアカウント",
+      "store": "Shopwareストア",
+      "defaults": "初期値"
+    }
+  },
+  "sw-privileges": {
+    "additional_permissions": {
+      "system": {
+        "frw": "初回設定ウィザード"
+      }
+    }
+  }
+}

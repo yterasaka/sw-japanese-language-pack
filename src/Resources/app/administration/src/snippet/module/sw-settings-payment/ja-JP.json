@@ -1,0 +1,85 @@
+{
+  "sw-settings-payment": {
+    "general": {
+      "mainMenuItemGeneral": "支払い方法",
+      "placeholderSearchBar": "すべての支払い方法を検索..."
+    },
+    "overview": {
+      "openSortingModalButton": "チェックアウトでの表示順を編集",
+      "editDetails": "詳細を編集",
+      "activeToggle": "アクティブ",
+      "missingEditorPermission": "支払い方法を編集する権限がありません。",
+      "notification": {
+        "activationSuccess": "{name} を正常に有効化しました。",
+        "deactivationSuccess": "{name} を正常に無効化しました。",
+        "activationError": "{name} を有効化できませんでした。",
+        "deactivationError": "{name} を無効化できませんでした。"
+      }
+    },
+    "sorting-modal": {
+      "modalTitle": "チェックアウトでの表示順",
+      "subTitle": "ドラッグ＆ドロップでチェックアウト画面に表示される支払い方法の順序を設定してください。",
+      "saveSuccessful": "支払い方法の表示順を更新しました。",
+      "errorMessage": "支払い方法の表示順の更新中にエラーが発生しました。"
+    },
+    "list": {
+      "textHeadline": "支払い",
+      "textDeleteConfirm": "支払い方法「{name}」を本当に削除しますか？",
+      "columnName": "名前",
+      "columnDescription": "説明",
+      "columnActive": "アクティブ",
+      "columnPosition": "表示順",
+      "columnExtension": "拡張機能",
+      "buttonAddPaymentMethod": "支払い方法を追加",
+      "contextMenuEdit": "編集",
+      "contextMenuDelete": "削除",
+      "messageDeleteSuccess": "支払い方法「{name}」を削除しました。",
+      "buttonDelete": "削除",
+      "pluginDeleteTitleText": "プラグインによる支払い方法は削除できません。"
+    },
+    "detail": {
+      "textHeadline": "新しい支払い方法",
+      "titleCard": "支払い方法",
+      "messageSaveSuccess": "支払い方法「{name}」を保存しました。",
+      "messageSaveError": "支払い方法「{name}」を保存できませんでした。",
+      "labelName": "名前",
+      "labelTechnicalName": "技術名",
+      "labelPosition": "表示順",
+      "labelActive": "アクティブ",
+      "labelAfterOrderEnabled": "チェックアウト後の支払い変更を許可",
+      "labelDescription": "説明",
+      "labelLogoUpload": "ロゴ",
+      "sidebar": {
+        "labelUseAsLogo": "ロゴとして使用"
+      },
+      "topRule": "利用可能ルール",
+      "placeholderName": "名前を入力...",
+      "placeholderTechnicalName": "技術名を入力...",
+      "placeholderPosition": "表示順を入力...",
+      "placeholderDescription": "説明を入力...",
+      "placeholderAvailabilityRule": "利用可能ルールを選択...",
+      "buttonSave": "保存",
+      "helpTextTechnicalName": "技術名は支払い方法を一意に参照するために使用されます。 技術名を後から変更すると、それに依存する支払い統合が動作しなくなる可能性があります。",
+      "hintTextTechnicalNameIsProvided": "技術名は {name} によって提供されています。",
+      "delete": {
+        "textHeadline": "支払い方法の削除",
+        "textAlert": "この支払い方法はルール、販売チャネルまたは注文で使用されているため、削除できません。",
+        "textButton": "支払い方法を削除",
+        "modal": {
+          "textConfirmation": "本当にこの支払い方法を削除しますか？",
+          "buttonDelete": "削除"
+        }
+      }
+    }
+  },
+  "sw-plugin-box": {
+    "buttonPluginSettings": "拡張機能の設定"
+  },
+  "sw-privileges": {
+    "permissions": {
+      "payment": {
+        "label": "支払い方法"
+      }
+    }
+  }
+}

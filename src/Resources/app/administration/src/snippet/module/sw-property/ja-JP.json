@@ -1,0 +1,73 @@
+{
+  "sw-property": {
+    "general": {
+      "placeholderSearchBar": "プロパティを検索...",
+      "mainMenuItemGeneral": "プロパティ",
+      "descriptionTextModule": "ここでプロパティを管理します。"
+    },
+    "list": {
+      "textProperties": "プロパティ",
+      "buttonAddProperty": "プロパティを追加",
+      "columnName": "プロパティ",
+      "columnOptions": "プロパティ値",
+      "columnFilterable": "商品フィルターに表示",
+      "contextMenuView": "編集",
+      "contextMenuDelete": "削除",
+      "titleSidebarItemRefresh": "更新",
+      "messageEmpty": "まだプロパティはありません",
+      "columnDescription": "説明",
+      "buttonDelete": "削除",
+      "textDeleteConfirm": "本当にプロパティ「{name}」を削除してよろしいですか？"
+    },
+    "detail": {
+      "mediaDisplayType": "画像",
+      "textDisplayType": "テキスト",
+      "selectDisplayType": "ドロップダウン",
+      "colorDisplayType": "カラー",
+      "numericSortingType": "数値",
+      "alphanumericSortingType": "英数字",
+      "positionSortingType": "カスタム",
+      "cardTitleGroupInfo": "基本情報",
+      "labelName": "名前",
+      "placeholderName": "名前を入力...",
+      "labelFilterable": "商品フィルターに表示",
+      "labelvisibleOnProductDetailPage": "商品詳細ページに表示",
+      "labelDisplayType": "値の表示タイプ",
+      "labelSortingType": "並び順",
+      "labelOptionName": "名前",
+      "labelOptionColor": "カラー",
+      "labelOptionMedia": "画像",
+      "labelPosition": "ポジション",
+      "placeholderPosition": "グループの順位を設定...",
+      "placeholderOptionName": "名前を入力...",
+      "labelOptionPosition": "ポジション",
+      "placeholderOptionPosition": "値の順位を設定...",
+      "addMediaCaption": "メディアを使用",
+      "contextMenuOptionView": "編集",
+      "contextMenuOptionDelete": "削除",
+      "textHeadline": "新しいプロパティ",
+      "buttonSave": "保存",
+      "labelDescription": "説明",
+      "placeholderDescription": "説明を入力...",
+      "placeholderOptionSearch": "プロパティ値を検索...",
+      "cardTitle": "プロパティ値",
+      "addOption": "値を追加",
+      "addOptionNotPossible": "プロパティ値はデフォルト言語でのみ追加可能です",
+      "contextMenuOptionResetDelete": "復元",
+      "textOptionHeadline": "新しい値",
+      "messageSaveSuccess": "プロパティ「{name}」を保存しました。",
+      "messageSaveError": "プロパティ「{name}」の保存に失敗しました。",
+      "messageOptionsEmpty": "まだプロパティ値がありません",
+      "messageOptionsEmptySubline": "ここにプロパティ値を追加してください。",
+      "optionEmptyStateSubline": "基本情報を入力してプロパティを保存してから、値を追加してください。",
+      "labelMediaUpload": "デフォルト画像"
+    }
+  },
+  "sw-privileges": {
+    "permissions": {
+      "property": {
+        "label": "プロパティ"
+      }
+    }
+  }
+}

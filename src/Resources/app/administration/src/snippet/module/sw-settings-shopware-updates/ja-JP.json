@@ -1,0 +1,87 @@
+{
+  "sw-settings-shopware-updates": {
+    "general": {
+      "menuTitle": "Shopware アップデート",
+      "title": "Shopware アップデート（{version}）",
+      "emptyTitle": "Shopware アップデート",
+      "emptyState": "最新バージョンを実行しています。",
+      "checkForUpdates": "アップデートを確認",
+      "currentVersion": "現在のバージョン："
+    },
+    "cards": {
+      "info": "新機能は何ですか？",
+      "requirements": "システム要件",
+      "extensions": "拡張機能の互換性",
+      "updating": "更新中..."
+    },
+    "notifications": {
+      "updateStarted": "アップデートを開始しました。",
+      "updateStopped": "アップデートを停止しました。",
+      "downloadFailed": "ダウンロードに失敗しました。",
+      "unpackFailed": "解凍に失敗しました。",
+      "deactivationFailed": "拡張機能の無効化に失敗しました。",
+      "alreadyUpToDate": "最新バージョンを実行しています。"
+    },
+    "infos": {
+      "backupCheckboxLabel": "バックアップを作成し、今すぐアップデートを実行します。",
+      "startUpdate": "アップデートを開始",
+      "requirementsNotMet": "すべてのシステム要件を満たしていません。",
+      "progress": {
+        "download": "アップデートファイルをダウンロードしています...",
+        "deactivate": "拡張機能を無効化しています...",
+        "unpack": "アップデートファイルを解凍しています..."
+      }
+    },
+    "requirements": {
+      "columns": {
+        "message": "要件",
+        "status": "状態"
+      },
+      "message": {
+        "phpVersion": "最低 PHP バージョン：{minVersion}。現在のインストール済み PHP バージョン：{currentVersion}。",
+        "mysqlVersion": "最低 MySQL バージョン：{minVersion}。現在のインストール済み MySQL バージョン：{currentVersion}。",
+        "writeableCheckValid": "以下のディレクトリとファイルは書き込み可能です:<br/>{checkedDirectories}",
+        "writeableCheckFailed": "以下のディレクトリとファイルは書き込み不可です:<br>{failedDirectories}",
+        "validShopwareLicense": "現在の Shopware バージョンは古いです。最新バージョンへのアップデートを検討してください。",
+        "invalidShopwareLicense": "有効な Shopware サブスクリプションが見つかりません。<br>自動アップデートは実行できません。<br><a target=\"_blank\" href=\"https://account.shopware.com\">Shopware アカウントページ</a>よりサブスクリプションの購入をおすすめします。"
+      },
+      "ready": "準備完了",
+      "notReady": "準備未完了"
+    },
+    "plugins": {
+      "columns": {
+        "name": "拡張機能",
+        "available": "互換性"
+      },
+      "actions": {
+        "openMyExtensions": "拡張機能へ",
+        "deactivateAll": "すべての拡張機能を無効化する",
+        "deactivateIncompatible": "非互換の拡張機能を無効化する",
+        "deactivateNone": "潜在的な危険を理解した上で、非互換の拡張機能を無効化せずにShopwareをアップデートします。アップデート後に動作保証ができないことを承知しています。",
+        "recommended": "（推奨）"
+      },
+      "pluginNotInStore": "この拡張機能はストアにありません。開発者にお問い合わせください。",
+      "pluginWillBeDeactivatedHint": "（アップデート時に無効化されます）"
+    },
+    "updateModal": {
+      "actions": {
+        "install": "インストール",
+        "goToUpdate": "今すぐアップデート"
+      },
+      "messageIncompatible": "インストールされている拡張機能の一部が最新のShopwareバージョンと互換性がありません。今すぐアップデートを続行すると、未知の問題が発生しシステムに深刻な影響を与える可能性があります。Shopwareは更新中に非互換の拡張機能を自動的に無効化し、インストールの機能継続性を保証します。アップデート完了後、これらの拡張機能は手動で再有効化できます。",
+      "messageNotInStore": "互換性確認ができなかった拡張機能がインストールされています。詳しくは開発者にお問い合わせください。この場合、アップデート前にバックアップを作成することを強く推奨します。",
+      "messageOkay": "すべての前提条件が満たされています。アップデート前にバックアップの作成をお忘れなく。",
+      "messageUpdateCheck": "現在のバージョンは {version} にアップデート可能です。どうしますか？",
+      "backupLabel": "はい、バックアップを作成しました。"
+    }
+  },
+  "sw-privileges": {
+    "additional_permissions": {
+      "system": {
+        "core_update": "アップデートを実行する",
+        "plugin_maintain": "拡張機能を管理する",
+        "plugin_upload": "拡張機能をアップロードする"
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "sw-privilege-error": {
+    "general": {
+      "mainMenuItemGeneral": "アクセス拒否",
+      "descriptionTextModule": "このページにアクセスする権限がないようです。アクセス権限を得るには管理者にお問い合わせください。",
+      "goBack": "戻る"
+    }
+  }
+}

@@ -1,0 +1,840 @@
+{
+  "sw-cms": {
+    "general": {
+      "placeholderSearchBar": "レイアウトを検索...",
+      "mainMenuItemGeneral": "ショッピングエクスペリエンス",
+      "moduleTitle": "ショッピングエクスペリエンス",
+      "greeting": "レイアウト",
+      "createNewLayout": "新しいレイアウトを作成",
+      "deleteDisabledToolTip": "削除しようとしているレイアウトはまだ少なくとも1つのカテゴリーに割り当てられています。",
+      "deleteDisabledProductToolTip": "削除しようとしているレイアウトはまだ少なくとも1つの製品に割り当てられています。",
+      "disabledAddingBlocksToolTip": "ブロックの追加は、デフォルトのシステム言語でのみ機能します。",
+      "privacyNotice": "続行を選択することで、<a href=\"%privacyUrl%\">データ保護情報</a>を読み、<a href=\"%tosUrl%\">一般利用規約</a>に同意したことを確認します。"
+    },
+    "sorting": {
+      "labelSort": "並び替え：",
+      "labelSortByNameAsc": "名前、昇順",
+      "labelSortByNameDesc": "名前、降順",
+      "labelSortByCreatedAsc": "作成日、昇順",
+      "labelSortByCreatedDsc": "作成日、降順",
+      "labelSortByUpdatedAsc": "更新日、昇順",
+      "labelSortByUpdatedDsc": "更新日、降順",
+      "labelSortByAllPages": "すべてのタイプ"
+    },
+    "list": {
+      "gridHeaderName": "名前",
+      "gridHeaderType": "タイプ",
+      "gridHeaderAssignment": "割り当てられたカテゴリー",
+      "gridHeaderAssignments": "割り当て済み",
+      "gridHeaderAssignedPages": "割り当てられたページ",
+      "gridHeaderCreated": "作成日",
+      "gridHeaderUpdated": "更新日"
+    },
+    "section": {
+      "fallBackSectionName": "セクション",
+      "positionLeft": "コンテンツ、左",
+      "positionRight": "コンテンツ、右",
+      "fullWidth": "全幅",
+      "sidebar": "サイドバー",
+      "layoutSection": "レイアウトセクション",
+      "isSidebar": "レイアウトセクション - サイドバー",
+      "isDefault": "レイアウトセクション - デフォルト",
+      "sectionEmptyState": "ここには何もありません。ブロックや要素を追加してください。"
+    },
+    "sidebar": {
+      "contentMenu": {
+        "moveUp": "上へ移動",
+        "moveDown": "下へ移動",
+        "generalSettings": "一般",
+        "settings": "設定",
+        "layoutSettings": "レイアウト",
+        "visibilitySettings": "表示設定",
+        "visibilityMobile": "モバイル",
+        "visibilityTablet": "タブレット",
+        "visibilityDesktop": "デスクトップ",
+        "visibilityBlockTextButton": "ブロックを折りたたむ | ブロックを展開",
+        "visibilitySectionTextButton": "セクションを折りたたむ | セクションを展開",
+        "visibilityLabelCheckboxGroup": "デバイス"
+      },
+      "layoutAssignment": {
+        "headline": "このレイアウトの表示場所を管理",
+        "infoText": "あなたのショップでは複数のカテゴリーに対してレイアウトを使用できます。ここでは、どのカテゴリーがすでにこのレイアウトを使用しているかを確認したり、他のカテゴリーに割り当てたりできます。",
+        "actionAssignLayout": "レイアウトを割り当て"
+      },
+      "layoutSetAsDefault": {
+        "headline": "デフォルトレイアウト",
+        "actionSetAsDefaultLayout": "デフォルトレイアウトに設定"
+      }
+    },
+    "create": {
+      "notification": {
+        "assignToEntityError": "レイアウトの割り当てに失敗しました"
+      }
+    },
+    "createWizard": {
+      "choosePageTypeTitle": "どのタイプのページを作成しますか？",
+      "choosePageTypeHelpText": "これらの異なるレイアウトタイプは、既存のレイアウトを素早く見つけるのに役立ちます。レイアウトタイプは後からレイアウト設定でいつでも変更可能です。",
+      "chooseSectionTitle": "開始するセクションタイプを選択してください。",
+      "chooseSectionHelpText": "セクションは作業スペースをエリアに分割し、より創造的に作業するのに役立ちます。異なるセクションを組み合わせたり、いつでも移動または削除できます。",
+      "chooseNameTitle": "新しいレイアウトの名前をどうしますか？",
+      "createLayout": "レイアウトを作成",
+      "stepBack": "戻る"
+    },
+    "detail": {
+      "alert": {
+        "titleTranslations": "翻訳は現在利用できません！",
+        "contentTranslations": "レイアウトはシステムのデフォルト言語でのみ編集可能です。"
+      },
+      "helpText": {
+        "cssClassField": "スペースで区切って1つ以上のCSSクラスを追加できます。"
+      },
+      "label": {
+        "buttonSave": "保存",
+        "pageName": "レイアウト名",
+        "pageNamePlaceholder": "レイアウト名を入力...",
+        "pageEntity": "カスタムエンティティ",
+        "pageEntityPlaceholder": "カスタムエンティティを選択...",
+        "pageCssClass": "CSSクラス",
+        "pageTypeSelection": "レイアウトタイプ",
+        "pageType": {
+          "landingpage": "ランディングページ",
+          "page": "ショップページ",
+          "productList": "一覧ページ",
+          "productDetail": "商品ページ",
+          "customEntityDetail": "コンテンツレイアウト",
+          "customEntityList": "コンテンツ一覧ページ"
+        },
+        "demoEntity": "プレビューエンティティ",
+        "blockCategorySelection": "ブロックカテゴリ",
+        "blockCategoryFavorite": "お気に入り",
+        "blockCategoryText": "テキスト",
+        "blockCategoryTextImage": "テキスト & 画像",
+        "blockCategorySidebar": "サイドバー",
+        "blockCategoryImage": "画像",
+        "blockCategoryCommerce": "コマース",
+        "blockCategoryVideo": "ビデオ",
+        "blockCategoryForm": "フォーム",
+        "blockCategoryHtml": "HTML",
+        "blockCategoryApp": "アプリ",
+        "buttonElementSettingsConfirm": "完了",
+        "blockNameField": "ブロック名",
+        "blockNameFieldPlaceholder": "名前を入力...",
+        "blockSizingField": "サイズモード",
+        "blockSizingOptionBoxed": "ボックス化されたコンテンツ",
+        "blockSizingOptionFull": "全幅",
+        "backgroundColorField": "色",
+        "backgroundColorLabel": "背景色",
+        "backgroundMediaField": "画像",
+        "backgroundMediaLabel": "背景画像",
+        "backgroundMediaMode": "画像モード",
+        "backgroundMediaModeContain": "コンテイン",
+        "backgroundMediaModeCover": "カバー",
+        "backgroundMediaModeAuto": "自動",
+        "sizingField": "サイズモード",
+        "cssClassField": "CSSクラス",
+        "sectionNameField": "セクション名",
+        "blockTopMarginField": "上マージン",
+        "blockRightMarginField": "右マージン",
+        "blockBottomMarginField": "下マージン",
+        "blockLeftMarginField": "左マージン",
+        "sizingOptionBoxed": "ボックス化されたコンテンツ",
+        "sizingOptionFull": "全幅",
+        "buttonMappingAction": "データマッピング",
+        "buttonMappingRemoveAction": "データマッピングを削除",
+        "mappingPreview": "マッピングされたフィールド：",
+        "mappingEmptyPreview": "プレビューは利用できません。",
+        "addBlocks": "ドラッグ＆ドロップでブロックを追加",
+        "labelNavigation": "ナビゲーション",
+        "lockedNotification": "これはロックされたデフォルトレイアウトです。すぐにコンテンツで使用できますが、このテンプレートは編集できません。レイアウトをニーズに合わせて調整するには、レイアウトを複製して複製したものを変更してください。",
+        "headlineEmptyState": "創造のスペース",
+        "claimEmptyState": "セクションを選んで新しいレイアウトを作成しましょう。セクションタイプを選び、どのセクションにもブロックをドラッグ＆ドロップして、コンテンツを入力します。",
+        "defaultLayout": "デフォルトレイアウト",
+        "blockFavoriteEmptyState": "ハート型のアイコンをブロック横でクリックすると、そのブロックをお気に入りに登録し、一カ所で便利に管理できます。",
+        "visibilityParagraph": "選択されたデバイスで非表示"
+      },
+      "notification": {
+        "pageInvalid": "エラーが発生しました。エディタのエラーリストを確認してください。",
+        "errorCollectionText": "次のエラーによりページを保存できませんでした：",
+        "warningCollectionText": "このレイアウトに以下の推奨される要素がありません：",
+        "messageMissingFields": "必須フィールドが入力されていません。",
+        "messageMissingBlockFields": "一部のブロックが十分に設定されていません。",
+        "messageMissingProductListing": "この一覧ページには商品一覧ブロックが含まれていません。",
+        "messageMissingSections": "このレイアウトにはセクションが含まれていません。",
+        "messageRedundantElements": "同一ページに存在できるのは1つだけのブロックがあります。({names})",
+        "messageMissingBlocks": "空のページは保存できません。少なくとも1つのブロックを追加してください。",
+        "messageMissingElements": "設定が必要です。レイアウトのすべての要素を設定してください。"
+      },
+      "placeholder": {
+        "demoEntity": "プレビューするエンティティを選択..."
+      },
+      "sidebar": {
+        "titlePageSettings": "設定",
+        "headerPageSettings": "基本情報",
+        "titleBlockOverview": "ブロック",
+        "titleBlockSettings": "ブロック設定",
+        "headerBlockSettings": "ブロック：",
+        "titleNavigator": "ナビゲーター",
+        "titleSectionSettings": "セクション設定",
+        "titleLayoutAssignment": "レイアウト割り当て",
+        "confirmTextNavigator": "ブロックナビゲーターに入ると現在のページが保存されます。続行してもよろしいですか？",
+        "confirmReminderNavigator": "今後表示しない",
+        "mobile": "モバイルサイドバーの挙動",
+        "mobileOptionHidden": "非表示",
+        "mobileOptionWrap": "折り返す"
+      },
+      "title": {
+        "elementSettingsModal": "要素設定",
+        "elementChangeModal": "要素を置き換え",
+        "blockFavoriteEmptyState": "お気に入りのブロックはまだありません"
+      },
+      "tooltip": {
+        "blockNameField": "各ブロックに個別の名前を付けて作業を管理しましょう。",
+        "sectionNameField": "各セクションに個別の名前を付けて作業を管理しましょう。",
+        "cannotSelectProductPageLayout": "商品ページのレイアウトタイプは変更できません。"
+      }
+    },
+    "elements": {
+      "general": {
+        "config": {
+          "caption": {
+            "mediaUpload": "画像をアップロード"
+          },
+          "label": {
+            "verticalAlign": "垂直方向の配置",
+            "alignment": "配置",
+            "verticalAlignTop": "上",
+            "verticalAlignCenter": "中央",
+            "verticalAlignBottom": "下",
+            "displayMode": "表示モード",
+            "displayModeStandard": "オリジナル",
+            "displayModeCover": "トリミング",
+            "displayModeStretch": "拡大縮小",
+            "displayModeContain": "固定高さ",
+            "autoSlide": "自動切り替え",
+            "autoplayTimeout": "遅延時間",
+            "speed": "アニメーションの長さ",
+            "horizontalAlign": "水平方向の配置",
+            "horizontalAlignLeft": "左",
+            "horizontalAlignCenter": "中央",
+            "horizontalAlignRight": "右"
+          },
+          "helpText": {
+            "autoplayTimeout": "スライドが停止する時間のミリ秒数。",
+            "speed": "スライドのアニメーション時間のミリ秒数。",
+            "displayMode": "<ul><li><strong>オリジナル：</strong>画像は元の解像度で表示されるか、CMSページの幅に合わせて縮小されます。</li><li><strong>拡大縮小：</strong>画像はCMSページの幅に合わせてサイズ変更され、高さには制限がありません。</li><li><strong>トリミング：</strong>画像はCMSページの幅に合わせてサイズ変更され、垂直方向のはみ出しは設定された最大高さで切り取られます。</li></ul>"
+          },
+          "tab": {
+            "content": "コンテンツ",
+            "settings": "設定",
+            "options": "オプション"
+          },
+          "infoText": {
+            "autoSlideTitle": "アクセシビリティ上の注意",
+            "autoSlide": "この機能を有効にすると、障がいのあるユーザーにとってストアフロントの一部がアクセス困難になる場合があります。これは適用されるアクセシビリティ法（例：欧州アクセシビリティ法）に違反する可能性があります。続行する場合は、このリスクを認識し、全責任を負うことに同意したものとみなします。",
+            "listingElement": "この要素の商品データは、このレイアウトに関連付けられたカテゴリーによって自動的に読み込まれます。コンテンツはサンプルプレビューを示しています。"
+          }
+        },
+        "switch": {
+          "groups": {
+            "all": "すべての要素",
+            "favorites": "お気に入りの要素"
+          }
+        }
+      },
+      "image": {
+        "label": "画像",
+        "config": {
+          "label": {
+            "minHeight": "最小高さ",
+            "minHeightHelpText": "希望の単位で最小高さを入力してください。例：200px",
+            "isDecorative": "画像を装飾的としてマーク",
+            "isDecorativeHelpText": "このオプションを有効にすると、画像情報はスクリーンリーダーに読み上げられません。",
+            "linkNewTab": "リンクを新しいタブで開く",
+            "linkTo": "リンク先"
+          },
+          "placeholder": {
+            "enterMinHeight": "最小高さを入力...",
+            "enterUrl": "URLを入力..."
+          }
+        }
+      },
+      "imageGallery": {
+        "label": "画像ギャラリー",
+        "config": {
+          "label": {
+            "navigationPreview": "プレビュー用ナビゲーション",
+            "navigationPreviewPositionLeft": "左",
+            "navigationPreviewPositionUnderneath": "下",
+            "zoom": "ズーム",
+            "fullscreen": "フルスクリーンギャラリー",
+            "keepAspectRatioOnZoom": "ズーム時にアスペクト比を維持",
+            "magnifierOverGallery": "ギャラリー上に拡大鏡を表示",
+            "magnifierOverGalleryHelpText": "拡大鏡ボックスをギャラリーの隣ではなく上に表示します"
+          },
+          "helpText": {
+            "displayMode": "<ul><li><strong>オリジナル：</strong>画像は元の解像度で表示されるか、スライダーの高さに合わせて縮小されます。</li><li><strong>固定高さ：</strong>画像は元の解像度で表示されるか、設定された高さに合わせて縮小されます。</li><li><strong>トリミング：</strong>画像はCMSページの幅に合わせてサイズ変更され、垂直方向のはみ出しは設定された高さで切り取られます。</li></ul>"
+          }
+        }
+      },
+      "imageSlider": {
+        "label": "画像スライダー",
+        "config": {
+          "label": {
+            "navigationArrows": "矢印ナビゲーション",
+            "navigationPositionNone": "なし",
+            "navigationPositionInside": "内側",
+            "navigationPositionOutside": "外側",
+            "navigationDots": "ドットナビゲーション"
+          },
+          "helpText": {
+            "displayMode": "<ul><li><strong>オリジナル：</strong>画像はCMSページの幅に合わせてサイズ変更され、高さの制限はありません。スライダーの高さは動的に調整されます。</li><li><strong>固定高さ：</strong>画像はCMSページの幅に合わせてサイズ変更されます。スライダーは一番高い画像の高さを保ちます。</li><li><strong>トリミング：</strong>画像はCMSページの幅に合わせてサイズ変更され、垂直方向のはみ出しは設定された高さで切り取られます。</li></ul>"
+          }
+        }
+      },
+      "productBox": {
+        "label": "商品ボックス",
+        "component": {
+          "label": {
+            "actionBuy": "カートに入れる",
+            "badgeTopseller": "売れ筋",
+            "badgeNew": "新着",
+            "priceUnitContent": "内容:"
+          }
+        },
+        "config": {
+          "label": {
+            "selection": "商品",
+            "layoutType": "レイアウトタイプ",
+            "layoutTypeStandard": "標準",
+            "layoutTypeImage": "大きな画像",
+            "layoutTypeMinimal": "最小限のコンテンツ",
+            "headlineLevel": "商品ボックスの見出しレベル",
+            "headlineLevelHelp": "この商品一覧内の商品ボックスタイトルの見出しレベルを選択してください。「見出しなし」を選択すると、見出しレベルは適用されません。",
+            "headlineLevelOption": "見出し {level}",
+            "headlineLevelDefaultOption": "見出し 2 (推奨デフォルト)",
+            "headlineLevelEmptyOption": "見出しなし (非推奨)"
+          },
+          "placeholder": {
+            "selection": "商品を選択..."
+          }
+        }
+      },
+      "productListing": {
+        "label": "商品一覧",
+        "config": {
+          "tab": {
+            "sorting": "並び替え",
+            "filter": "フィルター"
+          },
+          "sorting": {
+            "labelShowSorting": "商品並べ替えを表示",
+            "labelUseCustomSortings": "カスタム並び替えを使用",
+            "labelDefaultSorting": "デフォルトの並び替え",
+            "labelProductSortings": "商品並び替え",
+            "placeholderDefaultProductSorting": "デフォルトの並び替えを選択...",
+            "placeHolderProductSortings": "商品並び替えを追加または削除",
+            "helpTextUseCustomSortings": "商品一覧に対してカスタム並び替えを定義できます。有効にするとこの一覧で個別の並び替えが可能です。",
+            "helpTextDefaultSorting": "並び替えが指定されていない場合のデフォルト並び替えです。",
+            "gridHeaderName": "名前",
+            "gridHeaderFields": "条件",
+            "gridHeaderPriority": "優先度",
+            "deleteModal": {
+              "heading": "\"{productSortingName}\" を削除",
+              "body": "\"{productSortingName}\" を削除してもよろしいですか？"
+            },
+            "defaultSortingInUse": "この商品並び替えはすでにデフォルトとして選択されています。",
+            "defaultSortingCantBeDisabled": "この並び替えはデフォルトです。商品一覧に問題が起きないよう有効にする必要があります。"
+          },
+          "filter": {
+            "infoText": "この設定を有効にするには、レイアウトにフィルターブロックを追加してください。",
+            "labelFilterByManufacturer": "メーカーでフィルター",
+            "labelFilterByRating": "評価でフィルター",
+            "labelFilterByPrice": "価格でフィルター",
+            "labelFilterForFreeShipping": "送料無料でフィルター",
+            "labelUseFilterByProperties": "フィルター対象の商品プロパティを設定",
+            "helpTextUseFilterByProperties": "無効にすると、このレイアウトですべての既存プロパティのフィルターが表示されます。",
+            "descriptionTextUseFilterByProperties": "フィルター対象外に設定されているプロパティはここに表示されません。<a href=\"#/sw/property/index\" target=\"_blank\">プロパティ</a>モジュールで変更可能です。",
+            "gridHeaderStatus": "状態",
+            "gridHeaderName": "名前",
+            "gridEmptyStateLabel": "プロパティが見つかりません。",
+            "gridEmptyStateHint": "別の検索語を試してください"
+          }
+        }
+      },
+      "productSlider": {
+        "label": "商品スライダー",
+        "config": {
+          "label": {
+            "title": "スライダータイトル",
+            "selection": "商品",
+            "navigation": "ナビゲーション",
+            "border": "ボーダー",
+            "minWidth": "最小幅",
+            "navigationArrows": "矢印ナビゲーション",
+            "navigationPositionNone": "なし",
+            "navigationPositionInside": "内側",
+            "navigationPositionOutside": "外側",
+            "productAssignmentType": "商品割り当て",
+            "productStreamSorting": "並び替え",
+            "productStreamLimit": "最大商品数",
+            "productStreamChoice": "動的商品グループ"
+          },
+          "placeholder": {
+            "title": "スライダータイトル",
+            "selection": "商品を選択",
+            "minWidth": "最小幅",
+            "productStreamChoice": "動的商品グループを選択",
+            "productStreamSorting": "並び替えを選択..."
+          },
+          "helpText": {
+            "minWidth": "希望の単位で最小幅を入力してください。例：200px",
+            "displayMode": "<ul><li><strong>オリジナル：</strong>画像は商品ボックスの高さまたは幅に合わせてスケールされ、常に指定された領域に収まります。拡大されることはありません。</li><li><strong>固定高さ：</strong>画像は商品ボックスの高さまたは幅に合わせてスケールされます。拡大可能です。</li><li><strong>トリミング：</strong>画像は商品ボックスの高さまたは幅に合わせてスケールされ、はみ出した部分は切り取られます。</li></ul>"
+          },
+          "productAssignmentTypeOptions": {
+            "manual": "手動割り当て",
+            "productStream": "動的商品グループ"
+          },
+          "productStreamSortingOptions": {
+            "nameAsc": "名前昇順",
+            "nameDesc": "名前降順",
+            "priceAsc": "価格昇順",
+            "priceDesc": "価格降順",
+            "creationDateAsc": "作成日昇順",
+            "creationDateDesc": "作成日降順",
+            "releaseDateAsc": "公開日昇順",
+            "releaseDateDesc": "公開日降順",
+            "random": "ランダム"
+          },
+          "textProductStreamPreviewLink": "動的商品グループをプレビュー",
+          "textProductStreamPerformanceHint": "ご注意：動的商品グループは、商品グループのフィルターの複雑さや、ページに表示されるスライダー数によってパフォーマンスに影響を与える場合があります。"
+        }
+      },
+      "sidebarCategoryNavigation": {
+        "label": "カテゴリー ナビゲーション",
+        "infoText": {
+          "navigationElement": "この要素のナビゲーションデータは、このレイアウトに関連付けられたカテゴリーによって自動的に読み込まれます。コンテンツはサンプルプレビューです。"
+        },
+        "component": {
+          "label": {
+            "navigation": "ナビゲーション"
+          }
+        },
+        "preview": {
+          "label": {
+            "navigation": "ナビゲーション"
+          }
+        }
+      },
+      "sidebarFilter": {
+        "label": "商品フィルター",
+        "infoText": {
+          "filterElement": "この要素のフィルターデータは自動的に読み込まれます。表示されるフィルターは一覧要素で設定できます。"
+        }
+      },
+      "text": {
+        "label": "テキスト",
+        "config": {
+          "label": {
+            "content": "テキスト"
+          }
+        }
+      },
+      "vimeoVideo": {
+        "label": "Vimeoビデオ",
+        "config": {
+          "label": {
+            "videoId": "動画リンク",
+            "autoPlay": "自動再生",
+            "loop": "ループ再生",
+            "showControls": "コントロールを表示",
+            "controlsColor": "ビデオプレイヤーコントロールの色を変更",
+            "byLine": "動画制作者を表示",
+            "showPortrait": "制作者の写真を表示",
+            "showTitle": "動画タイトルを表示",
+            "advancedPrivacy": "高度なプライバシーモード",
+            "start": "再生開始時間",
+            "end": "再生終了時間",
+            "needsConfirmation": "ユーザーの承認後に動画を読み込む",
+            "previewImage": "プレビュー画像",
+            "videoTitle": "動画タイトル"
+          },
+          "placeholder": {
+            "videoId": "動画リンクを入力...",
+            "videoTitle": "説明的なタイトルを入力..."
+          },
+          "helpText": {
+            "autoPlay": "一部のブラウザでは動画の自動再生が制限されています。",
+            "advancedPrivacy": "プライバシー強化モードを有効にすると、動画が再生されるまで動画プラットフォームは訪問者の情報を保存しません。"
+          }
+        }
+      },
+      "youtubeVideo": {
+        "label": "YouTubeビデオ"
+      },
+      "form": {
+        "label": "フォーム",
+        "config": {
+          "label": {
+            "receiverEmail": "受信者アドレス",
+            "title": "タイトル",
+            "type": "フォームタイプ",
+            "typeContact": "お問い合わせ",
+            "typeNewsletter": "ニュースレター",
+            "confirmationText": "確認テキスト"
+          },
+          "placeholder": {
+            "type": "フォームタイプを選択..."
+          }
+        },
+        "element": {
+          "label": {
+            "action": "アクション*",
+            "email": "メールアドレス*",
+            "firstName": "名*",
+            "lastName": "姓*",
+            "message": "メッセージ*",
+            "newsletterSubmit": "続行",
+            "phone": "電話番号*",
+            "privacy": "プライバシー*",
+            "salutation": "敬称*",
+            "salutationUndisclosed": "開示しない",
+            "subject": "件名*",
+            "subscribeToNewsletter": "ニュースレターを購読する"
+          },
+          "placeholder": {
+            "firstName": "太郎",
+            "lastName": "山田",
+            "email": "taro{'@'}yamada.com",
+            "phone": "+8190 1234 5678",
+            "subject": "件名を入力してください。",
+            "message": "メッセージ本文を入力してください。"
+          },
+          "helpText": {
+            "requiredFields": "アスタリスク（*）付きの項目は必須です。"
+          },
+          "newsletter": {
+            "label": {
+              "firstName": "名",
+              "lastName": "姓",
+              "salutation": "敬称"
+            }
+          }
+        },
+        "preview": {
+          "label": {
+            "form": "フォーム",
+            "send": "送信"
+          }
+        }
+      },
+      "buyBox": {
+        "label": "バイボックス",
+        "infoText": {
+          "tooltipSettingDisabled": "この要素の商品データは、このレイアウトに関連付けられた商品によって自動的に読み込まれます。コンテンツはサンプルプレビューです。"
+        },
+        "config": {
+          "label": {
+            "selection": "商品"
+          },
+          "placeholder": {
+            "selection": "商品を選択 ..."
+          }
+        },
+        "component": {
+          "label": {
+            "actionBuy": "カートに入れる",
+            "taxInfo": "価格は税込、送料別",
+            "deliveryShippingFree": "送料無料",
+            "deliveryTime": "入荷予定、配送時間 {name}",
+            "variants": "バリアント",
+            "productNumber": "商品番号："
+          }
+        }
+      },
+      "productDescriptionReviews": {
+        "label": "商品説明＆レビュー",
+        "infoText": {
+          "descriptionAndReviewsElement": "この要素の商品データは、このレイアウトに関連付けられた商品によって自動的に読み込まれます。コンテンツはサンプルプレビューです。"
+        },
+        "component": {
+          "label": {
+            "descriptionAndReviews": "商品説明＆レビュー"
+          }
+        },
+        "preview": {
+          "label": {
+            "descriptionAndReviews": "商品説明＆レビュー",
+            "description": "説明",
+            "reviews": "レビュー"
+          }
+        }
+      },
+      "crossSelling": {
+        "label": "クロスセリング",
+        "preview": {
+          "label": {
+            "crossSellingTitle": "クロスセリングタイトル"
+          }
+        },
+        "config": {
+          "label": {
+            "selection": "商品",
+            "minWidth": "最小幅"
+          },
+          "placeholder": {
+            "selection": "商品を選択...",
+            "minWidth": "最小幅を入力..."
+          },
+          "infoText": {
+            "productDetailElement": "この要素の商品データは、このレイアウトに関連付けられた商品によって自動的に読み込まれます。コンテンツはサンプルプレビューです。"
+          }
+        }
+      },
+      "productName": {
+        "label": "商品名"
+      },
+      "html": {
+        "label": "HTML",
+        "config": {
+          "warning": "未検証のHTMLコードはセキュリティリスクを引き起こす可能性があります。信頼できるソースからのHTMLコードのみ挿入し、公開前に変更をテストしてください。"
+        }
+      }
+    },
+    "blocks": {
+      "commerce": {
+        "productHeading": {
+          "label": "商品名＆メーカーのロゴ"
+        },
+        "productListing": {
+          "label": "商品一覧"
+        },
+        "productSlider": {
+          "label": "商品スライダー"
+        },
+        "productThreeColumn": {
+          "label": "3カラムの商品ボックス"
+        },
+        "productDescriptionReviews": {
+          "label": "商品説明＆レビュー",
+          "preview": {
+            "label": {
+              "description": "説明",
+              "reviews": "レビュー"
+            }
+          }
+        },
+        "galleryBuyBox": {
+          "label": "画像ギャラリー＆バイボックス"
+        },
+        "crossSelling": {
+          "label": "クロスセリング"
+        }
+      },
+      "image": {
+        "image": {
+          "label": "ボックス型画像"
+        },
+        "imageBubbleRow": {
+          "label": "丸みを帯びた3カラム"
+        },
+        "imageCover": {
+          "label": "全幅画像"
+        },
+        "imageFourColumn": {
+          "label": "ボックス型4カラム"
+        },
+        "imageGallery": {
+          "label": "画像ギャラリー"
+        },
+        "imageHighlightRow": {
+          "label": "3カラム、ボックス型＆背景付き"
+        },
+        "imageSimpleGrid": {
+          "label": "画像グリッド"
+        },
+        "imageSlider": {
+          "label": "画像スライダー"
+        },
+        "imageThreeColumn": {
+          "label": "ボックス型3カラム"
+        },
+        "imageThreeCover": {
+          "label": "全幅3カラム"
+        },
+        "imageTwoColumn": {
+          "label": "ボックス型2カラム"
+        }
+      },
+      "sidebar": {
+        "categoryNavigation": {
+          "label": "カテゴリー ナビゲーション",
+          "preview": {
+            "label": {
+              "navigation": "ナビゲーション"
+            }
+          }
+        },
+        "sidebarFilter": {
+          "label": "商品フィルター"
+        }
+      },
+      "text": {
+        "text": {
+          "label": "テキスト"
+        },
+        "textHero": {
+          "label": "テキストバナー"
+        },
+        "textTeaser": {
+          "label": "ティーザーテキスト"
+        },
+        "textTeaserSection": {
+          "label": "2カラム、ティーザーテキスト"
+        },
+        "textThreeColumn": {
+          "label": "3カラム、テキスト"
+        },
+        "textTwoColumn": {
+          "label": "2カラム、テキスト"
+        }
+      },
+      "textImage": {
+        "centerText": {
+          "label": "3カラム、ボックス型画像＆テキスト"
+        },
+        "imageText": {
+          "label": "2カラム、ボックス型画像＆テキスト"
+        },
+        "imageTextBubble": {
+          "label": "3カラム、キャプション付き＆丸み"
+        },
+        "imageTextCover": {
+          "label": "2カラム、全幅画像＆テキスト"
+        },
+        "imageTextGallery": {
+          "label": "3カラム、画像/テキストカード"
+        },
+        "imageTextRow": {
+          "label": "3カラム、キャプション付き画像"
+        },
+        "textOnImage": {
+          "label": "ヒーローイメージ"
+        }
+      },
+      "video": {
+        "vimeoVideo": {
+          "label": "Vimeoビデオ"
+        },
+        "youtubeVideo": {
+          "label": "YouTubeビデオ"
+        }
+      },
+      "form": {
+        "form": {
+          "label": "フォーム"
+        }
+      },
+      "html": {
+        "html": {
+          "label": "HTML"
+        }
+      },
+      "blockDisableState": "このブロックはどのデバイスでも表示されません。ブロックは編集可能ですが、変更はショップに反映されません。表示設定を変更するにはショッピングエクスペリエンスモジュールでレイアウト編集を行ってください。"
+    },
+    "components": {
+      "setDefaultLayoutModal": {
+        "title": "デフォルトレイアウトを割り当て",
+        "infoText": "現在、デフォルトレイアウトが割り当てられているすべての商品はこのレイアウトに再割り当てされ、新規作成商品も自動的に割り当てられます。本当にこのレイアウトをデフォルトにしますか？ | 現在、デフォルトレイアウトが割り当てられているすべてのカテゴリーはこのレイアウトに再割り当てされ、新規作成カテゴリーも自動的に割り当てられます。本当にこのレイアウトをデフォルトにしますか？"
+      },
+      "cmsLayoutModal": {
+        "actionConfirm": "保存",
+        "modalTitle": "レイアウトを選択",
+        "headline": "ランディングページ / 商品一覧"
+      },
+      "cmsLayoutAssignmentModal": {
+        "infoText": "レイアウトはアクティブなカテゴリーに割り当てるとショップに表示されます。",
+        "infoTextShopPages": "このレイアウトはカテゴリーだけでなく、利用規約、インプリント、エラーページなどのショップページにも使用できます。",
+        "infoTextProductDetailPages": "このレイアウトはアクティブな商品に割り当てられた場合のみショップに表示されます。",
+        "labelCategories": "カテゴリー",
+        "placeholderCategories": "カテゴリーを選択...",
+        "placeholderLandingPages": "ランディングページを選択...",
+        "labelSalesChannel": "販売チャネル",
+        "placeholderSalesChannel": "販売チャネルを選択...",
+        "resetOptionSalesChannel": "すべての販売チャネル",
+        "helpTextSalesChannel": "特定の販売チャネルに割り当てられたレイアウトは「すべての販売チャネル」の割り当てを上書きします。",
+        "labelShopPages": "ショップページ",
+        "confirmChangesTextCategories": "カテゴリーからレイアウトの割り当てを削除しました。変更を確定すると、これらのカテゴリーにはレイアウトが割り当てられなくなります。",
+        "confirmChangesTextCategoriesAssignedLayouts": "選択されたカテゴリーの一部にはすでにレイアウトが割り当てられています。続行すると、以前の割り当ては現在のレイアウトに置き換えられます。",
+        "confirmChangesTextLandingPages": "ランディングページからレイアウトの割り当てを削除しました。変更を確定すると、これらのランディングページにはレイアウトが割り当てられなくなります。",
+        "confirmChangesTextLandingPagesAssignedLayouts": "選択されたランディングページの一部にはすでにレイアウトが割り当てられています。続行すると、以前の割り当ては現在のレイアウトに置き換えられます。",
+        "confirmChangesTextProducts": "商品からレイアウトの割り当てを削除しました。変更を確定すると、これらの商品にはレイアウトが割り当てられなくなります。",
+        "confirmChangesTextProductsAssignedLayouts": "選択された商品の一部にはすでにレイアウトが割り当てられています。続行すると、以前の割り当ては現在のレイアウトに置き換えられます。",
+        "confirmChangesTextShopPages": "ショップページからレイアウトの割り当てを削除しました。変更を確定すると、これらのショップページにはレイアウトが割り当てられなくなります。",
+        "confirmChangesText": "変更を適用しますか？",
+        "confirmChangesTitle": "割り当てを確認",
+        "shopPagesLoadError": "ショップページの読み込みに失敗しました",
+        "shopPagesSaveError": "ショップページの保存に失敗しました",
+        "tabCategories": "カテゴリー",
+        "tabShopPages": "ショップページ",
+        "tabLandingPages": "ランディングページ",
+        "shopPages": {
+          "tosPage": "利用規約ページ",
+          "revocationPage": "撤回通知ページ",
+          "shippingPaymentInfoPage": "支払い・配送情報ページ",
+          "privacyPage": "プライバシーページ",
+          "imprintPage": "インプリントページ",
+          "404Page": "404ページ",
+          "maintenancePage": "メンテナンスページ",
+          "contactPage": "お問い合わせフォーム",
+          "newsletterPage": "ニュースレターページ"
+        },
+        "products": {
+          "productAssignmentHeadline": "商品割り当て",
+          "productAssignmentPlaceholder": "商品を検索して割り当て...",
+          "productAssignmentLabel": "商品",
+          "productAssignmentEmptyStateDescription": "割り当てられた商品がありません",
+          "productStreamAssignmentEmptyStateDescription": "割り当てられた動的商品グループがありません",
+          "columnNameLabel": "名前",
+          "columnManufacturerLabel": "メーカー"
+        }
+      },
+      "cmsMissingElementModal": {
+        "headline": "欠落している要素",
+        "title": "この商品詳細ページに要素 <span>{element}</span> が存在しません。 | この商品詳細ページに要素 <span>{element}</span> が存在しません。",
+        "subtitle": "このページを訪れるお客様は重要な商品情報を見逃します。",
+        "paragraph": "それでもレイアウトを保存しますか？",
+        "buttonSave": "レイアウトを保存"
+      },
+      "cmsListItem": {
+        "emptyText": "レイアウトが割り当てられていません",
+        "edit": "編集",
+        "rename": "名前変更",
+        "delete": "削除",
+        "duplicate": "複製",
+        "view": "表示",
+        "addPreviewImage": "プレビュー画像を追加",
+        "setAsDefaultProductList": "商品一覧のデフォルトに設定",
+        "setAsDefaultProductDetail": "商品ページのデフォルトに設定",
+        "defaultLayout": "デフォルトレイアウト",
+        "defaultLayoutProductList": "デフォルトレイアウト - 一覧ページ",
+        "defaultLayoutProductDetail": "デフォルトレイアウト - 商品ページ",
+        "removePreviewImage": "プレビューを削除",
+        "notificationDeleteErrorMessage": "削除しようとしているレイアウトはまだ少なくとも1つのカテゴリーに割り当てられています。",
+        "modal": {
+          "renameModalTitle": "レイアウト名の変更",
+          "textRenameConfirm": "\"{pageName}\" の新しい名前を入力してください：",
+          "textDeleteConfirm": "レイアウト \"{pageName}\" を本当に削除してもよろしいですか？",
+          "buttonRename": "名前を変更",
+          "buttonDelete": "削除"
+        }
+      }
+    }
+  },
+  "sw-privileges": {
+    "permissions": {
+      "cms": {
+        "label": "ショッピングエクスペリエンス"
+      }
+    }
+  }
+}

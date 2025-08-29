@@ -1,0 +1,16 @@
+{
+  "sw-settings-store": {
+    "general": {
+      "mainMenuItemGeneral": "Shopwareアカウント",
+      "textHeadline": "Shopwareアカウント",
+      "description": "ここでShopwareアカウントの設定を変更できます。",
+      "buttonSave": "保存",
+      "messageSaveSuccess": "Shopwareアカウント情報が保存されました。"
+    },
+    "detail": {
+      "titleCard": "設定",
+      "labelHost": "ライセンスドメイン",
+      "placeholderHost": "Shopwareアカウントで指定されたライセンスドメイン（ショップドメイン）を入力してください。"
+    }
+  }
+}

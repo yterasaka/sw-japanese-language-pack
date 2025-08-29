@@ -1,0 +1,36 @@
+{
+  "sw-settings-units": {
+    "detail": {
+      "fieldLabels": {
+        "name": "商品単位名",
+        "shortCode": "略コード"
+      }
+    },
+    "general": {
+      "mainMenuItemGeneral": "商品単位",
+      "placeholderSearchBar": "商品単位を検索...",
+      "createNewUnit": "商品単位を追加",
+      "disableAddNewUnitMessage": "新しい商品単位はシステムのデフォルト言語でのみ追加できます。"
+    },
+    "grid": {
+      "columnName": "商品単位",
+      "columnShortCode": "略称",
+      "contextMenuDelete": "削除"
+    },
+    "empty-state": {
+      "title": "まだ商品単位がありません",
+      "subline": "ここで商品単位を管理します。"
+    },
+    "notification": {
+      "successMessage": "商品単位が保存されました。",
+      "errorMessage": "商品単位を保存できませんでした。必須項目をすべて入力してください。"
+    }
+  },
+  "sw-privileges": {
+    "permissions": {
+      "scale_unit": {
+        "label": "商品単位"
+      }
+    }
+  }
+}

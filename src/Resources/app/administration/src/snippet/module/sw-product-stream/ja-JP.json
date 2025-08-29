@@ -1,0 +1,156 @@
+{
+  "sw-product-stream": {
+    "general": {
+      "mainMenuItemGeneral": "動的商品グループ",
+      "placeholderSearchBar": "動的商品グループを検索...",
+      "descriptionTextModule": "ここで動的商品グループを管理します。",
+      "errorCategory": "\"{name}\" はカテゴリーのための商品割り当てを提供しているため、削除できません。 | \"{name}\" は {count} 個のカテゴリーのための商品割り当てを提供しているため、削除できません。"
+    },
+    "acl": {
+      "conditionsAlertHeading": "権限不足",
+      "conditionsAlertDescription": "「条件」セクション内のすべての操作を実行するのに十分な権限がありません。"
+    },
+    "list": {
+      "textProductStreamOverview": "動的商品グループ",
+      "columnName": "名前",
+      "columnDescription": "説明",
+      "columnDateUpdated": "最終更新日",
+      "columnStatus": "状態",
+      "titleSidebarItemRefresh": "更新",
+      "buttonAddProductStream": "動的商品グループを追加",
+      "status": {
+        "valid": "有効",
+        "invalid": "無効"
+      },
+      "messageEmpty": "まだ動的商品グループはありません"
+    },
+    "filter": {
+      "placeholderFieldSelect": "プロパティを選択...",
+      "placeholderOperatorSelect": "演算子を選択...",
+      "valid": "有効な動的商品グループのみ表示",
+      "type": {
+        "equals": "と等しい",
+        "equalsAny": "いずれかと等しい",
+        "equalsAll": "すべてと等しい",
+        "contains": "含む",
+        "greaterThan": "より大きい",
+        "lessThan": "より小さい",
+        "greaterThanEquals": "以上",
+        "lessThanEquals": "以下",
+        "notEquals": "と等しくない",
+        "notEqualsAny": "いずれとも等しくない",
+        "notEqualsAll": "すべてと等しくない",
+        "notContains": "含まない",
+        "range": "の間",
+        "since": "以降",
+        "until": "まで"
+      },
+      "timeUnits": {
+        "days": "日"
+      },
+      "values": {
+        "active": "有効",
+        "availableStock": "利用可能在庫",
+        "ratingAverage": "平均評価",
+        "additionalText": "追加テキスト",
+        "allowNotification": "通知を許可",
+        "customFields": "カスタムフィールド",
+        "category": "カテゴリー",
+        "categories": "カテゴリー",
+        "categoriesRo": "カテゴリー",
+        "cheapestPrice": "価格",
+        "choose": "選択",
+        "coverId": "カバー画像あり",
+        "createdAt": "作成日",
+        "description": "説明",
+        "descriptionLong": "詳細説明",
+        "ean": "GTIN/EAN",
+        "gross": "税込",
+        "group": "プロパティ",
+        "height": "高さ",
+        "isBlog": "ブログか",
+        "isCloseout": "クリアランスセール",
+        "keywords": "キーワード",
+        "length": "長さ",
+        "linked": "紐付け済み",
+        "manufacturerId": "メーカー",
+        "manufacturer": "メーカー",
+        "manufacturerNumber": "メーカー商品番号",
+        "markAsTopseller": "特集マーク",
+        "maxDeliveryTime": "最大配送時間",
+        "maxPurchase": "最大注文数",
+        "minDeliveryTime": "最小配送時間",
+        "minPurchase": "最小注文数",
+        "minStock": "最小在庫",
+        "name": "名前",
+        "net": "税抜",
+        "option": "オプション",
+        "packUnit": "梱包単位",
+        "packUnitPlural": "梱包単位（複数）",
+        "price": "価格",
+        "product": "商品",
+        "productNumber": "商品番号",
+        "purchasePrices": "仕入価格",
+        "purchaseUnit": "仕入単位",
+        "referenceUnit": "基準単位",
+        "releaseDate": "発売日",
+        "restockTime": "再入荷時間",
+        "sales": "販売数",
+        "salesChannel": "販売チャネル",
+        "shippingFree": "送料無料",
+        "stock": "在庫",
+        "tags": "タグ",
+        "tax": "税金",
+        "taxRate": "税率",
+        "type": "タイプ",
+        "unit": "単位",
+        "variations": "バリエーション",
+        "visibilities": "表示設定",
+        "visibility": "表示設定",
+        "visible": "表示",
+        "weight": "重量",
+        "width": "幅",
+        "deliveryTime": "配送時間",
+        "configuratorSettings": "コンフィグレーター設定",
+        "options": "バリアント値",
+        "properties": "プロパティ",
+        "property_group": "プロパティ",
+        "property_group_option": "プロパティ値",
+        "product_manufacturer": "メーカー",
+        "product_visibility": "販売チャネル内の商品",
+        "percentage": "価格/定価の比率(%)",
+        "states": "商品状態",
+        "productStates": {
+          "physical": "物理的",
+          "digital": "デジタル"
+        }
+      }
+    },
+    "detail": {
+      "titleCard": "基本情報",
+      "buttonSave": "保存",
+      "labelName": "名前",
+      "placeholderName": "タイトルを入力...",
+      "labelDescription": "説明",
+      "placeholderDescription": "説明を入力...",
+      "textHeadline": "新しい動的商品グループ",
+      "titleFilter": "条件",
+      "titleResult": "商品グループ",
+      "messageSaveSuccess": "動的商品グループ「{name}」が保存されました。",
+      "messageSaveError": "動的商品グループ「{name}」の保存に失敗しました。",
+      "buttonOpenPreview": "プレビュー"
+    },
+    "previewModal": {
+      "title": "プレビュー",
+      "empty": "商品が見つかりません。",
+      "close": "閉じる"
+    }
+  },
+  "sw-privileges": {
+    "permissions": {
+      "product_stream": {
+        "label": "動的商品グループ"
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "sw-settings-message-stats": {
+    "general": {
+      "mainMenuItemGeneral": "メッセージキュー統計",
+      "descriptionTextModule": "メッセージキューシステムで処理されたメッセージの統計を表示します",
+      "statsCardTitle": "概要",
+      "description": "このビューでは、Shopwareのメッセージキューのパフォーマンスに関する詳細な洞察を提供します。処理された各メッセージについて、システムはキューに留まった時間を記録します。これらの統計はスライディングタイムウィンドウに基づいており、システム設定で調整可能です。",
+      "totalMessages": "処理済みメッセージ数",
+      "totalMessagesHelp": "指定された期間内に正常に処理されたメッセージの数です。",
+      "averageTime": "平均キュー滞留時間",
+      "averageTimeHelp": "メッセージが処理されるまでキューで待機した平均時間（秒）です。遅延やボトルネックの特定に役立ちます。",
+      "processingWindow": "処理時間範囲",
+      "processingWindowHelp": "統計に現在含まれている最も古いメッセージの時間を表示します。例えば、統計ウィンドウを1時間に設定していても、処理が開始されたのが5分前なら、その短い期間が反映されます。",
+      "refreshButton": "データを更新",
+      "errorTitle": "メッセージ統計の読み込みエラー",
+      "emptyStateTitle": "統計データがありません",
+      "emptyStateSubline": "まだメッセージキュー統計が収集されていません。",
+      "type": "種類",
+      "count": "数量",
+      "seconds": "秒",
+      "statsDisabledTitle": "メッセージキュー統計は無効です",
+      "statsDisabledContent": "メッセージキュー統計を有効にするには、shopware.yaml の設定ファイルでキー \"shopware.messenger.stats.enabled\" を true に設定し、ワーカーを再起動してください。"
+    }
+  }
+}

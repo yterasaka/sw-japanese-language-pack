@@ -1,0 +1,86 @@
+{
+  "sw-settings-document": {
+    "general": {
+      "mainMenuItemGeneral": "ドキュメント",
+      "description": "設定モジュール内のドキュメント構成セクション",
+      "placeholderSearchBar": "すべてのドキュメントを検索..."
+    },
+    "list": {
+      "textHeadline": "ドキュメント",
+      "textDeleteConfirm": "ドキュメント「{name}」を削除してもよろしいですか？",
+      "columnName": "技術名",
+      "columnType": "種別",
+      "columnUsedIn": "割り当て先",
+      "columnAssignment": "割り当て",
+      "buttonAddDocument": "ドキュメントを追加",
+      "contextMenuEdit": "編集",
+      "messageDeleteSuccess": "ドキュメント「{name}」が削除されました。",
+      "buttonDelete": "削除",
+      "global": "グローバル"
+    },
+    "detail": {
+      "textHeadline": "新規ドキュメント",
+      "configCard": "設定",
+      "companyCard": "会社設定",
+      "assignmentCard": "割り当て",
+      "messageSaveSuccess": "ドキュメント「{name}」が保存されました。",
+      "labelName": "技術名",
+      "labelFileNamePrefix": "ファイル名プレフィックス",
+      "labelFileNameSuffix": "ファイル名サフィックス",
+      "labelDisplayPrices": "価格を表示",
+      "labelDisplayHeader": "ヘッダーを表示",
+      "labelDisplayLineItems": "明細行を表示",
+      "labelDisplayLineItemPosition": "明細行の位置を表示",
+      "labelDisplayPageCount": "ページ数を表示",
+      "labelPageOrientation": "ページの向き",
+      "labelPageSize": "ページサイズ",
+      "labelItemsPerPage": "1ページあたりの項目数",
+      "labelDisplayCompanyAddress": "会社住所を表示",
+      "labelCompanyCity": "市区町村",
+      "labelCompanyCountry": "国",
+      "labelCompanyName": "会社名",
+      "labelCompanyEmail": "メールアドレス",
+      "labelCompanyPhone": "電話番号",
+      "labelCompanyStreet": "住所",
+      "labelCompanyUrl": "ウェブサイト",
+      "labelCompanyZipcode": "郵便番号",
+      "labelPaymentDueDate": "支払期限",
+      "labelTaxNumber": "税番号",
+      "labelTaxOffice": "税務署",
+      "labelVatId": "VAT登録番号",
+      "labelBankName": "銀行名",
+      "labelBankIban": "IBAN",
+      "labelBankBic": "BIC",
+      "labelType": "ドキュメント種別",
+      "labelSalesChannel": "販売チャネル",
+      "labelDisplayFooter": "フッターを表示",
+      "labelPlaceOfJurisdiction": "管轄地 / 商業登記番号",
+      "labelPlaceOfFulfillment": "履行地",
+      "labelExecutiveDirector": "代表者",
+      "labelDisplayAdditionalNoteDelivery": "「EU内配送」ラベルを表示",
+      "labelDeliveryCountries": "加盟国",
+      "labelDisplayCustomerVatId": "顧客のVAT-IDを表示",
+      "placeholderDisplayDeliveryCountries": "EU内配送が有効な国を検索して追加してください...",
+      "labelOptionMedia": "会社ロゴ",
+      "placeholderName": "名前を入力...",
+      "buttonSave": "保存",
+      "disabledSalesChannel": "この販売チャネルには同じ種別のドキュメントが既に存在します。",
+      "disabledSalesChannelSelect": "まずドキュメント種別を選択してください。",
+      "disabledTypeSelect": "グローバルドキュメントの種別は変更できません。",
+      "labelDisplayDocumentInCustomerAccount": "\"マイアカウント\"にドキュメントを表示",
+      "labelDisplayDivergentDeliveryAddress": "異なる配送先住所を表示",
+      "helpTextDisplayDocumentInCustomerAccount": "ドキュメントは各顧客アカウントの「注文」欄に表示されます。実際に顧客へ送信されたドキュメントのみが顧客アカウントに表示されることにご注意ください。",
+      "helpTextDisplayDeliveryCountries": "選択された国への請求書に「EU内配送」の表示を行います。",
+      "helpTextPaymentDueDate": "例：+30日、+4週間、+1週間2日",
+      "helpTextDisplayAdditionalNoteDelivery": "EU加盟国のみ対象です。詳細は「設定 > 国」でご確認ください。",
+      "labelFileTypes": "ファイル形式"
+    }
+  },
+  "sw-privileges": {
+    "permissions": {
+      "document": {
+        "label": "ドキュメント"
+      }
+    }
+  }
+}

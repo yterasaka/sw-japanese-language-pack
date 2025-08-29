@@ -1,0 +1,65 @@
+{
+  "sw-login": {
+    "general": {
+      "mainMenuItemIndex": "ログイン",
+      "description": "Shopware ログイン"
+    },
+    "index": {
+      "headlineMain": "こんにちは！",
+      "subheadlineMain": "お帰りなさい。",
+      "headlineForm": "Shopwareストアにログイン",
+      "labelUsername": "ユーザー名",
+      "labelPassword": "パスワード",
+      "labelKeepLoggedIn": "ログイン状態を保持する",
+      "placeholderUsername": "ユーザー名を入力してください...",
+      "placeholderPassword": "パスワードを入力してください...",
+      "buttonLogin": "ログイン",
+      "messageUnsupportedGrantType": "認証サーバーでサポートされていない認可グラントタイプです。",
+      "messageInvalidRequest": "無効なリクエストです。",
+      "messageInvalidClient": "クライアントの認証に失敗しました。",
+      "messageInvalidScope": "無効なスコープのリクエストです。",
+      "messageInvalidCredentials": "ユーザー認証情報が正しくありません。",
+      "messageServerError": "認証サーバーで予期しないエラーが発生しました。",
+      "messageInvalidRefreshToken": "無効なリフレッシュトークンです。",
+      "messageAccessDenied": "認証サーバーによりリクエストが拒否されました。",
+      "messageGeneralRequestError": "\"{url}\" のリクエスト中に問題が発生しました。",
+      "messageAuthThrottled": "ログイン試行回数が多すぎます。{seconds} 秒間待ってから再度ログインしてください。",
+      "forgottenPasswordLink": "パスワードをお忘れですか？"
+    },
+    "recovery": {
+      "info": {
+        "headline": "ログインに戻る",
+        "info": "入力されたメールアドレスが有効な場合、数分以内にパスワード再設定メールが届きます。",
+        "warning": "再設定リンクの有効期限は2時間のみですのでご注意ください。"
+      },
+      "recovery": {
+        "headline": "パスワード再設定",
+        "newPasswordField": {
+          "label": "新しいパスワードを入力してください..."
+        },
+        "passwordConfirmField": {
+          "label": "新しいパスワードを再入力してください..."
+        },
+        "submit": {
+          "label": "パスワードを更新"
+        },
+        "errorMessage": "再設定リンクの有効期限が切れているか無効です！"
+      },
+      "headline": "パスワード再設定",
+      "text": "アカウントに登録されているメールアドレスを入力してください。",
+      "email": {
+        "label": "メールアドレス：",
+        "placeholder": "shop{'@'}example.com"
+      },
+      "submit": "再設定リンクを送信"
+    }
+  },
+  "global": {
+    "sw-admin-menu": {
+      "textShopwareAdmin": "Shopware 管理"
+    },
+    "default": {
+      "error": "エラー"
+    }
+  }
+}

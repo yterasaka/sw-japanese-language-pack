@@ -1,0 +1,312 @@
+{
+  "sw-customer": {
+    "error": {
+      "COMPANY_IS_REQUIRED": "法人顧客の場合、会社名の入力は必須です。",
+      "passwordDoNotMatch": "新しいパスワードと確認用パスワードが一致しません。"
+    },
+    "notification": {
+      "requiredFields": "必須項目をすべて入力してください。"
+    },
+    "general": {
+      "mainMenuItemGeneral": "顧客",
+      "mainMenuItemList": "一覧",
+      "mainMenuItemAdd": "顧客を追加",
+      "descriptionTextModule": "ここで顧客を管理します。",
+      "placeholderSearchBar": "顧客を検索...",
+      "newCustomer": "新規顧客",
+      "tooltipLanguageSwitch": "翻訳可能なフィールドがないため、言語選択は無効化されています。"
+    },
+    "customerGroupRegistration": {
+      "alert": "顧客グループ「{name}」へのアクセスがリクエストされました。",
+      "accept": "承認",
+      "acceptMessage": "顧客グループが変更されました",
+      "decline": "拒否",
+      "declineMessage": "リクエストは拒否されました",
+      "errorMessage": "リクエストを処理できません",
+      "notification": {
+        "title": "取引先ステータスのリクエスト",
+        "message": "顧客「{name}」が顧客グループ「{groupName}」へのアクセスをリクエストしています。",
+        "openCustomer": "顧客を開く"
+      }
+    },
+    "card": {
+      "buttonImitateCustomer": "顧客としてログイン",
+      "tooltipImitateCustomerGuest": "ゲスト顧客は模倣できません。",
+      "tooltipImitateCustomerInactive": "非アクティブな顧客は模倣できません。",
+      "tooltipImitateCustomerInactiveSalesChannel": "顧客の販売チャネルがアクティブではありません。",
+      "tooltipImitateCustomerNoDomain": "顧客の販売チャネルにドメインが設定されていません。",
+      "tooltipImitateCustomerNoStorefront": "顧客の販売チャネルはストアフロントタイプではありません。",
+      "placeholderTitle": "敬称",
+      "placeholderFirstName": "名",
+      "placeholderLastName": "姓",
+      "placeholderCompany": "会社名",
+      "placeholderEmail": "メールアドレス",
+      "placeholderNewPassword": "新しいパスワードを入力...",
+      "placeholderNewPasswordConfirm": "新しいパスワードを再入力...",
+      "labelSalutation": "敬称",
+      "labelTitle": "称号",
+      "labelFirstName": "名",
+      "labelLastName": "姓",
+      "labelCompany": "会社名",
+      "labelEmail": "メール",
+      "labelTags": "タグ",
+      "labelGuest": "ゲストアカウント",
+      "labelVatId": "VAT登録番号",
+      "placeholderVatId": "VAT登録番号を入力..."
+    },
+    "list": {
+      "textCustomers": "顧客",
+      "textCustomersTotal": "顧客なし | 1名の顧客 | {count}名の顧客",
+      "buttonAddCustomer": "顧客を追加",
+      "columnCompany": "会社名",
+      "columnCustomerNumber": "顧客番号",
+      "columnName": "氏名",
+      "columnGroup": "顧客グループ",
+      "columnGroupRequested": "リクエスト",
+      "columnNameGuestLabel": "ゲストアカウント",
+      "labelCreatedByAdmin": "管理者による作成",
+      "columnFirstName": "名",
+      "columnLastName": "姓",
+      "columnStreet": "住所",
+      "columnZip": "郵便番号",
+      "columnCity": "市区町村",
+      "columnEmail": "メールアドレス",
+      "columnLastLogin": "最終ログイン",
+      "columnActions": "操作",
+      "columnAffiliateCode": "アフィリエイトコード",
+      "columnCampaignCode": "キャンペーンコード",
+      "columnBoundSalesChannel": "販売チャネル",
+      "columnActive": "有効",
+      "columnCreatedAt": "作成日",
+      "emptyBoundSalesChannel": "すべて",
+      "contextMenuView": "表示",
+      "contextMenuDelete": "削除",
+      "contextMenuDuplicate": "複製",
+      "contextMenuEdit": "編集",
+      "messageEmpty": "顧客がまだいません",
+      "textDeleteConfirm": "顧客「{name}」を本当に削除してもよろしいですか？",
+      "buttonDelete": "削除",
+      "titleSidebarItemRefresh": "更新",
+      "titleSidebarItemFilter": "フィルター",
+      "titleSidebarItemFilterAffiliateCode": "アフィリエイトコード",
+      "titleSidebarItemFilterCampaignCode": "キャンペーンコード",
+      "titleSidebarItemFilterRequestedGroup": "顧客グループのリクエストのみ表示"
+    },
+    "baseForm": {
+      "labelSalutation": "敬称",
+      "labelTitle": "称号",
+      "labelFirstName": "名",
+      "labelLastName": "姓",
+      "labelEmail": "メールアドレス",
+      "labelPhoneNumber": "電話番号",
+      "labelCompany": "会社名",
+      "labelCustomerGroup": "顧客グループ",
+      "labelSalesChannel": "販売チャネル",
+      "labelPaymentMethod": "支払方法",
+      "labelCustomerNumber": "顧客番号",
+      "labelBirthday": "生年月日",
+      "labelPassword": "パスワード",
+      "placeholderPassword": "パスワードを入力...",
+      "helpTextPassword": "顧客保存後、パスワードは顧客本人のみが直接変更可能です。",
+      "placeholderSalutation": "敬称を選択...",
+      "placeholderTitle": "称号を入力...",
+      "placeholderFirstName": "名を入力...",
+      "placeholderLastName": "姓を入力...",
+      "placeholderEmail": "メールアドレスを入力...",
+      "placeholderCustomerNumber": "顧客番号を入力...",
+      "placeholderCustomerGroup": "顧客グループを選択...",
+      "placeholderSalesChannel": "販売チャネルを選択...",
+      "placeholderPaymentMethod": "支払方法を選択...",
+      "labelTags": "タグ",
+      "placeholderTags": "タグを選択..."
+    },
+    "baseInfo": {
+      "contactEmail": "メールアドレス",
+      "labelCustomerNumber": "顧客番号",
+      "labelCustomerGroup": "顧客グループ",
+      "labelBirthday": "生年月日",
+      "labelLastLogin": "最終ログイン",
+      "labelLanguage": "言語",
+      "labelOrders": "注文数",
+      "labelTurnover": "売上",
+      "labelDefaultPayment": "デフォルトの支払方法",
+      "labelActive": "アカウント状態",
+      "labelConfirmed": "メールアドレスの状態",
+      "labelAffiliateCode": "アフィリエイトコード",
+      "labelCampaignCode": "キャンペーンコード",
+      "labelCompany": "会社名",
+      "labelVatId": "VAT登録番号",
+      "contentActive": "有効 | 無効",
+      "contentConfirmed": "確認済み | 未確認",
+      "emptyTextLogin": "まだログインしていません",
+      "emptyTextBirthday": "情報なし",
+      "labelBoundSalesChannel": "販売チャネル",
+      "emptyBoundSalesChannel": "すべて",
+      "helpTextBoundSalesChannel": "この顧客がログイン可能な販売チャネル",
+      "placeholderCustomerAffiliateCode": "アフィリエイトコードを入力...",
+      "placeholderCustomerCampaignCode": "キャンペーンコードを入力..."
+    },
+    "detailBase": {
+      "labelAccountCard": "アカウント",
+      "labelAddressesCard": "住所",
+      "labelOrderCard": "注文",
+      "titleDefaultShippingAddress": "デフォルト配送先住所",
+      "titleDefaultBillingAddress": "デフォルト請求先住所",
+      "buttonAddAddress": "住所を追加",
+      "buttonTitleEditAddress": "住所を編集",
+      "buttonSave": "保存",
+      "buttonEdit": "顧客を編集",
+      "buttonChangePassword": "パスワード変更",
+      "labelAccountActiveField": "アカウントは有効です"
+    },
+    "detailAddresses": {
+      "buttonAddAddress": "住所を追加",
+      "buttonClose": "閉じる",
+      "buttonDelete": "削除",
+      "buttonSelect": "選択",
+      "buttonSaveAndSelect": "保存して選択",
+      "modalTitleAddress": "住所",
+      "modalTitleAddAddress": "住所を追加",
+      "modalTitleEditAddress": "住所を編集",
+      "textDeleteAddressConfirm": "この住所を本当に削除してもよろしいですか？",
+      "columnDefaultShippingAddress": "デフォルト配送先住所",
+      "columnDefaultBillingAddress": "デフォルト請求先住所",
+      "columnCompany": "会社名",
+      "columnFirstName": "名",
+      "columnLastName": "姓",
+      "columnStreet": "住所",
+      "columnZipCode": "郵便番号",
+      "columnCity": "市区町村",
+      "columnActions": "操作",
+      "contextMenuEdit": "編集",
+      "contextMenuDelete": "削除",
+      "contextMenuDuplicate": "複製",
+      "contextMenuDefaultShippingAddress": "デフォルト配送先として設定",
+      "contextMenuDefaultBillingAddress": "デフォルト請求先として設定"
+    },
+    "detailOrder": {
+      "searchbarPlaceholder": "注文を検索",
+      "columnNumber": "注文番号",
+      "columnAmount": "注文額",
+      "columnOrderState": "注文ステータス",
+      "columnOrderDate": "注文日",
+      "columnContextOpenOrder": "未処理の注文",
+      "emptyTitle": "注文はまだありません",
+      "emptySearchTitle": "検索結果なし",
+      "emptySubline": "ここで顧客の注文を管理します",
+      "buttonCreateOrder": "注文を追加",
+      "ordersTitle": "注文"
+    },
+    "imitateCustomerModal": {
+      "modalTitle": "{firstname} {lastname} としてログイン",
+      "modalDescription": "{firstname} {lastname} としてログインする販売チャネルを選択してください。",
+      "modalInfo": "作業が終わったら {logout} を忘れずに行ってください。",
+      "modalInfoLogout": "ログアウト",
+      "modalInfoNoDomains": "有効なドメインが見つかりません。販売チャネル設定を確認してください。",
+      "labelCancel": "閉じる"
+    },
+    "addressForm": {
+      "labelCompany": "会社名",
+      "labelDepartment": "部署",
+      "labelSalutation": "敬称",
+      "labelTitle": "称号",
+      "labelFirstName": "名",
+      "labelLastName": "姓",
+      "labelZipcode": "郵便番号",
+      "labelStreet": "住所",
+      "labelCity": "市区町村",
+      "labelCountry": "国",
+      "labelState": "都道府県",
+      "labelAdditionalAddressLine1": "住所補足1",
+      "labelAdditionalAddressLine2": "住所補足2",
+      "labelPhoneNumber": "電話番号",
+      "labelVatId": "VAT登録番号",
+      "labelSameBillingAddress": "請求先住所と同じ",
+      "placeholderCompany": "会社名を入力...",
+      "placeholderDepartment": "部署を入力...",
+      "placeholderSalutation": "敬称を選択...",
+      "placeholderTitle": "称号を入力...",
+      "placeholderFirstName": "名を入力...",
+      "placeholderLastName": "姓を入力...",
+      "placeholderZipcode": "郵便番号を入力...",
+      "placeholderStreet": "住所を入力...",
+      "placeholderCity": "市区町村を入力...",
+      "placeholderCountry": "国を選択...",
+      "placeholderState": "都道府県を選択...",
+      "placeholderAdditionalAddressLine1": "住所補足1を入力...",
+      "placeholderAdditionalAddressLine2": "住所補足2を入力...",
+      "placeholderPhoneNumber": "電話番号を入力...",
+      "placeholderVatId": "VAT登録番号を入力..."
+    },
+    "detail": {
+      "buttonSave": "保存",
+      "buttonEdit": "編集",
+      "tabGeneral": "一般",
+      "tabAddresses": "住所",
+      "messageSaveError": "顧客を保存できませんでした。",
+      "messageSaveSuccess": "顧客「{name}」を保存しました。",
+      "notificationPasswordErrorMessage": "入力されたパスワードが一致しません。",
+      "notificationImitateCustomerErrorMessage": "顧客としてログイン中にエラーが発生しました。ポップアップウィンドウが許可されているか確認してください。",
+      "labelCreatedByAdmin": "管理者による作成"
+    },
+    "filter": {
+      "customerNumber": {
+        "label": "顧客番号",
+        "placeholder": "顧客番号を入力..."
+      },
+      "salutation": {
+        "label": "敬称",
+        "placeholder": "敬称を選択..."
+      },
+      "status": {
+        "label": "ステータス",
+        "placeholder": "ステータスを選択..."
+      },
+      "customerGroup": {
+        "label": "顧客グループ",
+        "placeholder": "顧客グループを選択..."
+      },
+      "billingCountry": {
+        "label": "請求先国",
+        "placeholder": "請求先国を選択..."
+      },
+      "shippingCountry": {
+        "label": "配送先国",
+        "placeholder": "配送先国を選択..."
+      },
+      "tags": {
+        "label": "タグ",
+        "placeholder": "タグを選択..."
+      },
+      "affiliateCode": {
+        "label": "アフィリエイトコード",
+        "placeholder": "アフィリエイトコードを入力..."
+      },
+      "campaignCode": {
+        "label": "キャンペーンコード",
+        "placeholder": "キャンペーンコードを入力..."
+      },
+      "customerGroupRequest": {
+        "label": "顧客グループリクエスト",
+        "placeholder": "リクエストステータスを選択...",
+        "textHasCriteria": "未処理の顧客グループリクエスト",
+        "textNoCriteria": "顧客グループリクエストなし"
+      },
+      "messageEmptyTitle": "該当なし",
+      "messageEmptySubline": "フィルターを編集して結果を検索してください。"
+    },
+    "customerType": {
+      "labelAccountType": "顧客タイプ",
+      "placeholderAccountType": "顧客タイプを選択...",
+      "labelPrivate": "個人",
+      "labelBusiness": "法人"
+    }
+  },
+  "sw-privileges": {
+    "permissions": {
+      "customer": {
+        "label": "顧客"
+      }
+    }
+  }
+}

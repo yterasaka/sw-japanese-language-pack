@@ -1,0 +1,62 @@
+{
+  "sw-settings-number-range": {
+    "general": {
+      "mainMenuItemGeneral": "ナンバーレンジ",
+      "placeholderSearchBar": "ナンバーレンジを検索...",
+      "infoGlobalType": "\"{typeName}\" タイプのナンバーレンジはひとつだけです。\"{typeName}\" タイプのナンバーレンジの変更はここで行い、すべての販売チャネルに全体的に影響します。",
+      "infoGlobalTypeTitle": "グローバルナンバーレンジタイプ \"{typeName}\"",
+      "infoGlobal": "グローバルナンバーレンジのタイプは変更できません。ただし、ほとんどのタイプおよび特定の販売チャネル向けに追加のナンバーレンジは一覧にて作成可能です。",
+      "infoGlobalTitle": "グローバルナンバーレンジ \"{name}\"",
+      "infoSalesChannelBound": "ナンバーレンジのタイプを変更するには、まずすべての販売チャネルの割り当てを解除してください。"
+    },
+    "list": {
+      "textHeadline": "ナンバーレンジ",
+      "textDeleteConfirm": "ナンバーレンジ \"{name}\" を本当に削除しますか？",
+      "columnName": "名前",
+      "columnUsedIn": "タイプ",
+      "columnAssignment": "割り当て",
+      "buttonAddNumberRange": "ナンバーレンジを追加",
+      "contextMenuEdit": "編集",
+      "contextMenuDelete": "削除",
+      "messageDeleteSuccess": "ナンバーレンジ \"{name}\" を削除しました。",
+      "buttonDelete": "削除",
+      "global": "グローバル"
+    },
+    "detail": {
+      "textHeadline": "新規ナンバーレンジ",
+      "configCard": "設定",
+      "assignmentCard": "割り当て",
+      "messageSaveSuccess": "ナンバーレンジ \"{name}\" を保存しました。",
+      "messageSaveError": "ナンバーレンジ \"{name}\" の保存に失敗しました。",
+      "labelName": "名前",
+      "labelDescription": "説明",
+      "labelPrefix": "接頭語",
+      "labelSuffix": "接尾語",
+      "labelPattern": "パターン",
+      "labelStart": "開始番号",
+      "labelCurrentNumber": "現在の番号",
+      "labelPreview": "プレビュー",
+      "labelAdvanced": "詳細モード",
+      "labelType": "タイプ",
+      "labelSalesChannel": "販売チャネル",
+      "placeholderName": "名前を入力...",
+      "placeholderDescription": "説明を入力...",
+      "placeholderPrefix": "接頭語を入力...",
+      "placeholderSuffix": "接尾語を入力...",
+      "placeholderPattern": "パターンを入力... \"prefix_{n}_suffix\"",
+      "placeholderStart": "開始番号を入力...",
+      "placeholderPleaseSelect": "選択してください...",
+      "placeholderSimpleModeImpossible": "詳細モードが有効です",
+      "helpTextAdvancedField": "詳細なパターン定義: <br/>{'{prefix}_{n}_{suffix}'}<br/><li>'n' は定義された開始番号です</li><li>('_' は任意の区切り文字です)</li><br/>例として PHP のパラメーター 'date' を使えます: <br/><li>{'{date}'}: 国際標準日付形式 (YYYY-MM-DD)</li><li>{'{date_dmy}'}: ユーザー定義日付形式 (DD-MM-YY)</li>",
+      "errorPatternNeededMessage": "パターンが定義されていません。少なくとも開始値を定義してください。",
+      "infoStartDecrementMessage": "開始番号の変更は、開始番号が現在の番号より大きい場合にのみ反映されます。"
+    }
+  },
+  "sw-privileges": {
+    "permissions": {
+      "number_ranges": {
+        "label": "ナンバーレンジ"
+      }
+    }
+  }
+}

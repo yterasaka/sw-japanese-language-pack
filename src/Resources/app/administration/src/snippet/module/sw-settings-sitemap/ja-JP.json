@@ -1,0 +1,11 @@
+{
+  "sw-settings-sitemap": {
+    "general": {
+      "mainMenuItemGeneral": "サイトマップ",
+      "description": "ここでサイトマップの設定を変更します。",
+      "textHeadline": "サイトマップ",
+      "buttonSave": "保存",
+      "messageSaveSuccess": "設定が保存されました。"
+    }
+  }
+}

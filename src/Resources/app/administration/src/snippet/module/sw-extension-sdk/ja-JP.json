@@ -1,0 +1,8 @@
+{
+  "sw-extension-sdk": {
+    "general": {
+      "mainMenuItemGeneral": "マイ拡張機能",
+      "moduleDescription": "拡張機能のコンテンツを表示するモジュール"
+    }
+  }
+}

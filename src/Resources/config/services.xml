@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="YukiTJapaneseLanguagePack\Service\JapaneseLanguageService">
+            <argument type="service" id="locale.repository"/>
+            <argument type="service" id="language.repository"/>
+            <argument type="service" id="snippet_set.repository"/>
+        </service>
+
+        <service id="YukiTJapaneseLanguagePack\Service\JapaneseCurrencyService">
+            <argument type="service" id="currency.repository"/>
+        </service>
+
+        <service id="YukiTJapaneseLanguagePack\Service\JapanesePrefectureService">
+            <argument type="service" id="country.repository"/>
+            <argument type="service" id="country_state.repository"/>
+            <argument type="service" id="language.repository"/>
+        </service>
+
+        <service id="YukiTJapaneseLanguagePack\Service\JapaneseProductSortingService">
+            <argument type="service" id="language.repository"/>
+            <argument type="service" id="Doctrine\DBAL\Connection"/>
+        </service>
+
+        <service id="YukiTJapaneseLanguagePack\Service\JapaneseMailTemplateService">
+            <argument type="service" id="mail_template.repository"/>
+            <argument type="service" id="language.repository"/>
+        </service>
+
+        <service id="YukiTJapaneseLanguagePack\Service\JapaneseStateMachineStateService">
+            <argument type="service" id="state_machine_state.repository"/>
+            <argument type="service" id="language.repository"/>
+        </service>
+    </services>
+</container>

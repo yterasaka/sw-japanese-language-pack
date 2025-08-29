@@ -1,0 +1,57 @@
+{
+  "sw-review": {
+    "general": {
+      "mainMenuItemList": "レビュー",
+      "mainMenuItemGeneral": "レビュー",
+      "placeholderSearchBar": "レビューを検索...",
+      "descriptionTextModule": "ここでレビューを管理します。"
+    },
+    "list": {
+      "textReviewOverview": "レビュー",
+      "columnProduct": "商品",
+      "columnPoints": "評価",
+      "columnUser": "顧客",
+      "columnStatus": "承認済み",
+      "columnCreatedAt": "作成日",
+      "columnComment": "コメント",
+      "columnTitle": "レビュータイトル",
+      "placeholderSearchBar": "レビューを検索...",
+      "messageEmpty": "まだレビューがありません",
+      "messageEmptySubline": "ここでレビューを管理します",
+      "titleSidebarItemRefresh": "更新"
+    },
+    "detail": {
+      "textHeadline": "レビュー",
+      "cardTitleReviewInfo": "レビュー",
+      "cardTitleReviewProperties": "プロパティ",
+      "labelTitle": "タイトル",
+      "labelPoints": "評価",
+      "labelUser": "ユーザー",
+      "labelSalesChannel": "販売チャネル",
+      "labelCreatedAt": "作成日",
+      "labelProduct": "商品",
+      "labelEmail": "メールアドレス",
+      "labelLanguage": "言語",
+      "labelPositive": "賛成票",
+      "labelNegative": "反対票",
+      "labelStatus": "承認済み",
+      "labelContent": "内容",
+      "labelComment": "コメント",
+      "labelCustomer": "顧客",
+      "titleCardComment": "コメント",
+      "placeholderComment": "コメントを入力してください...",
+      "review1PointRatingText": "不満足",
+      "review2PointRatingText": "許容範囲",
+      "review3PointRatingText": "良い",
+      "review4PointRatingText": "とても良い",
+      "review5PointRatingText": "優秀"
+    }
+  },
+  "sw-privileges": {
+    "permissions": {
+      "review": {
+        "label": "レビュー"
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "sw-integration": {
+    "general": {
+      "mainMenuItemIndex": "インテグレーション",
+      "headlineIntegrations": "インテグレーション",
+      "buttonCreateIntegration": "インテグレーションを追加",
+      "heroHeadlineIntegrations": "インテグレーションを管理",
+      "heroDescriptionIntegrations": "Shopwareは、サードパーティシステムをあなたのプロセスに完璧に統合するための強力なAPIを提供します。適切な通信を確立するために、Shopwareは外部アプリケーションに対してまず個別のセキュリティキーで認証を要求します。ここでそれらの個別キーを作成することで、外部アプリケーションによる変更を別々に追跡することが可能になります。"
+    },
+    "list": {
+      "contextMenuEdit": "編集",
+      "contextMenuDelete": "削除",
+      "messageEmpty": "まだインテグレーションはありません",
+      "sublineEmpty": "インテグレーションを管理するモジュールです。",
+      "permissions": "権限",
+      "writeAccess": "書き込み",
+      "readAccess": "読み取り",
+      "integrationName": "インテグレーション"
+    },
+    "detail": {
+      "deleteModalTitle": "削除",
+      "detailModalTitle": "インテグレーションを作成",
+      "detailModalTitleEdit": "編集：",
+      "confirmDelete": "このインテグレーションを本当に削除してもよろしいですか？",
+      "buttonApply": "インテグレーションを保存",
+      "buttonApplyEdit": "変更を保存",
+      "buttonDelete": "削除",
+      "buttonCreateNewApiKeys": "新しいAPIキーを作成",
+      "hintCreateNewApiKeys": "APIアクセスキーの再生成には、関連するすべてのスクリプトやアプリケーションの更新が必要です。",
+      "labelFieldLabel": "名前",
+      "idFieldLabel": "アクセスキーID",
+      "secretFieldLabel": "秘密アクセスキー",
+      "secretHelpText": "アクセスキーは今のうちに控えてください。インテグレーションを保存すると、安全上の理由からキーは表示されなくなります。",
+      "permissions": "権限",
+      "readAccessFieldLabel": "読み取り（デフォルト）",
+      "writeAccessFieldLabel": "書き込み（任意）",
+      "messageSaveSuccess": "インテグレーションが保存されました。",
+      "messageSaveError": "インテグレーションを保存できませんでした。",
+      "messageCreateNewError": "インテグレーションを保存できませんでした。"
+    }
+  },
+  "sw-privileges": {
+    "permissions": {
+      "integration": {
+        "label": "インテグレーション"
+      }
+    }
+  }
+}

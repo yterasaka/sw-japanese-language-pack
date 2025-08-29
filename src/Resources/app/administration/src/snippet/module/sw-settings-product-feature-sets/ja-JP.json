@@ -1,0 +1,74 @@
+{
+  "sw-settings-product-feature-sets": {
+    "general": {
+      "mainMenuItemGeneral": "必須特性",
+      "placeholderSearchBar": "テンプレートを検索...",
+      "searchType": "必須特性"
+    },
+    "list": {
+      "textHeadline": "必須特性",
+      "textDeleteConfirm": "必須特性「{name}」を削除してもよろしいですか？",
+      "columnValues": "値",
+      "columnTemplate": "テンプレート",
+      "columnDescription": "説明",
+      "buttonAddEssentialCharacteristics": "新規作成",
+      "contextMenuEdit": "編集",
+      "contextMenuDelete": "削除",
+      "messageDeleteSuccess": "必須特性「{name}」を削除しました。",
+      "buttonDelete": "削除"
+    },
+    "detail": {
+      "textHeadline": "新規テンプレート",
+      "titleCard": "基本情報",
+      "titleCardValues": "値",
+      "messageSaveSuccess": "特性テンプレート「{name}」を保存しました。",
+      "messageSaveError": "商品必須特性テンプレートの保存中にエラーが発生しました。",
+      "labelName": "名前",
+      "labelDescription": "説明",
+      "labelValues": "値",
+      "placeholderName": "テンプレート名を入力してください...",
+      "placeholderDescription": "説明を入力してください...",
+      "buttonSave": "保存",
+      "notificationErrorMessage": "商品必須特性テンプレートの保存中にエラーが発生しました。",
+      "labelCreateNew": "値を追加"
+    },
+    "valuesCard": {
+      "createStateDescription": "値を追加して、商品ラインナップに合わせた必須特性を定義してください。",
+      "labelCreateNew": "フィールドを追加",
+      "cardTitle": "値",
+      "labelValue": "値",
+      "labelType": "タイプ",
+      "labelPosition": "位置",
+      "emptyStateDescription": "値を追加して、商品ラインナップに合わせた必須特性を定義してください。"
+    },
+    "modal": {
+      "textPropertyLabel": "プロパティ",
+      "textCustomFieldLabel": "カスタムフィールド",
+      "textProductInfoLabel": "商品情報",
+      "textReferencePriceLabel": "単価",
+      "labelTitlePageOne": "テンプレートに追加するフィールドタイプを選択してください",
+      "labelTitleModal": "値を追加",
+      "labelName": "名前",
+      "buttonNext": "次へ",
+      "label": {
+        "property": "プロパティ",
+        "width": "幅",
+        "height": "高さ",
+        "length": "長さ",
+        "weight": "重量",
+        "releaseDate": "発売日",
+        "description": "説明",
+        "manufacturerNumber": "メーカー品番",
+        "ean": "GTIN/EAN",
+        "referencePrice": "単価"
+      }
+    }
+  },
+  "sw-privileges": {
+    "permissions": {
+      "product_feature_sets": {
+        "label": "必須特性"
+      }
+    }
+  }
+}

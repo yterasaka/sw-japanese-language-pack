@@ -1,0 +1,46 @@
+{
+  "sw-settings-seo": {
+    "general": {
+      "mainMenuItemGeneral": "SEO",
+      "descriptionTextModule": "SEO設定を管理します。",
+      "textHeadline": "SEO",
+      "buttonSave": "保存"
+    }
+  },
+  "sw-settings-seo-entity-detail": {
+    "labelMetaTitle": "メタタイトル",
+    "labelAdditionalText": "メタディスクリプション"
+  },
+  "sw-seo-url-template-card": {
+    "general": {
+      "titleCard": "SEO URLテンプレート",
+      "labelPossibleValues": "使用可能な変数",
+      "tooltipValidTemplate": "テンプレートは有効です",
+      "tooltipInvalidTemplate": "テンプレートが無効です",
+      "messageSaveError": "すべてのテンプレートが有効ではありません。",
+      "messageSaveSuccess": "SEO URLテンプレートが保存されました。",
+      "preview": "プレビュー：",
+      "placeholderSelectVariables": "検索して選択...",
+      "labelSalesChannelSelect": "販売チャネル",
+      "textUrlPreviewNotPossible": "このテンプレートのプレビューを生成できませんでした。",
+      "textUrlNoEntitiesForPreview": "{entity}がありません。",
+      "textUrlPreviewEmptyTemplate": "テンプレートが空です。{entity}のSEO URLは生成されません。",
+      "headlineInfoMessageBoxEmptyProperties": "情報",
+      "textInfoMessageBoxEmptyProperties": "変数を使用する場合、それらの変数がそれぞれのエンティティ（商品、ランディングページ、またはカテゴリ）内の全ての該当フィールドに値が存在することを確認してください。空のフィールドを参照する変数がある場合、該当エンティティのSEO URLは生成されません。"
+    },
+    "routeNames": {
+      "frontend-detail-page": "商品詳細ページ",
+      "frontend-navigation-page": "カテゴリーページ",
+      "frontend-landing-page": "ランディングページ"
+    }
+  },
+  "sw-seo-url": {
+    "titleCard": "SEO URL",
+    "labelSalesChannelSelect": "販売チャネル",
+    "labelSeoPathInfo": "SEOパス",
+    "textEmptySeoUrls": "まだSEO URLはありません。",
+    "textSeoUrlsDisallowedForHeadless": "Headless販売チャネルにはSEO URLを割り当てることができません。",
+    "labelMainCategory": "メインカテゴリー",
+    "placeholderMainCategory": "メインカテゴリーを選択してください..."
+  }
+}

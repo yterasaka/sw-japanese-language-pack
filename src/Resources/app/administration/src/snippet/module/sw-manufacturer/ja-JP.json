@@ -1,0 +1,38 @@
+{
+  "sw-manufacturer": {
+    "general": {
+      "mainMenuItemList": "メーカー",
+      "mainMenuItemGeneral": "メーカー",
+      "placeholderSearchBar": "メーカーを検索..."
+    },
+    "list": {
+      "textManufacturerOverview": "メーカー",
+      "textTotalManufacturer": "メーカーがいません | 1 件のメーカー | {count} 件のメーカー",
+      "buttonAddManufacturer": "メーカーを追加",
+      "columnName": "メーカー",
+      "columnLink": "ウェブサイト"
+    },
+    "detail": {
+      "textHeadline": "新しいメーカー",
+      "textMediaSelection": "メディア選択",
+      "buttonSave": "保存",
+      "cardTitleManufacturerInfo": "メーカー情報",
+      "labelName": "名前",
+      "labelDescription": "説明",
+      "labelLink": "ウェブサイト",
+      "placeholderName": "メーカー名を入力してください...",
+      "placeholderDescription": "説明を入力してください...",
+      "placeholderLink": "メーカーのウェブサイトを入力してください...",
+      "messageSaveSuccess": "メーカー「{name}」が保存されました。",
+      "labelLogo": "ロゴ",
+      "labelUseAsLogo": "ロゴとして使用"
+    }
+  },
+  "sw-privileges": {
+    "permissions": {
+      "product_manufacturer": {
+        "label": "メーカー"
+      }
+    }
+  }
+}

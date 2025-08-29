@@ -1,0 +1,119 @@
+{
+  "sw-settings-search": {
+    "general": {
+      "mainMenuItemGeneral": "検索",
+      "textHeadline": "検索設定"
+    },
+    "page": {
+      "generalTab": "一般",
+      "liveSearchTab": "ライブ検索"
+    },
+    "generalTab": {
+      "labelSearchBehaviour": "検索動作",
+      "textTitleSearchBehaviour": "販売チャンネルの検索動作をあらかじめ定義します。",
+      "labelSearchAndCondition": "「AND」検索",
+      "textSearchAndConditionExplain": "検索結果は入力した検索語のすべての要素に一致します。\n例：「Jeans summer」は「jeans」と「summer」の両方の検索語を含む検索結果を見つけます。",
+      "labelSearchOrCondition": "「OR」検索",
+      "textSearchOrConditionExplain": "検索結果は入力された検索語のいずれかの要素に一致します。\n例：「Jeans summer」は「jeans」か「summer」のいずれかの検索語を含む検索結果を見つけます。",
+      "labelMinimalSearchTerm": "最小検索語長",
+      "labelExcludedSearchTerms": "除外検索語",
+      "textEmptyStateExcludedSearchTerms": "除外された検索語はまだありません",
+      "buttonAddExcludedSearch": "検索語を除外",
+      "textPlaceholderTermsFilter": "除外する検索語を検索...",
+      "buttonAddExcludedSearchTerms": "検索語を除外",
+      "labelExcludedSearchTermsNoResults": "結果が見つかりません。",
+      "labelSearchableContent": "検索可能なコンテンツ",
+      "textDescriptionSearchableContent": "すべての検索可能なコンテンツは下記の表に一覧表示されています。販売チャンネルの検索結果をカスタマイズするには、コンテンツを検索対象から除外するか、各要素のランキングを調整してください。ランキングが高い要素ほど「検索価値」が高くなり、検索結果内で上位に表示されます。",
+      "buttonResetDefault": "デフォルトにリセット",
+      "linkExample": "例を表示",
+      "buttonAddContent": "検索可能なコンテンツを追加",
+      "labelGeneralTab": "一般",
+      "labelCustomFieldsTab": "カスタムフィールド",
+      "textEmptyStateSearchableContent": "まだ検索可能なコンテンツが追加されていません。",
+      "titleExampleModal": "検索ランキングの例",
+      "textColumnSearchTerm": "除外検索語",
+      "modal": {
+        "textExplain": "以下は検索語「jeans」に対する３つの架空の検索結果です。検索対象は商品タイトル（ランキングスコア100）、商品説明（ランキングスコア50）、商品タグ（ランキングスコア20）です。",
+        "textTitle": "タイトル",
+        "textSuperJeans": "スーパージーンズ",
+        "textDescription": "説明",
+        "textFancyJeans": "ファンシージーンズ",
+        "textTag": "タグ",
+        "textJeans": "ジーンズ",
+        "textTotal": "合計",
+        "textProductRankedFirstScore": "1位商品はすべての検索対象にヒットし、合計ランキングスコアは170です。",
+        "textFancyPants": "ファンシーパンツ",
+        "textProductRankedSecondScore": "2位商品は商品名とタグにヒットし、合計ランキングスコアは120です。",
+        "textSuperPants": "スーパーパンツ",
+        "textProductRankedThirdScore": "3位商品はタグのみにヒットし、合計ランキングスコアは20です。"
+      },
+      "labelSearchIndex": "検索インデックス",
+      "buttonRebuildSearchIndex": "検索インデックスを再構築",
+      "textWarningOpenTab": "この画面を開いたままにしてください。",
+      "textRebuildSearchIndexDescription": "検索インデックスの再構築には時間がかかります。処理中はこの画面を開いたままにしておく必要があります。処理完了後に通知されます。",
+      "textRebuildingSearchIndex": "検索インデックスを再構築中",
+      "textLastedBuild": "最新のビルド日時：",
+      "textSearchNotIndexedYet": "検索インデックスがまだ作成されていません。",
+      "list": {
+        "columnSearchable": "検索可能",
+        "columnRankingPoints": "ランキングスコア",
+        "columnContent": "コンテンツ",
+        "columnSplitKeywords": "検索語を分割",
+        "textResetRanking": "ランキングをリセット",
+        "textRemove": "削除"
+      },
+      "configFields": {
+        "name": "商品名",
+        "description": "商品説明",
+        "productNumber": "商品番号",
+        "manufacturerNumber": "メーカー品番",
+        "ean": "GTIN/EAN",
+        "customSearchKeywords": "カスタム検索語",
+        "manufacturerName": "メーカー名",
+        "manufacturerCustomFields": "メーカーのカスタムフィールド",
+        "categoriesName": "カテゴリ名",
+        "categoriesCustomFields": "カテゴリのカスタムフィールド",
+        "tagsName": "商品タグ",
+        "metaTitle": "商品メタタイトル",
+        "metaDescription": "商品メタ説明",
+        "propertiesValue": "プロパティ値",
+        "variantValue": "バリアント値"
+      }
+    },
+    "notification": {
+      "saveSuccess": "設定が保存されました。",
+      "excludedTermRequired": "除外する検索語は空にできません。",
+      "excludedTermAlreadyExists": "除外検索語はすでに存在します。",
+      "updateExcludedTermSuccess": "除外検索語が更新されました。",
+      "createExcludedTermSuccess": "除外検索語が作成されました。",
+      "deleteExcludedTermSuccess": "除外検索語が削除されました。",
+      "resetToDefaultExcludedTermSuccess": "除外検索語がデフォルトにリセットされました。",
+      "resetToDefaultExcludedTermError": "除外検索語のリセット中にエラーが発生しました。",
+      "saveError": "設定の保存中にエラーが発生しました。",
+      "index": {
+        "started": "商品のインデックスを作成中です。",
+        "success": "商品のインデックス作成が完了しました。"
+      },
+      "loadError": "設定の読み込み中にエラーが発生しました。",
+      "notSupportedLanguageError": "選択した言語は、選択した販売チャンネルで利用できません"
+    },
+    "liveSearchTab": {
+      "titleCard": "販売チャンネル ライブ検索",
+      "textDescription": "以下でカスタム検索設定をテストできます。",
+      "labelSalesChannelSelect": "販売チャンネル",
+      "textPlaceholderSalesChannel": "販売チャンネルを選択...",
+      "linkRebuildSearchIndex": "検索インデックスを再構築",
+      "labelName": "検索結果",
+      "labelScore": "ランキングスコア",
+      "textNoResult": "結果が見つかりません。別の検索語でお試しください。"
+    },
+    "textLeaveConfirm": "このページで変更が行われました。保存せずに離れると変更は失われます。"
+  },
+  "sw-privileges": {
+    "permissions": {
+      "product_search_config": {
+        "label": "検索"
+      }
+    }
+  }
+}

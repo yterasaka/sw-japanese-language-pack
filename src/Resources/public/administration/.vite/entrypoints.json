@@ -1,0 +1,23 @@
+{
+  "base": "/bundles/japaneselanguagepack/administration/",
+  "entryPoints": {
+    "japanese-language-pack": {
+      "css": [],
+      "dynamic": [],
+      "js": [
+        "/bundles/japaneselanguagepack/administration/assets/japanese-language-pack-l0sNRNKZ.js"
+      ],
+      "legacy": false,
+      "preload": []
+    }
+  },
+  "legacy": false,
+  "metadatas": {},
+  "version": [
+    "7.1.0",
+    7,
+    1,
+    0
+  ],
+  "viteServer": null
+}

@@ -1,0 +1,317 @@
+{
+  "global": {
+    "error-codes": {
+      "DUPLICATED_PRODUCT_EXPORT_FILE_NAME": "このファイル名はすでに使用されています。別の名前を選択してください。"
+    }
+  },
+  "sw-sales-channel": {
+    "general": {
+      "tooltipOpenStorefront": "ストアフロントを開く",
+      "titleMenuItems": "販売チャネル",
+      "titleMenuMoreItems": "その他",
+      "manageSalesChannels": "販売チャネルを管理",
+      "addSalesChannel": "販売チャネルを追加"
+    },
+    "list": {
+      "title": "販売チャネル",
+      "subTitle": "販売チャネルを使って、ソーシャルメディア、ストアフロント、マーケットプレイス、あるいは対面で商品をお客様に販売できます。",
+      "placeholderSearchBar": "販売チャネルを検索...",
+      "buttonAddSalesChannel": "販売チャネルを追加",
+      "columnName": "販売チャネル",
+      "columnType": "タイプ",
+      "columnStatus": "ステータス",
+      "columnCreatedAt": "作成日",
+      "columnFavourite": "お気に入り",
+      "status": {
+        "maintenance": "メンテナンス中",
+        "online": "オンライン",
+        "offline": "オフライン"
+      },
+      "contextMenuEdit": "編集",
+      "productsLabel": "商品",
+      "productsCount": "商品 | 商品 | 商品"
+    },
+    "modal": {
+      "title": "販売チャネルを追加",
+      "buttonAddChannel": "販売チャネルを追加",
+      "titleDetailPrefix": "{name} - 詳細",
+      "buttonShowDetails": "詳細を表示",
+      "buttonBack": "戻る",
+      "titleDescription": "情報",
+      "messageNoProductStreams": "商品比較を利用するには、まず動的商品グループを作成する必要があります。"
+    },
+    "detail": {
+      "messageSaveSuccess": "販売チャネル「{name}」を保存しました。",
+      "messageSaveError": "販売チャネル「{name}」の保存に失敗しました。入力内容を確認してください。",
+      "messageActivateWithoutThemeError": "販売チャネル「{name}」を有効化できませんでした。アクティブな販売チャネルにはテーマの割り当てが必要です。",
+      "activateDisable": "販売チャネルを有効化して保存する前にテーマを割り当ててください。",
+      "buttonSave": "保存",
+      "buttonCreateNewApiKeys": "新しいAPIキーを作成",
+      "tabBase": "一般",
+      "tabTheme": "テーマ",
+      "tabAnalytics": "アナリティクス",
+      "tabProductComparison": "テンプレート",
+      "tabProducts": "商品",
+      "titleProductComparisonTemplate": "テンプレート",
+      "titleProductComparisonPreview": "プレビュー",
+      "titleProductComparisonPreviewErrors": "生成中のエラー",
+      "labelAccessKeyField": "APIアクセスキー",
+      "messageAPIError": "APIアクセスキーの生成に失敗しました。",
+      "titleGeneralSettings": "一般設定",
+      "labelInputName": "名前",
+      "labelInputActive": "有効",
+      "labelInputShippingMethods": "配送方法",
+      "labelInputPaymentMethods": "支払い方法",
+      "labelInputCountries": "国",
+      "countryMultiSelectHelpText": "すべての利用可能な国が表示されていない場合は、名前を入力して非表示の国にアクセスしてください。国の作成や編集は設定/国で行えます。",
+      "helpTextTaxCalculation": {
+        "label": "税計算プロバイダーが有効の場合、これらの設定は上書きされることがあります。{link}で確認できます。",
+        "linkText": "設定"
+      },
+      "labelInputTaxCalculation": "税計算",
+      "labelOptionTaxVertical": "縦方向",
+      "labelOptionTaxHorizontal": "横方向",
+      "labelInputCurrencies": "通貨",
+      "labelInputLanguages": "言語",
+      "labelInputUrl": "URL",
+      "labelInputCategories": "カテゴリ",
+      "titleOptionsCard": "オプション",
+      "labelInputDefaultShippingMethod": "デフォルト配送方法",
+      "labelInputDefaultPaymentMethod": "デフォルト支払い方法",
+      "labelInputDefaultCountry": "デフォルト国",
+      "labelInputDefaultCurrency": "デフォルト通貨",
+      "labelInputDefaultLanguage": "デフォルト言語",
+      "tooltipDisabledShippingMethod": "この配送方法はデフォルト配送方法として選択するには有効化されている必要があります。",
+      "tooltipDisabledPaymentMethod": "この支払い方法はデフォルト支払い方法として選択するには有効化されている必要があります。",
+      "tooltipDisabledCountry": "この国はデフォルト国として選択するには有効化されている必要があります。",
+      "warningDisabledCountries": "国 <b>{name}</b> は有効化されていません。 | 国 <b>{name}</b> と <b>{addition}</b> は有効化されていません。",
+      "warningDisabledPaymentMethod": "この販売チャネルに割り当てられている一部の支払い方法が現在利用できません。これらの支払い方法について<a href=\"{paymentSettingsLink}\">設定</a>を確認してください:<br/> <b>{separatedList}</b>",
+      "warningDisabledShippingMethod": "配送方法 <b>{name}</b> は有効化されていません。 | 配送方法 <b>{name}</b> と <b>{addition}</b> は有効化されていません。",
+      "warningDisabledAddition": "他に{amount}件",
+      "warningUnservedLanguage": "言語 <b>{list}</b> はドメインに割り当てられていません。この言語を販売チャネルで使用するには、まず該当ドメインを作成してください。 | 言語 <b>{list}</b> はどのドメインにも割り当てられていません。これらの言語を販売チャネルで使用するには、該当ドメインを先に作成してください。",
+      "textDeleteInfo": "ご注意ください。この販売チャネルを完全に削除しようとしています。続行すると、この販売チャネルとその設定は利用できなくなります。ただし、販売チャネルの削除は既存の注文やカテゴリには影響を与えません。",
+      "buttonDelete": "販売チャネルを削除",
+      "deleteModalTitle": "販売チャネルの削除",
+      "textConfirmDelete": "本当にこの販売チャネルを削除してよろしいですか？",
+      "buttonConfirmDelete": "削除",
+      "textHeadline": "新規販売チャネル",
+      "placeholderName": "販売チャネル名を入力...",
+      "placeholderInputCategories": "カテゴリを追加...",
+      "titleDomains": "ドメイン",
+      "titleDomainItem": "URL {index}",
+      "labelInputCurrency": "通貨",
+      "labelInputLanguage": "言語",
+      "labelInputSnippet": "スニペット",
+      "buttonDeleteDomain": "ドメインを削除",
+      "messageDeleteDomainError": "ドメイン「{url}」は既存の商品エクスポートにリンクされているため削除できません。",
+      "buttonAddDomain": "ドメインを追加",
+      "deleteDomainModalTitle": "ドメインの削除",
+      "textConfirmDeleteDomain": "本当にこのドメインを削除しますか？販売チャネルは「{url}」でのアクセスができなくなります。",
+      "buttonConfirmDeleteDomain": "削除",
+      "customerGroup": "顧客グループ",
+      "favouriteLabel": "販売チャネルをお気に入りにマーク",
+      "navigation": "ナビゲーション",
+      "navigationCategoryId": "メインナビゲーションのエントリーポイント",
+      "navigationCategoryDepth": "ナビゲーション階層",
+      "navigationCategoryHelpText": "このエントリーポイントでは、「カスタマイズ可能なリンク」や「構造要素」タイプのカテゴリは選択できません。",
+      "footerCategory": "フッターナビゲーションのエントリーポイント",
+      "serviceCategory": "フッターサービスナビゲーションのエントリーポイント",
+      "titleOptionsApiKey": "APIアクセス",
+      "textDeleteSalesChannelWarning": "この販売チャネルの削除は取り消せません。",
+      "buttonCopyApiKeyButton": "APIキーをコピー",
+      "titleStatus": "ステータス",
+      "titleGeneralInformation": "一般情報",
+      "titleAccount": "アカウント",
+      "titleDeleteSalesChannel": "販売チャネルを削除",
+      "titleProductSync": "商品同期",
+      "titleSyncedProducts": "同期済み商品",
+      "titleCategoryMapping": "カテゴリマッピング",
+      "titleTemplate": "テンプレート",
+      "titleDomainHeadline": "ドメインURLの作成",
+      "buttonEditDomain": "ドメインを編集",
+      "titleCreateDomain": "ドメインを作成",
+      "titleEditDomain": "ドメイン「{name}」を編集",
+      "textDomainDescription": "選択した各言語には、それぞれのオンライン販売チャネルで機能する独自のドメインが必要です。ここでカスタムドメインも追加できます。",
+      "textApiAccessDescription": "APIアクセスを取得するには、以下に表示されるAPIキーが必要です。キーを新しく生成すると古いキーは上書きされ、既存の全てのアクセス経路は使用できなくなります。<strong>この操作は元に戻せません。</strong>",
+      "textActiveDescription": "販売チャネルのオフ切り替えは訪問者とAPI接続の両方のアクセスを遮断します。",
+      "columnDomainUrl": "URL",
+      "columnDomainLanguage": "言語",
+      "columnDomainSnippetSet": "スニペットセット",
+      "maintenanceModeTitle": "メンテナンスモード",
+      "maintenanceModeDescription": "メンテナンスモード中は販売チャネルは訪問者に見えませんが、許可されたIPからはアクセス可能です。これにより、訪問者をメンテナンス画面にブロックしつつ安心してデータを作業できます。",
+      "labelMaintenanceActive": "メンテナンス中",
+      "ipAddressAllowlist": "IPアドレス許可リスト",
+      "ipAddressAllowlistHelpText": "ショップへの選択的アクセスを許可するためにIPアドレスを許可リストに追加してください。必要に応じてIPv4とIPv6アドレスを追加できます。",
+      "basicinformationLink": "デフォルトのメンテナンスレイアウトはここで変更できます",
+      "columnDomainCurrency": "通貨",
+      "columnDomainUnitSystem": "単位系",
+      "products": {
+        "titleEmptyState": "これ以上の商品は見つかりません",
+        "titleEmptyStateTable": "該当する商品が見つかりません",
+        "buttonAddProducts": "{productCount}件の商品を追加 | {productCount}件の商品を追加 | {productCount}件の商品を追加",
+        "columnProductName": "商品名",
+        "columnActive": "有効",
+        "columnProductNumber": "商品番号",
+        "inheritVariantNotRemovableTooltip": "このバリアント商品の販売チャネルの割り当ては親商品の設定を継承しています。"
+      },
+      "productComparison": {
+        "inputHeaderLabel": "ヘッダ行",
+        "inputBodyLabel": "商品行",
+        "inputFooterLabel": "フッタ行",
+        "buttonTestLabel": "テンプレートをテスト",
+        "buttonPreviewLabel": "プレビューを生成",
+        "settings": "商品エクスポート",
+        "fileName": "ファイル名",
+        "placeholderFileName": "shopware.csv",
+        "lastGenerationLabel": "最終生成日時: ",
+        "notYetGenerated": "このエクスポートはまだ生成されていません。",
+        "encoding": "エンコーディング",
+        "placeholderSelectEncoding": "エンコーディング形式を選択してください...",
+        "fileFormat": "ファイル形式",
+        "placeholderSelectFileFormat": "ファイル形式を選択してください...",
+        "accessKey": "アクセスキー",
+        "accessUrl": "エクスポートURL",
+        "buttonCreateNewAccessKey": "新しいアクセスキーを作成",
+        "productStream": "動的商品グループ",
+        "fileFormatLabels": {
+          "csv": "CSV",
+          "xml": "XML"
+        },
+        "includeVariants": "バリアントを個別の商品としてエクスポート",
+        "interval": "間隔",
+        "generateByCronjob": "スケジューラーで生成",
+        "notificationMessageValidateSuccessful": "エラーは発生しませんでした。",
+        "intervalLabels": {
+          "0": "ライブ",
+          "120": "2分",
+          "300": "5分",
+          "600": "10分",
+          "900": "15分",
+          "1800": "30分",
+          "3600": "1時間",
+          "7200": "2時間",
+          "14400": "4時間",
+          "28800": "8時間",
+          "43200": "12時間",
+          "86400": "1日",
+          "172800": "2日",
+          "259200": "3日",
+          "345600": "4日",
+          "432000": "5日",
+          "518400": "6日",
+          "604800": "1週間"
+        },
+        "storefront": "ストアフロント販売チャネル",
+        "storefrontDomain": "ストアフロントドメイン",
+        "storefrontDomainLanguage": {
+          "label": "言語",
+          "help": "販売チャネルドメインによって自動選択されます"
+        },
+        "storefrontDomainCurrency": {
+          "label": "通貨"
+        },
+        "storefrontSalesChannelCustomerGroup": {
+          "label": "顧客グループ",
+          "help": "販売チャネルにより自動選択されます"
+        },
+        "messageAccessKeyChanged": "アクセスキーとエクスポートURLは販売チャネル保存後に有効になります。",
+        "templates": {
+          "label": "テンプレート",
+          "placeholderSelectTemplate": "テンプレートを使わない...",
+          "template-label": {
+            "billiger-de": "billiger.de (CSV)",
+            "idealo": "idealo.de (CSV)",
+            "google-product-search-de": "Googleショッピング (XML)"
+          },
+          "modal-title": "テンプレートを適用",
+          "modal-message": "テンプレートを適用すると、販売チャネル内の既存のデータが上書きされます。設定およびテンプレートのタブにこれらの変更が反映されます。",
+          "modal-confirm": "テンプレートを適用",
+          "message": {
+            "template-applied-message": "テンプレートデータが適用されましたが、まだ保存されていません。変更を保持するには販売チャネルを保存してください。"
+          }
+        },
+        "cliCommand": "商品エクスポートを生成するCLIコマンド"
+      },
+      "hreflang": {
+        "title": "Hreflang",
+        "titleCard": "Hreflang統合",
+        "titleDescription": "hreflangメタタグはコンテンツを言語に固有に関連付けるために使われます。Googleは検索結果に該当言語を明示的に表示します。",
+        "enableCheckbox": "hreflangを有効化",
+        "defaultDomain": "hreflangのデフォルトドメイン",
+        "domainSettings": {
+          "label": "Hreflangローカライズ",
+          "byIso": "ISO標準によるローカライズ",
+          "byIsoHelpText": "言語の他に目的国も含めて正確なISOで設定されます。",
+          "byAbbreviation": "言語によるローカライズ",
+          "byAbbreviationHelpText": "言語だけでローカライズします。複数の目的国が言語出力でカバーされます。"
+        }
+      },
+      "analytics": {
+        "cardTitle": "Google Analytics",
+        "headline": "Google Analytics統合",
+        "description": "Google Analyticsを使うことで、ショップのデータを収集・分析できます。この機能を使うにはGoogleアカウントが必要です。まだアカウントをお持ちでない場合、こちらで登録できます：<a href=\"https://analytics.google.com/\" target=\"_blank\">Google Analytics</a>。登録後に取得するトラッキングIDを以下に入力し、統合を有効化します。",
+        "fields": {
+          "trackingId": {
+            "label": "トラッキングID",
+            "placeHolder": "トラッキングIDを入力...",
+            "helpText": "Google Analyticsへログインすると、`G-XXXXXXXXXX`の形式でトラッキングIDが取得できます。Google Tag Managerを使う場合は`GTM-`で始まるIDを入力してください。ストアフロントは自動的にGoogle Tag Managerスクリプト（`https://www.googletagmanager.com/gtm.js?id=...`）を含めます。そうでない場合は`https://www.googletagmanager.com/gtag/js?id=...`を使用します。"
+          },
+          "active": {
+            "label": "Google Analyticsを有効化"
+          },
+          "trackOrders": {
+            "label": "注文をトラッキング"
+          },
+          "anonymizeIp": {
+            "label": "IPを匿名化"
+          }
+        }
+      },
+      "titleShippingPayment": "支払いと配送",
+      "labelTaxCalculation": "税計算",
+      "descriptionTaxCalculation": "この設定変更は外部の支払いプロバイダーとの会計上の問題を引き起こす可能性があります。変更前に使用している支払いプロバイダーの消費税計算方法を確認してください。",
+      "taxCalculation": {
+        "verticalName": "縦方向（列ごと）計算",
+        "verticalDescription": "注文合計から消費税を計算します。チェックアウト時に個別の消費税額は表示されません。",
+        "horizontalName": "横方向（行ごと）計算",
+        "horizontalDescription": "ショッピングカートの各ポジションごとに消費税を計算します。チェックアウト時に各ポジションの個別消費税が表示されます。合計消費税は個々の消費税を足し合わせて計算されます。"
+      },
+      "productAssignmentModal": {
+        "title": "商品を追加",
+        "singleProducts": "商品選択",
+        "categories": {
+          "title": "カテゴリ選択",
+          "textInfo": "ここでの割り当ては動的ではなく現在の商品の状態を示します。以降にカテゴリの商品構成が変更されても割り当てには影響しません。",
+          "textSearch": "カテゴリを検索 ...",
+          "emptySearchResults": "カテゴリが見つかりません。"
+        },
+        "dynamicProductGroups": {
+          "title": "商品グループ選択",
+          "infoText": "ここでの割り当ては動的ではなく現在の商品の状態を示します。以降に動的商品グループの構成が変わっても割り当てには影響しません。",
+          "columnName": "名前",
+          "searchFieldPlaceholder": "動的商品グループを検索...",
+          "titleNoProductStreamsMatching": "該当する動的商品グループがありません。",
+          "titleNoProductStreamsAvailable": "動的商品グループが利用できません。"
+        }
+      },
+      "measurementSystem": {
+        "labelDefaultUnitSystem": "デフォルト単位系",
+        "labelDefaultLengthUnit": "デフォルト長さ単位",
+        "labelDefaultWeightUnit": "デフォルト重量単位",
+        "labelUnitSystem": "単位系",
+        "labelLengthUnit": "長さ単位",
+        "labelWeightUnit": "重量単位"
+      }
+    },
+    "sw-sales-channel-defaults-select": {
+      "messageError": "この値はすでにこのドメインで使用されています: 「{url}」。"
+    }
+  },
+  "sw-privileges": {
+    "permissions": {
+      "sales_channel": {
+        "label": "販売チャネル"
+      }
+    }
+  }
+}

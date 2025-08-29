@@ -1,0 +1,302 @@
+{
+  "sw-promotion-v2": {
+    "general": {
+      "mainMenuItemGeneral": "プロモーション",
+      "mainMenuItemList": "概要",
+      "description": "ここでプロモーションを管理します。"
+    },
+    "list": {
+      "textTitle": "プロモーション",
+      "buttonAddPromotion": "プロモーションを追加",
+      "columnActive": "有効",
+      "columnName": "名称",
+      "columnValidFrom": "有効開始日",
+      "columnValidUntil": "有効終了日",
+      "titleEmpty": "まだプロモーションがありません。",
+      "descriptionEmpty": "商品やサービスを割引して売上アップを促進しましょう。",
+      "placeholderSearchBar": "プロモーションを検索…",
+      "textDeleteConfirm": "プロモーション「{name}」を削除してもよろしいですか？",
+      "titleSidebarItemRefresh": "更新",
+      "duplicatePromotionInfo": "プロモーションコードは複製されません。再発行が必要です。",
+      "deleteDisabledToolTip": "プロモーションは現在使用中のため削除できません。"
+    },
+    "detail": {
+      "header": {
+        "titleCreate": "新規プロモーション",
+        "titleEdit": "プロモーション"
+      },
+      "tabs": {
+        "tabGeneral": "一般",
+        "tabConditions": "条件",
+        "tabDiscounts": "割引"
+      },
+      "codeChangeModal": {
+        "title": "プロモーションコードオプションの変更",
+        "text": "プロモーションコードオプションを切り替えると、これまでに生成されたプロモーションコードはすべて削除されます。"
+      },
+      "base": {
+        "general": {
+          "cardTitle": "一般設定",
+          "nameLabel": "名称",
+          "namePlaceholder": "名称を入力…",
+          "priorityLabel": "優先度",
+          "helpTextPriority": "優先度はプロモーションが適用される順序を決定します。優先度が高いプロモーションが優先的に適用されます。",
+          "validFromLabel": "有効開始日",
+          "validFromPlaceholder": "開始日を選択…",
+          "validUntilLabel": "有効終了日",
+          "validUntilPlaceholder": "終了日を選択…",
+          "maxUsesGlobalLabel": "合計最大利用回数",
+          "maxUsesGlobalPlaceholder": "無制限",
+          "maxUsesPerCustomerLabel": "顧客ごとの最大利用回数",
+          "maxUsesPerCustomerPlaceholder": "無制限",
+          "activeLabel": "有効"
+        },
+        "codes": {
+          "cardTitle": "プロモーションコード",
+          "codeTypeLabel": "コードオプション",
+          "none": {
+            "description": "プロモーションコードは不要"
+          },
+          "fixed": {
+            "description": "固定のプロモーションコード",
+            "codeLabel": "プロモーションコード",
+            "codePlaceholder": "プロモーションコードを入力…",
+            "generateButton": "ランダムコードを生成"
+          },
+          "individual": {
+            "description": "個別のプロモーションコード",
+            "emptyStateTitle": "まだプロモーションコードが生成されていません。",
+            "generateButton": "新しいコードを生成",
+            "searchPlaceholder": "プロモーションコードを検索…",
+            "addButton": "コードを追加",
+            "columnCode": "コード",
+            "columnRedeemed": "利用済み",
+            "columnCustomer": "顧客",
+            "columnCreatedAt": "生成日時",
+            "textDeleteConfirm": "コード「{code}」を削除してもよろしいですか？ | これら{count}件のコードを削除してもよろしいですか？",
+            "openCustomer": "顧客を開く",
+            "routingError": "顧客「{name}」が見つかりませんでした。",
+            "addCodesModal": {
+              "title": "新しいコードを追加",
+              "description": "新しいコードには、これまで生成したコードと同じプレフィックス、サフィックス、パターンが使用されます。",
+              "addCodesButton": "新しいコードを追加",
+              "codeAmountLabel": "新しいコード数"
+            },
+            "generateModal": {
+              "title": "新しいプロモーションコードを生成",
+              "buttonGenerate": "新しいコードを生成",
+              "warning": "新しいコードを生成すると、既存のすべてのコードが削除されます。削除されたコードは無効となり、もう使用できません。",
+              "description": "プロモーションコードは大文字アルファベットと数字からランダムに生成されます。接頭語（プレフィックス）や接尾語（サフィックス）を指定したり、独自のパターンを使用してコードプレビューで確認できます。",
+              "labelPrefix": "プレフィックス",
+              "placeholderPrefix": "プレフィックスを入力…",
+              "labelCodeLength": "コード長",
+              "labelSuffix": "サフィックス",
+              "placeholderSuffix": "サフィックスを入力…",
+              "labelCustomPattern": "カスタムパターン",
+              "placeholderCustomPattern": "カスタムパターンを入力…",
+              "helpTextCustomPattern": "連続した変数文字列は1つだけで、その部分が自動変換されます。<strong>使用可能な変数：</strong><ul><li>%d - 数字（0-9）</li><li>%s - 英字（A-Z）</li></ul>",
+              "labelUseCustomPattern": "カスタムパターンを使用",
+              "labelPreview": "プロモーションコードプレビュー",
+              "labelCodeAmount": "プロモーションコード数",
+              "notComplexEnoughException": "リクエストされた数のプロモーションコードは作成できません。パターンが十分に複雑かご確認ください。コードが十分にランダムであるよう、生成されるのは全体の50%までです。",
+              "alreadyInUseException": "選択したコードパターンは既に他のプロモーションで使用されています。別のパターンを入力してください。",
+              "unknownErrorCode": "プロモーションコード生成中にエラーが発生しました。詳細は開発者ツールをご利用ください。"
+            }
+          }
+        }
+      },
+      "conditions": {
+        "preConditions": {
+          "cardTitlePreConditions": "事前条件",
+          "cardTitleRuleConditions": "ルールベースの条件",
+          "labelPreventCombination": "他のプロモーションと併用禁止",
+          "helpTextPreventCombination": "このオプションを有効にすると、組合せ選択に関係なく全ての他のプロモーションが除外されます。",
+          "labelPromotionExclusions": "組み合わせを禁止するプロモーション",
+          "placeholderPromotionExclusions": "プロモーションを追加…",
+          "labelPromotionSalesChannel": "販売チャネル",
+          "placeholderPromotionSalesChannel": "販売チャネルを追加…",
+          "labelCustomerSelect": "顧客ルール",
+          "placeholderCustomerSelect": "顧客ルールを選択…",
+          "labelCartConditionSelect": "ショッピングカートルール",
+          "placeholderCartConditionSelect": "ショッピングカートルールを選択…",
+          "labelOrderConditionSelect": "注文ルール",
+          "placeholderOrderConditionSelect": "注文ルールを選択…"
+        },
+        "setgroups": {
+          "switchGroupsEnabled": "商品セットをプロモート",
+          "buttonAddGroup": "商品セットを追加",
+          "titleName": "グループ",
+          "labelMode": "モード",
+          "labelValue": "値",
+          "labelSorting": "ソート順",
+          "labelRules": "商品ルール",
+          "placeholder": "商品ルールを選択…",
+          "packager": {
+            "COUNT": "数量",
+            "PRICE_UNIT_GROSS": "金額（グロス）",
+            "PRICE_UNIT_NET": "金額（ネット）"
+          },
+          "sorter": {
+            "PRICE_ASC": "価格昇順",
+            "PRICE_DESC": "価格降順"
+          }
+        },
+        "filter": {
+          "sorter": {
+            "PRICE_ASC": "価格昇順",
+            "PRICE_DESC": "価格降順"
+          },
+          "applier": {
+            "ALL": "全商品",
+            "SELECT": "{count}番目の商品"
+          },
+          "counter": {
+            "ALL": "無制限",
+            "SELECT": "{count}回"
+          },
+          "picker": {
+            "VERTICAL": "縦",
+            "HORIZONTAL": "横"
+          }
+        }
+      },
+      "discounts": {
+        "emptyStateTitle": "まだ割引がありません。",
+        "addDiscountButton": "割引を追加",
+        "wizard": {
+          "basic": {
+            "prefixTitle": "基本割引 - {title}",
+            "titleDiscountType": "割引種別",
+            "titleProductRules": "商品ルール",
+            "description": "まず割引の種類を選択してください。次のステップで、この割引を発動させるトリガーを設定できます。"
+          },
+          "shipping-discount": {
+            "prefixTitle": "送料割引 - {title}",
+            "titleDiscountType": "割引種別",
+            "titleTriggerSelection": "トリガー（任意）",
+            "description": "Rule Builderを使って個別の割引トリガーが作成できます。基準値（一定数の商品や合計金額など）で割引を自動適用できます。トリガーカスケードも作成可能です。"
+          },
+          "buy-x-get-y": {
+            "prefixTitle": "まとめ買い割引 - {title}",
+            "titleDiscountType": "割引種別",
+            "titleTriggerSelection": "トリガー（任意）"
+          }
+        },
+        "settings": {
+          "discountType": {
+            "labelDiscountType": "割引種別",
+            "labelValue": "金額 | 割合",
+            "labelMaxDiscountValue": "最大割引額",
+            "labelApplyDiscountTo": "割引適用先",
+            "labelApplyTo": "適用先",
+            "discountTypeSelection": {
+              "displayFixedPrice": "固定価格",
+              "displayFixedDiscount": "絶対値",
+              "displayPercentage": "割合",
+              "displayFree": "無料商品"
+            },
+            "applyDiscountTo": {
+              "displayTotalPrice": "合計金額",
+              "displayProductPrice": "商品価格"
+            }
+          },
+          "ruleSelection": {
+            "description": "割引対象商品を決定するルールを選択または作成してください。",
+            "labelSelection": "ルール選択",
+            "placeholderSelection": "ルールを選択…"
+          },
+          "trigger": {
+            "labelUseTrigger": "トリガーを使用",
+            "triggerType": {
+              "displaySingleTrigger": "単品トリガー",
+              "displayMultiTrigger": "複数商品トリガー"
+            },
+            "labelNumberOfTriggers": "トリガータイプ"
+          }
+        },
+        "pricesModal": {
+          "advancedPricesHeader": "高度な価格設定",
+          "closeModal": "閉じる",
+          "labelCurrency": "通貨",
+          "labelPrice": "値",
+          "linkAdvancedPrices": "高度な価格設定を表示"
+        }
+      },
+      "discount-selection": {
+        "modalTitle": "新規割引",
+        "description": "割引は税込/税抜価格や固定金額、割合で適用できます。個別商品、商品群、送料などに割引適用が可能です。",
+        "basic": {
+          "name": "基本割引",
+          "description": "カート全体や選択した商品群に割引を適用します。"
+        },
+        "buy-x-get-y": {
+          "name": "まとめ買い割引（買うと貰える）",
+          "description": "特定商品がカートに追加された時に割引を適用します。"
+        },
+        "shipping-discount": {
+          "name": "送料割引",
+          "description": "送料の割引や送料無料プロモーション。商品のトリガーを任意で設定可。"
+        }
+      },
+      "shipping-discount-trigger": {
+        "modalTitle": "送料割引 - トリガー（任意）",
+        "description": "Rule Builderを使って個別トリガーを作成できます。商品数やカート合計で割引適用も可能、トリガーカスケードにも対応。",
+        "labelUseTrigger": "トリガーを使用"
+      }
+    },
+    "ruleSelect": {
+      "labelAddNewRule": "新しいルールを作成"
+    }
+  },
+  "sw-promotion": {
+    "detail": {
+      "main": {
+        "discounts": {
+          "card": "割引",
+          "labelValue": "値",
+          "labelMaxValue": "最大割引額",
+          "helpTextMaxValueAdvancedPrices": "最大限与えられる割引（絶対的金額）です。",
+          "placeholderValue": "割合または絶対値を入力…",
+          "labelScope": "適用範囲：",
+          "flagProductScopeLabel": "特定の商品範囲のみに適用",
+          "labelRules": "商品ルール",
+          "placeholder": "商品ルールを割り当て…",
+          "labelType": "種類",
+          "valueScopeCart": "カート",
+          "valueTypeAbsolute": "絶対値",
+          "valueScopeDelivery": "送料",
+          "valueScopeSet": "全セット",
+          "valueScopeSetGroup": "セットグループ",
+          "valueTypePercentage": "割合",
+          "valueTypeFixed": "固定価格",
+          "valueTypeFixedUnit": "単品固定価格",
+          "buttonAddDiscount": "割引を追加",
+          "buttonDeleteDiscount": "割引を削除",
+          "delete": {
+            "confirmTitle": "割引の削除",
+            "confirmText": "このプロモーションから割引を本当に削除しますか？",
+            "buttonDelete": "割引を削除"
+          },
+          "labelSorting": "並び替え基準",
+          "labelPicking": "アイテムの選択モード",
+          "labelApplyCount": "適用回数",
+          "labelMaxCount": "最大適用回数",
+          "linkAdvancedPrices": "高度な価格設定を表示",
+          "pricesModal": {
+            "advancedPricesHeader": "高度な価格設定",
+            "closeModal": "閉じる",
+            "labelCurrency": "通貨",
+            "labelPrice": "値"
+          }
+        }
+      }
+    }
+  },
+  "sw-privileges": {
+    "permissions": {
+      "promotion": {
+        "label": "プロモーション"
+      }
+    }
+  }
+}
