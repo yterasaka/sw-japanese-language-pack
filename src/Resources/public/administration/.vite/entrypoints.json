@@ -1,11 +1,11 @@
 {
-  "base": "/bundles/japaneselanguagepack/administration/",
+  "base": "/bundles/yukitjapaneselanguagepack/administration/",
   "entryPoints": {
-    "japanese-language-pack": {
+    "yuki-t-japanese-language-pack": {
       "css": [],
       "dynamic": [],
       "js": [
-        "/bundles/japaneselanguagepack/administration/assets/japanese-language-pack-l0sNRNKZ.js"
+        "/bundles/yukitjapaneselanguagepack/administration/assets/yuki-t-japanese-language-pack-BIgCXbhF.js"
       ],
       "legacy": false,
       "preload": []
