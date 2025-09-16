@@ -1,11 +1,11 @@
 const { Application } = Shopware;
 
-try {
-  const localeFactory = Application.getContainer("factory").locale;
+const localeFactory = Application.getContainer("factory").locale;
 
-  if (!localeFactory.getLocaleRegistry().has("ja-JP")) {
+if (!localeFactory.getLocaleRegistry().has("ja-JP")) {
+  try {
     localeFactory.register("ja-JP", {});
+  } catch (error) {
+    console.error("Failed to register Japanese locale:", error);
   }
-} catch (error) {
-  console.error("Failed to register Japanese locale:", error);
 }
