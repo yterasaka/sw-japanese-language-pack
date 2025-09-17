@@ -88,16 +88,23 @@ class JapaneseStateMachineStateService
         string $languageId,
         Context $context
     ): void {
-        try {
-            $criteria = new Criteria();
-            $criteria->addFilter(new EqualsFilter('technicalName', $technicalName));
-            $criteria->addAssociation('translations');
+        $criteria = new Criteria();
+        $criteria->addFilter(new EqualsFilter('technicalName', $technicalName));
+        $criteria->addAssociation('translations');
 
-            $states = $this->stateMachineStateRepository->search($criteria, $context);
+        $states = $this->stateMachineStateRepository->search($criteria, $context);
 
-            foreach ($states->getElements() as $state) {
-                /** @var StateMachineStateEntity $state */
+        if ($states->count() === 0) {
+            error_log(sprintf(
+                'JapaneseLanguagePack: State machine state not found: %s',
+                $technicalName
+            ));
+            return;
+        }
 
+        foreach ($states->getElements() as $state) {
+            /** @var StateMachineStateEntity $state */
+            try {
                 $this->stateMachineStateRepository->upsert([
                     [
                         'id' => $state->getId(),
@@ -108,13 +115,15 @@ class JapaneseStateMachineStateService
                         ],
                     ],
                 ], $context);
+            } catch (\Exception $e) {
+                error_log(sprintf(
+                    'JapaneseLanguagePack: Failed to add translation for state "%s" (ID: %s): %s',
+                    $technicalName,
+                    $state->getId(),
+                    $e->getMessage()
+                ));
+                continue;
             }
-        } catch (\Exception $e) {
-            error_log(sprintf(
-                'JapaneseLanguagePack: Failed to add translation for state "%s": %s',
-                $technicalName,
-                $e->getMessage()
-            ));
         }
     }
 }

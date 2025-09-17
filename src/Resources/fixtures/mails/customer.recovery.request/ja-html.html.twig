@@ -1,0 +1,16 @@
+<div style="font-family:arial; font-size:12px;">
+    <p>
+        {{ customerRecovery.customer.lastName }} {{ customerRecovery.customer.firstName }} 様<br/>
+        <br/>
+        {{ shopName }} のアカウントの新しいパスワードをリクエストされました。<br/>
+        以下のリンクをクリックしてパスワードをリセットしてください：<br/>
+        <br/>
+        <a href="{{ resetUrl }}">{{ resetUrl }}</a><br/>
+        <br/>
+        このリンクの有効期限は2時間です。<br/>
+        パスワードをリセットしない場合は、このメールを無視してください。変更は行われません。<br/>
+        <br/>
+        敬具<br/>
+        {{ shopName }} チーム
+    </p>
+</div>

@@ -1,0 +1,14 @@
+商品レビューが{% if reviewFormData.id is defined %}編集{% else %}送信{% endif %}されました。
+
+{% if reviewFormData.name is defined %}お名前: {% if reviewFormData.lastName is defined %}{{ reviewFormData.lastName }}{% endif %} {{ reviewFormData.name }}{% endif %}
+
+{% if reviewFormData.email is defined %}メールアドレス: {{ reviewFormData.email }}{% endif %}
+
+{% if product.translated.name is defined %}商品名: {{ product.translated.name }}{% endif %}
+
+評価: {{ reviewFormData.points }}
+
+タイトル: {{ reviewFormData.title }}
+
+内容:
+{{ reviewFormData.content }}

@@ -1,0 +1,111 @@
+{% set currencyIsoCode = order.currency.isoCode %}
+{{ order.orderCustomer.lastName }} {{ order.orderCustomer.firstName }} 様
+
+{{ order.orderDateTime|format_datetime(\'medium\', \'short\', locale=\'ja-JP\') }} にご注文を受付いたしました。
+
+ご注文番号：{{ order.orderNumber }}
+
+{{ order.transactions.first.paymentMethod.translated.name }} でのお支払いがまだ完了していません。以下のURLから支払い手続きを再開していただけます：{{ rawUrl(\'frontend.account.order.single.page\', { \'deepLinkCode\': order.deepLinkCode }, salesChannel.domains|first.url) }}
+
+ご注文内容：
+
+{% for lineItem in order.lineItems %}
+{{ loop.index }}. 
+---------------------
+{% if lineItem.payload.productNumber is defined %}
+商品番号：{{ lineItem.payload.productNumber|u.wordwrap(80) }}
+{% endif %}
+{% if nestedItem.cover is defined and nestedItem.cover is not null %}
+画像：{{ lineItem.cover.alt }}
+{% endif %}
+商品説明：{{ lineItem.label|u.wordwrap(80) }}
+{% if lineItem.payload.options is defined and lineItem.payload.options|length >= 1 %}
+{% for option in lineItem.payload.options %}
+{{ option.group }}：{{ option.option }}{{ ", " }}
+{% endfor %}
+{% endif %}
+{% if lineItem.payload.features is defined and lineItem.payload.features|length >= 1 %}
+{% set referencePriceFeatures = lineItem.payload.features|filter(feature => feature.type == \'referencePrice\') %}
+{% if referencePriceFeatures|length >= 1 %}
+{% set referencePriceFeature = referencePriceFeatures|first %}
+{{ referencePriceFeature.value.purchaseUnit }} {{ referencePriceFeature.value.unitName }}({{ referencePriceFeature.value.price|currency(currencyIsoCode) }} / {{ referencePriceFeature.value.referenceUnit }} {{ referencePriceFeature.value.unitName }})
+{% endif %}
+{% endif %}
+数量：{{ lineItem.quantity }}
+単価：{{ lineItem.unitPrice|currency(currencyIsoCode) }}
+小計：{{ lineItem.totalPrice|currency(currencyIsoCode) }}
+
+{% endfor %}
+{% set delivery = order.deliveries.first %}
+{% set displayRounded = order.totalRounding.interval != 0.01 or order.totalRounding.decimals != order.itemRounding.decimals %}
+{% set decimals = order.totalRounding.decimals %}
+{% set total = order.price.totalPrice %}
+{% if displayRounded %}
+    {% set total = order.price.rawTotal %}
+    {% set decimals = order.itemRounding.decimals %}
+{% endif %}
+{% for shippingCost in order.deliveries %}
+送料：{{ shippingCost.shippingCosts.totalPrice|currency(currencyIsoCode) }}
+{% endfor %}
+商品合計（税抜）：{{ order.amountNet|currency(currencyIsoCode) }}
+{% for calculatedTax in order.price.calculatedTaxes %}
+{% if order.taxStatus is same as(\'net\') %}税込{% else %}税込{% endif %} {{ calculatedTax.taxRate }}% 消費税：{{ calculatedTax.tax|currency(currencyIsoCode) }}
+{% endfor %}
+合計金額（税込）：{{ total|currency(currencyIsoCode,decimals=decimals) }}
+{% if displayRounded %}
+端数調整後合計金額：{{ order.price.totalPrice|currency(currencyIsoCode,decimals=order.totalRounding.decimals) }}
+{% endif %}
+
+{% if order.transactions is defined and order.transactions is not empty %}
+お支払い方法：{{ order.transactions.first.paymentMethod.translated.name }}
+{{ order.transactions.first.paymentMethod.translated.description }}
+{% endif %}
+
+{% if delivery %}
+配送方法：{{ delivery.shippingMethod.translated.name }}
+{{ delivery.shippingMethod.translated.description }}
+{% endif %}
+{% set billingAddress = order.addresses.get(order.billingAddressId) %}
+請求先住所：
+{{ billingAddress.company }}
+{{ billingAddress.lastName }} {{ billingAddress.firstName }}
+{{ billingAddress.zipcode }} {{ billingAddress.city }}
+{{ billingAddress.street }}
+{{ billingAddress.country.translated.name }}
+
+{% if delivery %}
+配送先住所：
+{{ delivery.shippingOrderAddress.company }}
+{{ delivery.shippingOrderAddress.lastName }} {{ delivery.shippingOrderAddress.firstName }}
+{{ delivery.shippingOrderAddress.zipcode}} {{ delivery.shippingOrderAddress.city }}
+{{ delivery.shippingOrderAddress.street }}
+{{ delivery.shippingOrderAddress.country.translated.name }}
+{% endif %}
+
+{% if order.orderCustomer.vatIds %}
+VAT番号：{{ order.orderCustomer.vatIds|first }}
+正常にご注文が完了し、EU諸国にお住まいの場合は、付加価値税を免除した商品をお受け取りいただけます。
+
+{% endif %}
+ご注文の現在の状況は、当サイトの「マイアカウント」→「ご注文履歴」からいつでもご確認いただけます：{{ rawUrl(\'frontend.account.order.single.page\', { \'deepLinkCode\': order.deepLinkCode }, salesChannel.domains|first.url) }}
+ご不明な点がございましたら、お気軽にお問い合わせください。
+
+{% if a11yDocuments is defined and a11yDocuments is not empty %}
+アクセシビリティ向上のため、文書のHTML版もご利用いただけます：
+
+{% for a11y in a11yDocuments %}
+{% set documentLink = rawUrl(
+    \'frontend.account.order.single.document.a11y\',
+    {
+        documentId: a11y.documentId,
+        deepLinkCode: a11y.deepLinkCode,
+        fileType: a11y.fileExtension,
+    },
+    salesChannel.domains|first.url
+)%}
+- {{ documentLink }}
+{% endfor %}
+
+個人情報保護の観点から、HTML版の閲覧にはログインが必要です。
+ゲスト注文の場合は、メールアドレスと請求先住所の郵便番号をご利用ください。
+{% endif %}

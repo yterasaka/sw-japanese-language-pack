@@ -1,0 +1,24 @@
+<div style="font-family:arial; font-size:12px;">
+    <p>
+        商品レビューが{% if reviewFormData.id is defined %}編集{% else %}送信{% endif %}されました。<br/>
+        <br/>
+        {% if reviewFormData.name is defined %}
+            お名前: {% if reviewFormData.lastName is defined %}{{ reviewFormData.lastName }}{% endif %} {{ reviewFormData.name }}
+            <br/>
+        {% endif %}
+        {% if reviewFormData.email is defined %}
+            メールアドレス: {{ reviewFormData.email }}<br/>
+            <br>
+        {% endif %}
+        {% if product.translated.name is defined %}
+            商品名: {{ product.translated.name }}<br/>
+            <br>
+        {% endif %}
+        評価: {{ reviewFormData.points }}<br/>
+        <br/>
+        タイトル: {{ reviewFormData.title }}<br/>
+        <br/>
+        内容:<br/>
+        {{ reviewFormData.content|nl2br }}<br/>
+    </p>
+</div>

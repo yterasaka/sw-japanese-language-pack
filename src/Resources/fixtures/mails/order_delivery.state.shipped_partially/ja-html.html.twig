@@ -1,0 +1,33 @@
+<div style="font-family:arial; font-size:12px;">
+    <br/>
+    <p>
+        {{ order.orderCustomer.lastName }} {{ order.orderCustomer.firstName }} 様<br/>
+        <br/>
+        {{ salesChannel.translated.name }} でのご注文（注文番号：{{ order.orderNumber }}、{{ order.orderDateTime|format_datetime(\'medium\', \'short\', locale=\'ja-JP\') }}）の配送状況が変更されました。<br/>
+        <strong>新しい状況は以下の通りです：{{ order.deliveries.first.stateMachineState.translated.name }}</strong><br/>
+        <br/>
+        ご注文の現在の状況は、当サイトの「マイアカウント」→「ご注文履歴」からいつでもご確認いただけます：{{ rawUrl(\'frontend.account.order.single.page\', { \'deepLinkCode\': order.deepLinkCode }, salesChannel.domains|first.url) }}
+        </br>
+        ただし、会員登録なしでご購入いただいた場合は、この機能をご利用いただけません。
+        <br><br>
+        {% if a11yDocuments %}
+            アクセシビリティ向上のため、文書のHTML版もご利用いただけます：<br><br>
+
+            {% for a11y in a11yDocuments %}
+                {% set documentLink = rawUrl(
+                    \'frontend.account.order.single.document.a11y\',
+                    {
+                        documentId: a11y.documentId,
+                        deepLinkCode: a11y.deepLinkCode,
+                        fileType: a11y.fileExtension,
+                    },
+                    salesChannel.domains|first.url
+                )%}
+
+                - <a href="{{ documentLink }}" target="_blank">{{ documentLink }}</a> <br>
+            {% endfor %}<br>
+            個人情報保護の観点から、HTML版の閲覧にはログインが必要です。<br><br>
+            ゲスト注文の場合は、メールアドレスと請求先住所の郵便番号をご利用ください。<br>
+        {% endif %}
+    </p>
+</div>
