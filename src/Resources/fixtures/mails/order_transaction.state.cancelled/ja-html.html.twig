@@ -1,0 +1,176 @@
+<div style="font-family:arial; font-size:12px;">
+
+    {% set currencyIsoCode = order.currency.isoCode %}
+    {{ order.orderCustomer.lastName }} {{ order.orderCustomer.firstName }} 様<br>
+    <br>
+    {{ order.orderDateTime|format_datetime(\'medium\', \'short\', locale=\'ja-JP\') }} にご注文を受付いたしました。<br>
+    <br>
+    ご注文番号：{{ order.orderNumber }}<br>
+    <br>
+    {{ order.transactions.first.paymentMethod.translated.name }} でのお支払いがまだ完了していません。以下のURLから支払い手続きを再開していただけます：{{ rawUrl(\'frontend.account.order.single.page\', { \'deepLinkCode\': order.deepLinkCode }, salesChannel.domains|first.url) }}<br>
+    <br>
+    <strong>ご注文内容：</strong><br>
+    <br>
+
+    <table border="0" style="font-family:Arial, Helvetica, sans-serif; font-size:12px;">
+        <tr>
+            <td bgcolor="#F7F7F2" style="border-bottom:1px solid #cccccc;"><strong>商品番号</strong></td>
+            <td bgcolor="#F7F7F2" style="border-bottom:1px solid #cccccc;"><strong>商品画像</strong></td>
+            <td bgcolor="#F7F7F2" style="border-bottom:1px solid #cccccc;"><strong>商品説明</strong></td>
+            <td bgcolor="#F7F7F2" style="border-bottom:1px solid #cccccc;"><strong>数量</strong></td>
+            <td bgcolor="#F7F7F2" style="border-bottom:1px solid #cccccc;"><strong>単価</strong></td>
+            <td bgcolor="#F7F7F2" style="border-bottom:1px solid #cccccc;"><strong>小計</strong></td>
+        </tr>
+
+        {% for lineItem in order.nestedLineItems %}
+            {% set nestingLevel = 0 %}
+            {% set nestedItem = lineItem %}
+            {% block lineItem %}
+                <tr>
+                    <td>{% if nestedItem.payload.productNumber is defined %}{{ nestedItem.payload.productNumber|u.wordwrap(80) }}{% endif %}</td>
+                    <td>{% if nestedItem.cover is defined and nestedItem.cover is not null %}<img src="{{ nestedItem.cover.url }}" width="75" height="auto"/>{% endif %}</td>
+                    <td>
+                        {% if nestingLevel > 0 %}
+                            {% for i in 1..nestingLevel %}
+                                <span style="position: relative;">
+                            <span style="display: inline-block;
+                                position: absolute;
+                                width: 6px;
+                                height: 20px;
+                                top: 0;
+                                border-left:  2px solid rgba(0, 0, 0, 0.15);
+                                margin-left: {{ i * 10 }}px;"></span>
+                        </span>
+                            {% endfor %}
+                        {% endif %}
+
+                        <div{% if nestingLevel > 0 %} style="padding-left: {{ (nestingLevel + 1) * 10 }}px"{% endif %}>
+                            {{ nestedItem.label|u.wordwrap(80) }}
+                        </div>
+
+                        {% if nestedItem.payload.options is defined and nestedItem.payload.options|length >= 1 %}
+                            <div>
+                                {% for option in nestedItem.payload.options %}
+                                    {{ option.group }}：{{ option.option }}
+                                    {% if nestedItem.payload.options|last != option %}
+                                        {{ " | " }}
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+
+                        {% if nestedItem.payload.features is defined and nestedItem.payload.features|length >= 1 %}
+                            {% set referencePriceFeatures = nestedItem.payload.features|filter(feature => feature.type == \'referencePrice\') %}
+                            {% if referencePriceFeatures|length >= 1 %}
+                                {% set referencePriceFeature = referencePriceFeatures|first %}
+                                <div>
+                                    {{ referencePriceFeature.value.purchaseUnit }} {{ referencePriceFeature.value.unitName }}
+                                    ({{ referencePriceFeature.value.price|currency(currencyIsoCode) }} / {{ referencePriceFeature.value.referenceUnit }} {{ referencePriceFeature.value.unitName }})
+                                </div>
+                            {% endif %}
+                        {% endif %}
+                    </td>
+                    <td style="text-align: center">{{ nestedItem.quantity }}</td>
+                    <td>{{ nestedItem.unitPrice|currency(currencyIsoCode) }}</td>
+                    <td>{{ nestedItem.totalPrice|currency(currencyIsoCode) }}</td>
+                </tr>
+
+                {% if nestedItem.children.count > 0 %}
+                    {% set nestingLevel = nestingLevel + 1 %}
+                    {% for lineItem in nestedItem.children %}
+                        {% set nestedItem = lineItem %}
+                        {{ block(\'lineItem\') }}
+                    {% endfor %}
+                {% endif %}
+            {% endblock %}
+        {% endfor %}
+    </table>
+
+    {% set delivery = order.deliveries.first %}
+
+    {% set displayRounded = order.totalRounding.interval != 0.01 or order.totalRounding.decimals != order.itemRounding.decimals %}
+    {% set decimals = order.totalRounding.decimals %}
+    {% set total = order.price.totalPrice %}
+    {% if displayRounded %}
+        {% set total = order.price.rawTotal %}
+        {% set decimals = order.itemRounding.decimals %}
+    {% endif %}
+    <p>
+        <br>
+        <br>
+        {% for shippingCost in order.deliveries %}
+            送料：{{ shippingCost.shippingCosts.totalPrice|currency(currencyIsoCode) }}<br>
+        {% endfor %}
+
+        商品合計（税抜）：{{ order.amountNet|currency(currencyIsoCode) }}<br>
+        {% for calculatedTax in order.price.calculatedTaxes %}
+            {% if order.taxStatus is same as(\'net\') %}税込{% else %}税込{% endif %} {{ calculatedTax.taxRate }}% 消費税：{{ calculatedTax.tax|currency(currencyIsoCode) }}<br>
+        {% endfor %}
+        {% if not displayRounded %}<strong>{% endif %}合計金額（税込）：{{ total|currency(currencyIsoCode,decimals=decimals) }}{% if not displayRounded %}</strong>{% endif %}<br>
+        {% if displayRounded %}
+            <strong>端数調整後合計金額：{{ order.price.totalPrice|currency(currencyIsoCode,decimals=order.totalRounding.decimals) }}</strong><br>
+        {% endif %}
+        <br>
+
+        {% if order.transactions is defined and order.transactions is not empty %}
+            <strong>お支払い方法：</strong> {{ order.transactions.first.paymentMethod.translated.name }}<br>
+            {{ order.transactions.first.paymentMethod.translated.description }}<br>
+            <br>
+        {% endif %}
+
+        {% if delivery %}
+            <strong>配送方法：</strong> {{ delivery.shippingMethod.translated.name }}<br>
+            {{ delivery.shippingMethod.translated.description }}<br>
+            <br>
+        {% endif %}
+
+        {% set billingAddress = order.addresses.get(order.billingAddressId) %}
+        <strong>請求先住所：</strong><br>
+        {{ billingAddress.company }}<br>
+        {{ billingAddress.lastName }} {{ billingAddress.firstName }}<br>
+        {{ billingAddress.zipcode }} {{ billingAddress.city }}<br>
+        {{ billingAddress.street }} <br>
+        {{ billingAddress.country.translated.name }}<br>
+        <br>
+
+        {% if delivery %}
+            <strong>配送先住所：</strong><br>
+            {{ delivery.shippingOrderAddress.company }}<br>
+            {{ delivery.shippingOrderAddress.lastName }} {{ delivery.shippingOrderAddress.firstName }}<br>
+            {{ delivery.shippingOrderAddress.zipcode}} {{ delivery.shippingOrderAddress.city }}<br>
+            {{ delivery.shippingOrderAddress.street }} <br>
+            {{ delivery.shippingOrderAddress.country.translated.name }}<br>
+            <br>
+        {% endif %}
+        {% if order.orderCustomer.vatIds %}
+            VAT番号：{{ order.orderCustomer.vatIds|first }}
+            正常にご注文が完了し、EU諸国にお住まいの場合は、付加価値税を免除した商品をお受け取りいただけます。<br>
+        {% endif %}
+        <br>
+        ご注文の現在の状況は、当サイトの「マイアカウント」→「ご注文履歴」からいつでもご確認いただけます：{{ rawUrl(\'frontend.account.order.single.page\', { \'deepLinkCode\': order.deepLinkCode }, salesChannel.domains|first.url) }}
+        <br>
+        ご不明な点がございましたら、お気軽にお問い合わせください。
+        <br>
+        {% if a11yDocuments is defined and a11yDocuments is not empty %}
+            <br>
+            アクセシビリティ向上のため、文書のHTML版もご利用いただけます：<br><br>
+            <ul>
+                {% for a11y in a11yDocuments %}
+                    {% set documentLink = rawUrl(
+                        \'frontend.account.order.single.document.a11y\',
+                        {
+                            documentId: a11y.documentId,
+                            deepLinkCode: a11y.deepLinkCode,
+                            fileType: a11y.fileExtension,
+                        },
+                        salesChannel.domains|first.url
+                    )%}
+                    <li><a href="{{ documentLink }}" target="_blank">{{ documentLink }}</a></li>
+                {% endfor %}
+            </ul>
+            個人情報保護の観点から、HTML版の閲覧にはログインが必要です。<br><br>
+            ゲスト注文の場合は、メールアドレスと請求先住所の郵便番号をご利用ください。<br>
+        {% endif %}
+    </p>
+    <br>
+</div>

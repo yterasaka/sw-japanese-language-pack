@@ -1,0 +1,13 @@
+<div style="font-family:arial; font-size:12px;">
+    <p>
+        {{ customer.lastName }} {{ customer.firstName }} 様<br/>
+        <br/>
+        {{ salesChannel.translated.name }} でパスワードのリセットがリクエストされました。<br/>
+        新しいパスワードを設定するために、以下のリンクをクリックして確認してください。<br/>
+        <br/>
+        <a href="{{ resetUrl }}">パスワードをリセット</a><br/>
+        <br/>
+        このリンクの有効期限は2時間です。期限が切れた場合は、新しい確認リンクをリクエストしてください。<br/>
+        パスワードをリセットしない場合は、このメールを無視してください。変更は行われません。
+    </p>
+</div>
